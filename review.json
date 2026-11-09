@@ -1,19 +1,17 @@
 {
-  "znamka": 6,
+  "znamka": 8,
   "slabiny": [
-    "Hlavička na PC (všechny buňky): logo HORSKÁ CHATA / ZVONICE / Kořenov je pořád uprostřed mezi dvěma polovinami menu. Přesuňte ho doleva, celé menu dejte doprava před tlačítko POPTÁVKA a logo zvětšete aspoň na 48–56 px výšky, aby psané slovo Kořenov bylo čitelné (teď je to sotva viditelná čárka).",
-    "Patička (PC buňka 10, mobil buňka 14): místo loga je pořád název HORSKÁ CHATA ZVONICE napsaný písmem Playfair. Do tmavé patičky dejte světlou verzi klientova loga (HORSKÁ CHATA tučně, ZVONICE tence, Kořenov psacím písmem, vše světlé nebo písková #f3ede1), stejně jako je vlevo logo Lippert Hotels.",
-    "Patička na mobilu: QA hlásí 11 dotykových cílů menších než 40 px (provozni@zvonice.cz 143×18, Poptávka pobytu, Školy v přírodě, Adaptační kurzy…). Odkazy v patičce dejte do bloku s min-height 40 px a padding 11px 0 a u e-mailu zvětšete i plochu pro klepnutí."
+    "PC buňka 3 (Pobyty pro každou skupinu): bílé nadpisy dlaždic jsou uprostřed pestrých fotek a u „Lyžařské výcviky“ na světlé zasněžené krajině se skoro ztrácí. Pod nadpisy dejte tmavý přechod rgba(30,19,16,.6) zespodu do průhledné, nadpisy přesuňte do spodní třetiny dlaždice a vnitřní rámeček nechte jen jako linku.",
+    "PC buňka 4: letní fotka chaty s dětmi je roztažená přes celou šířku 1440 px, i když koncept kvůli malým zdrojovým fotkám zakazuje fotky přes šířku. Když má zdroj méně než asi 1100 px, dejte ji do kontejneru s max-width jako ostatní sekce (1100 až 1160 px) nebo ji ořízněte na nižší pás, aby se nezvětšovala víc než 1,3×.",
+    "PC buňka 6 a mobil buňka 7: poznámka „Skupinové ceny zahrnují ubytování a stravu pětkrát denně…“ je drobný světle šedý text o velikosti zhruba 11 px s malým kontrastem na pískovém pozadí. Zvětšete ji na 14 až 15 px, ztmavte na #5a4a40 a dejte ji hned pod kartu Pokoje, ne volně mezi sekce."
   ],
-  "zavazne": [
-    "Logo v hlavičce (PC i mobil, nejvíc vidět přes fotku v hero, PC buňka 1, mobil buňka 1, a na pískovém pozadí, mobil buňky 2–14): slovo ZVONICE je vykreslené dvakrát přes sebe s posunem. Vedle vínového ZVONICE prosvítá bílé nebo průsvitné písmo (před Z a za E jsou vidět duchové písmen), takže logo vypadá rozmazané a rozbité. Nechte jen jednu vrstvu: buď SVG ve vínové #4b0000, nebo PNG s přebarveným ZVONICE. Druhou verzi (světlou pro hero nebo patičku) skryjte opravdu přes display:none, ne jen přes opacity nebo překryv."
-  ],
+  "zavazne": [],
   "silne": [
-    "Sekce Okolí je teď světlá: velká zimní fotka a vzdálenosti jako čistý seznam s linkami (0,2 / 0,5 / 30 / 110 km). Tmavý pruh se statistikami zmizel a dlaždice s čísly zůstaly jen v sekci Školy a skupiny.",
-    "Karty pobytů mají světlejší přechod a fotky jsou vidět, na mobilu je pod nadpisem čitelný odkaz DOZVĚDĚT SE VÍCE. Odkaz Co je kolem chaty je teď v textovém bloku nad širokou fotkou.",
-    "Web pořád funguje jako sourozenec Skalského dvora (Playfair verzálky, Montserrat, písek, víno ze střechy a loga, kosočtverečné ornamenty, karta přes fotku), ceník je přehledný a fakta odpovídají podkladům.",
-    "Bez přetékání na všech 6 šířkách a kontakt i poptávka jsou dostupné z hlavičky a patičky."
+    "Všechny čtyři minulé výtky jsou opravené. Logo je vlevo a menu vpravo před tlačítkem POPTÁVKA. V tmavé patičce je světlá verze klientova loga vedle Lippert Hotels. QA hlásí 0 malých dotykových cílů. Logo ZVONICE v hlavičce je na snímcích jen v jedné vrstvě, bez dvojitého obrysu.",
+    "Web je čitelně sourozenec Skalského dvora: Playfair verzálky + Montserrat, písek, vínová podle střechy, ornamenty s kosočtverci, záložky s kartou přes fotku a patička se sesterskými hotely.",
+    "Obsah je postavený pro hlavní cílovku, tedy učitele a vedoucí: kapacita, strava, poměr 1:20 a ceník za osobu a noc s jasnými podmínkami. Okolí ukazuje jako rozcestník se vzdálenostmi. Všechna fakta jsou konzistentní (200 m / 0,2 km).",
+    "Mobil je navržený, ne zmenšený: nic nepřetéká na žádné ze 6 šířek, CTA POPTÁVKA je stále v hlavičce a dlaždice pobytů jsou pod sebou s výzvou „Dozvědět se více“."
   ],
-  "verdikt": "Okolí a karty pobytů jsou opravené a logo klienta už v hlavičce je, ale vykresluje se zdvojeně s průsvitným duchem písmen, na PC je pořád uprostřed místo vlevo a v patičce chybí. Opravit logo (jedna vrstva, vlevo, světlá verze v patičce), pak je web blízko k odeslání.",
-  "_hash": "5e2b60f2fd0c68d5c668cfb1b16b16cc8c11c349"
+  "verdikt": "Minulé výtky jsou opravené a nová závažná vada tam není. Web drží úroveň sourozence Skalského dvora a dá se poslat. Zbývají jen drobnosti: kontrast nadpisů na dlaždicích, jedna fotka přes celou šířku a drobný šedý text.",
+  "_hash": "1cfb1242e145e611a2d3b681d92bff86e17d4d60"
 }

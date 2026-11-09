@@ -326,3 +326,39 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;color:var(--tma);margin:0}
 .pata .znak .lg b{font-size:19px}
 .pata a,.pata li a{padding:10px 0}
 .pata .pata-spodek a{padding:0}
+
+/* ČITELNOST (9. 11. 2026): kontrast WCAG AA, overlaye přes fotky, minimální velikosti */
+:root{--tlum:#55504a;--text:#34312c;--akcent-sv:#e0a79d}
+body{font-weight:400}
+.pribeh p,.dvoj p,.perex,.drobne{font-weight:400}
+.fakt span,.ikony div,.kc small,.dl .vic,.tabulka th,.formular label,.zal button,.hero-pata{font-size:12px}
+.znak small{font-size:10.5px;opacity:1}
+/* hlavička přes fotku: tmavý přechod + stín */
+.hl:not(.plna){background:linear-gradient(180deg,rgba(12,14,18,.72) 0,rgba(12,14,18,.42) 60%,rgba(12,14,18,0) 100%)}
+.hl:not(.plna) nav a,.hl:not(.plna) .znak{text-shadow:0 1px 6px rgba(0,0,0,.55)}
+.hl nav a{opacity:1}
+.hl nav a:hover{color:#f6d6cf}
+.hl.plna nav a:hover{color:var(--akcent)}
+/* hero */
+.hero::after{background:linear-gradient(90deg,rgba(12,14,18,.82) 0%,rgba(12,14,18,.62) 45%,rgba(12,14,18,.38) 100%),linear-gradient(0deg,rgba(12,14,18,.6),rgba(12,14,18,0) 40%)}
+.hero .stitek{color:#ffd9d1}
+.hero p{color:#fff}
+.hero-pata{color:#fff;text-shadow:0 1px 5px rgba(0,0,0,.6)}
+/* podstránky: fotka pod hlavičkou */
+.titulni{margin-top:0;height:clamp(324px,34vw,424px);padding-top:84px}
+.titulni::after{background:rgba(12,14,18,.62)}
+@media (max-width:900px){.titulni{margin-top:0;padding-top:68px}}
+/* dlaždice pobytů */
+.dl::before{background:linear-gradient(to top,rgba(12,12,12,.8) 0,rgba(12,12,12,.7) 55%,rgba(12,12,12,.58) 100%)}
+.dl:hover::before{background:rgba(12,12,12,.82)}
+.dl h3,.dl p,.dl .vic{text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.dl p{color:#fff;font-size:14.5px;font-weight:400}
+.dl::after{border-color:rgba(255,255,255,.8)}
+/* patička */
+.pata{color:#e4dfd6}
+.pata h4{color:#e0a79d}
+.hl:not(.plna){background:linear-gradient(180deg,rgba(12,14,18,.82) 0,rgba(12,14,18,.55) 65%,rgba(12,14,18,0) 100%)}
+.misto{background:rgba(14,16,20,.72)}
+.misto p{color:#fff;font-size:14px}
+@media (max-width:900px){.hero::after{background:linear-gradient(0deg,rgba(12,14,18,.8),rgba(12,14,18,.7) 100%)}.hero .stitek{font-size:12px}}
+.hl:not(.plna){background:linear-gradient(180deg,rgba(10,12,16,.88) 0,rgba(10,12,16,.72) 60%,rgba(10,12,16,0) 100%)}
