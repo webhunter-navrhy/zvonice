@@ -1,8 +1,17 @@
 {% macro stitek(t, cls='') %}<div class="stitek {{ cls }}"><svg viewBox="0 0 12 12"><path d="M6 0L12 6L6 12L0 6Z"/></svg><i></i><span>{{ t }}</span><i></i><svg viewBox="0 0 12 12"><path d="M6 0L12 6L6 12L0 6Z"/></svg></div>{% endmacro %}
 
-{% macro titulni(nadpis, foto, alt, pozice='50% 50%') %}
+{# Fotka ve tvaru štítu chaty (sedlová střecha) s odsazenou linkou – podpis webu. #}
+{% macro stit(foto, alt, sizes='100vw', pozice='50% 50%', cls='', eager=None) %}<figure class="stit {{ cls }}"><div class="stit-foto">{{ img(foto, alt, sizes=sizes, styl='object-position:' ~ pozice, eager=eager) }}</div><svg class="stit-linka" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M50 .5 L99.5 20 L99.5 99.5 L.5 99.5 L.5 20 Z" vector-effect="non-scaling-stroke"/></svg></figure>{% endmacro %}
+
+{% macro titulni(nadpis, foto, alt, pozice='50% 50%', perex='', stitek_text='Horská chata Zvonice · Kořenov') %}
 <section class="titulni">
-  {{ img(foto, '~' ~ alt, sizes='100vw', styl='object-position:' ~ pozice) }}
-  <h1>{{ nadpis }}</h1>
+  <div class="obal titulni-in">
+    <div class="titulni-txt">
+      {{ stitek(stitek_text, 'vlevo') }}
+      <h1>{{ nadpis }}</h1>
+      {% if perex %}<p>{{ perex }}</p>{% endif %}
+    </div>
+    {{ stit(foto, alt, sizes='(min-width: 900px) 40vw, 100vw', pozice=pozice, eager=True) }}
+  </div>
 </section>
 {% endmacro %}

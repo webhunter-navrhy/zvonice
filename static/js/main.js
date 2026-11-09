@@ -1,7 +1,7 @@
 // Horská chata Zvonice – hlavička, mobilní menu, záložky ubytování, odhalení sekcí.
 (function () {
   var hl = document.querySelector('.hl');
-  var plna = function () { hl.classList.toggle('plna', scrollY > 60 || !document.querySelector('.hero')); };
+  var plna = function () { hl.classList.toggle('plna', scrollY > 60 || !document.querySelector('.hero, .titulni')); };
   addEventListener('scroll', plna, { passive: true }); plna();
 
   var burger = document.querySelector('.burger');
