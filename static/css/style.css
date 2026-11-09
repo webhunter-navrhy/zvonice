@@ -362,3 +362,21 @@ body{font-weight:400}
 .misto p{color:#fff;font-size:14px}
 @media (max-width:900px){.hero::after{background:linear-gradient(0deg,rgba(12,14,18,.8),rgba(12,14,18,.7) 100%)}.hero .stitek{font-size:12px}}
 .hl:not(.plna){background:linear-gradient(180deg,rgba(10,12,16,.88) 0,rgba(10,12,16,.72) 60%,rgba(10,12,16,0) 100%)}
+
+/* ceník skupin 2027 */
+.cenik-sk{margin:18px 0;border:1px solid rgba(106,31,26,.25);background:#fff}
+.cenik-sk summary{cursor:pointer;padding:16px 20px;font-family:'Playfair Display',serif;font-size:1.3rem;color:#6a1f1a}
+.cenik-sk[open] summary{border-bottom:1px solid rgba(106,31,26,.25)}
+.cenik-sk .h3,.cenik-sk .drobne,.cenik-sk .tab-wrap{margin-left:20px;margin-right:20px}
+.cenik-sk .h3{margin-top:20px;margin-bottom:2px}
+.tab-wrap{overflow-x:auto;margin-bottom:20px}
+.tab-wrap .tabulka{min-width:520px}
+/* pop-up */
+.popup{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(30,10,8,.6);padding:20px}
+.popup.on{display:flex}
+.popup-okno{background:#fff;max-width:460px;width:100%;padding:36px 32px 30px;position:relative;border-top:5px solid #6a1f1a;text-align:center}
+.popup-okno h2{font-family:'Playfair Display',serif;color:#6a1f1a;margin:8px 0 10px}
+.popup-okno p{margin:0 0 18px}
+.popup-zavrit{position:absolute;top:8px;right:12px;background:none;border:0;font-size:28px;line-height:1;cursor:pointer;color:#555}
+.popup-okno .odkaz{display:block;margin-top:12px}
+.popup[hidden]{display:none}

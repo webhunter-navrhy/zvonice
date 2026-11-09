@@ -20,11 +20,11 @@
   <div class="hl-in">
     <nav aria-label="Hlavní vlevo"><a href="{{ url('pobyty/') }}">Pro skupiny</a><a href="{{ url('ubytovani/') }}">Ubytování</a><a href="{{ url('okoli/') }}">Okolí</a><a href="{{ url('fotogalerie/') }}">Fotogalerie</a></nav>
     <a class="znak" href="{{ url('') }}" aria-label="Horská chata Zvonice – úvod"><span class="lg"><img src="{{ base }}img/logo-tmave.png" alt="" width="577" height="257"><b>ZVONICE</b></span></a>
-    <nav class="vpravo" aria-label="Hlavní vpravo"><a href="{{ url('cenik/') }}">Ceník</a><a href="{{ url('silvestr/') }}">Silvestr 2026</a><a href="{{ url('poptavka/') }}#kontakt-info">Kontakt</a><a class="btn" href="{{ url('poptavka/') }}" style="padding:0 18px;min-height:40px;opacity:1">Poptávka</a></nav>
+    <nav class="vpravo" aria-label="Hlavní vpravo"><a href="{{ url('cenik/') }}">Ceník</a><a href="{{ url('zimni-pobyty/') }}">Zimní pobyty 2027</a><a href="{{ url('silvestr/') }}">Silvestr 2027</a><a href="{{ url('poptavka/') }}#kontakt-info">Kontakt</a><a class="btn" href="{{ url('poptavka/') }}" style="padding:0 18px;min-height:40px;opacity:1">Poptávka</a></nav>
     <a class="btn btn-mob" href="{{ url('poptavka/') }}">Poptávka</a>
     <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
     <div class="mob-menu">
-      <a href="{{ url('pobyty/') }}">Pro skupiny</a><a href="{{ url('ubytovani/') }}">Ubytování</a><a href="{{ url('cenik/') }}">Ceník</a><a href="{{ url('okoli/') }}">Okolí</a><a href="{{ url('silvestr/') }}">Silvestr 2026</a><a href="{{ url('fotogalerie/') }}">Fotogalerie</a><a href="{{ url('poptavka/') }}#kontakt-info">Kontakt</a>
+      <a href="{{ url('pobyty/') }}">Pro skupiny</a><a href="{{ url('ubytovani/') }}">Ubytování</a><a href="{{ url('cenik/') }}">Ceník</a><a href="{{ url('okoli/') }}">Okolí</a><a href="{{ url('zimni-pobyty/') }}">Zimní pobyty 2027</a><a href="{{ url('silvestr/') }}">Silvestr 2027</a><a href="{{ url('fotogalerie/') }}">Fotogalerie</a><a href="{{ url('poptavka/') }}#kontakt-info">Kontakt</a>
       <a class="btn" href="{{ url('poptavka/') }}">Poptat pobyt pro skupinu</a>
     </div>
   </div>
@@ -44,7 +44,7 @@
     </div>
     <div>
       <h4>Poptávky</h4>
-      <ul><li><a href="{{ url('poptavka/') }}">Poptávka pobytu</a></li><li><a href="{{ url('pobyty/') }}#skoly-v-prirode">Školy v přírodě</a></li><li><a href="{{ url('pobyty/') }}#adaptacni-kurzy">Adaptační kurzy</a></li><li><a href="{{ url('pobyty/') }}#lyzarske-vycviky">Lyžařské výcviky</a></li><li><a href="{{ url('silvestr/') }}">Silvestr 2026</a></li></ul>
+      <ul><li><a href="{{ url('poptavka/') }}">Poptávka pobytu</a></li><li><a href="{{ url('pobyty/') }}#skoly-v-prirode">Školy v přírodě</a></li><li><a href="{{ url('pobyty/') }}#adaptacni-kurzy">Adaptační kurzy</a></li><li><a href="{{ url('pobyty/') }}#lyzarske-vycviky">Lyžařské výcviky</a></li><li><a href="{{ url('zimni-pobyty/') }}">Zimní pobyty 2027</a></li><li><a href="{{ url('silvestr/') }}">Silvestrovský pobyt 2027</a></li></ul>
       <h4 style="margin-top:30px">Užitečné</h4>
       <ul><li><a href="{{ url('cenik/') }}#podminky">Ceník a ceny pro skupiny</a></li><li><a href="{{ url('okoli/') }}#jak-k-nam">Jak k nám</a></li></ul>
     </div>
@@ -61,6 +61,16 @@
   </div>
   <div class="obal pata-spodek"><span>© 2026 Horská chata Zvonice</span><span>Návrh webu · fotky ze stávajícího webu chaty</span></div>
 </footer>
+<div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-nadpis" hidden>
+  <div class="popup-okno">
+    <button class="popup-zavrit" type="button" aria-label="Zavřít">×</button>
+    <small>Novinky 2027</small>
+    <h2 id="popup-nadpis">Zimní pobyty a Silvestr 2027</h2>
+    <p>Lyžařské výcviky a víkendy pro skupiny, sjezdovka s vlekem 200 m od chaty. Silvestrovský pobyt 27. 12. 2026 – 1. 1. 2027 je otevřený i rodinám a partám přátel.</p>
+    <a class="btn" href="{{ url('zimni-pobyty/') }}">Zimní pobyty</a>
+    <a class="odkaz" href="{{ url('silvestr/') }}">Silvestrovský pobyt</a>
+  </div>
+</div>
 <script src="{{ asset('js/main.js') }}" defer></script>
 </body>
 </html>

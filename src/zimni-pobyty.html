@@ -1,0 +1,47 @@
+{% extends "_base.html" %}
+{% from "_casti.html" import stitek, titulni %}
+{% set titulek = "Zimní pobyty 2027 – lyžařské výcviky a víkendy | Horská chata Zvonice" %}
+{% set popis = "Zimní pobyty 2027 na Horské chatě Zvonice v Kořenově: lyžařské výcviky a skupinové lyžařské víkendy, sjezdovka s vlekem asi 200 m, běžkařská stopa u chaty." %}
+{% block obsah %}
+{{ titulni('Zimní pobyty 2027', 'chata-zima-slunce.jpg', 'Chata Zvonice pod sněhem', '52% 70%') }}
+<section class="sekce">
+  <div class="obal">
+    {{ stitek('Prosinec 2026 – březen 2027') }}
+    <h2 class="h2 stred">Zima v Jizerských horách pro celou skupinu</h2>
+    <p class="uvodni" style="margin-top:22px">Lyžařské výcviky pro školy a skupinové lyžařské víkendy pro oddíly, spolky a party přátel. Sjezdovka s vlekem je asi 200 metrů od chaty a kolem chaty vede běžkařská stopa.</p>
+    <div class="blok" data-odhal>
+      <div class="blok-foto">{{ img('krajina-mraz.jpg', 'Zimní krajina Jizerských hor u Kořenova', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div>
+        {{ stitek('Lyžařské výcviky', 'vlevo') }}
+        <h2>Pro školy</h2>
+        <p>Sjezdovka s vlekem je vhodná pro začátečníky a po lyžování se děti vrátí do tepla chaty. V zimě se k chatě cesta pluhuje.</p>
+        <ul class="seznam"><li>sjezdovka s vlekem asi 200 m</li><li>úschovna lyží</li><li>strava 5× denně a pitný režim v ceně</li><li>na 20 platících dětí 1 doprovod zdarma</li></ul>
+        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Zimní pobyt 2027">Poptat lyžařský výcvik</a>
+      </div>
+    </div>
+    <div class="blok otoc" data-odhal>
+      <div class="blok-foto">{{ img('chata-zima.jpg', 'Chata Zvonice v zimě', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div>
+        {{ stitek('Víkendy', 'vlevo') }}
+        <h2>Skupinové lyžařské víkendy</h2>
+        <p>Pro sportovní oddíly, spolky a rodinné či přátelské skupiny. Celá chata je jen pro Vás, večer u krbových kamen v restauraci.</p>
+        <ul class="seznam"><li>běžkařská stopa kolem chaty, Jizerská magistrála</li><li>krbová kamna v restauraci</li><li>klubovna a společenské místnosti</li><li>parkování pro ubytované zdarma</li></ul>
+        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Zimní pobyt 2027">Poptat zimní víkend</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sekce pisek-2">
+  <div class="obal" data-odhal>
+    {{ stitek('Cena') }}
+    <h2 class="h2 stred">Sezónní ceny pro skupiny</h2>
+    <p class="perex stred">Sezóna zahrnuje prosinec od 20. 12., leden, únor a březen. Ceny jsou za osobu a noc včetně plné penze 5× denně a pitného režimu, kompletní tabulky najdete v ceníku.</p>
+    <div class="akce stred"><a class="btn" href="{{ url('cenik/') }}">Ceník skupin 2027</a></div>
+  </div>
+</section>
+<section class="cta-pas">
+  <h2 class="h2">Zimní termíny se plní</h2>
+  <p>Napište termín a počet osob, pošleme nabídku na celý pobyt.</p>
+  <a class="btn" href="{{ url('poptavka/') }}?pobyt=Zimní pobyt 2027">Poptat zimní pobyt</a>
+</section>
+{% endblock %}

@@ -1,7 +1,7 @@
 {% extends "_base.html" %}
 {% from "_casti.html" import stitek, titulni %}
-{% set titulek = "Ceník – od 620 Kč za osobu a noc se stravou | Horská chata Zvonice" %}
-{% set popis = "Ceník Horské chaty Zvonice v Kořenově: skupiny od 620 Kč za osobu a noc se stravou 5× denně, nocleh od 735 Kč, parkování pro ubytované zdarma." %}
+{% set titulek = "Ceník – od 617 Kč za osobu a noc se stravou | Horská chata Zvonice" %}
+{% set popis = "Ceník Horské chaty Zvonice v Kořenově: skupiny od 617 Kč za osobu a noc s plnou penzí 5× denně, nocleh od 735 Kč, parkování pro ubytované zdarma." %}
 {% block obsah %}
 {{ titulni('Ceník', 'restaurace-vecer.jpg', 'Restaurace chaty Zvonice večer', '50% 55%') }}
 <section class="sekce">
@@ -9,14 +9,85 @@
     <p class="uvodni">Ceny jsou za osobu a noc. Pro školy a velké skupiny připravíme nabídku na celý pobyt.</p>
     <div data-odhal style="margin-top:60px">
       {{ stitek('Skupiny') }}
-      <h2 class="h2 stred">Skupinové pobyty</h2>
-      <table class="tabulka">
-        <tbody>
-          <tr><td>Ubytování a strava 5× denně (školy v přírodě, adaptační kurzy, lyžařské výcviky)</td><td class="c">od 620 Kč</td></tr>
-          <tr><td>Doprovod: na každých 20 dětí</td><td class="c">1 dospělý zdarma</td></tr>
-        </tbody>
-      </table>
-      <p class="drobne">Skupinové a mimosezonní slevy na dotaz.</p>
+      <h2 class="h2 stred">Ceník pro školy a skupiny 2027</h2>
+      <p class="perex stred">Ceny platí pro 2027, jsou za osobu a noc a zahrnují ubytování, plnou penzi 5× denně (snídaně, svačina, oběd, svačina, večeře) a celodenní pitný režim.</p>
+      <table class="tabulka"><tbody>
+          <tr><td>Doprovod</td><td class="c">1 dospělý zdarma na každých 20 platících dětí</td></tr>
+          <tr><td>Dospělá osoba nad rámec doprovodu (plná penze)</td><td class="c">872 Kč za osobu a den</td></tr>
+      </tbody></table>
+      <details class="cenik-sk" data-odhal open><summary>1. stupeň ZŠ</summary>
+      <h3 class="h3">Mimo sezónu</h3><p class="drobne">září, říjen, listopad, prosinec do 20. 12., duben</p>
+      <div class="tab-wrap"><table class="tabulka"><thead><tr><th>Počet osob</th><th class="c">1 noc</th><th class="c">2–3 noci</th><th class="c">4–5 nocí</th><th class="c">6 a více nocí</th></tr></thead><tbody>
+        <tr><td>do 15 osob</td><td class="c">756 Kč</td><td class="c">735 Kč</td><td class="c">714 Kč</td><td class="c">694 Kč</td></tr>
+        <tr><td>16–30 osob</td><td class="c">746 Kč</td><td class="c">725 Kč</td><td class="c">704 Kč</td><td class="c">684 Kč</td></tr>
+        <tr><td>31–50 osob</td><td class="c">736 Kč</td><td class="c">715 Kč</td><td class="c">694 Kč</td><td class="c">674 Kč</td></tr>
+        <tr><td>51–70 osob</td><td class="c">726 Kč</td><td class="c">705 Kč</td><td class="c">684 Kč</td><td class="c">664 Kč</td></tr>
+        <tr><td>nad 70 osob</td><td class="c">719 Kč</td><td class="c">695 Kč</td><td class="c">674 Kč</td><td class="c">654 Kč</td></tr>
+      </tbody></table></div>
+      <h3 class="h3">V sezóně</h3><p class="drobne">prosinec od 20. 12., leden, únor, březen, květen–srpen</p>
+      <div class="tab-wrap"><table class="tabulka"><thead><tr><th>Počet osob</th><th class="c">1 noc</th><th class="c">2–3 noci</th><th class="c">4–5 nocí</th><th class="c">6 a více nocí</th></tr></thead><tbody>
+        <tr><td>do 15 osob</td><td class="c">819 Kč</td><td class="c">798 Kč</td><td class="c">777 Kč</td><td class="c">757 Kč</td></tr>
+        <tr><td>16–30 osob</td><td class="c">809 Kč</td><td class="c">788 Kč</td><td class="c">767 Kč</td><td class="c">747 Kč</td></tr>
+        <tr><td>31–50 osob</td><td class="c">799 Kč</td><td class="c">778 Kč</td><td class="c">757 Kč</td><td class="c">737 Kč</td></tr>
+        <tr><td>51–70 osob</td><td class="c">789 Kč</td><td class="c">768 Kč</td><td class="c">747 Kč</td><td class="c">727 Kč</td></tr>
+        <tr><td>nad 70 osob</td><td class="c">779 Kč</td><td class="c">758 Kč</td><td class="c">737 Kč</td><td class="c">717 Kč</td></tr>
+      </tbody></table></div>
+      </details>
+      <details class="cenik-sk" data-odhal><summary>2. stupeň ZŠ</summary>
+      <h3 class="h3">Mimo sezónu</h3><p class="drobne">září, říjen, listopad, prosinec do 20. 12., duben</p>
+      <div class="tab-wrap"><table class="tabulka"><thead><tr><th>Počet osob</th><th class="c">1 noc</th><th class="c">2–3 noci</th><th class="c">4–5 nocí</th><th class="c">6 a více nocí</th></tr></thead><tbody>
+        <tr><td>do 15 osob</td><td class="c">779 Kč</td><td class="c">758 Kč</td><td class="c">738 Kč</td><td class="c">718 Kč</td></tr>
+        <tr><td>16–30 osob</td><td class="c">769 Kč</td><td class="c">748 Kč</td><td class="c">728 Kč</td><td class="c">708 Kč</td></tr>
+        <tr><td>31–50 osob</td><td class="c">759 Kč</td><td class="c">738 Kč</td><td class="c">718 Kč</td><td class="c">698 Kč</td></tr>
+        <tr><td>51–70 osob</td><td class="c">749 Kč</td><td class="c">728 Kč</td><td class="c">708 Kč</td><td class="c">688 Kč</td></tr>
+        <tr><td>nad 70 osob</td><td class="c">739 Kč</td><td class="c">718 Kč</td><td class="c">698 Kč</td><td class="c">678 Kč</td></tr>
+      </tbody></table></div>
+      <h3 class="h3">V sezóně</h3><p class="drobne">prosinec od 20. 12., leden, únor, březen, květen–srpen</p>
+      <div class="tab-wrap"><table class="tabulka"><thead><tr><th>Počet osob</th><th class="c">1 noc</th><th class="c">2–3 noci</th><th class="c">4–5 nocí</th><th class="c">6 a více nocí</th></tr></thead><tbody>
+        <tr><td>do 15 osob</td><td class="c">835 Kč</td><td class="c">814 Kč</td><td class="c">803 Kč</td><td class="c">783 Kč</td></tr>
+        <tr><td>16–30 osob</td><td class="c">824 Kč</td><td class="c">804 Kč</td><td class="c">793 Kč</td><td class="c">773 Kč</td></tr>
+        <tr><td>31–50 osob</td><td class="c">814 Kč</td><td class="c">794 Kč</td><td class="c">783 Kč</td><td class="c">763 Kč</td></tr>
+        <tr><td>51–70 osob</td><td class="c">804 Kč</td><td class="c">784 Kč</td><td class="c">773 Kč</td><td class="c">753 Kč</td></tr>
+        <tr><td>nad 70 osob</td><td class="c">794 Kč</td><td class="c">774 Kč</td><td class="c">761 Kč</td><td class="c">743 Kč</td></tr>
+      </tbody></table></div>
+      </details>
+      <details class="cenik-sk" data-odhal><summary>Mateřské školy</summary>
+      <h3 class="h3">Mimo sezónu</h3><p class="drobne">září, říjen, listopad, prosinec do 20. 12., duben</p>
+      <div class="tab-wrap"><table class="tabulka"><thead><tr><th>Počet osob</th><th class="c">1 noc</th><th class="c">2–3 noci</th><th class="c">4–5 nocí</th><th class="c">6 a více nocí</th></tr></thead><tbody>
+        <tr><td>do 15 osob</td><td class="c">719 Kč</td><td class="c">698 Kč</td><td class="c">677 Kč</td><td class="c">657 Kč</td></tr>
+        <tr><td>16–30 osob</td><td class="c">709 Kč</td><td class="c">688 Kč</td><td class="c">667 Kč</td><td class="c">647 Kč</td></tr>
+        <tr><td>31–50 osob</td><td class="c">699 Kč</td><td class="c">678 Kč</td><td class="c">657 Kč</td><td class="c">637 Kč</td></tr>
+        <tr><td>51–70 osob</td><td class="c">689 Kč</td><td class="c">668 Kč</td><td class="c">647 Kč</td><td class="c">627 Kč</td></tr>
+        <tr><td>nad 70 osob</td><td class="c">679 Kč</td><td class="c">658 Kč</td><td class="c">637 Kč</td><td class="c">617 Kč</td></tr>
+      </tbody></table></div>
+      <h3 class="h3">V sezóně</h3><p class="drobne">prosinec od 20. 12., leden, únor, březen, květen–srpen</p>
+      <div class="tab-wrap"><table class="tabulka"><thead><tr><th>Počet osob</th><th class="c">1 noc</th><th class="c">2–3 noci</th><th class="c">4–5 nocí</th><th class="c">6 a více nocí</th></tr></thead><tbody>
+        <tr><td>do 15 osob</td><td class="c">772 Kč</td><td class="c">751 Kč</td><td class="c">730 Kč</td><td class="c">714 Kč</td></tr>
+        <tr><td>16–30 osob</td><td class="c">761 Kč</td><td class="c">741 Kč</td><td class="c">720 Kč</td><td class="c">704 Kč</td></tr>
+        <tr><td>31–50 osob</td><td class="c">751 Kč</td><td class="c">731 Kč</td><td class="c">710 Kč</td><td class="c">694 Kč</td></tr>
+        <tr><td>51–70 osob</td><td class="c">741 Kč</td><td class="c">721 Kč</td><td class="c">700 Kč</td><td class="c">684 Kč</td></tr>
+        <tr><td>nad 70 osob</td><td class="c">731 Kč</td><td class="c">711 Kč</td><td class="c">690 Kč</td><td class="c">674 Kč</td></tr>
+      </tbody></table></div>
+      </details>
+      <details class="cenik-sk" data-odhal><summary>Střední školy</summary>
+      <h3 class="h3">Mimo sezónu</h3><p class="drobne">září, říjen, listopad, prosinec do 20. 12., duben</p>
+      <div class="tab-wrap"><table class="tabulka"><thead><tr><th>Počet osob</th><th class="c">1 noc</th><th class="c">2–3 noci</th><th class="c">4–5 nocí</th><th class="c">6 a více nocí</th></tr></thead><tbody>
+        <tr><td>do 15 osob</td><td class="c">804 Kč</td><td class="c">783 Kč</td><td class="c">763 Kč</td><td class="c">747 Kč</td></tr>
+        <tr><td>16–30 osob</td><td class="c">794 Kč</td><td class="c">773 Kč</td><td class="c">753 Kč</td><td class="c">737 Kč</td></tr>
+        <tr><td>31–50 osob</td><td class="c">784 Kč</td><td class="c">763 Kč</td><td class="c">743 Kč</td><td class="c">727 Kč</td></tr>
+        <tr><td>51–70 osob</td><td class="c">774 Kč</td><td class="c">753 Kč</td><td class="c">733 Kč</td><td class="c">717 Kč</td></tr>
+        <tr><td>nad 70 osob</td><td class="c">764 Kč</td><td class="c">743 Kč</td><td class="c">723 Kč</td><td class="c">707 Kč</td></tr>
+      </tbody></table></div>
+      <h3 class="h3">V sezóně</h3><p class="drobne">prosinec od 20. 12., leden, únor, březen, květen–srpen</p>
+      <div class="tab-wrap"><table class="tabulka"><thead><tr><th>Počet osob</th><th class="c">1 noc</th><th class="c">2–3 noci</th><th class="c">4–5 nocí</th><th class="c">6 a více nocí</th></tr></thead><tbody>
+        <tr><td>do 15 osob</td><td class="c">861 Kč</td><td class="c">840 Kč</td><td class="c">830 Kč</td><td class="c">814 Kč</td></tr>
+        <tr><td>16–30 osob</td><td class="c">851 Kč</td><td class="c">830 Kč</td><td class="c">820 Kč</td><td class="c">804 Kč</td></tr>
+        <tr><td>31–50 osob</td><td class="c">841 Kč</td><td class="c">820 Kč</td><td class="c">810 Kč</td><td class="c">794 Kč</td></tr>
+        <tr><td>51–70 osob</td><td class="c">831 Kč</td><td class="c">810 Kč</td><td class="c">800 Kč</td><td class="c">784 Kč</td></tr>
+        <tr><td>nad 70 osob</td><td class="c">821 Kč</td><td class="c">800 Kč</td><td class="c">790 Kč</td><td class="c">774 Kč</td></tr>
+      </tbody></table></div>
+      </details>
+      <p class="drobne">Konečnou cenu podle počtu osob a délky pobytu potvrdíme v nabídce.</p>
     </div>
     <div data-odhal style="margin-top:80px">
       {{ stitek('Individuální hosté') }}
@@ -35,7 +106,6 @@
     <table class="tabulka">
       <tbody><tr><td>Ubytovaní hosté</td><td class="c">zdarma</td></tr><tr><td>Neubytovaní</td><td class="c">100 Kč za den</td></tr></tbody>
     </table>
-    <p class="drobne">Ceník je převzatý ze stávajícího webu chaty a před spuštěním ho doladíme podle aktuálních cen.</p>
   </div>
 </section>
 <section class="cta-pas">

@@ -52,3 +52,24 @@ document.querySelectorAll('form.formular').forEach(function (f) {
     stav.textContent = 'Ukázka formuláře: v návrhu se nic neodesílá. Po spuštění webu přijde poptávka provozovateli chaty.';
   });
 });
+
+// pop-up s novinkami: jednou za návštěvu, Esc / klik mimo / křížek zavře
+(function () {
+  var p = document.getElementById('popup');
+  if (!p) return;
+  try { if (sessionStorage.getItem('popup-zavren')) return; } catch (e) {}
+  var zav = function () {
+    p.classList.remove('on'); p.hidden = true;
+    try { sessionStorage.setItem('popup-zavren', '1'); } catch (e) {}
+    if (last) last.focus();
+  };
+  var last;
+  setTimeout(function () {
+    last = document.activeElement;
+    p.hidden = false; p.classList.add('on');
+    p.querySelector('.popup-zavrit').focus();
+  }, 6000);
+  p.querySelector('.popup-zavrit').addEventListener('click', zav);
+  p.addEventListener('click', function (e) { if (e.target === p) zav(); });
+  addEventListener('keydown', function (e) { if (e.key === 'Escape' && p.classList.contains('on')) zav(); });
+})();

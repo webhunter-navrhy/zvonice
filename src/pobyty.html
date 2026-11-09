@@ -1,15 +1,15 @@
 {% extends "_base.html" %}
 {% from "_casti.html" import stitek, titulni %}
 {% set titulek = "Pobyty pro skupiny – školy v přírodě, adaptační kurzy, lyžáky | Horská chata Zvonice" %}
-{% set popis = "Školy v přírodě, adaptační kurzy a lyžařské výcviky na Horské chatě Zvonice v Kořenově. Až 100 lůžek, ceny od 620 Kč za osobu a noc se stravou 5× denně." %}
+{% set popis = "Školy v přírodě, adaptační kurzy, lyžařské výcviky a pobyty pro skupiny na Horské chatě Zvonice v Kořenově. Až 100 lůžek, ceny od 617 Kč za osobu a noc se stravou 5× denně." %}
 {% block obsah %}
-{{ titulni('Pobyty pro skupiny', 'tridni-foto.jpg', 'Školní třída s učitelkou před chatou Zvonice', '50% 45%') }}
+{{ titulni('Pobyty pro skupiny', 'zv27-ext-hriste-1.jpg', 'Hřiště a party stan před chatou Zvonice', '50% 60%') }}
 <section class="sekce">
   <div class="obal">
-    <p class="uvodni">Zvonice je chata pro větší skupiny. Pokoje, restaurace, klubovna i hřiště jsou pod jednou střechou a hned za dveřmi je les. Skupinové ceny začínají na 620 Kč za osobu a noc včetně ubytování a stravy 5× denně, na každých 20 dětí je jeden dospělý zdarma.</p>
+    <p class="uvodni">Zvonice je chata pro školy a větší skupiny. Jednotlivce ubytováváme jen na Silvestra. Pokoje, restaurace, klubovna i hřiště jsou pod jednou střechou a hned za dveřmi je les. Skupinové ceny začínají na 617 Kč za osobu a noc včetně ubytování a stravy 5× denně, na každých 20 dětí je jeden dospělý zdarma.</p>
 
     <div class="blok" id="skoly-v-prirode" data-odhal>
-      <div class="blok-foto">{{ img('hriste-trampolina.jpg', 'Hřiště s trampolínou a průlezkami u chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div class="blok-foto">{{ img('zv27-ext-hriste-2.jpg', 'Hřiště s průlezkami a skluzavkou u chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
         {{ stitek('Jaro až podzim', 'vlevo') }}
         <h2>Školy v přírodě</h2>
@@ -20,7 +20,7 @@
     </div>
 
     <div class="blok otoc" id="adaptacni-kurzy" data-odhal>
-      <div class="blok-foto">{{ img('adaptacni-kurz.jpg', 'Žáci na adaptačním kurzu u chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div class="blok-foto">{{ img('zv27-int-klubovna.jpg', 'Klubovna s dětským kobercem na chatě Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
         {{ stitek('Celoročně', 'vlevo') }}
         <h2>Adaptační kurzy</h2>
@@ -37,7 +37,17 @@
         <h2>Lyžařské výcviky</h2>
         <p>Asi 200 metrů od chaty je sjezdovka s vlekem, vhodná pro začátečníky. Kolem chaty vede běžkařská stopa a v okolí jsou další areály: Příchovice, Rejdice, Harrachov a Rokytnice. V zimě se k chatě cesta pluhuje.</p>
         <ul class="seznam"><li>sjezdovka s vlekem asi 200 m od chaty</li><li>běžkařská stopa kolem chaty, Jizerská magistrála</li><li>úschovna lyží</li><li>krbová kamna v restauraci</li></ul>
-        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Lyžařský výcvik">Poptat lyžařský výcvik</a>
+        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Lyžařský výcvik">Poptat lyžařský výcvik</a> <a class="odkaz" href="{{ url('zimni-pobyty/') }}">Zimní pobyty 2027</a>
+      </div>
+    </div>
+    <div class="blok otoc" id="skupiny" data-odhal>
+      <div class="blok-foto">{{ img('zv27-ext-hriste-1.jpg', 'Hřiště a party stan u chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div>
+        {{ stitek('Celoročně', 'vlevo') }}
+        <h2>Skupiny</h2>
+        <p>Chata je jako dělaná pro sportovní oddíly, spolky, dětské domovy, tábory i rodinné a přátelské skupiny. Celá chata patří jen Vám, jsou tu společenské místnosti, venkovní hřiště a les kolem.</p>
+        <ul class="seznam"><li>sportovní oddíly a soustředění</li><li>spolky a dětské domovy</li><li>tábory</li><li>rodinné a přátelské skupiny</li></ul>
+        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Skupinový pobyt">Poptat pobyt pro skupinu</a>
       </div>
     </div>
   </div>

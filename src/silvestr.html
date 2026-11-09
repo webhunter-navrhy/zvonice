@@ -1,16 +1,16 @@
 {% extends "_base.html" %}
 {% from "_casti.html" import stitek, titulni %}
-{% set titulek = "Silvestr 2026 v Jizerských horách – Horská chata Zvonice" %}
-{% set popis = "Silvestr na Zvonici 27. 12. 2026 – 1. 1. 2027: polopenze 1 300 Kč, plná penze 1 500 Kč za osobu a noc, silvestrovské občerstvení za příplatek 300 Kč." %}
+{% set titulek = "Silvestrovský pobyt 2027 v Jizerských horách – Horská chata Zvonice" %}
+{% set popis = "Silvestrovský pobyt 2027 na Zvonici 27. 12. 2026 – 1. 1. 2027: polopenze 1 300 Kč, plná penze 1 500 Kč za osobu a noc, silvestrovské občerstvení za příplatek 300 Kč." %}
 {% block obsah %}
-{{ titulni('Silvestr na Zvonici', 'chata-zima-slunce.jpg', 'Chata Zvonice pod sněhem', '52% 70%') }}
+{{ titulni('Silvestrovský pobyt 2027', 'chata-zima-slunce.jpg', 'Chata Zvonice pod sněhem', '52% 70%') }}
 <section class="sekce">
   <div class="obal">
     {{ stitek('27. prosince 2026 – 1. ledna 2027') }}
     <h2 class="h2 stred">Konec roku v lesích Jizerských hor</h2>
-    <p class="uvodni" style="margin-top:22px">Silvestr pro partu přátel nebo velkou rodinu na chatě, kde Vás nikdo nebude rušit. Kolem chaty vede běžkařská stopa a sjezdovka s vlekem je asi 200 metrů daleko.</p>
+    <p class="uvodni" style="margin-top:22px">Silvestr je jediný termín, kdy na Zvonici ubytováváme i jednotlivce, rodiny a party přátel. Chata je celá Vaše a nikdo Vás nebude rušit. Kolem chaty vede běžkařská stopa a sjezdovka s vlekem je asi 200 metrů daleko.</p>
     <div class="blok" data-odhal>
-      <div class="blok-foto">{{ img('restaurace-vecer.jpg', 'Restaurace chaty Zvonice večer', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div class="blok-foto">{{ img('zv27-int-spolecenska-1.jpg', 'Společenská místnost chaty Zvonice s dlouhými stoly', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
         <p>Stylová restaurace s krbovými kamny pojme celou společnost. Je tu plátno a projektor, bar a wifi, venku posezení a hřiště. Do centra Kořenova je to asi 500 metrů.</p>
         <ul class="seznam">
@@ -19,6 +19,7 @@
           <li>restaurace s krbovými kamny</li>
           <li>klubovna s dětským koutkem</li>
           <li>parkování pro ubytované zdarma</li>
+          <li>domácí mazlíčci jsou vítáni</li>
         </ul>
       </div>
     </div>
@@ -36,7 +37,8 @@
         <tr><td>Silvestrovské občerstvení (příplatek)</td><td class="c">300 Kč / os.</td></tr>
       </tbody>
     </table>
-    <div class="akce stred"><a class="btn" href="{{ url('poptavka/') }}?pobyt=Silvestr 2026">Rezervovat Silvestr</a></div>
+    <p class="perex stred" style="margin-top:28px">Děti: do 2,99 let zdarma (bez lůžka), 3–9 let včetně sleva 40 %, 10–15 let včetně sleva 20 %.</p>
+    <div class="akce stred"><a class="btn" href="{{ url('poptavka/') }}?pobyt=Silvestr 2027">Poptat Silvestr</a></div>
   </div>
 </section>
 {% endblock %}
