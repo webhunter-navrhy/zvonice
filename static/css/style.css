@@ -313,3 +313,16 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;color:var(--tma);margin:0}
 @media (max-width:900px){.okoli{grid-template-columns:1fr}}
 .pata a{display:inline-flex;align-items:center;min-height:40px}
 .pata li{margin:0}
+
+@media (min-width:901px){
+ .hl-in{grid-template-columns:auto 1fr auto;gap:36px}
+ .hl-in>.znak{grid-column:1;grid-row:1}
+ .hl-in>nav:first-of-type{grid-column:2;grid-row:1;justify-content:flex-end}
+ .hl-in>nav.vpravo{grid-column:3;grid-row:1}
+ .znak .lg{width:132px;height:59px}
+ .znak .lg b{font-size:19px}
+}
+.pata .znak{align-items:flex-start;min-height:0}
+.pata .znak .lg b{font-size:19px}
+.pata a,.pata li a{padding:10px 0}
+.pata .pata-spodek a{padding:0}
