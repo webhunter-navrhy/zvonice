@@ -97,7 +97,8 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;color:var(--tma);margin:0}
 .pribeh .h2{font-size:clamp(28px,3vw,42px)}
 .pribeh p{font-size:15.5px;color:var(--tlum)}
 .siroka{margin-top:50px}
-.siroka img{width:100%;aspect-ratio:21/8;object-fit:cover}
+.siroka{max-width:960px;margin-left:auto;margin-right:auto}
+.siroka img{width:100%;aspect-ratio:16/8;object-fit:cover}
 
 /* ubytování se záložkami */
 .zal{display:flex;justify-content:center;gap:10px;margin:30px 0 40px;flex-wrap:wrap}

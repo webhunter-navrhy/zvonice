@@ -2,7 +2,7 @@
 
 {% macro titulni(nadpis, foto, alt, pozice='50% 50%') %}
 <section class="titulni">
-  {{ img(foto, alt, sizes='100vw', styl='object-position:' ~ pozice) }}
+  <div aria-hidden="true" style="display:contents">{{ img(foto, alt, sizes='100vw', styl='object-position:' ~ pozice) }}</div>
   <h1>{{ nadpis }}</h1>
 </section>
 {% endmacro %}
