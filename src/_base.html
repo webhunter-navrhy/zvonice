@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ titulek or site.nazev }}</title>
+<meta name="description" content="{{ popis or site.popis }}">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#2f5d46">
+<meta property="og:title" content="{{ titulek or site.nazev }}">
+<meta property="og:description" content="{{ popis or site.popis }}">
+{% if og_url %}<meta property="og:image" content="{{ og_url }}">{% endif %}
+<link rel="stylesheet" href="{{ asset('css/fonty.css') }}">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{% block head %}{% endblock %}
+{% if jsonld %}<script type="application/ld+json">{{ jsonld|safe }}</script>{% endif %}
+</head>
+<body>
+<header class="hl">
+  <div class="hl-in">
+    <nav aria-label="Hlavní vlevo"><a href="{{ url('pobyty/') }}">Pro skupiny</a><a href="{{ url('ubytovani/') }}">Ubytování</a><a href="{{ url('okoli/') }}">Okolí</a><a href="{{ url('fotogalerie/') }}">Fotogalerie</a></nav>
+    <a class="znak" href="{{ url('') }}" aria-label="Horská chata Zvonice – úvod"><b>ZVONICE</b><small>Horská chata · Kořenov</small></a>
+    <nav class="vpravo" aria-label="Hlavní vpravo"><a href="{{ url('cenik/') }}">Ceník</a><a href="{{ url('silvestr/') }}">Silvestr 2026</a><a href="{{ url('poptavka/') }}#kontakt-info">Kontakt</a><a class="btn" href="{{ url('poptavka/') }}" style="padding:0 18px;min-height:40px;opacity:1">Poptávka</a></nav>
+    <a class="btn btn-mob" href="{{ url('poptavka/') }}">Poptávka</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    <div class="mob-menu">
+      <a href="{{ url('pobyty/') }}">Pro skupiny</a><a href="{{ url('ubytovani/') }}">Ubytování</a><a href="{{ url('cenik/') }}">Ceník</a><a href="{{ url('okoli/') }}">Okolí</a><a href="{{ url('silvestr/') }}">Silvestr 2026</a><a href="{{ url('fotogalerie/') }}">Fotogalerie</a><a href="{{ url('poptavka/') }}#kontakt-info">Kontakt</a>
+      <a class="btn" href="{{ url('poptavka/') }}">Poptat pobyt pro skupinu</a>
+    </div>
+  </div>
+</header>
+<main>
+{% block obsah %}{% endblock %}
+</main>
+<footer class="pata">
+  <div class="obal pata-mriz">
+    <div>
+      <p class="jmeno">Horská chata<br>Zvonice</p>
+      <ul>
+        <li><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></li>
+        <li>Kořenov 872<br>468 49 Kořenov</li>
+      </ul>
+      <p style="margin-top:14px"><small>Provozovatel Alteris s.r.o., IČ 27862313</small></p>
+    </div>
+    <div>
+      <h4>Poptávky</h4>
+      <ul><li><a href="{{ url('poptavka/') }}">Poptávka pobytu</a></li><li><a href="{{ url('pobyty/') }}#skoly-v-prirode">Školy v přírodě</a></li><li><a href="{{ url('pobyty/') }}#adaptacni-kurzy">Adaptační kurzy</a></li><li><a href="{{ url('pobyty/') }}#lyzarske-vycviky">Lyžařské výcviky</a></li><li><a href="{{ url('silvestr/') }}">Silvestr 2026</a></li></ul>
+      <h4 style="margin-top:30px">Užitečné</h4>
+      <ul><li><a href="{{ url('cenik/') }}#podminky">Ceník a ceny pro skupiny</a></li><li><a href="{{ url('okoli/') }}#jak-k-nam">Jak k nám</a></li></ul>
+    </div>
+    <div>
+      <h4>Oblíbené</h4>
+      <ul><li><a href="{{ url('okoli/') }}">Okolí chaty</a></li><li><a href="{{ url('ubytovani/') }}">Ubytování</a></li><li><a href="{{ url('fotogalerie/') }}">Fotogalerie</a></li></ul>
+    </div>
+    <div>
+      <h4>Součást skupiny</h4>
+      <img class="lippert" src="{{ base }}img/lippert-hotels.png" alt="Lippert Hotels" width="120" height="62">
+      <h4>Naše další hotely a chaty</h4>
+      <ul>{% for h in site.skupina %}<li><a href="{{ h.url }}" target="_blank" rel="noopener">{{ h.nazev }}</a><small>{{ h.misto }}</small></li>{% endfor %}</ul>
+    </div>
+  </div>
+  <div class="obal pata-spodek"><span>© 2026 Horská chata Zvonice</span><span>Návrh webu · fotky ze stávajícího webu chaty</span></div>
+</footer>
+<script src="{{ asset('js/main.js') }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{% extends "_base.html" %}
+{% from "_casti.html" import stitek, titulni %}
+{% set titulek = "Ceník – od 620 Kč za osobu a noc se stravou | Horská chata Zvonice" %}
+{% set popis = "Ceník Horské chaty Zvonice v Kořenově: skupiny od 620 Kč za osobu a noc se stravou 5× denně, nocleh od 735 Kč, parkování pro ubytované zdarma." %}
+{% block obsah %}
+{{ titulni('Ceník', 'jidelna-3.jpg', 'Restaurace chaty Zvonice', '50% 60%') }}
+<section class="sekce">
+  <div class="obal">
+    <p class="uvodni">Ceny jsou za osobu a noc. Pro školy a velké skupiny připravíme nabídku na celý pobyt.</p>
+    <div data-odhal style="margin-top:60px">
+      {{ stitek('Skupiny') }}
+      <h2 class="h2 stred">Skupinové pobyty</h2>
+      <table class="tabulka">
+        <tbody>
+          <tr><td>Ubytování a strava 5× denně (školy v přírodě, adaptační kurzy, lyžařské výcviky)</td><td class="c">od 620 Kč</td></tr>
+          <tr><td>Doprovod: na každých 20 dětí</td><td class="c">1 dospělý zdarma</td></tr>
+        </tbody>
+      </table>
+      <p class="drobne">Skupinové a mimosezonní slevy na dotaz.</p>
+    </div>
+    <div data-odhal style="margin-top:80px">
+      {{ stitek('Individuální hosté') }}
+      <h2 class="h2 stred">Ceny za osobu a noc</h2>
+      <table class="tabulka">
+        <thead><tr><th>Stravování</th><th class="c">Cena</th></tr></thead>
+        <tbody><tr><td>Bez stravy</td><td class="c">735 Kč</td></tr><tr><td>Se snídaní</td><td class="c">893 Kč</td></tr><tr><td>Polopenze</td><td class="c">1 103 Kč</td></tr><tr><td>Plná penze</td><td class="c">1 260 Kč</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section class="sekce pisek-2" id="podminky">
+  <div class="obal" data-odhal>
+    {{ stitek('Parkování') }}
+    <h2 class="h2 stred">Parkování u chaty</h2>
+    <table class="tabulka">
+      <tbody><tr><td>Ubytovaní hosté</td><td class="c">zdarma</td></tr><tr><td>Neubytovaní</td><td class="c">100 Kč za den</td></tr></tbody>
+    </table>
+    <p class="drobne">Ceník je převzatý ze stávajícího webu chaty a před spuštěním ho doladíme podle aktuálních cen.</p>
+  </div>
+</section>
+<section class="cta-pas">
+  <h2 class="h2">Spočítáme Vám celý pobyt</h2>
+  <p>Napište počet dětí a dospělých, termín a stravu. Pošleme nabídku.</p>
+  <a class="btn" href="{{ url('poptavka/') }}">Poptat pobyt</a>
+</section>
+{% endblock %}

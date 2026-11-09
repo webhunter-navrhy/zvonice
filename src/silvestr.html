@@ -1,0 +1,42 @@
+{% extends "_base.html" %}
+{% from "_casti.html" import stitek, titulni %}
+{% set titulek = "Silvestr 2026 v Jizerských horách – Horská chata Zvonice" %}
+{% set popis = "Silvestr na Zvonici 27. 12. 2026 – 1. 1. 2027: polopenze 1 300 Kč, plná penze 1 500 Kč za osobu a noc, silvestrovské občerstvení za příplatek 300 Kč." %}
+{% block obsah %}
+{{ titulni('Silvestr na Zvonici', 'chata-zima.jpg', 'Chata Zvonice pod sněhem', '50% 50%') }}
+<section class="sekce">
+  <div class="obal">
+    {{ stitek('27. prosince 2026 – 1. ledna 2027') }}
+    <h2 class="h2 stred">Konec roku v lesích Jizerských hor</h2>
+    <p class="uvodni" style="margin-top:22px">Silvestr pro partu přátel nebo velkou rodinu na chatě, kde Vás nikdo nebude rušit. Kolem chaty vede běžkařská stopa a sjezdovka s vlekem je asi 200 metrů daleko.</p>
+    <div class="blok" data-odhal>
+      <div class="blok-foto">{{ img('jidelna-2.jpg', 'Restaurace chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div>
+        <p>Stylová restaurace s krbovými kamny pojme celou společnost. Je tu plátno a projektor, bar a wifi, venku posezení a hřiště. Do centra Kořenova je to asi 500 metrů.</p>
+        <ul class="seznam">
+          <li>běžkařská stopa kolem chaty, Jizerská magistrála</li>
+          <li>sjezdovka s vlekem asi 200 m</li>
+          <li>restaurace s krbovými kamny</li>
+          <li>klubovna s dětským koutkem</li>
+          <li>parkování pro ubytované zdarma</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sekce pisek-2">
+  <div class="obal" data-odhal>
+    {{ stitek('Cena') }}
+    <h2 class="h2 stred">od 1 300 Kč za osobu a noc</h2>
+    <p class="perex stred">27. 12. 2026 – 1. 1. 2027</p>
+    <table class="tabulka">
+      <tbody>
+        <tr><td>Polopenze</td><td class="c">1 300 Kč</td></tr>
+        <tr><td>Plná penze</td><td class="c">1 500 Kč</td></tr>
+        <tr><td>Silvestrovské občerstvení (příplatek)</td><td class="c">300 Kč / os.</td></tr>
+      </tbody>
+    </table>
+    <div class="akce stred"><a class="btn" href="{{ url('poptavka/') }}?pobyt=Silvestr 2026">Rezervovat Silvestr</a></div>
+  </div>
+</section>
+{% endblock %}

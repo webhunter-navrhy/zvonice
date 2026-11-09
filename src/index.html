@@ -1,0 +1,154 @@
+{% extends "_base.html" %}
+{% from "_casti.html" import stitek %}
+{% set titulek = "Horská chata Zvonice – školy v přírodě a pobyty pro skupiny v Kořenově" %}
+{% block obsah %}
+
+<section class="hero">
+  {{ img('chata-leto.jpg', 'Horská chata Zvonice v létě, před ní děti na hřišti a party stan', sizes='100vw') }}
+  <div class="hero-in">
+    {{ stitek('Kořenov · Jizerské hory', 'vlevo') }}
+    <h1>Chata na samotě v lesích Jizerských hor</h1>
+    <p>Zvonice stojí na rozhraní Jizerských hor a Krkonoš, kousek od Kořenova. Školy v přírodě, adaptační kurzy a lyžařské výcviky tu mají celou chatu, jídelnu i hřiště jen pro sebe.</p>
+    <div class="akce"><a class="btn" href="{{ url('poptavka/') }}">Poptat pobyt</a><a class="odkaz" href="{{ url('cenik/') }}">Ceník</a></div>
+  </div>
+  <div class="hero-pata"><span>až 100 lůžek</span><span>Běžkařská stopa u chaty</span><span>Parkování zdarma</span></div>
+</section>
+
+<section class="sekce" id="skupiny">
+  <div class="obal" data-odhal>
+    {{ stitek('Skupiny a školy') }}
+    <h2 class="h2 stred">Pobyty pro děti i dospělé v horách</h2>
+  </div>
+  <div class="obal dvoj" style="margin-top:50px" data-odhal>
+    <div>
+      <p>Chata leží na samotě v lesích, asfaltová cesta končí u parkoviště a okolo je jen příroda. Děti se tu mohou volně pohybovat a hrát, na hřišti jsou pískoviště a průlezky, v létě i volejbalové hřiště. Do centra Kořenova je to asi 500 metrů pěšky.</p>
+      <div class="fakta">
+        <div class="fakt"><svg viewBox="0 0 24 24"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6M3 14h18M3 18v2M21 18v2M6 10V7a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/></svg><b>100</b><span>lůžek</span></div>
+        <div class="fakt"><svg viewBox="0 0 24 24"><path d="M7 3v8M5 3v4a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 0-3 2-3 5s1 4 3 4v9"/></svg><b>5×</b><span>denně strava</span></div>
+        <div class="fakt"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V9h14v11M8 13h3M13 13h3M3 9l9-5 9 5"/></svg><b>200 m</b><span>sjezdovka s vlekem</span></div>
+        <div class="fakt"><svg viewBox="0 0 24 24"><path d="M4 21V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16M2 21h20M9 7h2M13 7h2M9 11h2M13 11h2M10 21v-4h4v4"/></svg><b>20×10 m</b><span>party stan v létě</span></div>
+      </div>
+      <div class="akce"><a class="odkaz" href="{{ url('ubytovani/') }}">Ubytování a vybavení</a><a class="btn" href="{{ url('poptavka/') }}">Poptat pobyt pro skupinu</a></div>
+    </div>
+    <div class="foto-ram">{{ img('chata-zima.jpg', 'Horská chata Zvonice v zimě pod sněhem', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+  </div>
+</section>
+
+<section class="sekce" style="padding-top:0">
+  <div class="obal" data-odhal>
+    {{ stitek('Naše pobyty') }}
+    <h2 class="h2 stred">Pobyty pro každou skupinu</h2>
+    <p class="perex stred">Skupinové pobyty od 620 Kč za osobu a noc včetně ubytování a stravy 5× denně. Na každých 20 dětí jeden dospělý zdarma.</p>
+    <div class="dlazdice">
+      <a class="dl" href="{{ url('pobyty/') }}#skoly-v-prirode">{{ img('hriste.jpg', 'Děti na hřišti s pískovištěm a průlezkami u chaty Zvonice', sizes='(min-width: 900px) 25vw, 100vw') }}<div class="dl-in"><h3>Školy v přírodě</h3><p>Hřiště s pískovištěm a průlezkami, louka, volejbal a les kolem dokola.</p><span class="vic">Dozvědět se více</span></div></a>
+      <a class="dl" href="{{ url('pobyty/') }}#adaptacni-kurzy">{{ img('jidelna-2.jpg', 'Jídelna chaty Zvonice s dřevěnými lavicemi a stoly', sizes='(min-width: 900px) 25vw, 100vw') }}<div class="dl-in"><h3>Adaptační kurzy</h3><p>Klubovna, restaurace s projektorem a klid na samotě pro nový kolektiv.</p><span class="vic">Dozvědět se více</span></div></a>
+      <a class="dl" href="{{ url('pobyty/') }}#lyzarske-vycviky">{{ img('les-zima.jpg', 'Zasněžený les a hřiště u chaty Zvonice', sizes='(min-width: 900px) 25vw, 100vw') }}<div class="dl-in"><h3>Lyžařské výcviky</h3><p>Sjezdovka s vlekem asi 200 m od chaty, běžkařská stopa přímo kolem.</p><span class="vic">Dozvědět se více</span></div></a>
+      <a class="dl" href="{{ url('okoli/') }}">{{ img('louka.jpg', 'Louka a smrky kolem chaty Zvonice', sizes='(min-width: 900px) 25vw, 100vw') }}<div class="dl-in"><h3>Výlety v okolí</h3><p>Mumlavské vodopády, Protržená přehrada, Jizerská magistrála i Harrachov.</p><span class="vic">Dozvědět se více</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="sekce" style="padding-top:0">
+  <div class="obal pribeh" data-odhal>
+    <h2 class="h2">Daleko od silnic, blízko všeho</h2>
+    <div>
+      <p>Horská chata Zvonice leží na samotě v lesích, přesto je od centra Kořenova jen asi 500 metrů pěšky. Autobus se u chaty otočí, v zimě se cesta pluhuje a kolem chaty vede běžkařská stopa napojená na Jizerskou magistrálu.</p>
+      <p>Z Prahy je to 110 km, z Liberce 30 km, z Hradce Králové 90 km. Můžete přijet i vlakem na zastávku Kořenov, nebo autobusem na zastávku Kořenov, Příchovice, Motorest, od které je to k chatě necelý kilometr.</p>
+      <a class="odkaz" href="{{ url('okoli/') }}">Co je kolem chaty</a>
+    </div>
+  </div>
+  <div class="siroka" data-odhal>{{ img('chata-leto.jpg', 'Chata Zvonice, hřiště a party stan v létě', sizes='100vw') }}</div>
+  <div class="akce stred"><a class="btn" href="{{ url('pobyty/') }}">Vyberte si svůj pobyt</a></div>
+</section>
+
+<section class="sekce pisek-2" id="ubytovani">
+  <div class="obal" data-odhal>
+    {{ stitek('Ubytování') }}
+    <h2 class="h2 stred">Pokoje, restaurace a klubovna</h2>
+    <div class="zal" role="tablist">
+      <button role="tab" aria-selected="true" aria-controls="z-pokoje">Pokoje</button>
+      <button role="tab" aria-selected="false" aria-controls="z-jidelna">Restaurace</button>
+      <button role="tab" aria-selected="false" aria-controls="z-stravovani">Strava</button>
+    </div>
+    <div class="zal-panel" id="z-pokoje" role="tabpanel">
+      <div class="foto">{{ img('pokoj-1.jpg', 'Dvoulůžkový pokoj s dřevěnými postelemi a okny v roubené stěně', sizes='(min-width: 900px) 62vw, 100vw') }}</div>
+      <div class="karta"><h3>Pokoje</h3><p>Kapacita až 100 lůžek, pokoje jsou převážně dvou až čtyřlůžkové a je tu i jeden osmilůžkový. Na pokoji je umyvadlo, sociální zařízení je na chodbě. Dva pokoje mají kompletní zařízení.</p><a class="odkaz" href="{{ url('ubytovani/') }}">Všechny pokoje</a></div>
+    </div>
+    <div class="zal-panel" id="z-jidelna" role="tabpanel" hidden>
+      <div class="foto">{{ img('jidelna.jpg', 'Stylová restaurace chaty Zvonice s dřevěnými stoly a okny', sizes='(min-width: 900px) 62vw, 100vw') }}</div>
+      <div class="karta"><h3>Stylová restaurace</h3><p>V restauraci je plátno a projektor, v zimě hřejí krbová kamna. K chatě patří také klubovna s dětským koutkem, bar a wifi.</p><a class="odkaz" href="{{ url('ubytovani/') }}">Vybavení chaty</a></div>
+    </div>
+    <div class="zal-panel" id="z-stravovani" role="tabpanel" hidden>
+      <div class="foto">{{ img('bufet.jpg', 'Bufet s chlebíčky a občerstvením na chatě Zvonice', sizes='(min-width: 900px) 62vw, 100vw') }}</div>
+      <div class="karta"><h3>Strava 5× denně</h3><p>Skupinové ceny od 620 Kč za osobu a noc zahrnují ubytování i stravu pětkrát denně. Individuálně lze zvolit nocleh bez stravy, se snídaní, polopenzi nebo plnou penzi.</p><a class="odkaz" href="{{ url('cenik/') }}">Ceník</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="split">
+  <div class="foto">{{ img('jidelna-3.jpg', 'Restaurace chaty Zvonice s velkými okny', sizes='(min-width: 900px) 50vw, 100vw') }}</div>
+  <div class="txt" data-odhal>
+    {{ stitek('Volný čas', 'vlevo') }}
+    <h2 class="h2" style="font-size:clamp(28px,3vw,40px)">Po dni venku do tepla</h2>
+    <p style="margin-top:22px">Děti se vyběhají na hřišti, večer je čeká klubovna s dětským koutkem a promítání v restauraci. V létě se hodí party stan 20×10 m, v zimě krbová kamna a úschovna lyží.</p>
+    <div class="ikony">
+      <div><svg viewBox="0 0 24 24"><path d="M12 21c-4 0-6-3-6-6 0-4 4-6 4-10 3 2 4 5 4 7 1-1 2-2 2-4 2 2 2 5 2 7 0 3-2 6-6 6z"/></svg>Krbová kamna</div>
+      <div><svg viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11M9 20v-5h6v5"/></svg>Dětský koutek</div>
+      <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Wifi a bar</div>
+      <div><svg viewBox="0 0 24 24"><path d="M4 6h16v10H4zM8 20h8M12 16v4"/></svg>Plátno a projektor</div>
+      <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>Volejbalové hřiště</div>
+    </div>
+  </div>
+</section>
+
+<section class="sekce pisek-2" id="ceny">
+  <div class="obal" data-odhal>
+    {{ stitek('Ceník') }}
+    <h2 class="h2 stred">Ceny za osobu a noc</h2>
+    <p class="perex stred">Skupiny, školy i individuální hosté. Skupinové a mimosezonní slevy na dotaz.</p>
+    <div class="karty">
+      <article class="kc">{{ img('hriste.jpg', 'Hřiště u chaty Zvonice', sizes='(min-width: 900px) 32vw, 100vw') }}<div class="kc-in"><small>Skupiny a školy</small><h3>Skupinový pobyt</h3><p class="cena"><b>od 620 Kč</b> s ubytováním a stravou 5× denně</p><p>Škola v přírodě, adaptační kurz nebo lyžařský výcvik. Na 20 dětí jeden dospělý zdarma.</p><a class="odkaz" href="{{ url('poptavka/') }}">Poptat pobyt</a></div></article>
+      <article class="kc">{{ img('jidelna.jpg', 'Restaurace chaty Zvonice', sizes='(min-width: 900px) 32vw, 100vw') }}<div class="kc-in"><small>Individuální hosté</small><h3>Nocleh a strava</h3><p class="cena"><b>od 735 Kč</b> bez stravy</p><p>Se snídaní 893 Kč, s polopenzí 1 103 Kč, s plnou penzí 1 260 Kč.</p><a class="odkaz" href="{{ url('cenik/') }}">Celý ceník</a></div></article>
+      <article class="kc" id="silvestr">{{ img('chata-zima.jpg', 'Chata Zvonice v zimě', sizes='(min-width: 900px) 32vw, 100vw') }}<div class="kc-in"><small>27. 12. 2026 – 1. 1. 2027</small><h3>Silvestr na Zvonici</h3><p class="cena"><b>1 300 Kč</b> s polopenzí</p><p>S plnou penzí 1 500 Kč. Silvestrovské občerstvení za příplatek 300 Kč na osobu.</p><a class="odkaz" href="{{ url('silvestr/') }}">Silvestrovský pobyt</a></div></article>
+    </div>
+    <p class="pozn">Parkování pro ubytované zdarma · neubytovaní 100 Kč za den</p>
+  </div>
+</section>
+
+<section class="sekce tmava" id="okoli">
+  {{ img('les-zima.jpg', '', sizes='100vw') }}
+  <div class="obal" data-odhal>
+    {{ stitek('Okolí chaty') }}
+    <h2 class="h2 stred">Všechno je na dosah</h2>
+    <p class="perex stred">Centrum Kořenova je pár minut pěšky, sjezdovka s vlekem asi 200 metrů od chaty. Odtud se dá vyrazit do celých Jizerských hor i Krkonoš.</p>
+    <div class="mista">
+      <div class="misto"><b>200 m</b><h3>Sjezdovka s vlekem</h3><p>Vhodná pro začátečníky.</p></div>
+      <div class="misto"><b>500 m</b><h3>Centrum Kořenova</h3><p>Pěšky z chaty, obchody, vlak i autobus.</p></div>
+      <div class="misto"><b>u chaty</b><h3>Běžkařská stopa</h3><p>Napojení na Jizerskou magistrálu.</p></div>
+      <div class="misto"><b>výlety</b><h3>Mumlavské vodopády</h3><p>Protržená přehrada, Harrachov, Liberec, Jablonec.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sekce">
+  <div class="obal dve" data-odhal>
+    <div><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h16M9 4v16"/></svg><h3>Poptávka pro skupinu</h3><p>Napište termín, počet dětí a dospělých a jakou stravu chcete. Připravíme nabídku na celý pobyt.</p><a class="btn" href="{{ url('poptavka/') }}">Poptat pobyt</a></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><h3>Jak k nám</h3><p>Horská chata Zvonice, Kořenov 872, 468 49 Kořenov. Parkoviště u chaty, pro autobus je tu místo k otočení.</p><a class="btn btn-ram" href="{{ url('okoli/') }}#jak-k-nam">Jak k nám</a></div>
+  </div>
+</section>
+
+<section class="sekce pisek-2" id="galerie">
+  <div class="obal" data-odhal>
+    {{ stitek('Fotogalerie') }}
+    <h2 class="h2 stred">Nahlédněte k nám</h2>
+    <div class="galerie">
+      <a href="{{ url('fotogalerie/') }}">{{ img('chata-zima.jpg', 'Chata v zimě', sizes='20vw') }}</a>
+      <a href="{{ url('fotogalerie/') }}">{{ img('jidelna-2.jpg', 'Restaurace', sizes='20vw') }}</a>
+      <a href="{{ url('fotogalerie/') }}">{{ img('hriste.jpg', 'Hřiště', sizes='20vw') }}</a>
+      <a href="{{ url('fotogalerie/') }}">{{ img('pokoj-2.jpg', 'Pokoj', sizes='20vw') }}</a>
+      <a href="{{ url('fotogalerie/') }}">{{ img('louka.jpg', 'Louka u chaty', sizes='20vw') }}</a>
+    </div>
+    <div class="akce stred"><a class="odkaz" href="{{ url('fotogalerie/') }}">Celá fotogalerie</a></div>
+  </div>
+</section>
+{% endblock %}

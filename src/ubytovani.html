@@ -1,0 +1,58 @@
+{% extends "_base.html" %}
+{% from "_casti.html" import stitek, titulni %}
+{% set titulek = "Ubytování v Kořenově – až 100 lůžek | Horská chata Zvonice" %}
+{% set popis = "Horská chata Zvonice: až 100 lůžek v převážně dvou až čtyřlůžkových pokojích, restaurace s projektorem, klubovna s dětským koutkem, bar a wifi." %}
+{% block obsah %}
+{{ titulni('Ubytování', 'pokoj-3.jpg', 'Pokoj na chatě Zvonice', '50% 60%') }}
+<section class="sekce">
+  <div class="obal">
+    <p class="uvodni">Horská chata Zvonice nabízí až 100 lůžek. Pokoje jsou převážně dvou až čtyřlůžkové a je tu jeden osmilůžkový. Na každém pokoji je umyvadlo, sociální zařízení je na chodbě. Dva pokoje mají kompletní zařízení.</p>
+
+    <div class="blok" data-odhal>
+      <div class="blok-foto">{{ img('pokoj-2.jpg', 'Pokoj s manželskou postelí a umyvadlem', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div>
+        {{ stitek('Pokoje', 'vlevo') }}
+        <h2>Pokoje pro celou třídu</h2>
+        <p>Dvou až čtyřlůžkové pokoje se hodí pro děti i dospělé. Pro větší partu je k dispozici osmilůžkový pokoj. Přesné rozdělení pokojů Vám rádi upřesníme v nabídce.</p>
+        <a class="odkaz" href="{{ url('poptavka/') }}">Poptat ubytování</a>
+      </div>
+    </div>
+
+    <div class="blok otoc" data-odhal>
+      <div class="blok-foto">{{ img('pokoj-5.jpg', 'Podkrovní pokoj s dřevěným obložením', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div>
+        {{ stitek('Podkroví', 'vlevo') }}
+        <h2>Podkrovní pokoje</h2>
+        <p>V podkroví jsou pokoje s dřevěným obložením a šikmými stropy. Hodí se pro skupinu dětí.</p>
+        <a class="odkaz" href="{{ url('pobyty/') }}">Pobyty pro skupiny</a>
+      </div>
+    </div>
+
+    <div class="blok" data-odhal>
+      <div class="blok-foto">{{ img('jidelna.jpg', 'Stylová restaurace chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div>
+        {{ stitek('Stravování', 'vlevo') }}
+        <h2>Stylová restaurace</h2>
+        <p>Restaurace má plátno a projektor, takže se hodí i na výuku nebo večerní promítání. V zimě hřejí krbová kamna. Skupinám vaříme stravu 5× denně.</p>
+        <a class="odkaz" href="{{ url('cenik/') }}">Ceny se stravou</a>
+      </div>
+    </div>
+
+    <div data-odhal style="margin-top:clamp(70px,8vw,100px)">
+      {{ stitek('Vybavení chaty') }}
+      <h2 class="h2 stred">Co u nás najdete</h2>
+      <ul class="vybaveni">
+        <li>až 100 lůžek</li><li>umyvadlo na pokoji</li><li>stylová restaurace s plátnem a projektorem</li>
+        <li>klubovna s dětským koutkem</li><li>bar a wifi</li><li>venkovní posezení</li>
+        <li>pískoviště a průlezky</li><li>volejbalové hřiště</li><li>úschovna lyží a kol</li>
+        <li>krbová kamna v restauraci</li><li>v létě party stan 20×10 m</li><li>parkování zdarma</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="cta-pas">
+  <h2 class="h2">Vejde se k nám celá škola</h2>
+  <p>Pošlete nám termín a počet osob, připravíme nabídku.</p>
+  <a class="btn" href="{{ url('poptavka/') }}">Poptat pobyt</a>
+</section>
+{% endblock %}

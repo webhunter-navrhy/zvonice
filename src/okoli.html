@@ -1,0 +1,53 @@
+{% extends "_base.html" %}
+{% from "_casti.html" import stitek, titulni %}
+{% set titulek = "Okolí chaty – Jizerská magistrála, vodopády, sjezdovka | Horská chata Zvonice" %}
+{% set popis = "Horská chata Zvonice leží u Kořenova na rozhraní Jizerských hor a Krkonoš: běžkařská stopa u chaty, sjezdovka s vlekem 200 m, Mumlavské vodopády, Harrachov." %}
+{% block obsah %}
+{{ titulni('Okolí chaty', 'les-zima.jpg', 'Zasněžený les a hřiště u chaty Zvonice', '50% 50%') }}
+<section class="sekce">
+  <div class="obal">
+    <p class="uvodni">Horská chata Zvonice stojí na rozhraní Jizerských hor a Krkonoš, mezi Kořenovem a Horním Polubným. Je to výchozí bod pro pěší výlety, cykloturistiku i zimní sporty.</p>
+
+    <div class="blok" data-odhal>
+      <div class="blok-foto">{{ img('chata-zima.jpg', 'Chata Zvonice v zimě pod sněhem', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div>
+        {{ stitek('Zima', 'vlevo') }}
+        <h2>Stopa a sjezdovka u chaty</h2>
+        <p>Kolem chaty vede běžkařská stopa napojená na Jizerskou magistrálu a asi 200 metrů od chaty je sjezdovka s vlekem, vhodná pro začátečníky. V okolí jsou také areály Příchovice, Rejdice, Harrachov a Rokytnice. V zimě se k chatě cesta pluhuje.</p>
+        <ul class="seznam"><li>běžkařská stopa kolem chaty</li><li>sjezdovka s vlekem asi 200 m</li><li>Příchovice, Rejdice, Harrachov, Rokytnice</li><li>úschovna lyží v chatě</li></ul>
+      </div>
+    </div>
+
+    <div class="blok otoc" data-odhal>
+      <div class="blok-foto">{{ img('louka.jpg', 'Louka a smrky kolem chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div>
+        {{ stitek('Léto', 'vlevo') }}
+        <h2>Lesy, vodopády a přehrady</h2>
+        <p>Chata leží na samotě v lesích a do centra Kořenova je to asi 500 metrů pěšky. V okolí jsou Mumlavské vodopády, vodopády na Černé Desné, Protržená přehrada a Kozí farma v Pěnčíně. K dalším cílům patří Harrachov, Liberec a Jablonec.</p>
+        <ul class="seznam"><li>Mumlavské vodopády</li><li>vodopády na Černé Desné</li><li>Protržená přehrada</li><li>Kozí farma Pěnčín</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sekce tmava">
+  {{ img('les-zima.jpg', '', sizes='100vw') }}
+  <div class="obal" data-odhal>
+    {{ stitek('Vzdálenosti') }}
+    <h2 class="h2 stred">Z čeho se k nám jede</h2>
+    <div class="mista">
+      <div class="misto"><b>30 km</b><h3>Liberec</h3><p>Nejbližší velké město.</p></div>
+      <div class="misto"><b>65 km</b><h3>Mladá Boleslav</h3><p>Hradec Králové 90 km.</p></div>
+      <div class="misto"><b>110 km</b><h3>Praha</h3><p>Od Černého Mostu.</p></div>
+      <div class="misto"><b>100 km</b><h3>Pardubice, Děčín</h3><p>Ústí nad Labem 120 km.</p></div>
+    </div>
+  </div>
+</section>
+<section class="sekce" id="jak-k-nam">
+  <div class="obal" data-odhal>
+    {{ stitek('Jak k nám') }}
+    <h2 class="h2 stred">Jak k nám</h2>
+    <p class="perex stred">Horská chata Zvonice, Kořenov 872, 468 49 Kořenov. Asfaltová cesta končí parkovištěm u chaty, kde se otočí i autobus. Vlakem přijedete na zastávku Kořenov, autobusem na zastávku Kořenov, Příchovice, Motorest, odkud je to k chatě necelý kilometr.</p>
+    <div class="akce stred"><a class="btn" href="{{ site.mapa }}" target="_blank" rel="noopener">Google Maps</a><a class="btn btn-ram" href="{{ site.waze }}" target="_blank" rel="noopener">Waze</a></div>
+  </div>
+</section>
+{% endblock %}

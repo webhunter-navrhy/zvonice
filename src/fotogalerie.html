@@ -1,0 +1,40 @@
+{% extends "_base.html" %}
+{% from "_casti.html" import stitek, titulni %}
+{% set titulek = "Fotogalerie | Horská chata Zvonice" %}
+{% set popis = "Fotky Horské chaty Zvonice v Kořenově: chata v zimě i v létě, restaurace, pokoje, hřiště a okolí." %}
+{% set fotky = [
+  ('jidelna.jpg', 'Restaurace chaty Zvonice'),
+  ('jidelna-2.jpg', 'Restaurace s dřevěnými lavicemi'),
+  ('jidelna-3.jpg', 'Restaurace s velkými okny'),
+  ('bufet.jpg', 'Bufet s občerstvením'),
+  ('bufet-2.jpg', 'Švédský stůl'),
+  ('chata-leto.jpg', 'Chata, hřiště a party stan v létě'),
+  ('chata-zima.jpg', 'Chata v zimě'),
+  ('les-zima.jpg', 'Zasněžený les a hřiště'),
+  ('hriste.jpg', 'Děti na hřišti'),
+  ('louka.jpg', 'Louka a lesy kolem chaty'),
+  ('pokoj-1.jpg', 'Pokoj na chatě Zvonice'),
+  ('pokoj-2.jpg', 'Pokoj na chatě Zvonice'),
+  ('pokoj-3.jpg', 'Pokoj na chatě Zvonice'),
+  ('pokoj-4.jpg', 'Pokoj na chatě Zvonice'),
+  ('pokoj-5.jpg', 'Pokoj na chatě Zvonice'),
+  ('pokoj-6.jpg', 'Pokoj na chatě Zvonice'),
+  ('pokoj-7.jpg', 'Pokoj na chatě Zvonice'),
+  ('pokoj-8.jpg', 'Pokoj na chatě Zvonice'),
+  ('pokoj-9.jpg', 'Pokoj na chatě Zvonice'),
+  ('pokoj-10.jpg', 'Pokoj na chatě Zvonice'),
+  ('pokoj-11.jpg', 'Pokoj na chatě Zvonice'),
+  ('pokoj-12.jpg', 'Pokoj na chatě Zvonice')] %}
+{% block obsah %}
+{{ titulni('Fotogalerie', 'les-zima.jpg', 'Zasněžený les a hřiště u chaty Zvonice') }}
+<section class="sekce">
+  <div class="obal">
+    {{ stitek('Nahlédněte k nám') }}
+    <h2 class="h2 stred">Chata, restaurace, pokoje i okolí</h2>
+    <div class="galerie-plna">
+      {% for f, a in fotky %}<button type="button" data-velka="{{ img_url(f, 1920) }}" aria-label="Zvětšit: {{ a }}">{{ img(f, a, sizes='(min-width: 900px) 25vw, 50vw') }}</button>{% endfor %}
+    </div>
+  </div>
+</section>
+<dialog class="lightbox" aria-label="Zvětšená fotka"><button type="button" aria-label="Zavřít">×</button><img src="" alt=""></dialog>
+{% endblock %}

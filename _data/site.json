@@ -1,0 +1,58 @@
+{
+  "slug": "zvonice",
+  "nazev": "Horská chata Zvonice",
+  "url": "https://webhunter-navrhy.github.io/zvonice/",
+  "base": "/zvonice/",
+  "lang": "cs",
+  "popis": "Horská chata Zvonice v Kořenově: až 100 lůžek pro školy v přírodě, lyžařské výcviky a skupiny, restaurace, hřiště a běžkařská stopa u chaty.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "chata-leto.jpg",
+  "logo": "",
+  "theme_color": "#2f5d46",
+  "typ": "LodgingBusiness",
+  "ico": "27862313",
+  "kontakt": {
+    "email": "provozni@zvonice.cz",
+    "telefon": "",
+    "adresa": {
+      "ulice": "Kořenov 872",
+      "psc": "468 49",
+      "mesto": "Kořenov",
+      "zeme": "CZ"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "735–1 260 Kč",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Poptávka z webu zvonice.cz"
+  },
+  "nav": [],
+  "mapa": "https://www.google.com/maps/search/?api=1&query=50.763912,15.365742",
+  "waze": "https://waze.com/ul?ll=50.763912,15.365742&navigate=yes",
+  "skupina": [
+    {
+      "nazev": "Hotel Skalský Dvůr",
+      "misto": "Vysočina",
+      "url": "https://skalskydvur.cz/"
+    },
+    {
+      "nazev": "Hotel Zadov",
+      "misto": "Šumava – Zadov",
+      "url": "https://www.zadovhotel.cz/"
+    },
+    {
+      "nazev": "Hotel Stella",
+      "misto": "Šumava – Špičák",
+      "url": "https://www.stellahotel.cz/"
+    },
+    {
+      "nazev": "Chata Zuzka",
+      "misto": "Šumava – Špičák",
+      "url": "https://www.chatazuzka.cz/"
+    }
+  ]
+}
