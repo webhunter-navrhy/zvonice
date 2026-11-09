@@ -1,0 +1,418 @@
+{
+ "slug": "zvonice",
+ "zdroj_url": "https://www.zvonice.cz",
+ "firma": "Horská chata Zvonice",
+ "obor": [
+  "gastro a ubytování",
+  "zahrada a venkov"
+ ],
+ "ico": "27862313",
+ "ares": {
+  "ico": "27862313",
+  "obchodni_jmeno": "Alteris s.r.o.",
+  "pravni_forma": "112",
+  "adresa": "Na stezce 1330/3, Vršovice, 10000 Praha 10",
+  "obec": "Praha",
+  "dic": "CZ27862313",
+  "datum_vzniku": "2007-02-22",
+  "nace": [
+   "772",
+   "62",
+   "74300",
+   "016",
+   "461"
+  ]
+ },
+ "kontakty": {
+  "emaily": [
+   "provozni@zvonice.cz",
+   "sales@lipperthotels.com"
+  ],
+  "telefony": [
+   "771 135 359"
+  ],
+  "adresa": "",
+  "socialni_site": []
+ },
+ "logo": {
+  "soubor": "podklady/logo.png",
+  "zdroj": "https://www.zvonice.cz/img/logo.png",
+  "rozmery": [
+   577,
+   257
+  ]
+ },
+ "barvy": {
+  "css_promenne": {},
+  "z_css": [
+   "#420c0a",
+   "#eddddd",
+   "#1967d2",
+   "#188038",
+   "#d50000",
+   "#ffb300"
+  ],
+  "z_loga": [
+   "#9fc3d9",
+   "#b99494",
+   "#4b0000"
+  ],
+  "theme_color": null,
+  "doporucene": [
+   "#9fc3d9",
+   "#b99494",
+   "#420c0a"
+  ]
+ },
+ "fotky": [
+  {
+   "soubor": "podklady/foto/foto-01.png",
+   "url": "https://www.zvonice.cz/img/trojuhelniky.png",
+   "sirka": 1204,
+   "vyska": 415,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-02.jpg",
+   "url": "https://www.zvonice.cz/img/pokoje/6.jpg",
+   "sirka": 840,
+   "vyska": 562,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-03.jpg",
+   "url": "https://www.zvonice.cz/img/pokoje/7.jpg",
+   "sirka": 586,
+   "vyska": 392,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-04.jpg",
+   "url": "https://www.zvonice.cz/img/pokoje/11.jpg",
+   "sirka": 814,
+   "vyska": 545,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-05.jpg",
+   "url": "https://www.zvonice.cz/img/pokoje/20.jpg",
+   "sirka": 1187,
+   "vyska": 890,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-06.jpg",
+   "url": "https://www.zvonice.cz/img/pokoje/23.jpg",
+   "sirka": 694,
+   "vyska": 462,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-07.jpg",
+   "url": "https://www.zvonice.cz/img/pokoje/24.jpg",
+   "sirka": 1098,
+   "vyska": 732,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-08.jpg",
+   "url": "https://www.zvonice.cz/img/pokoje/28.jpg",
+   "sirka": 1115,
+   "vyska": 627,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-09.jpg",
+   "url": "https://www.zvonice.cz/img/pokoje/40.jpg",
+   "sirka": 1315,
+   "vyska": 880,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-10.jpg",
+   "url": "https://www.zvonice.cz/img/pokoje/41.jpg",
+   "sirka": 1270,
+   "vyska": 851,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-11.jpg",
+   "url": "https://www.zvonice.cz/img/pokoje/42.jpg",
+   "sirka": 1114,
+   "vyska": 746,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-12.jpg",
+   "url": "https://www.zvonice.cz/img/pokoje/43.jpg",
+   "sirka": 1288,
+   "vyska": 966,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-13.jpg",
+   "url": "https://www.zvonice.cz/img/pokoje/44.jpg",
+   "sirka": 1150,
+   "vyska": 862,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-14.jpg",
+   "url": "https://www.zvonice.cz/img/sluzby/2.jpg",
+   "sirka": 543,
+   "vyska": 305,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-15.jpg",
+   "url": "https://www.zvonice.cz/img/sluzby/3.jpg",
+   "sirka": 499,
+   "vyska": 888,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-16.jpg",
+   "url": "https://www.zvonice.cz/img/sluzby/4.jpg",
+   "sirka": 606,
+   "vyska": 341,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-17.jpg",
+   "url": "https://www.zvonice.cz/img/sluzby/5.jpg",
+   "sirka": 656,
+   "vyska": 369,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-18.jpg",
+   "url": "https://www.zvonice.cz/img/sluzby/8.jpg",
+   "sirka": 744,
+   "vyska": 498,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-19.jpg",
+   "url": "https://www.zvonice.cz/img/sluzby/9.jpg",
+   "sirka": 778,
+   "vyska": 521,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-20.jpg",
+   "url": "https://www.zvonice.cz/img/sluzby/10.jpg",
+   "sirka": 775,
+   "vyska": 519,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-21.jpg",
+   "url": "https://www.zvonice.cz/img/sluzby/12.jpg",
+   "sirka": 775,
+   "vyska": 519,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-22.jpg",
+   "url": "https://www.zvonice.cz/img/sluzby/13.jpg",
+   "sirka": 760,
+   "vyska": 509,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-23.jpg",
+   "url": "https://www.zvonice.cz/img/sluzby/14.jpg",
+   "sirka": 864,
+   "vyska": 578,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-24.jpg",
+   "url": "https://www.zvonice.cz/img/sluzby/15.jpg",
+   "sirka": 998,
+   "vyska": 668,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-25.jpg",
+   "url": "https://www.zvonice.cz/img/svp2.jpg",
+   "sirka": 2100,
+   "vyska": 2082,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-26.jpg",
+   "url": "https://www.zvonice.cz/img/adaptaky.jpg",
+   "sirka": 1175,
+   "vyska": 1296,
+   "alt": ""
+  }
+ ],
+ "fakta": [
+  {
+   "typ": "h1",
+   "text": "Vítejte na Zvonici",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "Ubytování",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "Vybavení chaty",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "Lokalita",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "Pobyty pro školy a skupiny",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "h3",
+   "text": "Školy v přírodě",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "h3",
+   "text": "Adaptační kurzy",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "h3",
+   "text": "Lyžařské výcviky",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "Ceník",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "Poptávka, Rezervace",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "Fotogalerie",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "Kontakt",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Vítejte na stránkách horské chaty Zvonice v Kořenově, která se nachází na rozhraní Jizerských hor a Krkonoš. Horská chata Zvonice je jako stvořená pro pobyty rodin s dětmi, skupinové pobyty, školy v přírodě a podobné akce. Od prvního okamžiku budete unešeni krásou okolní přírody a chata Vás nadchne originálním horským stylem, příjemnou rodinnou atmosférou a osobním přístupem. Rádi vyhovíme všem Vašim přáním, aby Váš pobyt byl přesně podle Vašich představ.",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Pokoje v naší chatě jsou převážně 2-4 lůžkové a navíc jeden 8 lůžkový pokoj. Ubytovací kapacita činí celkem 100 lůžek. Pokoje jsou vybaveny vlastním umyvadlem, sociální zařízení je umístěno na chodbě na každém patře. 2 pokoje disponují kompletním sociálním zařízením.",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "v letních měsících je k dispozici venkovní party stan s pevnou podlahou (20x10m)",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Horská chata Zvonice se nachází na rozhraní Jizerských hor a Krkonoš, mezi Kořenovem a Horním Polubným v Libereckém kraji. Přesná poloha chaty je dle souřadnic GPS 50°45'50.081\"N, 15°21'56.672\"E.",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Nejkratší (pěší) cestou je to do centra Kořenova přibližně 500 m. Přesto leží chata na samotě prakticky uprostřed lesů, díky čemuž si přímo u chaty můžete vychutnat překrásné a hlavně klidné prostředí lesů a luk.",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Chata Zvonice je dobře dostupná autem a to jak v zimním, tak i letním období. Asfaltová příjezdová cesta končí na parkovišti přímo u chaty. Zaparkuje zde a na parkovišti se otočí i velký autobus. Příjezdová cesta je v zimě udržována pluhováním (v případě větší sněhové nadílky sněžnou frézou).",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "V okolí je dostatek značených turistických cest vhodných pro pěší i cyklistické vyžití, v zimě pak především pro výlety na běžkách (nejbližší běžkařská stopa vede přímo kolem chaty, dostupná je též známá Jizerská magistrála). Přibližně 200 metrů od areálu se nachází sjezdovka s vlekem vhodná pro začátečníky i mírně pokročilé. Pro zdatnější lyžaře doporučujeme využít některé z nedalekých lyžařských areálů (Příchovice, Rejdice, Harrachov, Rokytnice nad Jizerou).",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Vzdálenost z Prahy (Černý most) je pouhých 110 km, z Liberce 30 km, z Pardubic a Děčína 100 km, z Hradce Králové 90 km, z Ústí nad Labem 120 km a z Mladé Boleslavi 65 km.",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Vlaková i autobusová zastávka jsou od chaty vzdáleny necelý 1km. Zastávka vlaku se nazývá Kořenov a nachází se mezi zastávkami Kořenov zast. a Harrachov. Nejvhodnější a nejbližší zastávka autobusu se nazývá „Kořenov, Příchovice, Motorest“. Například z Prahy (Černého mostu) se do Kořenova dostanete dálkovým autobusem bez přestupů, a to několikrát během dne.",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Poloha chaty skýtá mnoho zajímavých cílů v okolí, mezi které patří zejména:",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Chata Zvonice je pro skupinové pobyty tou nejlepší volbou. Pro skupiny nabízíme ceny již od 620 Kč (ubytování se stravou 5x denně). Na každých 20 dětí je navíc jeden dospělý zdarma. Cena se odvíjí od délky pobytu, počtu osob a období, ve kterém se pobyt koná. Pro individuální nabídku nás prosím kontaktujte e-mailem na sales@lipperthotels.com",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Ubytování (bez stravy): 735,- Kč/noc Ubytování se snídaní: 893,- Kč/noc Ubytování s polopenzí: 1103,- Kč/noc Ubytování s plnou penzí: 1260,- Kč/noc",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Termín: 27. 12. 2026 – 1. 1. 2027 Cena: Polopenze: 1 300 Kč / osoba / noc Plná penze: 1 500 Kč / osoba / noc Silvestrovské občerstvení: příplatek 300 Kč / osoba",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Parkovné Pro ubytované hosty: zdarma Pro neubytované: 100,- kč/den",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Slevy Dále nabízíme výrazné skupinové a mimosezonní slevy.",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Pro zjištění aktuálních mimosezonních cen a skupinových slev nás kontaktujte na mailu sales@lipperthotels.com.",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Pro školy v přírodě, lyžařské kurzy a další dětské a skupinové rekreace nabízíme ceny od 620,- Kč za osobu a noc se stravováním 5x denně.",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Alteris s.r.o. Na stezce 1330/3, Vršovice (Praha 10), 100 00 Praha IČ: 27862313 DIČ: CZ27862313",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Kristýna Racková - tel.: 771 135 359 E-mail: provozni@zvonice.cz",
+   "zdroj": "https://www.zvonice.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Rezervace, cenové nabídky E-mail: sales@lipperthotels.com",
+   "zdroj": "https://www.zvonice.cz/"
+  }
+ ],
+ "chybi": [
+  "adresa / provozovna",
+  "potvrzení služeb a ceníku (nic nevymýšlet)"
+ ],
+ "popis_webu": ""
+}

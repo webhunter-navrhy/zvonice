@@ -4,7 +4,7 @@
 {% block obsah %}
 
 <section class="hero">
-  <div aria-hidden="true" style="display:contents">{{ img('chata-leto.jpg', 'Horská chata Zvonice v létě, před ní děti na hřišti a party stan', sizes='100vw') }}</div>
+  {{ img('chata-leto.jpg', '~Horská chata Zvonice v létě, před ní děti na hřišti a party stan', sizes='100vw') }}
   <div class="hero-in">
     {{ stitek('Kořenov · Jizerské hory', 'vlevo') }}
     <h1>Chata na samotě v lesích Jizerských hor</h1>
@@ -57,7 +57,7 @@
       <a class="odkaz" href="{{ url('okoli/') }}">Co je kolem chaty</a>
     </div>
   </div>
-  <div class="siroka" data-odhal>{{ img('chata-leto.jpg', 'Chata Zvonice, hřiště a party stan v létě', sizes='100vw') }}</div>
+  <div class="siroka" data-odhal>{{ img('hriste.jpg', 'Hřiště s průlezkami u chaty Zvonice', sizes='100vw') }}</div>
   <div class="akce stred"><a class="btn" href="{{ url('pobyty/') }}">Vyberte si svůj pobyt</a></div>
 </section>
 
@@ -116,7 +116,7 @@
 </section>
 
 <section class="sekce tmava" id="okoli">
-  <div aria-hidden="true" style="display:contents">{{ img('les-zima.jpg', '', sizes='100vw') }}</div>
+  {{ img('les-zima.jpg', '', sizes='100vw') }}
   <div class="obal" data-odhal>
     {{ stitek('Okolí chaty') }}
     <h2 class="h2 stred">Všechno je na dosah</h2>

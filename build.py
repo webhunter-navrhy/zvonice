@@ -91,6 +91,9 @@ class Obrazky:
     def img(self, nazev, alt=None, sizes="100vw", cls="", eager=None, styl=""):
         if alt is None:
             raise BuildError(f"img('{nazev}'): chybí alt (pro dekorativní fotku alt='')")
+        skryta = ""
+        if alt == "" or alt.startswith("~"):
+            alt = alt.lstrip("~"); skryta = ' aria-hidden="true"'
         self.pocet += 1
         prvni = (self.pocet == 1) if eager is None else eager
         i = self._zpracuj(nazev)
@@ -102,7 +105,7 @@ class Obrazky:
         w, h, nejv = i["varianty"][-1][0], i["varianty"][-1][1], i["varianty"][-1][2]
         srcset = ", ".join(f"{self.base}{p} {w_}w" for w_, _, p in i["varianty"])
         nacitani = 'loading="eager" fetchpriority="high"' if prvni else 'loading="lazy"'
-        return Markup(f'<img src="{self.base}{nejv}" srcset="{srcset}" sizes="{sizes}" width="{w}" height="{h}"{a}{c}{s} '
+        return Markup(f'<img src="{self.base}{nejv}" srcset="{srcset}" sizes="{sizes}" width="{w}" height="{h}"{a}{skryta}{c}{s} '
                       f'{nacitani} decoding="async">')
 
     def img_url(self, nazev, w=1280):
