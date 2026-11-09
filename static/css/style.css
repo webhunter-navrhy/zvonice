@@ -377,6 +377,6 @@ body{font-weight:400}
 .popup-okno{background:#fff;max-width:460px;width:100%;padding:36px 32px 30px;position:relative;border-top:5px solid #6a1f1a;text-align:center}
 .popup-okno h2{font-family:'Playfair Display',serif;color:#6a1f1a;margin:8px 0 10px}
 .popup-okno p{margin:0 0 18px}
-.popup-zavrit{position:absolute;top:8px;right:12px;background:none;border:0;font-size:28px;line-height:1;cursor:pointer;color:#555}
+.popup-zavrit{position:absolute;top:4px;right:4px;width:44px;height:44px;background:none;border:0;font-size:28px;line-height:1;cursor:pointer;color:#555}
 .popup-okno .odkaz{display:block;margin-top:12px}
 .popup[hidden]{display:none}
