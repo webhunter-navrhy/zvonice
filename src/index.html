@@ -115,17 +115,20 @@
   </div>
 </section>
 
-<section class="sekce tmava" id="okoli">
-  {{ img('drevo-bg.jpg', '', sizes='100vw') }}
-  <div class="obal" data-odhal>
-    {{ stitek('Okolí chaty') }}
-    <h2 class="h2 stred">Všechno je na dosah</h2>
-    <p class="perex stred">Sjezdovka, běžkařská stopa i centrum Kořenova jsou pár kroků od chaty.</p>
-    <div class="mista">
-      <div class="misto"><b>0,2 km</b><h3>Sjezdovka s vlekem</h3><p>V zimě na lyže z chaty pěšky.</p></div>
-      <div class="misto"><b>0,5 km</b><h3>Centrum Kořenova</h3><p>Vlak i autobus kousek.</p></div>
-      <div class="misto"><b>30 km</b><h3>Liberec</h3><p>Nejbližší velké město.</p></div>
-      <div class="misto"><b>110 km</b><h3>Praha</h3><p>Dálkový autobus bez přestupu.</p></div>
+<section class="sekce pisek-2" id="okoli">
+  <div class="obal okoli" data-odhal>
+    <div class="foto-ram">{{ img('krajina-mraz.jpg', 'Zimní krajina Jizerských hor u Kořenova', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+    <div>
+      {{ stitek('Okolí chaty') }}
+      <h2 class="h2">Všechno je na dosah</h2>
+      <p class="perex">Sjezdovka, běžkařská stopa i centrum Kořenova jsou pár kroků od chaty.</p>
+      <ul class="vzdal">
+        <li><b>0,2 km</b><span>Sjezdovka s vlekem, v zimě na lyže z chaty pěšky</span></li>
+        <li><b>0,5 km</b><span>Centrum Kořenova, vlak i autobus kousek</span></li>
+        <li><b>30 km</b><span>Liberec, nejbližší velké město</span></li>
+        <li><b>110 km</b><span>Praha, dálkový autobus bez přestupu</span></li>
+      </ul>
+      <a class="odkaz" href="{{ url('okoli/') }}">Co je kolem chaty</a>
     </div>
   </div>
 </section>

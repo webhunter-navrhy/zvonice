@@ -1,0 +1,18 @@
+{
+  "znamka": 5,
+  "slabiny": [
+    "Hlavička (PC i mobil): místo klientova loga je název ZVONICE napsaný písmem Playfair. Klient má vlastní logo (podklady/logo.png a logo-2.png): HORSKÁ CHATA tučným bezpatkovým písmem, ZVONICE tenkým bezpatkovým písmem a Kořenov psacím písmem v barvě #4b0000. Logo použijte celé, na PC vlevo v hlavičce (teď je uprostřed). Bílé slovo ZVONICE v PNG na světlém pozadí nebude vidět, proto ho přebarvěte na vínovou nebo logo překreslete do SVG ve stejných písmech. V tmavé patičce použijte světlou verzi.",
+    "Čísla se na stránce ukazují dvakrát stejným způsobem: v sekci Školy a skupiny jsou 4 béžové dlaždice (100 / 5× / 200 m / 1 : 20) a v sekci Okolí chaty tmavý pruh s dřevěnou texturou a dalšími 4 dlaždicemi (0,2 / 0,5 / 30 / 110 km). Tmavý pruh se statistikami je zakázaný šablonový prvek a na mobilu tvoří dlouhý tmavý blok přes 2 obrazovky. Okolí udělejte světlé a s fotkami: velká fotka okolí (sjezdovka, Mumlavské vodopády) a vzdálenosti jako obyčejný seznam nebo malá mapka. Dlaždice nechte jen v sekci Školy a skupiny.",
+    "Sekce Pobyty pro každou skupinu: 4 stejné karty s tmavým přechodem a vnitřním rámečkem fotky skoro schovávají. Karta Silvestr 2026 je skoro černá a na mobilu jde o 4 vysoké tmavé dlaždice za sebou. Přechod zesvětlete a jen dolní třetinu nechte tmavší pod textem. Textové odkazy (Ceník od 620 Kč, Ubytování a vybavení, Co je kolem chaty, Celý ceník, Chci nabídku) zvětšete na 40 px výšky, QA jich hlásí 19 menších. Osamocený odkaz Co je kolem chaty nad širokou fotkou (PC, buňka 4) přesuňte do textového bloku nad ní."
+  ],
+  "zavazne": [
+    "Hlavička na PC i na mobilu: klientovo logo (HORSKÁ CHATA / ZVONICE / Kořenov psacím písmem, podklady/logo.png) chybí úplně. Místo něj je název napsaný jiným písmem. Na tohle Rafael už jednou upozornil (Tomáš Veigl: „není tam vůbec jeho logo“)."
+  ],
+  "silne": [
+    "Web je sourozenec skalskydvur.cz ze stejné skupiny LippertHotels: písmo Playfair ve verzálkách s Montserratem, pískové pozadí, vínová barva #420c0a, ornamenty u nadtitulků a bohatá skladba sekcí. Přesně to bylo měřítko z výtky u Engadinu.",
+    "Všechny fotky jsou od klienta a k oboru sedí: zasněžená chata v úvodu, třída před chatou, hřiště, pokoje a restaurace. Je hned jasné, že jde o horskou chatu pro školy.",
+    "Obsah sedí na brief: 620 Kč se stravou 5× denně, na každých 20 dětí dospělý zdarma, 735 až 1 260 Kč pro jednotlivce, Silvestr 1 300 Kč, 200 m ke sjezdovce, 110 km z Prahy. Jasné výzvy Poptávka a Poptat pobyt, záložky Pokoje / Restaurace / Klubovna, žádné přetečení na 6 šířkách."
+  ],
+  "verdikt": "Řemeslně slušný hotelový web, sourozenec Skalského dvora, se skutečnými fotkami a ověřenými cenami. Chybí ale klientovo logo, a to podle kritérií strhává známku na nejvýš 5. Po doplnění loga, světlé sekci Okolí místo tmavého pruhu se statistikami a světlejších kartách pobytů má na 8/10.",
+  "_hash": "cc57bf54fec18140fc08247e9f4496bcce092c0f"
+}

@@ -293,3 +293,21 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;color:var(--tma);margin:0}
   .tabulka td.c{font-size:16px}
 }
 @media (max-width:760px){.hero{min-height:84svh}.hero>img{object-position:40% 50%!important}}
+
+.znak .lg{position:relative;display:block;width:104px;height:46px}
+.znak .lg img{position:absolute;inset:0;width:100%;height:100%;filter:brightness(0) invert(1)}
+.znak .lg b{position:absolute;left:0;right:0;top:50%;transform:translateY(-52%);text-align:center;font:300 15px/1 var(--sans);letter-spacing:.16em;padding:0}
+.hl.plna .znak .lg img,.hl.otevreno .znak .lg img{filter:none}
+.pata .znak .lg{width:130px;height:58px;margin-bottom:14px}
+@media (max-width:900px){.znak .lg{width:92px;height:41px}.znak .lg b{font-size:13px}}
+.a.odkaz,a.odkaz{display:inline-flex;align-items:center;min-height:40px}
+
+.dl::before{background:linear-gradient(to top,rgba(15,15,15,.62) 0,rgba(15,15,15,.28) 38%,rgba(15,15,15,0) 70%)}
+.dl::after{inset:12px;border-color:rgba(255,255,255,.55)}
+.okoli{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px);align-items:center}
+.okoli .foto-ram img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.vzdal{list-style:none;margin:26px 0 22px;padding:0;border-top:1px solid var(--linka)}
+.vzdal li{display:grid;grid-template-columns:90px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--linka);align-items:baseline}
+.vzdal b{font:700 20px/1 var(--serif);color:var(--akcent)}
+.vzdal span{font-size:15px;color:var(--tlum)}
+@media (max-width:900px){.okoli{grid-template-columns:1fr}}
