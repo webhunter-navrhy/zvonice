@@ -40,16 +40,17 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;color:var(--tma);margin:0}
 
 /* hlavička */
 .hl{position:fixed;inset:0 0 auto;z-index:60;transition:background .4s,box-shadow .4s}
-.hl-in{width:min(1320px,100% - 48px);margin:0 auto;height:84px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px}
+.hl-in{width:min(1320px,100% - 48px);margin:0 auto;height:84px;display:grid;grid-template-columns:auto 1fr;align-items:center;gap:24px}
 .hl nav{display:flex;gap:26px;font:400 12px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:#fff}
 .hl nav a{text-decoration:none;padding:8px 0;opacity:.92}
 .hl nav a:hover{opacity:1;color:#f3c9c0}
-.hl nav.vpravo{justify-content:flex-end;align-items:center}
-.znak{display:flex;flex-direction:column;justify-content:center;min-height:44px;align-items:center;text-decoration:none;color:#fff;line-height:1}
+.hl nav.vpravo{justify-content:flex-end;align-items:center;gap:22px}
+.znak{display:flex;flex-direction:column;justify-content:center;min-height:44px;align-items:center;gap:3px;text-decoration:none;color:#fff;line-height:1}
 .znak b{font:700 25px/1 var(--serif);letter-spacing:.2em;padding-left:.2em}
-.znak small{font:400 9.5px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;margin-top:7px;opacity:.85}
+.znak small{font:600 9.5px/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;opacity:.9}
+.znak i{font:italic 400 15px/1 var(--serif);align-self:flex-end;margin-top:2px}
 .hl.plna{background:var(--pisek);box-shadow:0 1px 0 var(--linka)}
-.hl.plna nav,.hl.plna .znak{color:var(--tma)}
+.hl.plna nav,.hl.plna .znak{color:#420c0a}
 .hl.plna nav a:hover{color:var(--akcent)}
 .burger{display:none}
 .btn-mob{display:none}
