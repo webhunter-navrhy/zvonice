@@ -1,0 +1,69 @@
+{
+  "url": "https://webhunter-navrhy.github.io/zvonice/",
+  "ok": true,
+  "chyby": [],
+  "varovani": [
+    "Dotykové cíle <40 px na mobilu: 19× (např. a.odkaz \"Ceník od 620 Kč\" 117×32; a.odkaz \"Ubytování a vybavení\" 154×32; a.odkaz \"Co je kolem chaty\" 129×32; a.odkaz \"Ubytování\" 73×32)"
+  ],
+  "metriky": {
+    "sirky": {
+      "1440": {
+        "scrollWidth": 1440,
+        "pocet_pretekajicich": 0
+      },
+      "1280": {
+        "scrollWidth": 1280,
+        "pocet_pretekajicich": 0
+      },
+      "1024": {
+        "scrollWidth": 1024,
+        "pocet_pretekajicich": 0
+      },
+      "820": {
+        "scrollWidth": 820,
+        "pocet_pretekajicich": 0
+      },
+      "390": {
+        "scrollWidth": 390,
+        "pocet_pretekajicich": 0
+      },
+      "360": {
+        "scrollWidth": 360,
+        "pocet_pretekajicich": 0
+      }
+    },
+    "preneseno_PC_MB": 2.0,
+    "nejvetsi_obrazek_PC": {
+      "kB": 328,
+      "url": "https://webhunter-navrhy.github.io/zvonice/img/drevo-bg-1920.webp"
+    },
+    "snimku_PC": 9,
+    "preneseno_mobil_MB": 2.0,
+    "nejvetsi_obrazek_mobil": {
+      "kB": 268,
+      "url": "https://webhunter-navrhy.github.io/zvonice/img/adaptacni-kurz-1175.webp"
+    },
+    "snimku_mobil": 14,
+    "seo": {
+      "title": "Horská chata Zvonice – školy v přírodě a pobyty pro skupiny v Kořenově",
+      "description": "Horská chata Zvonice v Kořenově: až 100 lůžek pro školy v přírodě, lyžařské výcviky a skupiny, resta",
+      "lang": "cs",
+      "h1": 1,
+      "jsonld": [
+        true
+      ],
+      "robots": "noindex, nofollow",
+      "og_image": "https://webhunter-navrhy.github.io/zvonice/og.jpg",
+      "bez_v": [],
+      "canonical": false,
+      "viewport": true
+    },
+    "maly_dotykovy_cil": 19,
+    "font_nadpis": "Playfair Display",
+    "font_text": "Montserrat",
+    "podstranky": {
+      "stranek": 12,
+      "obrazku": 76
+    }
+  }
+}
