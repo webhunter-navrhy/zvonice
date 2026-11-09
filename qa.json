@@ -3,7 +3,7 @@
   "ok": true,
   "chyby": [],
   "varovani": [
-    "Dotykové cíle <40 px na mobilu: 19× (např. a.odkaz \"Ceník od 620 Kč\" 117×32; a.odkaz \"Ubytování a vybavení\" 154×32; a.odkaz \"Co je kolem chaty\" 129×32; a.odkaz \"Ubytování\" 73×32)"
+    "Dotykové cíle <40 px na mobilu: 11× (např. a \"provozni@zvonice.cz\" 143×18; a \"Poptávka pobytu\" 118×18; a \"Školy v přírodě\" 101×18; a \"Adaptační kurzy\" 112×18)"
   ],
   "metriky": {
     "sirky": {
@@ -32,13 +32,13 @@
         "pocet_pretekajicich": 0
       }
     },
-    "preneseno_PC_MB": 2.0,
+    "preneseno_PC_MB": 1.8,
     "nejvetsi_obrazek_PC": {
-      "kB": 328,
-      "url": "https://webhunter-navrhy.github.io/zvonice/img/drevo-bg-1920.webp"
+      "kB": 241,
+      "url": "https://webhunter-navrhy.github.io/zvonice/img/chata-zima-slunce-1600.webp"
     },
-    "snimku_PC": 9,
-    "preneseno_mobil_MB": 2.0,
+    "snimku_PC": 10,
+    "preneseno_mobil_MB": 1.86,
     "nejvetsi_obrazek_mobil": {
       "kB": 268,
       "url": "https://webhunter-navrhy.github.io/zvonice/img/adaptacni-kurz-1175.webp"
@@ -58,12 +58,12 @@
       "canonical": false,
       "viewport": true
     },
-    "maly_dotykovy_cil": 19,
+    "maly_dotykovy_cil": 11,
     "font_nadpis": "Playfair Display",
     "font_text": "Montserrat",
     "podstranky": {
       "stranek": 12,
-      "obrazku": 76
+      "obrazku": 74
     }
   }
 }

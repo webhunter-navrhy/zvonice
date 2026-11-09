@@ -311,3 +311,5 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;color:var(--tma);margin:0}
 .vzdal b{font:700 20px/1 var(--serif);color:var(--akcent)}
 .vzdal span{font-size:15px;color:var(--tlum)}
 @media (max-width:900px){.okoli{grid-template-columns:1fr}}
+.pata a{display:inline-flex;align-items:center;min-height:40px}
+.pata li{margin:0}
