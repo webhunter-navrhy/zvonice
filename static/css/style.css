@@ -73,13 +73,13 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;color:var(--tma);margin:0}
 .hero,.titulni,.drevo{background:var(--drevo) url(../img/drevo.jpg) center/cover;color:var(--pisek);position:relative;isolation:isolate}
 .hero::before,.titulni::before,.drevo::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,rgba(30,19,16,.92) 30%,rgba(66,12,10,.55))}
 .hero{padding:clamp(120px,13vw,170px) 0 0;min-height:100svh;display:flex;flex-direction:column}
-.hero-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);gap:clamp(40px,6vw,96px);align-items:center;flex:1}
+.hero-in{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.12fr);gap:clamp(40px,6vw,96px);align-items:center;flex:1}
 .hero .stitek,.titulni .stitek,.drevo .stitek,.cta-pas .stitek{color:var(--akcent-sv)}
 .hero h1{color:var(--pisek);font-size:clamp(56px,6.6vw,108px);line-height:.92;letter-spacing:.06em;text-transform:uppercase;margin:6px 0 30px}
 .hero h1 small{display:block;font:400 clamp(13px,1.2vw,16px)/1 var(--sans);letter-spacing:.42em;margin:0 0 18px .2em;color:var(--akcent-sv)}
 .hero-txt p{max-width:480px;font-size:17.5px;color:rgba(243,237,225,.86)}
 .hero-foto{position:relative;padding:0 16px 56px 0}
-.hero-foto .stit-foto{--pomer:11/10}
+.hero-foto .stit-foto{--pomer:1/1}
 .pohlednice{position:absolute;left:-44px;bottom:0;width:38%;background:var(--pisek);padding:10px 10px 10px;box-shadow:0 24px 50px rgba(0,0,0,.4);transform:rotate(-3deg)}
 .pohlednice img{width:100%;aspect-ratio:4/3;object-fit:cover}
 .hero-pata{display:flex;justify-content:space-between;gap:20px;border-top:1px solid rgba(201,169,163,.35);margin-top:clamp(50px,6vw,80px);padding:24px 0 30px;font:400 11.5px/1.3 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:rgba(243,237,225,.82)}
@@ -112,15 +112,15 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;color:var(--tma);margin:0}
 
 /* den na Zvonici */
 .den{list-style:none;padding:0;margin-top:clamp(50px,6vw,72px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(20px,2.4vw,34px);position:relative}
-.den::before{content:"";position:absolute;left:0;right:0;top:calc(var(--fh) + 30px);height:1px;background:var(--linka)}
-.den{--fh:clamp(150px,15vw,200px)}
+.den::before{content:"";position:absolute;left:0;right:0;top:calc(var(--fh) + 70px);height:1px;background:var(--linka)}
+.den{--fh:clamp(170px,17vw,230px)}
 .den li{position:relative}
-.den-foto{height:var(--fh);overflow:hidden}
+.den-foto{height:calc(var(--fh) + 40px);overflow:hidden;clip-path:polygon(50% 0,100% 16%,100% 100%,0 100%,0 16%)}
 .den-foto img{width:100%;height:100%;object-fit:cover}
-.den-cas{display:flex;align-items:center;gap:12px;margin:22px 0 14px;font:500 11px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--akcent)}
+.den-cas{display:flex;align-items:center;gap:12px;margin:22px 0 14px;font:600 12px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--akcent)}
 .den-cas::before{content:"";width:11px;height:11px;background:var(--pisek-2);border:1.5px solid var(--akcent);transform:rotate(45deg);flex:none}
-.den h3{font-size:19px;letter-spacing:.05em;text-transform:uppercase;line-height:1.25;margin:20px 0 10px}
-.den p{font-size:15.5px;color:#554b45;margin:0}
+.den h3{font-size:20px;letter-spacing:.05em;text-transform:uppercase;line-height:1.25;margin:20px 0 10px}
+.den p{font-size:16px;line-height:1.6;color:#4a3e38;margin:0}
 
 /* ubytování – záložky s kartou přes fotku */
 .zal{display:flex;justify-content:center;gap:10px;margin:34px 0 40px;flex-wrap:wrap}
@@ -338,3 +338,23 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;color:var(--tma);margin:0}
   .tabulka td.c{font-size:18px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.odhal{opacity:1;transform:none}}
+
+/* 3. kolo: střešní hřeben, pohyb v hero, štítové fotky ve dni, kontrast */
+.hero::after,.drevo::after,.cta-pas::before{content:"";position:absolute;left:50%;top:-1px;width:clamp(120px,14vw,200px);aspect-ratio:5/1;transform:translateX(-50%);background:var(--pisek);clip-path:polygon(0 0,100% 0,50% 100%);z-index:1}
+.hero::after{top:auto;bottom:-1px;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.drevo::after{background:var(--pisek)}
+.cta-pas{position:relative}
+.cta-pas::before{background:var(--pisek)}
+.sekce.pisek-2+.drevo::after,.sekce.pisek-2+.cta-pas::before{background:var(--pisek-2)}
+@keyframes vyjed{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes ramkreslit{from{opacity:0;transform:translate(0,0)}to{opacity:1;transform:translate(16px,16px)}}
+.hero-txt>*{animation:vyjed .9s cubic-bezier(.2,.7,.2,1) both}
+.hero-txt>*:nth-child(2){animation-delay:.12s}.hero-txt>*:nth-child(3){animation-delay:.24s}.hero-txt>*:nth-child(4){animation-delay:.36s}
+.hero-foto .stit{animation:vyjed 1.1s .2s cubic-bezier(.2,.7,.2,1) both}
+.hero-foto .stit-linka{animation:ramkreslit 1.2s .8s ease both}
+.pohlednice{animation:vyjed 1s .7s both}
+.den li:hover .den-foto img{transform:scale(1.05)}
+.den-foto img{transition:transform 1s ease}
+.drevo .stit-foto img{filter:brightness(1.12) saturate(.92)}
+@media (max-width:900px){.hero-foto .stit-foto{--pomer:10/9}.den-foto{height:calc(var(--fh) + 30px)}}
+@media (max-width:600px){.den-foto{clip-path:polygon(50% 0,100% 10%,100% 100%,0 100%,0 10%)}.den-foto img{aspect-ratio:3/2}.den-foto{height:auto}.den li{padding-top:0}.mozaika a:last-child:nth-child(even){grid-column:1/-1}}
