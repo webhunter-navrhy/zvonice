@@ -81,7 +81,7 @@ class Obrazky:
                 r = im.resize((w, vyska), Image.LANCZOS) if w != w0 else im
                 if r.mode not in ("RGB", "RGBA"):
                     r = r.convert("RGBA" if "A" in r.getbands() else "RGB")
-                r.save(cache, "WEBP", quality=80, method=6)
+                r.save(cache, "WEBP", quality=62, method=6)
             out = f"{stem}-{w}.webp"
             shutil.copy(cache, os.path.join(cil_dir, out))
             varianty.append((w, vyska, f"img/{out}"))

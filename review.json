@@ -1,17 +1,18 @@
 {
   "znamka": 8,
   "slabiny": [
-    "PC buňka 3 (Pobyty pro každou skupinu): bílé nadpisy dlaždic jsou uprostřed pestrých fotek a u „Lyžařské výcviky“ na světlé zasněžené krajině se skoro ztrácí. Pod nadpisy dejte tmavý přechod rgba(30,19,16,.6) zespodu do průhledné, nadpisy přesuňte do spodní třetiny dlaždice a vnitřní rámeček nechte jen jako linku.",
-    "PC buňka 4: letní fotka chaty s dětmi je roztažená přes celou šířku 1440 px, i když koncept kvůli malým zdrojovým fotkám zakazuje fotky přes šířku. Když má zdroj méně než asi 1100 px, dejte ji do kontejneru s max-width jako ostatní sekce (1100 až 1160 px) nebo ji ořízněte na nižší pás, aby se nezvětšovala víc než 1,3×.",
-    "PC buňka 6 a mobil buňka 7: poznámka „Skupinové ceny zahrnují ubytování a stravu pětkrát denně…“ je drobný světle šedý text o velikosti zhruba 11 px s malým kontrastem na pískovém pozadí. Zvětšete ji na 14 až 15 px, ztmavte na #5a4a40 a dejte ji hned pod kartu Pokoje, ne volně mezi sekce."
+    "PC buňka 3 a mobil buňky 3–4, Pobyty pro každou skupinu: oprava se neprovedla. Nadpisy dlaždic jsou pořád uprostřed fotky a „Lyžařské výcviky“ se na světlé zasněžené krajině dál ztrácí. Pod nadpis dejte zespodu přechod linear-gradient(to top, rgba(30,19,16,.6), transparent 60%), nadpis a „Dozvědět se více“ přesuňte do spodní třetiny dlaždice (align-items:flex-end, padding-bottom 24 px) a vnitřní rámeček nechte jen jako 1px linku.",
+    "PC buňka 4, letní fotka chaty s dětmi a party stanem: oprava se neprovedla. Fotka je pořád roztažená přes celých 1440 px a zdroj má kolem 1100 px. Dejte ji do kontejneru max-width 1160 px jako ostatní sekce (stejně odsazenou jako dlaždice nad ní), nebo ji ořízněte na pás vysoký nejvýš 420 px, aby se nezvětšovala víc než 1,3×. Na mobilu může zůstat přes celou šířku.",
+    "PC buňka 6 a mobil buňka 7, poznámka „Skupinové ceny zahrnují ubytování a stravu pětkrát denně…“: na mobilu už je pod kartou Pokoje, ale na PC visí pořád volně nad sekcí Den na chatě. Na obou je dál drobná (asi 11 px) a světle šedá. Nastavte font-size 15px a color #5a4a40, na PC ji dejte hned pod kartu Pokoje se zarovnáním na její levou hranu (margin-top 16 px) a odstraňte prázdný pruh pod ní."
   ],
   "zavazne": [],
   "silne": [
-    "Všechny čtyři minulé výtky jsou opravené. Logo je vlevo a menu vpravo před tlačítkem POPTÁVKA. V tmavé patičce je světlá verze klientova loga vedle Lippert Hotels. QA hlásí 0 malých dotykových cílů. Logo ZVONICE v hlavičce je na snímcích jen v jedné vrstvě, bez dvojitého obrysu.",
-    "Web je čitelně sourozenec Skalského dvora: Playfair verzálky + Montserrat, písek, vínová podle střechy, ornamenty s kosočtverci, záložky s kartou přes fotku a patička se sesterskými hotely.",
-    "Obsah je postavený pro hlavní cílovku, tedy učitele a vedoucí: kapacita, strava, poměr 1:20 a ceník za osobu a noc s jasnými podmínkami. Okolí ukazuje jako rozcestník se vzdálenostmi. Všechna fakta jsou konzistentní (200 m / 0,2 km).",
-    "Mobil je navržený, ne zmenšený: nic nepřetéká na žádné ze 6 šířek, CTA POPTÁVKA je stále v hlavičce a dlaždice pobytů jsou pod sebou s výzvou „Dozvědět se více“."
+    "Web je sourozenec skalskydvur.cz: Playfair 700 verzálky, Montserrat, pískové pozadí, vínová #420c0a a ornamentální nadtitulky. Tak to Rafael chtěl u hotelů skupiny LippertHotels.",
+    "Logo Horská chata Zvonice je vlevo v hlavičce a v patičce a vínovou barvu bere z loga a starého webu.",
+    "Všechna čísla mají zdroj v briefu: 100 lůžek, strava 5× denně, sjezdovka 200 m, dospělý zdarma na 20 dětí, ceny 620/735/893/1 103/1 260 Kč, Silvestr 1 300/1 500 Kč, vzdálenosti 0,5/30/110 km.",
+    "Jasná konverze: Poptávka v hlavičce, CTA Poptat pobyt v hero a v sekcích, ceník se třemi kartami, blok Poptávka a Jak k nám a kontakty v patičce.",
+    "QA je čisté: žádné přetečení na 6 šířkách, noindex, cache busting, malé dotykové cíle 0. Mobil je skutečně navržený pro mobil (karty pod sebou, čitelné texty, galerie 2×2)."
   ],
-  "verdikt": "Minulé výtky jsou opravené a nová závažná vada tam není. Web drží úroveň sourozence Skalského dvora a dá se poslat. Zbývají jen drobnosti: kontrast nadpisů na dlaždicích, jedna fotka přes celou šířku a drobný šedý text.",
-  "_hash": "1cfb1242e145e611a2d3b681d92bff86e17d4d60"
+  "verdikt": "Ani jedna ze tří výtek minulého kola není opravená, jen poznámka k cenám se na mobilu přesunula pod kartu Pokoje. Nové závažné vady nejsou, takže známka zůstává 8. Před odesláním je dobré dodělat přechod pod nadpisy dlaždic, zúžit letní fotku a zvětšit poznámku k cenám.",
+  "_hash": "08eacdb617dc51a89bd4238f679e7f1e517b83d0"
 }
