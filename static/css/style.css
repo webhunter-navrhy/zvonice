@@ -385,3 +385,14 @@ body{font-weight:400}
 .hl nav a{white-space:nowrap}
 @media (min-width:901px) and (max-width:1250px){.hl nav{gap:14px;font-size:11px;letter-spacing:.06em}.hl-in{gap:16px}.hl nav.vpravo .btn{padding:0 12px!important}}
 @media (max-width:900px){.hero>img{object-position:22% 60%!important}}
+
+/* video */
+.video-obal{display:grid;grid-template-columns:1fr auto;gap:clamp(24px,5vw,72px);align-items:center}
+.video-ram{width:min(320px,70vw);aspect-ratio:9/16;background:#2a1a14 url(../img/drevo.jpg) center/cover;position:relative;overflow:hidden;box-shadow:0 14px 40px rgba(40,20,10,.28);justify-self:center}
+.video-hraj{position:absolute;inset:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:rgba(30,12,8,.45);color:#fff;border:0;cursor:pointer;font:inherit}
+.video-hraj:hover .video-ikona{transform:scale(1.08)}
+.video-ikona{width:76px;height:76px;border-radius:50%;background:var(--akcent);display:grid;place-items:center;transition:transform .2s}
+.video-ikona svg{width:34px;height:34px;fill:#fff;margin-left:4px}
+.video-pozn{font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.video-ram iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media (max-width:900px){.video-obal{grid-template-columns:1fr}.video-txt{text-align:center}.video-txt .stitek{justify-content:center}}

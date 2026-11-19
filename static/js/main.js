@@ -73,3 +73,17 @@ document.querySelectorAll('form.formular').forEach(function (f) {
   p.addEventListener('click', function (e) { if (e.target === p) zav(); });
   addEventListener('keydown', function (e) { if (e.key === 'Escape' && p.classList.contains('on')) zav(); });
 })();
+
+// video: YouTube se načte až po kliknutí (bez cookies a bez spojení na Google předem)
+(function () {
+  document.querySelectorAll('.video-hraj').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(b.dataset.yt) + '?autoplay=1&rel=0&playsinline=1';
+      f.title = 'Video – Horská chata Zvonice';
+      f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      f.allowFullscreen = true;
+      b.parentNode.replaceChild(f, b);
+    });
+  });
+})();

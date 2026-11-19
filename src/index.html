@@ -140,10 +140,26 @@
   </div>
 </section>
 
+{% if data.video.zobrazit and yt_id(data.video.youtube) %}
+<section class="sekce" id="video">
+  <div class="obal video-obal" data-odhal>
+    <div class="video-txt">
+      {{ stitek('Video', 'vlevo') }}
+      <h2 class="h2">{{ data.video.nadpis }}</h2>
+      {% if data.video.text %}<p class="perex">{{ data.video.text }}</p>{% endif %}
+    </div>
+    <div class="video-ram">
+      <button type="button" class="video-hraj" data-yt="{{ yt_id(data.video.youtube) }}" aria-label="Přehrát video: {{ data.video.nadpis }}"><span class="video-ikona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="video-pozn">Přehrát video</span></button>
+      <noscript><a href="{{ data.video.youtube }}">Video na YouTube</a></noscript>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <section class="sekce pisek-2" id="galerie">
   <div class="obal" data-odhal>
     {{ stitek('Fotogalerie') }}
-    <h2 class="h2 stred">Nahlédněte k nám</h2>
+    <h2 class="h2 stred">Chata v obrázcích</h2>
     <div class="galerie">
       <a href="{{ url('fotogalerie/') }}">{{ img('chata-podzim.jpg', 'Chata Zvonice na podzim', sizes='20vw') }}</a>
       <a href="{{ url('fotogalerie/') }}">{{ img('jidelna-3.jpg', 'Restaurace s velkými okny', sizes='20vw') }}</a>
