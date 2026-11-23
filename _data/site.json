@@ -26,8 +26,8 @@
   "sameas": [],
   "cenove_rozpeti": "735–1 260 Kč",
   "formular": {
-    "endpoint": "",
-    "demo": true,
+    "endpoint": "https://webhunter-admin.webhunter.workers.dev/api/zvonice/form",
+    "demo": false,
     "predmet": "Poptávka z webu zvonice.cz"
   },
   "nav": [],
