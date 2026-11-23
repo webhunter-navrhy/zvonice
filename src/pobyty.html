@@ -1,60 +1,60 @@
 {% extends "_base.html" %}
 {% from "_casti.html" import stitek, titulni %}
-{% set titulek = "Pobyty pro skupiny – školy v přírodě, adaptační kurzy, lyžáky | Horská chata Zvonice" %}
-{% set popis = "Školy v přírodě, adaptační kurzy, lyžařské výcviky a pobyty pro skupiny na Horské chatě Zvonice v Kořenově. Až 100 lůžek, ceny od 617 Kč za osobu a noc se stravou 5× denně." %}
+{% set titulek = TS('pobyty-001') %}
+{% set popis = TS('pobyty-002') %}
 {% block obsah %}
-{{ titulni('Pobyty pro skupiny', 'zv27-ext-hriste-1.jpg', 'Hřiště a party stan před chatou Zvonice', '50% 60%') }}
+{{ titulni(T('pobyty-003'), 'zv27-ext-hriste-1.jpg', 'Hřiště a party stan před chatou Zvonice', '50% 60%') }}
 <section class="sekce">
   <div class="obal">
-    <p class="uvodni">Zvonice je chata pro školy a větší skupiny. Pokoje, restaurace i klubovna jsou pod jednou střechou. Hned za dveřmi je hřiště a les. Skupinové ceny začínají na 617 Kč za osobu a noc včetně ubytování a stravy 5× denně, na každých 20 dětí je jeden dospělý zdarma.</p>
+    <p class="uvodni">{{ T('pobyty-004') }}</p>
 
     <div class="blok" id="skoly-v-prirode" data-odhal>
       <div class="blok-foto">{{ img('zv27-ext-hriste-2.jpg', 'Hřiště s průlezkami a skluzavkou u chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
-        {{ stitek('Jaro až podzim', 'vlevo') }}
-        <h2>Školy v přírodě</h2>
-        <p>Chata leží na samotě v lesích, takže si děti mohou v klidu hrát venku. Na hřišti jsou pískoviště a průlezky, k tomu hřiště pro míčové hry a louka. Na výuku a večerní program je klubovna a restaurace s plátnem a projektorem.</p>
-        <ul class="seznam"><li>hřiště s pískovištěm a průlezkami</li><li>hřiště pro míčové hry</li><li>klubovna s dětským koutkem</li><li>v létě party stan 20×10 m</li></ul>
-        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Škola v přírodě">Poptat školu v přírodě</a>
+        {{ stitek(T('pobyty-005'), 'vlevo') }}
+        <h2>{{ T('pobyty-006') }}</h2>
+        <p>{{ T('pobyty-007') }}</p>
+        <ul class="seznam"><li>{{ T('pobyty-008') }}</li><li>{{ T('pobyty-009') }}</li><li>{{ T('pobyty-010') }}</li><li>{{ T('pobyty-011') }}</li></ul>
+        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Škola v přírodě">{{ T('pobyty-012') }}</a>
       </div>
     </div>
 
     <div class="blok otoc" id="adaptacni-kurzy" data-odhal>
       <div class="blok-foto">{{ img('nz-herna.jpg', 'Herna s dětským kobercem na chatě Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
-        {{ stitek('Celoročně', 'vlevo') }}
-        <h2>Adaptační kurzy</h2>
-        <p>Nový kolektiv se nejlépe seznámí na místě, kde ho nic neruší. Kolem chaty jsou lesy, uvnitř klubovna a stylová restaurace, kde se dá program i promítat.</p>
-        <ul class="seznam"><li>klubovna a restaurace s projektorem</li><li>wifi a bar</li><li>venkovní posezení</li><li>strava 5× denně v ceně skupinového pobytu</li></ul>
-        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Adaptační kurz">Poptat adaptační kurz</a>
+        {{ stitek(T('pobyty-013'), 'vlevo') }}
+        <h2>{{ T('pobyty-014') }}</h2>
+        <p>{{ T('pobyty-015') }}</p>
+        <ul class="seznam"><li>{{ T('pobyty-016') }}</li><li>{{ T('pobyty-017') }}</li><li>{{ T('pobyty-018') }}</li><li>{{ T('pobyty-019') }}</li></ul>
+        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Adaptační kurz">{{ T('pobyty-020') }}</a>
       </div>
     </div>
 
     <div class="blok" id="lyzarske-vycviky" data-odhal>
       <div class="blok-foto">{{ img('krajina-mraz.jpg', 'Zimní krajina u Kořenova', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
-        {{ stitek('Zima', 'vlevo') }}
-        <h2>Lyžařské výcviky</h2>
-        <p>Asi 200 metrů od chaty je sjezdovka s vlekem, vhodná pro začátečníky. Kolem chaty vede běžkařská stopa a v okolí jsou další areály: Příchovice, Rejdice, Harrachov a Rokytnice. V zimě se k chatě cesta pluhuje.</p>
-        <ul class="seznam"><li>sjezdovka s vlekem asi 200 m od chaty</li><li>běžkařská stopa kolem chaty, Jizerská magistrála</li><li>úschovna lyží</li><li>krbová kamna v restauraci</li></ul>
-        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Lyžařský výcvik">Poptat lyžařský výcvik</a> <a class="odkaz" href="{{ url('zimni-pobyty/') }}">Zimní pobyty 2027</a>
+        {{ stitek(T('pobyty-021'), 'vlevo') }}
+        <h2>{{ T('pobyty-022') }}</h2>
+        <p>{{ T('pobyty-023') }}</p>
+        <ul class="seznam"><li>{{ T('pobyty-024') }}</li><li>{{ T('pobyty-025') }}</li><li>{{ T('pobyty-026') }}</li><li>{{ T('pobyty-027') }}</li></ul>
+        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Lyžařský výcvik">{{ T('pobyty-028') }}</a> <a class="odkaz" href="{{ url('zimni-pobyty/') }}">{{ T('pobyty-029') }}</a>
       </div>
     </div>
     <div class="blok otoc" id="skupiny" data-odhal>
       <div class="blok-foto">{{ img('zv27-ext-hriste-1.jpg', 'Hřiště a party stan u chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
-        {{ stitek('Celoročně', 'vlevo') }}
-        <h2>Skupiny</h2>
-        <p>Chata je jako dělaná pro sportovní oddíly, spolky, dětské domovy, tábory i rodinné a přátelské skupiny. Jsou tu společenské místnosti, venkovní hřiště a les kolem.</p>
-        <ul class="seznam"><li>sportovní oddíly a soustředění</li><li>spolky a dětské domovy</li><li>tábory</li><li>rodinné a přátelské skupiny</li></ul>
-        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Skupinový pobyt">Poptat pobyt pro skupinu</a>
+        {{ stitek(T('pobyty-030'), 'vlevo') }}
+        <h2>{{ T('pobyty-031') }}</h2>
+        <p>{{ T('pobyty-032') }}</p>
+        <ul class="seznam"><li>{{ T('pobyty-033') }}</li><li>{{ T('pobyty-034') }}</li><li>{{ T('pobyty-035') }}</li><li>{{ T('pobyty-036') }}</li></ul>
+        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Skupinový pobyt">{{ T('pobyty-037') }}</a>
       </div>
     </div>
   </div>
 </section>
 <section class="cta-pas">
-  <h2 class="h2">Máte termín a počet dětí?</h2>
-  <p>Napište nám, s kým a kdy jedete. Připravíme nabídku na celý pobyt.</p>
-  <a class="btn" href="{{ url('poptavka/') }}">Poptat pobyt</a>
+  <h2 class="h2">{{ T('pobyty-038') }}</h2>
+  <p>{{ T('pobyty-039') }}</p>
+  <a class="btn" href="{{ url('poptavka/') }}">{{ T('pobyty-040') }}</a>
 </section>
 {% endblock %}

@@ -1,12 +1,12 @@
-/* Administrace Horská chata Zvonice: fotogalerie, video na úvodní stránce, heslo.
-   Data jsou v repozitáři (_data/galerie.json, _data/video.json). Uložení = jeden commit přes webhunter-admin,
+/* Administrace Horská chata Zvonice: texty a ceny všech stránek, pop-up, fotogalerie, video na úvodní stránce, heslo.
+   Data jsou v repozitáři (_data/texty.json, _data/galerie.json, _data/video.json). Uložení = jeden commit přes webhunter-admin,
    GitHub Action pak web přegeneruje (~1 minuta). */
 'use strict';
 (() => {
 const CFG = { id: 'zvonice', site: '../', api: 'https://webhunter-admin.webhunter.workers.dev' };
-const FILES = { galerie: '_data/galerie.json', video: '_data/video.json' };
+const FILES = { texty: '_data/texty.json', galerie: '_data/galerie.json', video: '_data/video.json' };
 const SK = 'zvonice_admin';
-const S = { sess: null, def: false, D: {}, snap: {}, pending: {}, preview: {}, saving: false, lib: null };
+const S = { tab: 'texty', str: null, sess: null, def: false, D: {}, snap: {}, pending: {}, preview: {}, saving: false, lib: null };
 const $ = (s) => document.querySelector(s);
 const uid = () => Math.random().toString(36).slice(2, 8);
 const slug = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40);
@@ -141,6 +141,73 @@ function vVideo() {
     h('p.hint', {}, 'Sekce „Nahlédněte k nám“ pod ceníkem. Vložte odkaz na video z YouTube (i krátké video Shorts).'),
     h('label.f', {}, chk, ' Zobrazit video na úvodní stránce'), fld('youtube', 'Odkaz na YouTube'), fld('nadpis', 'Nadpis'), fld('text', 'Krátký text', { multi: true }));
 }
+/* texty a ceny: _data/texty.json = stránky → skupiny (sekce webu) → pole {k, typ, t} nebo tabulka {hlavicka, radky} */
+const bezDiak = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
+function poleTextu(p) {
+  const dlouhy = (p.t || '').length > 70 || (p.t || '').includes('\n');
+  const opt = { 'aria-label': p.typ, oninput: (e) => { p.t = e.target.value; bar(); if (e.target.tagName === 'TEXTAREA') roste(e.target); } };
+  const el = dlouhy ? h('textarea', { rows: 2, ...opt }, p.t || '') : h('input', { type: 'text', value: p.t || '', ...opt });
+  if (dlouhy) requestAnimationFrame(() => roste(el));
+  return h('label.f', {}, h('span', {}, p.typ + (p.seo ? ' – zobrazuje se ve výsledcích vyhledávání' : '')), el);
+}
+const roste = (el) => { el.style.height = 'auto'; el.style.height = (el.scrollHeight + 2) + 'px'; };
+function popisTabulky(g, p) {
+  let sum = '', nad = '';
+  for (const x of g.pole) { if (x === p) break; if (x.typ === 'Rozbalovací nadpis') { sum = x.t; nad = ''; } else if (/^(Podnadpis|Nadpis)$/.test(x.typ)) nad = x.t; }
+  return 'Tabulka' + ([sum, nad].filter(Boolean).length ? ': ' + [sum, nad].filter(Boolean).join(' – ') : '');
+}
+function editorTabulky(p, nazev) {
+  const box = h('div.tbl');
+  const bunka = (arr, j, popis) => h('input', { type: 'text', value: arr[j] ?? '', 'aria-label': popis, oninput: (e) => { arr[j] = e.target.value; bar(); } });
+  const render = () => {
+    const sl = Math.max(p.hlavicka ? p.hlavicka.length : 0, ...p.radky.map((r) => r.length), 1);
+    const t = h('table');
+    if (p.hlavicka) t.append(h('thead', {}, h('tr', {}, p.hlavicka.map((c, j) => h('th', {}, bunka(p.hlavicka, j, 'Záhlaví sloupce ' + (j + 1)))), h('th'))));
+    const tb = h('tbody');
+    p.radky.forEach((r, i) => tb.append(h('tr', {}, Array.from({ length: sl }, (_, j) => h('td', {}, bunka(r, j, `Řádek ${i + 1}, sloupec ${j + 1}`))),
+      h('td.x', {}, h('button', { type: 'button', title: 'Smazat řádek', 'aria-label': 'Smazat řádek', onclick: () => { if (confirm('Smazat tento řádek tabulky?')) { p.radky.splice(i, 1); bar(); render(); } } }, '×')))));
+    t.append(tb);
+    box.replaceChildren(h('span.tbl-n', {}, nazev), h('div.tbl-sc', {}, t),
+      h('button.btn.btn-s', { type: 'button', onclick: () => { p.radky.push(Array(sl).fill('')); bar(); render(); } }, '＋ Přidat řádek'));
+  };
+  render(); return box;
+}
+function kartaSkupiny(g, cesta) {
+  const kids = [];
+  if (g.id === 'popup') {
+    const chk = h('input', { type: 'checkbox', onchange: (e) => { g.zapnuto = e.target.checked; bar(); } }); chk.checked = g.zapnuto !== false;
+    kids.push(h('p.hint', {}, 'Okno s novinkami, které se návštěvníkům ukáže po několika sekundách (jednou za návštěvu).'), h('label.f.chk', {}, chk, ' Zobrazovat pop-up na webu'));
+  }
+  for (const p of g.pole) kids.push(p.typ === 'tabulka' ? editorTabulky(p, popisTabulky(g, p)) : poleTextu(p));
+  return h('section.card', {}, cesta ? h('small.cesta', {}, cesta) : null, h('h2', {}, g.nazev), ...kids);
+}
+function vTexty() {
+  const T = S.D.texty; if (!S.str) S.str = T.stranky[0].id;
+  const obsah = h('div'), q = h('input', { type: 'search', placeholder: 'Hledat text nebo cenu na celém webu, např. 1 300', 'aria-label': 'Hledat text nebo cenu' });
+  const volby = h('div.chips');
+  const kresli = () => {
+    const dotaz = bezDiak(q.value), bezMez = dotaz.replace(/ /g, '');
+    volby.hidden = !!dotaz;
+    if (dotaz.length >= 2) {
+      const sedi = (s) => { const n = bezDiak(s); return n.includes(dotaz) || (bezMez.length > 2 && n.replace(/ /g, '').includes(bezMez)); };
+      const karty = [];
+      for (const st of T.stranky) for (const g of st.skupiny) {
+        const pole = g.pole.filter((p) => p.typ === 'tabulka' ? sedi([...(p.hlavicka || []), ...p.radky.flat()].join(' | ')) : sedi(p.t));
+        if (pole.length) karty.push(kartaSkupiny({ ...g, pole, id: null }, st.nazev));
+      }
+      obsah.replaceChildren(h('p.hint', {}, karty.length ? `Nalezeno v ${karty.length} ${karty.length === 1 ? 'sekci' : 'sekcích'}. Upravit můžete přímo tady.` : 'Nic nenalezeno.'), ...karty);
+      return;
+    }
+    volby.replaceChildren(...T.stranky.map((st) => h('button', { type: 'button', 'aria-pressed': String(st.id === S.str), onclick: () => { S.str = st.id; kresli(); } }, st.nazev)));
+    const st = T.stranky.find((x) => x.id === S.str) || T.stranky[0];
+    obsah.replaceChildren(...st.skupiny.map((g) => kartaSkupiny(g)));
+  };
+  let tm; q.addEventListener('input', () => { clearTimeout(tm); tm = setTimeout(kresli, 250); });
+  kresli();
+  return h('div', {}, h('section.card', {}, h('h2', {}, 'Texty a ceny'),
+    h('p.hint', {}, 'Vyberte stránku a přepište, co potřebujete. Ceny a termíny jsou na webu na více místech (úvod, ceník, zimní pobyty, Silvestr, pop-up), vyhledáváním je najdete všechny najednou. Nový řádek v textu se na webu zobrazí jako zalomení řádku.'),
+    q, volby), obsah);
+}
 function vHeslo() {
   const o = h('input', { type: 'password', autocomplete: 'current-password' }), a = h('input', { type: 'password', autocomplete: 'new-password' }), b = h('input', { type: 'password', autocomplete: 'new-password' });
   return h('section.card', {}, h('h2', {}, 'Heslo'), S.def ? h('div.banner', {}, 'Používáte výchozí heslo „admin“. Nastavte si prosím vlastní.') : null,
@@ -155,8 +222,11 @@ function shell() {
     h('header.top', {}, h('b', {}, 'Horská chata Zvonice – administrace'), h('span.pub', {}, 'Web je aktuální'),
       h('span', {}, h('a.btn.btn-s', { href: CFG.site, target: '_blank', rel: 'noopener' }, 'Zobrazit web'), ' ',
         h('button.btn.btn-s', { type: 'button', onclick: () => { if (dirty().length && !confirm('Máte neuložené změny. Opravdu se odhlásit?')) return; localStorage.removeItem(SK); S.sess = null; login(); } }, 'Odhlásit'))),
-    h('div.wrap', {}, S.def ? h('div.banner', {}, 'Používáte výchozí heslo „admin“. Dole na stránce si nastavte vlastní.') : null, vVideo(), vGalerie(), vHeslo()),
-    h('div.savebar#savebar', {}, h('span', {}, ''),
+    h('div.wrap', {}, S.def ? h('div.banner', {}, 'Používáte výchozí heslo „admin“. V záložce Heslo si nastavte vlastní.') : null,
+      h('nav.tabs', { 'aria-label': 'Části administrace' }, [['texty', 'Texty a ceny'], ['foto', 'Fotogalerie a video'], ['heslo', 'Heslo']].map(([k, n]) =>
+        h('button', { type: 'button', 'aria-pressed': String(S.tab === k), onclick: () => { S.tab = k; shell(); window.scrollTo(0, 0); } }, n))),
+      ...(S.tab === 'texty' ? [vTexty()] : S.tab === 'foto' ? [vVideo(), vGalerie()] : [vHeslo()])),
+    h('div.savebar', { id: 'savebar' }, h('span', {}, ''),
       h('span', {}, h('button.btn.btn-s', { type: 'button', onclick: () => { if (confirm('Zahodit neuložené změny?')) location.reload(); } }, 'Zahodit'), ' ',
         h('button.btn.btn-p', { type: 'button', onclick: saveAll }, 'Uložit změny'))));
   bar();

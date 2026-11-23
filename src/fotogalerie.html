@@ -1,13 +1,13 @@
 {% extends "_base.html" %}
 {% from "_casti.html" import stitek, titulni %}
-{% set titulek = "Fotogalerie | Horská chata Zvonice" %}
-{% set popis = "Fotky Horské chaty Zvonice v Kořenově: chata v zimě i v létě, restaurace, pokoje, hřiště a okolí." %}
+{% set titulek = TS('foto-001') %}
+{% set popis = TS('foto-002') %}
 {% block obsah %}
-{{ titulni('Fotogalerie', 'chata-podzim.jpg', 'Chata Zvonice na podzim', '50% 60%') }}
+{{ titulni(T('foto-003'), 'chata-podzim.jpg', 'Chata Zvonice na podzim', '50% 60%') }}
 <section class="sekce">
   <div class="obal">
-    {{ stitek('Nahlédněte k nám') }}
-    <h2 class="h2 stred">Chata, restaurace, pokoje i okolí</h2>
+    {{ stitek(T('foto-004')) }}
+    <h2 class="h2 stred">{{ T('foto-005') }}</h2>
     <div class="galerie-plna">
       {% for p in data.galerie.photos %}<button type="button" data-velka="{{ img_url(p.img, 1920) }}" aria-label="Zvětšit: {{ p.alt }}">{{ img(p.img, p.alt, sizes='(min-width: 900px) 25vw, 50vw') }}</button>{% endfor %}
     </div>

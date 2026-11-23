@@ -19,14 +19,14 @@
 <body>
 <header class="hl">
   <div class="hl-in">
-    <nav aria-label="Hlavní vlevo"><a href="{{ url('pobyty/') }}">Pro skupiny</a><a href="{{ url('ubytovani/') }}">Ubytování</a><a href="{{ url('okoli/') }}">Okolí</a><a href="{{ url('fotogalerie/') }}">Fotogalerie</a></nav>
+    <nav aria-label="Hlavní vlevo"><a href="{{ url('pobyty/') }}">{{ T('spol-001') }}</a><a href="{{ url('ubytovani/') }}">{{ T('spol-002') }}</a><a href="{{ url('okoli/') }}">{{ T('spol-003') }}</a><a href="{{ url('fotogalerie/') }}">{{ T('spol-004') }}</a></nav>
     <a class="znak" href="{{ url('') }}" aria-label="Horská chata Zvonice – úvod"><span class="lg"><img src="{{ base }}img/logo-tmave.png" alt="" width="577" height="257"><b>ZVONICE</b></span></a>
-    <nav class="vpravo" aria-label="Hlavní vpravo"><a href="{{ url('cenik/') }}">Ceník</a><a href="{{ url('zimni-pobyty/') }}">Zimní pobyty 2027</a><a href="{{ url('silvestr/') }}">Silvestr 2027</a><a href="{{ url('poptavka/') }}#kontakt-info">Kontakt</a><a class="btn" href="{{ url('poptavka/') }}" style="padding:0 18px;min-height:40px;opacity:1">Poptávka</a></nav>
-    <a class="btn btn-mob" href="{{ url('poptavka/') }}">Poptávka</a>
+    <nav class="vpravo" aria-label="Hlavní vpravo"><a href="{{ url('cenik/') }}">{{ T('spol-005') }}</a><a href="{{ url('zimni-pobyty/') }}">{{ T('spol-006') }}</a><a href="{{ url('silvestr/') }}">{{ T('spol-007') }}</a><a href="{{ url('poptavka/') }}#kontakt-info">{{ T('spol-008') }}</a><a class="btn" href="{{ url('poptavka/') }}" style="padding:0 18px;min-height:40px;opacity:1">{{ T('spol-009') }}</a></nav>
+    <a class="btn btn-mob" href="{{ url('poptavka/') }}">{{ T('spol-010') }}</a>
     <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
     <div class="mob-menu">
-      <a href="{{ url('pobyty/') }}">Pro skupiny</a><a href="{{ url('ubytovani/') }}">Ubytování</a><a href="{{ url('cenik/') }}">Ceník</a><a href="{{ url('okoli/') }}">Okolí</a><a href="{{ url('zimni-pobyty/') }}">Zimní pobyty 2027</a><a href="{{ url('silvestr/') }}">Silvestr 2027</a><a href="{{ url('fotogalerie/') }}">Fotogalerie</a><a href="{{ url('poptavka/') }}#kontakt-info">Kontakt</a>
-      <a class="btn" href="{{ url('poptavka/') }}">Poptat pobyt pro skupinu</a>
+      <a href="{{ url('pobyty/') }}">{{ T('spol-011') }}</a><a href="{{ url('ubytovani/') }}">{{ T('spol-012') }}</a><a href="{{ url('cenik/') }}">{{ T('spol-013') }}</a><a href="{{ url('okoli/') }}">{{ T('spol-014') }}</a><a href="{{ url('zimni-pobyty/') }}">{{ T('spol-015') }}</a><a href="{{ url('silvestr/') }}">{{ T('spol-016') }}</a><a href="{{ url('fotogalerie/') }}">{{ T('spol-017') }}</a><a href="{{ url('poptavka/') }}#kontakt-info">{{ T('spol-018') }}</a>
+      <a class="btn" href="{{ url('poptavka/') }}">{{ T('spol-019') }}</a>
     </div>
   </div>
 </header>
@@ -39,45 +39,45 @@
       <a class="znak" href="{{ url('') }}" aria-label="Horská chata Zvonice – úvod"><span class="lg"><img src="{{ base }}img/logo-tmave.png" alt="" width="577" height="257" loading="lazy"><b>ZVONICE</b></span></a>
       <ul>
         <li><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></li>
-        <li>Kořenov 872<br>468 49 Kořenov</li>
+        <li>{{ T('spol-020') }}</li>
       </ul>
-      <p style="margin-top:14px"><small>Provozovatel Alteris s.r.o., IČ 27862313</small></p>
+      <p style="margin-top:14px"><small>{{ T('spol-021') }}</small></p>
     </div>
     <div>
-      <h4>Poptávky</h4>
-      <ul><li><a href="{{ url('poptavka/') }}">Poptávka pobytu</a></li><li><a href="{{ url('pobyty/') }}#skoly-v-prirode">Školy v přírodě</a></li><li><a href="{{ url('pobyty/') }}#adaptacni-kurzy">Adaptační kurzy</a></li><li><a href="{{ url('pobyty/') }}#lyzarske-vycviky">Lyžařské výcviky</a></li><li><a href="{{ url('zimni-pobyty/') }}">Zimní pobyty 2027</a></li><li><a href="{{ url('silvestr/') }}">Silvestrovský pobyt 2027</a></li></ul>
-      <h4 style="margin-top:30px">Užitečné</h4>
-      <ul><li><a href="{{ url('cenik/') }}#podminky">Ceník a ceny pro skupiny</a></li><li><a href="{{ url('okoli/') }}#jak-k-nam">Jak k nám</a></li></ul>
+      <h4>{{ T('spol-022') }}</h4>
+      <ul><li><a href="{{ url('poptavka/') }}">{{ T('spol-023') }}</a></li><li><a href="{{ url('pobyty/') }}#skoly-v-prirode">{{ T('spol-024') }}</a></li><li><a href="{{ url('pobyty/') }}#adaptacni-kurzy">{{ T('spol-025') }}</a></li><li><a href="{{ url('pobyty/') }}#lyzarske-vycviky">{{ T('spol-026') }}</a></li><li><a href="{{ url('zimni-pobyty/') }}">{{ T('spol-027') }}</a></li><li><a href="{{ url('silvestr/') }}">{{ T('spol-028') }}</a></li></ul>
+      <h4 style="margin-top:30px">{{ T('spol-029') }}</h4>
+      <ul><li><a href="{{ url('cenik/') }}#podminky">{{ T('spol-030') }}</a></li><li><a href="{{ url('okoli/') }}#jak-k-nam">{{ T('spol-031') }}</a></li></ul>
     </div>
     <div>
-      <h4>Oblíbené</h4>
-      <ul><li><a href="{{ url('okoli/') }}">Okolí chaty</a></li><li><a href="{{ url('ubytovani/') }}">Ubytování</a></li><li><a href="{{ url('fotogalerie/') }}">Fotogalerie</a></li></ul>
+      <h4>{{ T('spol-032') }}</h4>
+      <ul><li><a href="{{ url('okoli/') }}">{{ T('spol-033') }}</a></li><li><a href="{{ url('ubytovani/') }}">{{ T('spol-034') }}</a></li><li><a href="{{ url('fotogalerie/') }}">{{ T('spol-035') }}</a></li></ul>
     </div>
     <div>
-      <h4>Součást skupiny</h4>
+      <h4>{{ T('spol-036') }}</h4>
       <img class="lippert" src="{{ base }}img/lippert-hotels.png" alt="Lippert Hotels" width="120" height="62">
-      <h4>Naše další hotely a chaty</h4>
+      <h4>{{ T('spol-037') }}</h4>
       <ul>{% for h in site.skupina %}<li><a href="{{ h.url }}" target="_blank" rel="noopener">{{ h.nazev }}</a><small>{{ h.misto }}</small></li>{% endfor %}</ul>
     </div>
   </div>
-  <div class="obal pata-spodek"><span>© 2026 Horská chata Zvonice</span><button type="button" class="cookie-odkaz" data-cookies-nastaveni>Nastavení cookies</button></div>
+  <div class="obal pata-spodek"><span>{{ T('spol-038') }}</span><button type="button" class="cookie-odkaz" data-cookies-nastaveni>{{ T('spol-039') }}</button></div>
 </footer>
-<div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-nadpis" hidden>
+{% if zapnuto('popup') %}<div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-nadpis" hidden>
   <div class="popup-okno">
     <button class="popup-zavrit" type="button" aria-label="Zavřít">×</button>
-    <small>Novinky 2027</small>
-    <h2 id="popup-nadpis">Zimní pobyty a Silvestr 2027</h2>
-    <p>Lyžařské výcviky a víkendy pro skupiny, sjezdovka s vlekem 200 m od chaty. Silvestrovský pobyt 27. 12. 2026 – 1. 1. 2027 je otevřený i rodinám a partám přátel.</p>
-    <a class="btn" href="{{ url('zimni-pobyty/') }}">Zimní pobyty</a>
-    <a class="odkaz" href="{{ url('silvestr/') }}">Silvestrovský pobyt</a>
+    <small>{{ T('spol-040') }}</small>
+    <h2 id="popup-nadpis">{{ T('spol-041') }}</h2>
+    <p>{{ T('spol-042') }}</p>
+    <a class="btn" href="{{ url('zimni-pobyty/') }}">{{ T('spol-043') }}</a>
+    <a class="odkaz" href="{{ url('silvestr/') }}">{{ T('spol-044') }}</a>
   </div>
-</div>
+</div>{% endif %}
 <div class="cookies" id="cookies" role="dialog" aria-live="polite" aria-labelledby="cookies-nadpis" data-gtm="{{ site.gtm }}" hidden>
-  <h2 id="cookies-nadpis">Cookies na našem webu</h2>
-  <p>Nezbytné cookies potřebuje web ke svému fungování. Se souhlasem používáme i analytické a marketingové cookies (Google Tag Manager, Google Analytics), abychom věděli, co návštěvníky zajímá, a mohli web zlepšovat. Volbu můžete kdykoli změnit v patičce webu.</p>
+  <h2 id="cookies-nadpis">{{ T('spol-045') }}</h2>
+  <p>{{ T('spol-046') }}</p>
   <div class="cookies-tl">
-    <button type="button" class="btn" data-cookies="vse">Přijmout vše</button>
-    <button type="button" class="btn btn-obrys" data-cookies="nezbytne">Jen nezbytné</button>
+    <button type="button" class="btn" data-cookies="vse">{{ T('spol-047') }}</button>
+    <button type="button" class="btn btn-obrys" data-cookies="nezbytne">{{ T('spol-048') }}</button>
   </div>
 </div>
 <script src="{{ asset('js/main.js') }}" defer></script>

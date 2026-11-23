@@ -1,58 +1,58 @@
 {% extends "_base.html" %}
 {% from "_casti.html" import stitek, titulni %}
-{% set titulek = "Ubytování v Kořenově – až 100 lůžek | Horská chata Zvonice" %}
-{% set popis = "Horská chata Zvonice: až 100 lůžek v převážně dvou až čtyřlůžkových pokojích, restaurace s projektorem, klubovna s dětským koutkem, bar a wifi." %}
+{% set titulek = TS('ubyt-001') %}
+{% set popis = TS('ubyt-002') %}
 {% block obsah %}
-{{ titulni('Ubytování', 'pokoj-13.jpg', 'Pokoj na chatě Zvonice', '50% 55%') }}
+{{ titulni(T('ubyt-003'), 'pokoj-13.jpg', 'Pokoj na chatě Zvonice', '50% 55%') }}
 <section class="sekce">
   <div class="obal">
-    <p class="uvodni">Horská chata Zvonice nabízí až 100 lůžek. Pokoje jsou převážně dvou až čtyřlůžkové a je tu jeden osmilůžkový. Na každém pokoji je umyvadlo, sociální zařízení je na chodbě. Dva pokoje mají kompletní zařízení.</p>
+    <p class="uvodni">{{ T('ubyt-004') }}</p>
 
     <div class="blok" data-odhal>
       <div class="blok-foto">{{ img('nz-pokoj-2.jpg', 'Pokoj pro třídu s postelemi a červeným kobercem', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
-        {{ stitek('Pokoje', 'vlevo') }}
-        <h2>Pokoje pro celou třídu</h2>
-        <p>Dvou až čtyřlůžkové pokoje se hodí pro děti i dospělé. Pro větší partu je k dispozici osmilůžkový pokoj. Přesné rozdělení pokojů Vám rádi upřesníme v nabídce.</p>
-        <a class="odkaz" href="{{ url('poptavka/') }}">Poptat ubytování</a>
+        {{ stitek(T('ubyt-005'), 'vlevo') }}
+        <h2>{{ T('ubyt-006') }}</h2>
+        <p>{{ T('ubyt-007') }}</p>
+        <a class="odkaz" href="{{ url('poptavka/') }}">{{ T('ubyt-008') }}</a>
       </div>
     </div>
 
     <div class="blok otoc" data-odhal>
       <div class="blok-foto">{{ img('nz-pokoj-4.jpg', 'Podkrovní pokoj s dřevěným obložením', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
-        {{ stitek('Podkroví', 'vlevo') }}
-        <h2>Podkrovní pokoje</h2>
-        <p>V podkroví jsou pokoje s dřevěným obložením a šikmými stropy. Hodí se pro skupinu dětí.</p>
-        <a class="odkaz" href="{{ url('pobyty/') }}">Pobyty pro skupiny</a>
+        {{ stitek(T('ubyt-009'), 'vlevo') }}
+        <h2>{{ T('ubyt-010') }}</h2>
+        <p>{{ T('ubyt-011') }}</p>
+        <a class="odkaz" href="{{ url('pobyty/') }}">{{ T('ubyt-012') }}</a>
       </div>
     </div>
 
     <div class="blok" data-odhal>
       <div class="blok-foto">{{ img('nz-restaurace-4.jpg', 'Stylová restaurace chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
-        {{ stitek('Stravování', 'vlevo') }}
-        <h2>Stylová restaurace</h2>
-        <p>Restaurace má plátno a projektor, takže se hodí i na výuku nebo večerní promítání. V zimě hřejí krbová kamna. Skupinám vaříme stravu 5× denně.</p>
-        <a class="odkaz" href="{{ url('cenik/') }}">Ceny se stravou</a>
+        {{ stitek(T('ubyt-013'), 'vlevo') }}
+        <h2>{{ T('ubyt-014') }}</h2>
+        <p>{{ T('ubyt-015') }}</p>
+        <a class="odkaz" href="{{ url('cenik/') }}">{{ T('ubyt-016') }}</a>
       </div>
     </div>
 
     <div data-odhal style="margin-top:clamp(70px,8vw,100px)">
-      {{ stitek('Vybavení chaty') }}
-      <h2 class="h2 stred">Co u nás najdete</h2>
+      {{ stitek(T('ubyt-017')) }}
+      <h2 class="h2 stred">{{ T('ubyt-018') }}</h2>
       <ul class="vybaveni">
-        <li>až 100 lůžek</li><li>umyvadlo na pokoji</li><li>stylová restaurace s plátnem a projektorem</li>
-        <li>klubovna s dětským koutkem</li><li>bar a wifi</li><li>venkovní posezení</li>
-        <li>pískoviště a průlezky</li><li>hřiště pro míčové hry</li><li>úschovna lyží a kol</li>
-        <li>krbová kamna v restauraci</li><li>v létě party stan 20×10 m</li><li>parkování zdarma</li>
+        <li>{{ T('ubyt-019') }}</li><li>{{ T('ubyt-020') }}</li><li>{{ T('ubyt-021') }}</li>
+        <li>{{ T('ubyt-022') }}</li><li>{{ T('ubyt-023') }}</li><li>{{ T('ubyt-024') }}</li>
+        <li>{{ T('ubyt-025') }}</li><li>{{ T('ubyt-026') }}</li><li>{{ T('ubyt-027') }}</li>
+        <li>{{ T('ubyt-028') }}</li><li>{{ T('ubyt-029') }}</li><li>{{ T('ubyt-030') }}</li>
       </ul>
     </div>
   </div>
 </section>
 <section class="cta-pas">
-  <h2 class="h2">Vejde se k nám celá škola</h2>
-  <p>Pošlete nám termín a počet osob, připravíme nabídku.</p>
-  <a class="btn" href="{{ url('poptavka/') }}">Poptat pobyt</a>
+  <h2 class="h2">{{ T('ubyt-031') }}</h2>
+  <p>{{ T('ubyt-032') }}</p>
+  <a class="btn" href="{{ url('poptavka/') }}">{{ T('ubyt-033') }}</a>
 </section>
 {% endblock %}

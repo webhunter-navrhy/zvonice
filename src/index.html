@@ -1,34 +1,34 @@
 {% extends "_base.html" %}
 {% from "_casti.html" import stitek %}
-{% set titulek = "Horská chata Zvonice – školy v přírodě a pobyty pro skupiny v Kořenově" %}
+{% set titulek = TS('uvod-001') %}
 {% block obsah %}
 
 <section class="hero">
   {{ img('nz-uvodni.jpg', 'Horská chata Zvonice s červenou střechou v zasněženém lese', sizes='100vw', styl='object-position:30% 78%', eager=True) }}
   <div class="hero-in">
-    {{ stitek('Kořenov · Jizerské hory', 'vlevo') }}
-    <h1>Chata v lesích Jizerských hor</h1>
-    <p>Sto lůžek, restaurace, klubovna a hřiště pro školy a skupiny: školy v přírodě, adaptační kurzy, lyžařské výcviky, sportovní oddíly, spolky i tábory. Les hned za chatou, sjezdovka s vlekem 200 metrů od ní.</p>
-    <div class="akce"><a class="btn" href="{{ url('poptavka/') }}">Poptat pobyt</a><a class="odkaz" href="{{ url('cenik/') }}">Ceník od 617 Kč</a></div>
+    {{ stitek(T('uvod-002'), 'vlevo') }}
+    <h1>{{ T('uvod-003') }}</h1>
+    <p>{{ T('uvod-004') }}</p>
+    <div class="akce"><a class="btn" href="{{ url('poptavka/') }}">{{ T('uvod-005') }}</a><a class="odkaz" href="{{ url('cenik/') }}">{{ T('uvod-006') }}</a></div>
   </div>
-  <div class="hero-pata"><span>až 100 lůžek</span><span>Strava 5× denně</span><span>Sjezdovka s vlekem 200 m</span></div>
+  <div class="hero-pata"><span>{{ T('uvod-007') }}</span><span>{{ T('uvod-008') }}</span><span>{{ T('uvod-009') }}</span></div>
 </section>
 
 <section class="sekce" id="skupiny">
   <div class="obal" data-odhal>
-    {{ stitek('Školy a skupiny') }}
-    <h2 class="h2 stred">Pro jednu třídu i celou školu</h2>
+    {{ stitek(T('uvod-010')) }}
+    <h2 class="h2 stred">{{ T('uvod-011') }}</h2>
   </div>
   <div class="obal dvoj" style="margin-top:50px" data-odhal>
     <div>
-      <p>Na Zvonici jezdí školy, sportovní oddíly a spolky. Pokoje, restaurace i klubovna jsou pod jednou střechou, z chaty vyběhnete rovnou na hřiště a kolem jsou jen lesy a louky. Asfaltová cesta končí na parkovišti, kde se otočí i autobus, a v zimě se k chatě pluhuje.</p>
+      <p>{{ T('uvod-012') }}</p>
       <div class="fakta">
-        <div class="fakt"><svg viewBox="0 0 24 24"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6M3 14h18M3 18v2M21 18v2M6 10V7a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/></svg><b>100</b><span>lůžek</span></div>
-        <div class="fakt"><svg viewBox="0 0 24 24"><path d="M7 3v8M5 3v4a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 0-3 2-3 5s1 4 3 4v9"/></svg><b>5×</b><span>denně strava</span></div>
-        <div class="fakt"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><b>200 m</b><span>sjezdovka s vlekem</span></div>
-        <div class="fakt"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V9h14v11M8 13h3M13 13h3M3 9l9-5 9 5"/></svg><b>1 : 20</b><span>dospělý zdarma</span></div>
+        <div class="fakt"><svg viewBox="0 0 24 24"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6M3 14h18M3 18v2M21 18v2M6 10V7a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/></svg><b>{{ T('uvod-013') }}</b><span>{{ T('uvod-014') }}</span></div>
+        <div class="fakt"><svg viewBox="0 0 24 24"><path d="M7 3v8M5 3v4a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 0-3 2-3 5s1 4 3 4v9"/></svg><b>{{ T('uvod-015') }}</b><span>{{ T('uvod-016') }}</span></div>
+        <div class="fakt"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><b>{{ T('uvod-017') }}</b><span>{{ T('uvod-018') }}</span></div>
+        <div class="fakt"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V9h14v11M8 13h3M13 13h3M3 9l9-5 9 5"/></svg><b>{{ T('uvod-019') }}</b><span>{{ T('uvod-020') }}</span></div>
       </div>
-      <div class="akce"><a class="odkaz" href="{{ url('ubytovani/') }}">Ubytování a vybavení</a><a class="btn" href="{{ url('poptavka/') }}">Poptat pobyt pro skupinu</a></div>
+      <div class="akce"><a class="odkaz" href="{{ url('ubytovani/') }}">{{ T('uvod-021') }}</a><a class="btn" href="{{ url('poptavka/') }}">{{ T('uvod-022') }}</a></div>
     </div>
     <div class="foto-ram">{{ img('zv27-ext-vstup.jpg', 'Vstup do chaty Zvonice s kamennou podezdívkou', sizes='(min-width: 900px) 48vw, 100vw', styl='object-position:50% 45%') }}</div>
   </div>
@@ -36,81 +36,81 @@
 
 <section class="sekce" style="padding-top:0">
   <div class="obal" data-odhal>
-    {{ stitek('Naše pobyty') }}
-    <h2 class="h2 stred">Pobyty pro školy a skupiny</h2>
-    <p class="perex stred">Od 617 Kč za osobu a noc včetně ubytování a stravy pětkrát denně. Na každých 20 dětí jeden dospělý zdarma.</p>
+    {{ stitek(T('uvod-023')) }}
+    <h2 class="h2 stred">{{ T('uvod-024') }}</h2>
+    <p class="perex stred">{{ T('uvod-025') }}</p>
     <div class="dlazdice">
-      <a class="dl" href="{{ url('pobyty/') }}#skoly-v-prirode">{{ img('zv27-ext-hriste-2.jpg', 'Hřiště s průlezkami a skluzavkou u chaty', sizes='(min-width: 900px) 25vw, 100vw') }}<div class="dl-in"><h3>Školy v přírodě</h3><p>Hřiště s trampolínou, louka a les hned za dveřmi, od jara do podzimu.</p><span class="vic">Dozvědět se více</span></div></a>
-      <a class="dl" href="{{ url('pobyty/') }}#adaptacni-kurzy">{{ img('zv27-int-klubovna.jpg', 'Klubovna s dětským kobercem', sizes='(min-width: 900px) 25vw, 100vw') }}<div class="dl-in"><h3>Adaptační kurzy</h3><p>Klubovna na hry a porady, louka na týmové aktivity, celoročně.</p><span class="vic">Dozvědět se více</span></div></a>
-      <a class="dl" href="{{ url('zimni-pobyty/') }}">{{ img('krajina-mraz.jpg', 'Zimní krajina Jizerských hor u Kořenova', sizes='(min-width: 900px) 25vw, 100vw') }}<div class="dl-in"><h3>Zimní pobyty 2027</h3><p>Lyžařské výcviky a víkendy. Sjezdovka s vlekem asi 200 m od chaty a běžkařská stopa kolem.</p><span class="vic">Dozvědět se více</span></div></a>
-      <a class="dl" href="{{ url('silvestr/') }}">{{ img('nz-zimni-chata.jpg', 'Chata Zvonice v zimě pod sněhem', sizes='(min-width: 900px) 25vw, 100vw') }}<div class="dl-in"><h3>Silvestrovský pobyt 2027</h3><p>27. 12. 2026 – 1. 1. 2027, restaurace s krbovými kamny jen pro Vás.</p><span class="vic">Dozvědět se více</span></div></a>
+      <a class="dl" href="{{ url('pobyty/') }}#skoly-v-prirode">{{ img('zv27-ext-hriste-2.jpg', 'Hřiště s průlezkami a skluzavkou u chaty', sizes='(min-width: 900px) 25vw, 100vw') }}<div class="dl-in"><h3>{{ T('uvod-026') }}</h3><p>{{ T('uvod-027') }}</p><span class="vic">{{ T('uvod-028') }}</span></div></a>
+      <a class="dl" href="{{ url('pobyty/') }}#adaptacni-kurzy">{{ img('zv27-int-klubovna.jpg', 'Klubovna s dětským kobercem', sizes='(min-width: 900px) 25vw, 100vw') }}<div class="dl-in"><h3>{{ T('uvod-029') }}</h3><p>{{ T('uvod-030') }}</p><span class="vic">{{ T('uvod-031') }}</span></div></a>
+      <a class="dl" href="{{ url('zimni-pobyty/') }}">{{ img('krajina-mraz.jpg', 'Zimní krajina Jizerských hor u Kořenova', sizes='(min-width: 900px) 25vw, 100vw') }}<div class="dl-in"><h3>{{ T('uvod-032') }}</h3><p>{{ T('uvod-033') }}</p><span class="vic">{{ T('uvod-034') }}</span></div></a>
+      <a class="dl" href="{{ url('silvestr/') }}">{{ img('nz-zimni-chata.jpg', 'Chata Zvonice v zimě pod sněhem', sizes='(min-width: 900px) 25vw, 100vw') }}<div class="dl-in"><h3>{{ T('uvod-035') }}</h3><p>{{ T('uvod-036') }}</p><span class="vic">{{ T('uvod-037') }}</span></div></a>
     </div>
   </div>
 </section>
 
 <section class="sekce" style="padding-top:0">
   <div class="obal pribeh" data-odhal>
-    <h2 class="h2">Mezi Jizerskými horami a Krkonošemi</h2>
+    <h2 class="h2">{{ T('uvod-038') }}</h2>
     <div>
-      <p>Chata stojí mezi Kořenovem a Horním Polubným. Do centra Kořenova je to asi 500 metrů pěšky, na vlak i autobus kousek. Z Prahy jede dálkový autobus bez přestupu.</p>
-      <p>Mumlavské vodopády, Protržená přehrada nebo kus Jizerské magistrály jsou na výlet z chaty. Učitelé a vedoucí nemusí nikam přejíždět, od snídaně po večerní program je všechno na jednom místě.</p>
-      <a class="odkaz" href="{{ url('okoli/') }}">Co je kolem chaty</a>
+      <p>{{ T('uvod-039') }}</p>
+      <p>{{ T('uvod-040') }}</p>
+      <a class="odkaz" href="{{ url('okoli/') }}">{{ T('uvod-041') }}</a>
     </div>
   </div>
   <div class="siroka" data-odhal>{{ img('nz-chata-hriste-zima.jpg', 'Chata Zvonice v zimě mezi zasněženými smrky', sizes='100vw', styl='object-position:50% 70%') }}</div>
-  <div class="akce stred"><a class="btn" href="{{ url('pobyty/') }}">Vyberte si svůj pobyt</a></div>
+  <div class="akce stred"><a class="btn" href="{{ url('pobyty/') }}">{{ T('uvod-042') }}</a></div>
 </section>
 
 <section class="sekce pisek-2" id="ubytovani">
   <div class="obal" data-odhal>
-    {{ stitek('Ubytování') }}
-    <h2 class="h2 stred">Pokoje, restaurace a klubovna</h2>
+    {{ stitek(T('uvod-043')) }}
+    <h2 class="h2 stred">{{ T('uvod-044') }}</h2>
     <div class="zal" role="tablist">
-      <button role="tab" aria-selected="true" aria-controls="z-pokoje">Pokoje</button>
-      <button role="tab" aria-selected="false" aria-controls="z-restaurace">Restaurace</button>
-      <button role="tab" aria-selected="false" aria-controls="z-klubovna">Klubovna</button>
+      <button role="tab" aria-selected="true" aria-controls="z-pokoje">{{ T('uvod-045') }}</button>
+      <button role="tab" aria-selected="false" aria-controls="z-restaurace">{{ T('uvod-046') }}</button>
+      <button role="tab" aria-selected="false" aria-controls="z-klubovna">{{ T('uvod-047') }}</button>
     </div>
     <div class="zal-panel" id="z-pokoje" role="tabpanel">
       <div class="foto">{{ img('nz-pokoj-vi.jpg', 'Dvoulůžkový pokoj s dřevěnou skříní na chatě Zvonice', sizes='(min-width: 900px) 62vw, 100vw') }}</div>
-      <div class="karta"><h3>Pokoje</h3><p>Až 100 lůžek v pokojích převážně pro dva až čtyři, k tomu jeden osmilůžkový. Na pokoji je umyvadlo, sociální zařízení na každém patře. Dva pokoje mají vlastní koupelnu.</p><a class="odkaz" href="{{ url('ubytovani/') }}">Ubytování</a></div>
+      <div class="karta"><h3>{{ T('uvod-048') }}</h3><p>{{ T('uvod-049') }}</p><a class="odkaz" href="{{ url('ubytovani/') }}">{{ T('uvod-050') }}</a></div>
     </div>
     <div class="zal-panel" id="z-restaurace" role="tabpanel" hidden>
       <div class="foto">{{ img('jidelna.jpg', 'Stylová restaurace chaty s dřevěnými stoly a okny', sizes='(min-width: 900px) 62vw, 100vw') }}</div>
-      <div class="karta"><h3>Stylová restaurace</h3><p>Pojme celou skupinu najednou. V zimě hřejí krbová kamna, na výuku nebo večerní film je tu plátno a projektor. K tomu bar a wifi.</p><a class="odkaz" href="{{ url('cenik/') }}">Ceny se stravou</a></div>
+      <div class="karta"><h3>{{ T('uvod-051') }}</h3><p>{{ T('uvod-052') }}</p><a class="odkaz" href="{{ url('cenik/') }}">{{ T('uvod-053') }}</a></div>
     </div>
     <div class="zal-panel" id="z-klubovna" role="tabpanel" hidden>
       <div class="foto">{{ img('klubovna.jpg', 'Klubovna s kobercem, stolky a hračkami', sizes='(min-width: 900px) 62vw, 100vw') }}</div>
-      <div class="karta"><h3>Klubovna</h3><p>Prostor na hry, výuku i porady vedoucích. Menší děti mají vlastní dětský koutek, venku pískoviště a průlezky.</p><a class="odkaz" href="{{ url('pobyty/') }}">Pobyty pro skupiny</a></div>
+      <div class="karta"><h3>{{ T('uvod-054') }}</h3><p>{{ T('uvod-055') }}</p><a class="odkaz" href="{{ url('pobyty/') }}">{{ T('uvod-056') }}</a></div>
     </div>
-    <p class="drobne">Skupinové ceny zahrnují ubytování i stravu pětkrát denně. Individuální hosté si vyberou nocleh bez stravy, se snídaní, polopenzi nebo plnou penzi.</p>
+    <p class="drobne">{{ T('uvod-057') }}</p>
   </div>
 </section>
 
 <section class="split">
   <div class="foto">{{ img('nz-jidelna-ii.jpg', 'Jídelna chaty s dlouhými stoly', sizes='(min-width: 900px) 50vw, 100vw') }}</div>
   <div class="txt" data-odhal>
-    {{ stitek('Den na chatě', 'vlevo') }}
-    <h2 class="h2" style="font-size:clamp(28px,3vw,40px)">Všechno na jednom místě</h2>
-    <p style="margin-top:22px">Snídaně v restauraci, dopoledne na hřišti, odpoledne výlet k vodopádům a večer promítání nebo hry v klubovně.</p>
+    {{ stitek(T('uvod-058'), 'vlevo') }}
+    <h2 class="h2" style="font-size:clamp(28px,3vw,40px)">{{ T('uvod-059') }}</h2>
+    <p style="margin-top:22px">{{ T('uvod-060') }}</p>
     <div class="ikony">
-      <div><svg viewBox="0 0 24 24"><path d="M7 3v8M5 3v4a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 0-3 2-3 5s1 4 3 4v9"/></svg>Strava 5× denně</div>
-      <div><svg viewBox="0 0 24 24"><path d="M12 21c-4 0-6-3-6-6 0-4 4-6 4-10 3 2 4 5 4 7 1-1 2-2 2-4 2 2 2 5 2 7 0 3-2 6-6 6z"/></svg>Krbová kamna</div>
-      <div><svg viewBox="0 0 24 24"><path d="M3 5h18v11H3zM8 20h8M12 16v4"/></svg>Plátno a projektor</div>
-      <div><svg viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11M9 20v-5h6v5"/></svg>Dětský koutek</div>
-      <div><svg viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 13a10 10 0 0 1 14 0M8.5 16.5a5 5 0 0 1 7 0M12 20h.01"/></svg>Wifi</div>
+      <div><svg viewBox="0 0 24 24"><path d="M7 3v8M5 3v4a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 0-3 2-3 5s1 4 3 4v9"/></svg>{{ T('uvod-061') }}</div>
+      <div><svg viewBox="0 0 24 24"><path d="M12 21c-4 0-6-3-6-6 0-4 4-6 4-10 3 2 4 5 4 7 1-1 2-2 2-4 2 2 2 5 2 7 0 3-2 6-6 6z"/></svg>{{ T('uvod-062') }}</div>
+      <div><svg viewBox="0 0 24 24"><path d="M3 5h18v11H3zM8 20h8M12 16v4"/></svg>{{ T('uvod-063') }}</div>
+      <div><svg viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11M9 20v-5h6v5"/></svg>{{ T('uvod-064') }}</div>
+      <div><svg viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 13a10 10 0 0 1 14 0M8.5 16.5a5 5 0 0 1 7 0M12 20h.01"/></svg>{{ T('uvod-065') }}</div>
     </div>
   </div>
 </section>
 
 <section class="sekce pisek-2" id="ceny">
   <div class="obal" data-odhal>
-    {{ stitek('Ceník') }}
-    <h2 class="h2 stred">Ceny za osobu a noc</h2>
-    <p class="perex stred">Parkování pro ubytované zdarma, pro neubytované 100 Kč za den. Skupinové a mimosezonní slevy na dotaz.</p>
+    {{ stitek(T('uvod-066')) }}
+    <h2 class="h2 stred">{{ T('uvod-067') }}</h2>
+    <p class="perex stred">{{ T('uvod-068') }}</p>
     <div class="karty">
-      <article class="kc">{{ img('nz-skupina.jpg', 'Skupina na cestě před chatou Zvonice', sizes='(min-width: 900px) 32vw, 100vw') }}<div class="kc-in"><small>Školy a skupiny</small><h3>Skupinový pobyt</h3><p class="cena"><b>od 617 Kč</b> se stravou 5× denně</p><p>Ubytování i strava v ceně, na každých 20 dětí jeden dospělý zdarma. Cena podle délky pobytu, počtu osob a termínu.</p><a class="odkaz" href="{{ url('poptavka/') }}">Chci nabídku</a></div></article>
-      <article class="kc">{{ img('nz-pokoj-iii.jpg', 'Dvoulůžkový pokoj se srubovou stěnou', sizes='(min-width: 900px) 32vw, 100vw') }}<div class="kc-in"><small>Individuální hosté</small><h3>Nocleh</h3><p class="cena"><b>735 Kč</b> bez stravy</p><p>Se snídaní 893 Kč, polopenze 1 103 Kč, plná penze 1 260 Kč.</p><a class="odkaz" href="{{ url('cenik/') }}">Celý ceník</a></div></article>
-      <article class="kc" id="silvestr">{{ img('nz-zimni-chata.jpg', 'Chata Zvonice v zimě pod sněhem', sizes='(min-width: 900px) 32vw, 100vw') }}<div class="kc-in"><small>27. 12. 2026 – 1. 1. 2027</small><h3>Silvestrovský pobyt 2027</h3><p class="cena"><b>1 300 Kč</b> s polopenzí</p><p>Plná penze 1 500 Kč, silvestrovské občerstvení za příplatek 300 Kč za osobu.</p><a class="odkaz" href="{{ url('silvestr/') }}">Silvestrovský pobyt</a></div></article>
+      <article class="kc">{{ img('nz-skupina.jpg', 'Skupina na cestě před chatou Zvonice', sizes='(min-width: 900px) 32vw, 100vw') }}<div class="kc-in"><small>{{ T('uvod-069') }}</small><h3>{{ T('uvod-070') }}</h3><p class="cena"><b>{{ T('uvod-071') }}</b> {{ T('uvod-072') }}</p><p>{{ T('uvod-073') }}</p><a class="odkaz" href="{{ url('poptavka/') }}">{{ T('uvod-074') }}</a></div></article>
+      <article class="kc">{{ img('nz-pokoj-iii.jpg', 'Dvoulůžkový pokoj se srubovou stěnou', sizes='(min-width: 900px) 32vw, 100vw') }}<div class="kc-in"><small>{{ T('uvod-075') }}</small><h3>{{ T('uvod-076') }}</h3><p class="cena"><b>{{ T('uvod-077') }}</b> {{ T('uvod-078') }}</p><p>{{ T('uvod-079') }}</p><a class="odkaz" href="{{ url('cenik/') }}">{{ T('uvod-080') }}</a></div></article>
+      <article class="kc" id="silvestr">{{ img('nz-zimni-chata.jpg', 'Chata Zvonice v zimě pod sněhem', sizes='(min-width: 900px) 32vw, 100vw') }}<div class="kc-in"><small>{{ T('uvod-081') }}</small><h3>{{ T('uvod-082') }}</h3><p class="cena"><b>{{ T('uvod-083') }}</b> {{ T('uvod-084') }}</p><p>{{ T('uvod-085') }}</p><a class="odkaz" href="{{ url('silvestr/') }}">{{ T('uvod-086') }}</a></div></article>
     </div>
   </div>
 </section>
@@ -119,24 +119,24 @@
   <div class="obal okoli" data-odhal>
     <div class="foto-ram">{{ img('krajina-mraz.jpg', 'Zimní krajina Jizerských hor u Kořenova', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
     <div>
-      {{ stitek('Okolí chaty') }}
-      <h2 class="h2">Všechno je na dosah</h2>
-      <p class="perex">Sjezdovka, běžkařská stopa i centrum Kořenova jsou pár kroků od chaty.</p>
+      {{ stitek(T('uvod-087')) }}
+      <h2 class="h2">{{ T('uvod-088') }}</h2>
+      <p class="perex">{{ T('uvod-089') }}</p>
       <ul class="vzdal">
-        <li><b>0,2 km</b><span>Sjezdovka s vlekem, v zimě na lyže z chaty pěšky</span></li>
-        <li><b>0,5 km</b><span>Centrum Kořenova, vlak i autobus kousek</span></li>
-        <li><b>30 km</b><span>Liberec, nejbližší velké město</span></li>
-        <li><b>110 km</b><span>Praha, dálkový autobus bez přestupu</span></li>
+        <li><b>{{ T('uvod-090') }}</b><span>{{ T('uvod-091') }}</span></li>
+        <li><b>{{ T('uvod-092') }}</b><span>{{ T('uvod-093') }}</span></li>
+        <li><b>{{ T('uvod-094') }}</b><span>{{ T('uvod-095') }}</span></li>
+        <li><b>{{ T('uvod-096') }}</b><span>{{ T('uvod-097') }}</span></li>
       </ul>
-      <a class="odkaz" href="{{ url('okoli/') }}">Co je kolem chaty</a>
+      <a class="odkaz" href="{{ url('okoli/') }}">{{ T('uvod-098') }}</a>
     </div>
   </div>
 </section>
 
 <section class="sekce">
   <div class="obal dve" data-odhal>
-    <div><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h16M9 4v16"/></svg><h3>Poptávka pro skupinu</h3><p>Napište nám termín a počet dětí a dospělých. Pošleme nabídku na celý pobyt včetně stravy.</p><a class="btn" href="{{ url('poptavka/') }}">Poptat pobyt</a></div>
-    <div><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><h3>Jak k nám</h3><p>Horská chata Zvonice, Kořenov 872, 468 49 Kořenov. Parkoviště u chaty, otočí se tu i autobus.</p><a class="btn btn-ram" href="{{ url('okoli/') }}#jak-k-nam">Jak k nám</a></div>
+    <div><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h16M9 4v16"/></svg><h3>{{ T('uvod-099') }}</h3><p>{{ T('uvod-100') }}</p><a class="btn" href="{{ url('poptavka/') }}">{{ T('uvod-101') }}</a></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><h3>{{ T('uvod-102') }}</h3><p>{{ T('uvod-103') }}</p><a class="btn btn-ram" href="{{ url('okoli/') }}#jak-k-nam">{{ T('uvod-104') }}</a></div>
   </div>
 </section>
 
@@ -144,12 +144,12 @@
 <section class="sekce" id="video">
   <div class="obal video-obal" data-odhal>
     <div class="video-txt">
-      {{ stitek('Video', 'vlevo') }}
+      {{ stitek(T('uvod-105'), 'vlevo') }}
       <h2 class="h2">{{ data.video.nadpis }}</h2>
       {% if data.video.text %}<p class="perex">{{ data.video.text }}</p>{% endif %}
     </div>
     <div class="video-ram">
-      <button type="button" class="video-hraj" data-yt="{{ yt_id(data.video.youtube) }}" aria-label="Přehrát video: {{ data.video.nadpis }}"><span class="video-ikona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="video-pozn">Přehrát video</span></button>
+      <button type="button" class="video-hraj" data-yt="{{ yt_id(data.video.youtube) }}" aria-label="Přehrát video: {{ data.video.nadpis }}"><span class="video-ikona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="video-pozn">{{ T('uvod-106') }}</span></button>
       <noscript><a href="{{ data.video.youtube }}">Video na YouTube</a></noscript>
     </div>
   </div>
@@ -158,8 +158,8 @@
 
 <section class="sekce pisek-2" id="galerie">
   <div class="obal" data-odhal>
-    {{ stitek('Fotogalerie') }}
-    <h2 class="h2 stred">Chata v obrázcích</h2>
+    {{ stitek(T('uvod-107')) }}
+    <h2 class="h2 stred">{{ T('uvod-108') }}</h2>
     <div class="galerie">
       <a href="{{ url('fotogalerie/') }}">{{ img('chata-podzim.jpg', 'Chata Zvonice na podzim', sizes='20vw') }}</a>
       <a href="{{ url('fotogalerie/') }}">{{ img('jidelna-3.jpg', 'Restaurace s velkými okny', sizes='20vw') }}</a>
@@ -167,7 +167,7 @@
       <a href="{{ url('fotogalerie/') }}">{{ img('louka.jpg', 'Louka a smrkový les kolem chaty v létě', sizes='20vw') }}</a>
       <a href="{{ url('fotogalerie/') }}">{{ img('zv27-ext-hriste-3.jpg', 'Hřiště s průlezkami u chaty', sizes='20vw') }}</a>
     </div>
-    <div class="akce stred"><a class="odkaz" href="{{ url('fotogalerie/') }}">Celá fotogalerie</a></div>
+    <div class="akce stred"><a class="odkaz" href="{{ url('fotogalerie/') }}">{{ T('uvod-109') }}</a></div>
   </div>
 </section>
 {% endblock %}

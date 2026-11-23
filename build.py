@@ -189,6 +189,34 @@ def main():
 
     env.globals.update(yt_id=yt_id, site=site, data=data, base=base, asset=asset, url=url, img=obr.img, img_url=obr.img_url,
                        og_url=og_url, jsonld=jsonld(site), titulek="", popis="", cesta="", noindex=False)
+    # texty z administrace (_data/texty.json): T('k') text, TS('k') prostý text (titulek/popis), tab('k') tabulka, zapnuto('popup')
+    tx, sk = {}, {}
+    for st in data.get("texty", {}).get("stranky", []):
+        for g in st["skupiny"]:
+            if g.get("id"):
+                sk[g["id"]] = g.get("zapnuto", True)
+            for pole in g["pole"]:
+                tx[pole["k"]] = pole
+    def _pole(k):
+        if k not in tx:
+            raise BuildError(f"_data/texty.json: chybí text {k}")
+        return tx[k]
+    def _txt(k):
+        return "\n".join(r.strip() for r in str(_pole(k).get("t", "")).strip().split("\n"))
+    def T(k):
+        return Markup.escape(_txt(k)).replace("\n", Markup("<br>"))
+    def TS(k):
+        return " ".join(_txt(k).split())
+    def tab(k):
+        t = _pole(k)
+        esc = lambda x: html.escape(str(x).strip(), quote=False)
+        bunky = lambda r, z: "".join(f"<{z}>{esc(c)}</{z}>" if j == 0 else f'<{z} class="c">{esc(c)}</{z}>' for j, c in enumerate(r))
+        out = ""
+        if t.get("hlavicka"):
+            out += "<thead><tr>" + bunky(t["hlavicka"], "th") + "</tr></thead>"
+        out += "<tbody>" + "".join("<tr>" + bunky(r, "td") + "</tr>" for r in t.get("radky", []) if any(str(c).strip() for c in r)) + "</tbody>"
+        return Markup(out)
+    env.globals.update(T=T, TS=TS, tab=tab, zapnuto=lambda i: sk.get(i, True))
     stranky = []
     for f in sorted(os.listdir(SRC)):
         if not f.endswith(".html") or f.startswith("_"):
