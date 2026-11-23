@@ -216,7 +216,12 @@ def main():
             out += "<thead><tr>" + bunky(t["hlavicka"], "th") + "</tr></thead>"
         out += "<tbody>" + "".join("<tr>" + bunky(r, "td") + "</tr>" for r in t.get("radky", []) if any(str(c).strip() for c in r)) + "</tbody>"
         return Markup(out)
-    env.globals.update(T=T, TS=TS, tab=tab, zapnuto=lambda i: sk.get(i, True))
+    def odkaz(u):
+        u = str(u or '').strip()
+        if re.match(r'^(https?:|mailto:|tel:|#)', u):
+            return u
+        return base + u.lstrip('/')
+    env.globals.update(T=T, TS=TS, tab=tab, zapnuto=lambda i: sk.get(i, True), odkaz=odkaz)
     stranky = []
     for f in sorted(os.listdir(SRC)):
         if not f.endswith(".html") or f.startswith("_"):
@@ -233,7 +238,8 @@ def main():
         else:
             os.makedirs(os.path.join(DIST, jmeno), exist_ok=True)
             vystup = os.path.join(DIST, jmeno, "index.html")
-            stranky.append(jmeno + "/")
+            if 'content="noindex' not in kod:  # např. prázdné Akční balíčky do sitemapy nepatří
+                stranky.append(jmeno + "/")
         with open(vystup, "w", encoding="utf-8") as fh:
             fh.write(kod)
 

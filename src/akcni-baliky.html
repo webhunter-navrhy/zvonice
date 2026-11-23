@@ -1,0 +1,20 @@
+{% extends "_base.html" %}
+{% from "_casti.html" import stitek, titulni %}
+{% set titulek = data.baliky.nadpis ~ " | Horská chata Zvonice, Jizerské hory" %}
+{% set popis = "Akční balíčky a aktuální nabídky Horské chaty Zvonice v Kořenově v Jizerských horách." %}
+{% set noindex = not data.baliky.polozky %}
+{% block obsah %}
+{{ titulni(data.baliky.nadpis, 'zv28-cenik.jpg', 'Chata Zvonice pod sněhem', '50% 60%') }}
+<section class="sekce">
+  <div class="obal" data-odhal>
+    {% if data.baliky.perex %}<p class="perex stred" style="margin-top:0">{{ data.baliky.perex }}</p>{% endif %}
+    {% if data.baliky.polozky %}
+    <div class="karty baliky">
+      {% for b in data.baliky.polozky %}{% include "_balicek.html" %}{% endfor %}
+    </div>
+    {% else %}
+    <p class="perex stred">Nové akční nabídky pro Vás připravujeme. Zatím se podívejte na <a href="{{ url('cenik/') }}">ceník pobytů</a> nebo nám <a href="{{ url('poptavka/') }}">napište</a>.</p>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

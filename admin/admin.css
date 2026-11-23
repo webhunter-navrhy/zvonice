@@ -46,3 +46,34 @@ small.cesta{display:block;color:#6a1f1a;font-size:13px;text-transform:uppercase;
 .tbl td.x button{width:36px;height:36px;border:1px solid #cfc6b4;border-radius:6px;background:#fff;color:#b4452f;cursor:pointer;font-size:18px}
 .chips[hidden]{display:none}
 .tbl td:first-child input,.tbl th:first-child input{min-width:150px}
+
+/* poptávky, pop-up, balíčky */
+.chips .obnovit{margin-left:auto}
+.forms{display:grid;margin-top:14px;border-top:1px solid #e0d8c6}
+.frow{display:grid;grid-template-columns:8.5rem 1.4fr 1fr 1fr auto;gap:12px;align-items:center;text-align:left;padding:12px 6px;border:0;border-bottom:1px solid #e0d8c6;background:none;font:inherit;color:inherit;cursor:pointer;width:100%}
+.frow:hover{background:#f3ede1}.frow.new b{color:#6a1f1a}.frow small{color:#6f6a62}
+.fst{display:inline-block;justify-self:start;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:600;background:#f3ede1}
+.st-nova{background:#FBE7DC;color:#8a3a1c}.st-potvrzena{background:#E3F0E7;color:#3f7a4e}.st-vyrizena{background:#ECEAE6;color:#6f6a62}.st-zrusena{background:#F6E1DE;color:#b4452f}
+.ftable{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:15px}
+.ftable th{text-align:left;font-weight:500;color:#6f6a62;padding:8px 12px 8px 0;vertical-align:top;white-space:nowrap;border-bottom:1px solid #e0d8c6}
+.ftable td{padding:8px 0;border-bottom:1px solid #e0d8c6;white-space:pre-wrap;word-break:break-word}
+.modal-bg{position:fixed;inset:0;z-index:20;background:rgba(22,21,19,.45);display:flex;align-items:center;justify-content:center;padding:16px}
+.modal{background:#fff;width:100%;max-width:560px;max-height:90vh;overflow-y:auto;border-radius:14px;padding:22px 20px;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.modal h2{margin:0 0 12px;font-size:21px}
+.modal select{width:100%;padding:10px;border:1px solid #cfc6b4;border-radius:8px;background:#fffdf8;font:inherit}
+.modal-actions{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap;margin-top:14px}
+.btn.smazat{color:#b4452f}.modal-actions .smazat{margin-right:auto}
+.dva{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+small.pozn{display:block;color:#6f6a62;font-size:13px;margin-top:4px;font-weight:400}
+.fotka{margin:6px 0 16px}.fotka>span{display:block;font-weight:600;margin-bottom:6px}
+.fotka-in{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.fotka-in img,.fotka-prazdna{width:180px;aspect-ratio:4/3;object-fit:cover;border-radius:8px;border:1px solid #e0d8c6;background:#f3ede1}
+.fotka-prazdna{display:grid;place-items:center;color:#6f6a62;font-size:14px}
+.balik{border:1px solid #e0d8c6;border-radius:10px;padding:14px 14px 4px;margin:0 0 16px;background:#fbf8f2}
+.balik-h{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.balik-h b{font-size:17px}
+@media(max-width:700px){
+  .frow{grid-template-columns:1fr auto}.frow>span:nth-of-type(2),.frow>span:nth-of-type(3){display:none}.frow small{grid-column:span 2}
+  .dva{grid-template-columns:1fr}
+  .modal-bg{align-items:flex-end;padding:0}.modal{border-radius:14px 14px 0 0}
+}

@@ -440,3 +440,30 @@ body{font-weight:400}
 .video-ram.siroke{width:100%;aspect-ratio:16/9;background-size:cover;background-position:center}
 .video-ram.siroke .video-hraj{background:rgba(30,12,8,.28)}
 .formular fieldset.zajem legend{font:400 11px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--tlum)}
+
+/* rozbalovací menu Pro skupiny (27062): světlý panel v barvách chaty, bez stínu písma */
+.rozbal{position:relative;display:inline-flex;align-items:center}
+.rozbal>a{display:inline-flex;align-items:center;gap:7px}
+.rozbal>a::after{content:"";width:5px;height:5px;border-right:1.3px solid currentColor;border-bottom:1.3px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .25s}
+.rozbal:hover>a::after,.rozbal:focus-within>a::after{transform:translateY(1px) rotate(-135deg)}
+.rozbal-in{display:flex!important;flex-direction:column;position:absolute;top:calc(100% + 16px);left:50%;min-width:280px;padding:10px;background:var(--pisek);border:1px solid var(--linka);border-top:3px solid var(--akcent);border-radius:2px;box-shadow:0 22px 48px -18px rgba(40,20,10,.38),0 2px 6px rgba(40,20,10,.06);z-index:60;opacity:0;visibility:hidden;transform:translate(-50%,8px);transition:opacity .22s ease,transform .22s ease,visibility 0s linear .22s}
+.rozbal-in::before{content:"";position:absolute;left:0;right:0;top:-20px;height:20px}
+.rozbal-in::after{content:"";position:absolute;top:-8px;left:50%;width:11px;height:11px;background:var(--akcent);transform:translateX(-50%) rotate(45deg)}
+.rozbal:hover .rozbal-in,.rozbal:focus-within .rozbal-in{opacity:1;visibility:visible;transform:translate(-50%,0);transition:opacity .22s ease,transform .22s ease,visibility 0s}
+.hl nav .rozbal-in a,.hl:not(.plna) nav .rozbal-in a{position:relative;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:11px 14px;font:500 14px/1.25 var(--sans);letter-spacing:.01em;text-transform:none;color:var(--tma);text-shadow:none!important;white-space:nowrap;opacity:1;border-radius:2px;transition:background .18s,color .18s}
+.hl nav .rozbal-in a::after{content:"→";font-size:14px;color:var(--akcent);opacity:0;transform:translateX(-6px);transition:opacity .18s,transform .18s}
+.hl nav .rozbal-in a:hover,.hl nav .rozbal-in a:focus-visible{background:var(--pisek-2);color:var(--akcent)}
+.hl nav .rozbal-in a:hover::after,.hl nav .rozbal-in a:focus-visible::after{opacity:1;transform:none}
+.hl nav .rozbal-in a.rozbal-vse{margin-top:6px;padding-top:15px;border-top:1px solid var(--linka);border-radius:0 0 2px 2px;font:400 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--akcent)}
+@media(max-width:900px){.rozbal-in{display:none!important}}
+/* patička: odkaz na administraci */
+.pata-admin{margin-left:auto;opacity:.6;text-decoration:none;color:inherit}
+.pata-admin:hover{opacity:1}
+/* pop-up s fotkou */
+.popup-okno.s-fotkou{padding-top:0;overflow:hidden}
+.popup-foto{margin:0 -32px 22px}
+.popup-foto img{width:100%;height:200px;object-fit:cover;display:block}
+/* rozbalovací menu: zarovnat k levé hraně položky (vystředěné utíkalo z obrazovky) */
+.rozbal-in{left:-14px;transform:translate(0,8px)}
+.rozbal:hover .rozbal-in,.rozbal:focus-within .rozbal-in{transform:translate(0,0)}
+.rozbal-in::after{left:60px}

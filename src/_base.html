@@ -19,13 +19,13 @@
 <body>
 <header class="hl">
   <div class="hl-in">
-    <nav aria-label="Hlavní vlevo"><span class="rozbal"><a href="{{ url('pobyty/') }}">{{ T('spol-001') }}</a><span class="rozbal-in"><a href="{{ url('pobyty/') }}#skoly-v-prirode">{{ T('pobyty-006') }}</a><a href="{{ url('pobyty/') }}#adaptacni-kurzy">{{ T('pobyty-014') }}</a><a href="{{ url('pobyty/') }}#lyzarske-vycviky">{{ T('pobyty-022') }}</a><a href="{{ url('pobyty/') }}#zimni-tabory">{{ T('pobyty-043') }}</a><a href="{{ url('pobyty/') }}#skupiny">{{ T('pobyty-031') }}</a><a href="{{ url('pobyty/') }}#rodinne-pobyty">{{ T('pobyty-051') }}</a><a href="{{ url('pobyty/') }}#svatby">{{ T('pobyty-059') }}</a></span></span><a href="{{ url('ubytovani/') }}">{{ T('spol-002') }}</a><a href="{{ url('okoli/') }}">{{ T('spol-003') }}</a><a href="{{ url('fotogalerie/') }}">{{ T('spol-004') }}</a><a href="{{ url('partneri/') }}">{{ T('spol-049') }}</a></nav>
+    <nav aria-label="Hlavní vlevo"><span class="rozbal"><a href="{{ url('pobyty/') }}" aria-haspopup="true">{{ T('spol-001') }}</a><span class="rozbal-in"><a href="{{ url('pobyty/') }}#skoly-v-prirode">{{ T('pobyty-006') }}</a><a href="{{ url('pobyty/') }}#adaptacni-kurzy">{{ T('pobyty-014') }}</a><a href="{{ url('pobyty/') }}#lyzarske-vycviky">{{ T('pobyty-022') }}</a><a href="{{ url('pobyty/') }}#zimni-tabory">{{ T('pobyty-043') }}</a><a href="{{ url('pobyty/') }}#skupiny">{{ T('pobyty-031') }}</a><a href="{{ url('pobyty/') }}#rodinne-pobyty">{{ T('pobyty-051') }}</a><a href="{{ url('pobyty/') }}#svatby">{{ T('pobyty-059') }}</a><a class="rozbal-vse" href="{{ url('pobyty/') }}">{{ T('spol-050') }}</a></span></span><a href="{{ url('ubytovani/') }}">{{ T('spol-002') }}</a><a href="{{ url('okoli/') }}">{{ T('spol-003') }}</a><a href="{{ url('fotogalerie/') }}">{{ T('spol-004') }}</a><a href="{{ url('partneri/') }}">{{ T('spol-049') }}</a>{% if data.baliky.polozky %}<a href="{{ url('akcni-baliky/') }}">{{ data.baliky.menu or 'Balíčky' }}</a>{% endif %}</nav>
     <a class="znak" href="{{ url('') }}" aria-label="Horská chata Zvonice – úvod"><span class="lg"><img src="{{ base }}img/logo-tmave.png" alt="" width="577" height="257"><b>ZVONICE</b></span></a>
     <nav class="vpravo" aria-label="Hlavní vpravo"><a href="{{ url('cenik/') }}">{{ T('spol-005') }}</a><a href="{{ url('zimni-pobyty/') }}">{{ T('spol-006') }}</a><a href="{{ url('silvestr/') }}">{{ T('spol-007') }}</a><a href="{{ url('poptavka/') }}#kontakt-info">{{ T('spol-008') }}</a><a class="btn" href="{{ url('poptavka/') }}" style="padding:0 18px;min-height:40px;opacity:1">{{ T('spol-009') }}</a></nav>
     <a class="btn btn-mob" href="{{ url('poptavka/') }}">{{ T('spol-010') }}</a>
     <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
     <div class="mob-menu">
-      <details class="mob-rozbal"><summary>{{ T('spol-011') }}</summary><div><a href="{{ url('pobyty/') }}">{{ T('spol-050') }}</a><a href="{{ url('pobyty/') }}#skoly-v-prirode">{{ T('pobyty-006') }}</a><a href="{{ url('pobyty/') }}#adaptacni-kurzy">{{ T('pobyty-014') }}</a><a href="{{ url('pobyty/') }}#lyzarske-vycviky">{{ T('pobyty-022') }}</a><a href="{{ url('pobyty/') }}#zimni-tabory">{{ T('pobyty-043') }}</a><a href="{{ url('pobyty/') }}#skupiny">{{ T('pobyty-031') }}</a><a href="{{ url('pobyty/') }}#rodinne-pobyty">{{ T('pobyty-051') }}</a><a href="{{ url('pobyty/') }}#svatby">{{ T('pobyty-059') }}</a></div></details><a href="{{ url('ubytovani/') }}">{{ T('spol-012') }}</a><a href="{{ url('cenik/') }}">{{ T('spol-013') }}</a><a href="{{ url('okoli/') }}">{{ T('spol-014') }}</a><a href="{{ url('zimni-pobyty/') }}">{{ T('spol-015') }}</a><a href="{{ url('silvestr/') }}">{{ T('spol-016') }}</a><a href="{{ url('fotogalerie/') }}">{{ T('spol-017') }}</a><a href="{{ url('partneri/') }}">{{ T('spol-049') }}</a><a href="{{ url('poptavka/') }}#kontakt-info">{{ T('spol-018') }}</a>
+      <details class="mob-rozbal"><summary>{{ T('spol-011') }}</summary><div><a href="{{ url('pobyty/') }}">{{ T('spol-050') }}</a><a href="{{ url('pobyty/') }}#skoly-v-prirode">{{ T('pobyty-006') }}</a><a href="{{ url('pobyty/') }}#adaptacni-kurzy">{{ T('pobyty-014') }}</a><a href="{{ url('pobyty/') }}#lyzarske-vycviky">{{ T('pobyty-022') }}</a><a href="{{ url('pobyty/') }}#zimni-tabory">{{ T('pobyty-043') }}</a><a href="{{ url('pobyty/') }}#skupiny">{{ T('pobyty-031') }}</a><a href="{{ url('pobyty/') }}#rodinne-pobyty">{{ T('pobyty-051') }}</a><a href="{{ url('pobyty/') }}#svatby">{{ T('pobyty-059') }}</a></div></details><a href="{{ url('ubytovani/') }}">{{ T('spol-012') }}</a><a href="{{ url('cenik/') }}">{{ T('spol-013') }}</a><a href="{{ url('okoli/') }}">{{ T('spol-014') }}</a><a href="{{ url('zimni-pobyty/') }}">{{ T('spol-015') }}</a><a href="{{ url('silvestr/') }}">{{ T('spol-016') }}</a><a href="{{ url('fotogalerie/') }}">{{ T('spol-017') }}</a><a href="{{ url('partneri/') }}">{{ T('spol-049') }}</a>{% if data.baliky.polozky %}<a href="{{ url('akcni-baliky/') }}">{{ data.baliky.menu or 'Balíčky' }}</a>{% endif %}<a href="{{ url('poptavka/') }}#kontakt-info">{{ T('spol-018') }}</a>
       <a class="btn" href="{{ url('poptavka/') }}">{{ T('spol-019') }}</a>
     </div>
   </div>
@@ -51,7 +51,7 @@
     </div>
     <div>
       <h4>{{ T('spol-032') }}</h4>
-      <ul><li><a href="{{ url('okoli/') }}">{{ T('spol-033') }}</a></li><li><a href="{{ url('ubytovani/') }}">{{ T('spol-034') }}</a></li><li><a href="{{ url('fotogalerie/') }}">{{ T('spol-035') }}</a></li><li><a href="{{ url('partneri/') }}">{{ T('spol-049') }}</a></li></ul>
+      <ul><li><a href="{{ url('okoli/') }}">{{ T('spol-033') }}</a></li><li><a href="{{ url('ubytovani/') }}">{{ T('spol-034') }}</a></li><li><a href="{{ url('fotogalerie/') }}">{{ T('spol-035') }}</a></li><li><a href="{{ url('partneri/') }}">{{ T('spol-049') }}</a></li>{% if data.baliky.polozky %}<li><a href="{{ url('akcni-baliky/') }}">{{ data.baliky.nadpis }}</a></li>{% endif %}</ul>
     </div>
     <div>
       <h4>{{ T('spol-036') }}</h4>
@@ -60,16 +60,17 @@
       <ul>{% for h in site.skupina %}<li><a href="{{ h.url }}" target="_blank" rel="noopener">{{ h.nazev }}</a><small>{{ h.misto }}</small></li>{% endfor %}</ul>
     </div>
   </div>
-  <div class="obal pata-spodek"><span>{{ T('spol-038') }}</span><button type="button" class="cookie-odkaz" data-cookies-nastaveni>{{ T('spol-039') }}</button></div>
+  <div class="obal pata-spodek"><span>{{ T('spol-038') }}</span><button type="button" class="cookie-odkaz" data-cookies-nastaveni>{{ T('spol-039') }}</button><a class="pata-admin" href="{{ url('admin/') }}" rel="nofollow">Administrace</a></div>
 </footer>
-{% if zapnuto('popup') %}<div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-nadpis" hidden>
-  <div class="popup-okno">
+{% set P = data.popup %}{% if P.zapnuto and P.nadpis %}<div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-nadpis" data-zpozdeni="{{ P.zpozdeni or 6 }}" hidden>
+  <div class="popup-okno{% if P.foto %} s-fotkou{% endif %}">
     <button class="popup-zavrit" type="button" aria-label="Zavřít">×</button>
-    <small>{{ T('spol-040') }}</small>
-    <h2 id="popup-nadpis">{{ T('spol-041') }}</h2>
-    <p>{{ T('spol-042') }}</p>
-    <a class="btn" href="{{ url('zimni-pobyty/') }}">{{ T('spol-043') }}</a>
-    <a class="odkaz" href="{{ url('silvestr/') }}">{{ T('spol-044') }}</a>
+    {% if P.foto %}<div class="popup-foto">{{ img(P.foto, '', sizes='460px') }}</div>{% endif %}
+    {% if P.stitek %}<small>{{ P.stitek }}</small>{% endif %}
+    <h2 id="popup-nadpis">{{ P.nadpis }}</h2>
+    {% if P.text %}<p>{{ P.text | replace('\n', ' ') }}</p>{% endif %}
+    {% if P.tlacitko and P.odkaz %}<a class="btn" href="{{ odkaz(P.odkaz) }}">{{ P.tlacitko }}</a>{% endif %}
+    {% if P.odkaz2_text and P.odkaz2 %}<a class="odkaz" href="{{ odkaz(P.odkaz2) }}">{{ P.odkaz2_text }}</a>{% endif %}
   </div>
 </div>{% endif %}
 <div class="cookies" id="cookies" role="dialog" aria-live="polite" aria-labelledby="cookies-nadpis" data-gtm="{{ site.gtm }}" hidden>

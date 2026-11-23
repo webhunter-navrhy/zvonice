@@ -3011,38 +3011,6 @@
           ]
         },
         {
-          "nazev": "Pop-up s novinkami",
-          "id": "popup",
-          "zapnuto": true,
-          "pole": [
-            {
-              "k": "spol-040",
-              "typ": "Krátký text",
-              "t": "Novinky 2027"
-            },
-            {
-              "k": "spol-041",
-              "typ": "Nadpis",
-              "t": "Zimní pobyty a Silvestr 2027"
-            },
-            {
-              "k": "spol-042",
-              "typ": "Text",
-              "t": "Lyžařské výcviky a víkendy pro skupiny, sjezdovka s vlekem 200 m od chaty. Silvestrovský pobyt 27. 12. 2026 – 1. 1. 2027 je otevřený i rodinám a partám přátel."
-            },
-            {
-              "k": "spol-043",
-              "typ": "Tlačítko",
-              "t": "Zimní pobyty"
-            },
-            {
-              "k": "spol-044",
-              "typ": "Odkaz",
-              "t": "Silvestrovský pobyt"
-            }
-          ]
-        },
-        {
           "nazev": "Cookie lišta",
           "pole": [
             {

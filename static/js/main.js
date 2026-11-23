@@ -50,6 +50,7 @@ document.querySelectorAll('form.formular').forEach(function (f) {
   var stav = f.querySelector('.formular-stav'); var t0 = Date.now();
   var q = new URLSearchParams(location.search);
   if (q.get('pobyt') && f.elements.skupina) f.elements.skupina.value = q.get('pobyt');
+  if (q.get('balicek') && f.elements.zprava && !f.elements.zprava.value) f.elements.zprava.value = 'Mám zájem o balíček: ' + q.get('balicek');
   f.addEventListener('submit', function (e) {
     e.preventDefault();
     var hp = f.querySelector('.past input').value;
@@ -107,7 +108,8 @@ var cookiesVolba = (function () {
 (function () {
   var p = document.getElementById('popup');
   if (!p) return;
-  try { if (sessionStorage.getItem('popup-zavren')) return; } catch (e) {}
+  var nahled = /[?&]popup\b/.test(location.search);
+  try { if (!nahled && sessionStorage.getItem('popup-zavren')) return; } catch (e) {}
   var zav = function () {
     p.classList.remove('on'); p.hidden = true;
     try { sessionStorage.setItem('popup-zavren', '1'); } catch (e) {}
@@ -118,7 +120,7 @@ var cookiesVolba = (function () {
     last = document.activeElement;
     p.hidden = false; p.classList.add('on');
     p.querySelector('.popup-zavrit').focus();
-  }, 6000); });
+  }, nahled ? 400 : (parseFloat(p.getAttribute('data-zpozdeni')) || 6) * 1000); });
   p.querySelector('.popup-zavrit').addEventListener('click', zav);
   p.addEventListener('click', function (e) { if (e.target === p) zav(); });
   addEventListener('keydown', function (e) { if (e.key === 'Escape' && p.classList.contains('on')) zav(); });

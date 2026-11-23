@@ -75,11 +75,11 @@
       <div class="karta"><h3>{{ T('uvod-048') }}</h3><p>{{ T('uvod-049') }}</p><a class="odkaz" href="{{ url('ubytovani/') }}">{{ T('uvod-050') }}</a></div>
     </div>
     <div class="zal-panel" id="z-restaurace" role="tabpanel" hidden>
-      <div class="foto">{{ img('jidelna.jpg', 'Stylová restaurace chaty s dřevěnými stoly a okny', sizes='(min-width: 900px) 62vw, 100vw') }}</div>
+      <div class="foto">{{ img('zv28-restaurace.jpg', 'Restaurace chaty Zvonice s dřevěnými stoly', sizes='(min-width: 900px) 62vw, 100vw') }}</div>
       <div class="karta"><h3>{{ T('uvod-051') }}</h3><p>{{ T('uvod-052') }}</p><a class="odkaz" href="{{ url('cenik/') }}">{{ T('uvod-053') }}</a></div>
     </div>
     <div class="zal-panel" id="z-klubovna" role="tabpanel" hidden>
-      <div class="foto">{{ img('klubovna.jpg', 'Klubovna s kobercem, stolky a hračkami', sizes='(min-width: 900px) 62vw, 100vw') }}</div>
+      <div class="foto">{{ img('zv28-klubovna.jpg', 'Klubovna s hracím kobercem, stolky a hračkami', sizes='(min-width: 900px) 62vw, 100vw') }}</div>
       <div class="karta"><h3>{{ T('uvod-054') }}</h3><p>{{ T('uvod-055') }}</p><a class="odkaz" href="{{ url('pobyty/') }}">{{ T('uvod-056') }}</a></div>
     </div>
     <p class="drobne">{{ T('uvod-057') }}</p>
@@ -115,6 +115,18 @@
   </div>
 </section>
 
+{% set bal = data.baliky.polozky | selectattr('na_uvodu') | list %}
+{% if bal %}
+<section class="sekce" id="akcni-baliky">
+  <div class="obal" data-odhal>
+    {{ stitek('Aktuální nabídky') }}
+    <h2 class="h2 stred">{{ data.baliky.nadpis }}</h2>
+    {% if data.baliky.perex %}<p class="perex stred">{{ data.baliky.perex }}</p>{% endif %}
+    <div class="karty baliky">{% for b in bal %}{% include "_balicek.html" %}{% endfor %}</div>
+    {% if data.baliky.polozky | length > bal | length %}<p class="stred" style="margin-top:28px"><a class="btn btn-ram" href="{{ url('akcni-baliky/') }}">Všechny akční balíčky</a></p>{% endif %}
+  </div>
+</section>
+{% endif %}
 <section class="sekce pisek-2" id="okoli">
   <div class="obal okoli" data-odhal>
     <div class="foto-ram">{{ img('krajina-mraz.jpg', 'Zimní krajina Jizerských hor u Kořenova', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
