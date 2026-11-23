@@ -1,3073 +1,2602 @@
 {
- "stranky": [
-  {
-   "id": "index",
-   "nazev": "Úvod",
-   "skupiny": [
+  "stranky": [
     {
-     "nazev": "Horská chata na rozhraní Jizerek a Krkonoš",
-     "pole": [
-      {
-       "k": "uvod-002",
-       "typ": "Štítek nad nadpisem",
-       "t": "Kořenov · Jizerské hory"
-      },
-      {
-       "k": "uvod-003",
-       "typ": "Hlavní nadpis",
-       "t": "Horská chata na rozhraní Jizerek a Krkonoš"
-      },
-      {
-       "k": "uvod-004",
-       "typ": "Text",
-       "t": "Sto lůžek, restaurace, klubovna a hřiště pro školy a skupiny: školy v přírodě, adaptační kurzy, lyžařské výcviky, sportovní oddíly, spolky i tábory. Les hned za chatou, sjezdovka s vlekem 200 metrů od ní."
-      },
-      {
-       "k": "uvod-005",
-       "typ": "Tlačítko",
-       "t": "Poptat pobyt"
-      },
-      {
-       "k": "uvod-006",
-       "typ": "Odkaz",
-       "t": "Ceník od 617 Kč"
-      },
-      {
-       "k": "uvod-007",
-       "typ": "Krátký text",
-       "t": "až 100 lůžek"
-      },
-      {
-       "k": "uvod-008",
-       "typ": "Krátký text",
-       "t": "Strava 5× denně"
-      },
-      {
-       "k": "uvod-009",
-       "typ": "Krátký text",
-       "t": "Sjezdovka s vlekem 200 m"
-      }
-     ]
+      "id": "index",
+      "nazev": "Úvod",
+      "skupiny": [
+        {
+          "nazev": "Chata v lesích Jizerských hor",
+          "pole": [
+            {
+              "k": "uvod-002",
+              "typ": "Štítek nad nadpisem",
+              "t": "Kořenov · Jizerské hory"
+            },
+            {
+              "k": "uvod-003",
+              "typ": "Hlavní nadpis",
+              "t": "Chata v lesích Jizerských hor"
+            },
+            {
+              "k": "uvod-004",
+              "typ": "Text",
+              "t": "Sto lůžek, restaurace, klubovna a hřiště pro školy a skupiny: školy v přírodě, adaptační kurzy, lyžařské výcviky, sportovní oddíly, spolky i tábory. Les hned za chatou, sjezdovka s vlekem 200 metrů od ní."
+            },
+            {
+              "k": "uvod-005",
+              "typ": "Tlačítko",
+              "t": "Poptat pobyt"
+            },
+            {
+              "k": "uvod-006",
+              "typ": "Odkaz",
+              "t": "Ceník od 617 Kč"
+            },
+            {
+              "k": "uvod-007",
+              "typ": "Krátký text",
+              "t": "až 100 lůžek"
+            },
+            {
+              "k": "uvod-008",
+              "typ": "Krátký text",
+              "t": "Strava 5× denně"
+            },
+            {
+              "k": "uvod-009",
+              "typ": "Krátký text",
+              "t": "Sjezdovka s vlekem 200 m"
+            }
+          ]
+        },
+        {
+          "nazev": "Pro jednu třídu i celou školu",
+          "pole": [
+            {
+              "k": "uvod-010",
+              "typ": "Štítek nad nadpisem",
+              "t": "Školy a skupiny"
+            },
+            {
+              "k": "uvod-011",
+              "typ": "Nadpis",
+              "t": "Pro jednu třídu i celou školu"
+            },
+            {
+              "k": "uvod-012",
+              "typ": "Text",
+              "t": "Na Zvonici jezdí školy, sportovní oddíly a spolky. Pokoje, restaurace i klubovna jsou pod jednou střechou, z chaty vyběhnete rovnou na hřiště a kolem jsou jen lesy a louky. Asfaltová cesta končí na parkovišti, kde se otočí i autobus, a v zimě se k chatě pluhuje."
+            },
+            {
+              "k": "uvod-013",
+              "typ": "Zvýrazněné číslo",
+              "t": "100"
+            },
+            {
+              "k": "uvod-014",
+              "typ": "Krátký text",
+              "t": "lůžek"
+            },
+            {
+              "k": "uvod-015",
+              "typ": "Zvýrazněné číslo",
+              "t": "5×"
+            },
+            {
+              "k": "uvod-016",
+              "typ": "Krátký text",
+              "t": "denně strava"
+            },
+            {
+              "k": "uvod-017",
+              "typ": "Zvýrazněné číslo",
+              "t": "200 m"
+            },
+            {
+              "k": "uvod-018",
+              "typ": "Krátký text",
+              "t": "sjezdovka s vlekem"
+            },
+            {
+              "k": "uvod-019",
+              "typ": "Zvýrazněné číslo",
+              "t": "1 : 20"
+            },
+            {
+              "k": "uvod-020",
+              "typ": "Krátký text",
+              "t": "dospělý zdarma"
+            },
+            {
+              "k": "uvod-021",
+              "typ": "Odkaz",
+              "t": "Ubytování a vybavení"
+            },
+            {
+              "k": "uvod-022",
+              "typ": "Tlačítko",
+              "t": "Poptat pobyt pro skupinu"
+            }
+          ]
+        },
+        {
+          "nazev": "Pobyty pro školy a skupiny",
+          "pole": [
+            {
+              "k": "uvod-023",
+              "typ": "Štítek nad nadpisem",
+              "t": "Naše pobyty"
+            },
+            {
+              "k": "uvod-024",
+              "typ": "Nadpis",
+              "t": "Pobyty pro školy a skupiny"
+            },
+            {
+              "k": "uvod-025",
+              "typ": "Text",
+              "t": "Od 617 Kč za osobu a noc včetně ubytování a stravy pětkrát denně. Na každých 20 dětí jeden dospělý zdarma."
+            },
+            {
+              "k": "uvod-026",
+              "typ": "Podnadpis",
+              "t": "Školy v přírodě"
+            },
+            {
+              "k": "uvod-027",
+              "typ": "Text",
+              "t": "Hřiště s trampolínou, louka a les hned za dveřmi, od jara do podzimu."
+            },
+            {
+              "k": "uvod-028",
+              "typ": "Krátký text",
+              "t": "Dozvědět se více"
+            },
+            {
+              "k": "uvod-029",
+              "typ": "Podnadpis",
+              "t": "Adaptační kurzy"
+            },
+            {
+              "k": "uvod-030",
+              "typ": "Text",
+              "t": "Klubovna na hry a porady, louka na týmové aktivity, celoročně."
+            },
+            {
+              "k": "uvod-031",
+              "typ": "Krátký text",
+              "t": "Dozvědět se více"
+            },
+            {
+              "k": "uvod-032",
+              "typ": "Podnadpis",
+              "t": "Zimní pobyty 2027"
+            },
+            {
+              "k": "uvod-033",
+              "typ": "Text",
+              "t": "Lyžařské výcviky a víkendy. Sjezdovka s vlekem asi 200 m od chaty a běžkařská stopa kolem."
+            },
+            {
+              "k": "uvod-034",
+              "typ": "Krátký text",
+              "t": "Dozvědět se více"
+            },
+            {
+              "k": "uvod-035",
+              "typ": "Podnadpis",
+              "t": "Silvestrovský pobyt 2027"
+            },
+            {
+              "k": "uvod-036",
+              "typ": "Text",
+              "t": "27. 12. 2026 – 1. 1. 2027, restaurace s krbovými kamny jen pro Vás."
+            },
+            {
+              "k": "uvod-037",
+              "typ": "Krátký text",
+              "t": "Dozvědět se více"
+            }
+          ]
+        },
+        {
+          "nazev": "Mezi Jizerskými horami a Krkonošemi",
+          "pole": [
+            {
+              "k": "uvod-038",
+              "typ": "Nadpis",
+              "t": "Mezi Jizerskými horami a Krkonošemi"
+            },
+            {
+              "k": "uvod-039",
+              "typ": "Text",
+              "t": "Chata stojí mezi Kořenovem a Horním Polubným. Do centra Kořenova je to asi 500 metrů pěšky, na vlak i autobus kousek. Z Prahy jede dálkový autobus bez přestupu."
+            },
+            {
+              "k": "uvod-040",
+              "typ": "Text",
+              "t": "Mumlavské vodopády, Protržená přehrada nebo kus Jizerské magistrály jsou na výlet z chaty. Učitelé a vedoucí nemusí nikam přejíždět, od snídaně po večerní program je všechno na jednom místě."
+            },
+            {
+              "k": "uvod-041",
+              "typ": "Odkaz",
+              "t": "Co je kolem chaty"
+            },
+            {
+              "k": "uvod-042",
+              "typ": "Tlačítko",
+              "t": "Vyberte si svůj pobyt"
+            }
+          ]
+        },
+        {
+          "nazev": "Pokoje, restaurace a klubovna",
+          "pole": [
+            {
+              "k": "uvod-043",
+              "typ": "Štítek nad nadpisem",
+              "t": "Ubytování"
+            },
+            {
+              "k": "uvod-044",
+              "typ": "Nadpis",
+              "t": "Pokoje, restaurace a klubovna"
+            },
+            {
+              "k": "uvod-045",
+              "typ": "Tlačítko",
+              "t": "Pokoje"
+            },
+            {
+              "k": "uvod-046",
+              "typ": "Tlačítko",
+              "t": "Restaurace"
+            },
+            {
+              "k": "uvod-047",
+              "typ": "Tlačítko",
+              "t": "Klubovna"
+            },
+            {
+              "k": "uvod-048",
+              "typ": "Podnadpis",
+              "t": "Pokoje"
+            },
+            {
+              "k": "uvod-049",
+              "typ": "Text",
+              "t": "Až 100 lůžek v pokojích převážně pro dva až čtyři, k tomu jeden osmilůžkový. Na pokoji je umyvadlo, sociální zařízení na každém patře. Dva pokoje mají vlastní koupelnu."
+            },
+            {
+              "k": "uvod-050",
+              "typ": "Odkaz",
+              "t": "Ubytování"
+            },
+            {
+              "k": "uvod-051",
+              "typ": "Podnadpis",
+              "t": "Stylová restaurace"
+            },
+            {
+              "k": "uvod-052",
+              "typ": "Text",
+              "t": "Pojme celou skupinu najednou. V zimě hřejí krbová kamna, na výuku nebo večerní film je tu plátno a projektor. K tomu bar a wifi."
+            },
+            {
+              "k": "uvod-053",
+              "typ": "Odkaz",
+              "t": "Ceny se stravou"
+            },
+            {
+              "k": "uvod-054",
+              "typ": "Podnadpis",
+              "t": "Klubovna"
+            },
+            {
+              "k": "uvod-055",
+              "typ": "Text",
+              "t": "Prostor na hry, výuku i porady vedoucích. Menší děti mají vlastní dětský koutek, venku pískoviště a průlezky."
+            },
+            {
+              "k": "uvod-056",
+              "typ": "Odkaz",
+              "t": "Pobyty pro skupiny"
+            },
+            {
+              "k": "uvod-057",
+              "typ": "Drobný text",
+              "t": "Skupinové ceny zahrnují ubytování i stravu pětkrát denně. Individuální hosté si vyberou nocleh bez stravy, se snídaní, polopenzi nebo plnou penzi."
+            }
+          ]
+        },
+        {
+          "nazev": "Všechno na jednom místě",
+          "pole": [
+            {
+              "k": "uvod-058",
+              "typ": "Štítek nad nadpisem",
+              "t": "Den na chatě"
+            },
+            {
+              "k": "uvod-059",
+              "typ": "Nadpis",
+              "t": "Všechno na jednom místě"
+            },
+            {
+              "k": "uvod-060",
+              "typ": "Text",
+              "t": "Snídaně v restauraci, dopoledne na hřišti, odpoledne výlet k vodopádům a večer promítání nebo hry v klubovně."
+            },
+            {
+              "k": "uvod-061",
+              "typ": "Text",
+              "t": "Strava 5× denně"
+            },
+            {
+              "k": "uvod-062",
+              "typ": "Text",
+              "t": "Krbová kamna"
+            },
+            {
+              "k": "uvod-063",
+              "typ": "Text",
+              "t": "Plátno a projektor"
+            },
+            {
+              "k": "uvod-064",
+              "typ": "Text",
+              "t": "Dětský koutek"
+            },
+            {
+              "k": "uvod-065",
+              "typ": "Text",
+              "t": "Wifi"
+            }
+          ]
+        },
+        {
+          "nazev": "Ceny za osobu a noc",
+          "pole": [
+            {
+              "k": "uvod-066",
+              "typ": "Štítek nad nadpisem",
+              "t": "Ceník"
+            },
+            {
+              "k": "uvod-067",
+              "typ": "Nadpis",
+              "t": "Ceny za osobu a noc"
+            },
+            {
+              "k": "uvod-068",
+              "typ": "Text",
+              "t": "Parkování pro ubytované zdarma, pro neubytované 100 Kč za den. Skupinové a mimosezonní slevy na dotaz."
+            },
+            {
+              "k": "uvod-069",
+              "typ": "Krátký text",
+              "t": "Školy a skupiny"
+            },
+            {
+              "k": "uvod-070",
+              "typ": "Podnadpis",
+              "t": "Skupinový pobyt"
+            },
+            {
+              "k": "uvod-071",
+              "typ": "Zvýrazněné číslo",
+              "t": "od 617 Kč"
+            },
+            {
+              "k": "uvod-072",
+              "typ": "Text",
+              "t": "se stravou 5× denně"
+            },
+            {
+              "k": "uvod-073",
+              "typ": "Text",
+              "t": "Ubytování i strava v ceně, na každých 20 dětí jeden dospělý zdarma. Cena podle délky pobytu, počtu osob a termínu."
+            },
+            {
+              "k": "uvod-074",
+              "typ": "Odkaz",
+              "t": "Chci nabídku"
+            },
+            {
+              "k": "uvod-075",
+              "typ": "Krátký text",
+              "t": "Individuální hosté"
+            },
+            {
+              "k": "uvod-076",
+              "typ": "Podnadpis",
+              "t": "Nocleh"
+            },
+            {
+              "k": "uvod-077",
+              "typ": "Zvýrazněné číslo",
+              "t": "735 Kč"
+            },
+            {
+              "k": "uvod-078",
+              "typ": "Text",
+              "t": "bez stravy"
+            },
+            {
+              "k": "uvod-079",
+              "typ": "Text",
+              "t": "Se snídaní 893 Kč, polopenze 1 103 Kč, plná penze 1 260 Kč."
+            },
+            {
+              "k": "uvod-080",
+              "typ": "Odkaz",
+              "t": "Celý ceník"
+            },
+            {
+              "k": "uvod-081",
+              "typ": "Krátký text",
+              "t": "27. 12. 2026 – 1. 1. 2027"
+            },
+            {
+              "k": "uvod-082",
+              "typ": "Podnadpis",
+              "t": "Silvestrovský pobyt 2027"
+            },
+            {
+              "k": "uvod-083",
+              "typ": "Zvýrazněné číslo",
+              "t": "1 300 Kč"
+            },
+            {
+              "k": "uvod-084",
+              "typ": "Text",
+              "t": "s polopenzí"
+            },
+            {
+              "k": "uvod-085",
+              "typ": "Text",
+              "t": "Plná penze 1 500 Kč, silvestrovské občerstvení za příplatek 300 Kč za osobu."
+            },
+            {
+              "k": "uvod-086",
+              "typ": "Odkaz",
+              "t": "Silvestrovský pobyt"
+            }
+          ]
+        },
+        {
+          "nazev": "Všechno je na dosah",
+          "pole": [
+            {
+              "k": "uvod-087",
+              "typ": "Štítek nad nadpisem",
+              "t": "Okolí chaty"
+            },
+            {
+              "k": "uvod-088",
+              "typ": "Nadpis",
+              "t": "Všechno je na dosah"
+            },
+            {
+              "k": "uvod-089",
+              "typ": "Text",
+              "t": "Sjezdovka, běžkařská stopa i centrum Kořenova jsou pár kroků od chaty."
+            },
+            {
+              "k": "uvod-090",
+              "typ": "Zvýrazněné číslo",
+              "t": "0,2 km"
+            },
+            {
+              "k": "uvod-091",
+              "typ": "Krátký text",
+              "t": "Sjezdovka s vlekem, v zimě na lyže z chaty pěšky"
+            },
+            {
+              "k": "uvod-092",
+              "typ": "Zvýrazněné číslo",
+              "t": "0,5 km"
+            },
+            {
+              "k": "uvod-093",
+              "typ": "Krátký text",
+              "t": "Centrum Kořenova, vlak i autobus kousek"
+            },
+            {
+              "k": "uvod-094",
+              "typ": "Zvýrazněné číslo",
+              "t": "30 km"
+            },
+            {
+              "k": "uvod-095",
+              "typ": "Krátký text",
+              "t": "Liberec, nejbližší velké město"
+            },
+            {
+              "k": "uvod-096",
+              "typ": "Zvýrazněné číslo",
+              "t": "110 km"
+            },
+            {
+              "k": "uvod-097",
+              "typ": "Krátký text",
+              "t": "Praha, dálkový autobus bez přestupu"
+            },
+            {
+              "k": "uvod-098",
+              "typ": "Odkaz",
+              "t": "Co je kolem chaty"
+            }
+          ]
+        },
+        {
+          "nazev": "Sekce",
+          "pole": [
+            {
+              "k": "uvod-099",
+              "typ": "Podnadpis",
+              "t": "Poptávka pro skupinu"
+            },
+            {
+              "k": "uvod-100",
+              "typ": "Text",
+              "t": "Napište nám termín a počet dětí a dospělých. Pošleme nabídku na celý pobyt včetně stravy."
+            },
+            {
+              "k": "uvod-101",
+              "typ": "Tlačítko",
+              "t": "Poptat pobyt"
+            },
+            {
+              "k": "uvod-102",
+              "typ": "Podnadpis",
+              "t": "Jak k nám"
+            },
+            {
+              "k": "uvod-103",
+              "typ": "Text",
+              "t": "Horská chata Zvonice, Kořenov 872, 468 49 Kořenov. Parkoviště u chaty, otočí se tu i autobus."
+            },
+            {
+              "k": "uvod-104",
+              "typ": "Tlačítko",
+              "t": "Jak k nám"
+            }
+          ]
+        },
+        {
+          "nazev": "Video",
+          "pole": [
+            {
+              "k": "uvod-105",
+              "typ": "Štítek nad nadpisem",
+              "t": "Video"
+            },
+            {
+              "k": "uvod-106",
+              "typ": "Krátký text",
+              "t": "Přehrát video"
+            }
+          ]
+        },
+        {
+          "nazev": "Chata v obrázcích",
+          "pole": [
+            {
+              "k": "uvod-107",
+              "typ": "Štítek nad nadpisem",
+              "t": "Fotogalerie"
+            },
+            {
+              "k": "uvod-108",
+              "typ": "Nadpis",
+              "t": "Chata v obrázcích"
+            },
+            {
+              "k": "uvod-109",
+              "typ": "Odkaz",
+              "t": "Celá fotogalerie"
+            }
+          ]
+        },
+        {
+          "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
+          "pole": [
+            {
+              "k": "uvod-001",
+              "typ": "Titulek v Googlu (záložka prohlížeče)",
+              "t": "Horská chata Zvonice – školy v přírodě a pobyty pro skupiny v Kořenově",
+              "seo": true
+            }
+          ]
+        }
+      ]
     },
     {
-     "nazev": "Pro jednu třídu i celou školu",
-     "pole": [
-      {
-       "k": "uvod-010",
-       "typ": "Štítek nad nadpisem",
-       "t": "Školy a skupiny"
-      },
-      {
-       "k": "uvod-011",
-       "typ": "Nadpis",
-       "t": "Pro jednu třídu i celou školu"
-      },
-      {
-       "k": "uvod-012",
-       "typ": "Text",
-       "t": "Na Zvonici jezdí školy, sportovní oddíly a spolky. Pokoje, restaurace i klubovna jsou pod jednou střechou, z chaty vyběhnete rovnou na hřiště a kolem jsou jen lesy a louky. Asfaltová cesta končí na parkovišti, kde se otočí i autobus, a v zimě se k chatě pluhuje."
-      },
-      {
-       "k": "uvod-013",
-       "typ": "Zvýrazněné číslo",
-       "t": "100"
-      },
-      {
-       "k": "uvod-014",
-       "typ": "Krátký text",
-       "t": "lůžek"
-      },
-      {
-       "k": "uvod-015",
-       "typ": "Zvýrazněné číslo",
-       "t": "5×"
-      },
-      {
-       "k": "uvod-016",
-       "typ": "Krátký text",
-       "t": "denně strava"
-      },
-      {
-       "k": "uvod-017",
-       "typ": "Zvýrazněné číslo",
-       "t": "200 m"
-      },
-      {
-       "k": "uvod-018",
-       "typ": "Krátký text",
-       "t": "sjezdovka s vlekem"
-      },
-      {
-       "k": "uvod-019",
-       "typ": "Zvýrazněné číslo",
-       "t": "20 : 1"
-      },
-      {
-       "k": "uvod-020",
-       "typ": "Krátký text",
-       "t": "dospělý zdarma"
-      },
-      {
-       "k": "uvod-021",
-       "typ": "Odkaz",
-       "t": "Ubytování a vybavení"
-      },
-      {
-       "k": "uvod-022",
-       "typ": "Tlačítko",
-       "t": "Poptat pobyt pro skupinu"
-      }
-     ]
+      "id": "pobyty",
+      "nazev": "Pro skupiny",
+      "skupiny": [
+        {
+          "nazev": "Úvod stránky",
+          "pole": [
+            {
+              "k": "pobyty-003",
+              "typ": "Hlavní nadpis (na fotce)",
+              "t": "Pobyty pro skupiny"
+            }
+          ]
+        },
+        {
+          "nazev": "Školy v přírodě",
+          "pole": [
+            {
+              "k": "pobyty-004",
+              "typ": "Text",
+              "t": "Zvonice je chata pro školy a větší skupiny. Pokoje, restaurace i klubovna jsou pod jednou střechou. Hned za dveřmi je hřiště a les. Skupinové ceny začínají na 617 Kč za osobu a noc včetně ubytování a stravy 5× denně, na každých 20 dětí je jeden dospělý zdarma."
+            },
+            {
+              "k": "pobyty-005",
+              "typ": "Štítek nad nadpisem",
+              "t": "Jaro až podzim"
+            },
+            {
+              "k": "pobyty-006",
+              "typ": "Nadpis",
+              "t": "Školy v přírodě"
+            },
+            {
+              "k": "pobyty-007",
+              "typ": "Text",
+              "t": "Chata leží na samotě v lesích, takže si děti mohou v klidu hrát venku. Na hřišti jsou pískoviště a průlezky, k tomu hřiště pro míčové hry a louka. Na výuku a večerní program je klubovna a restaurace s plátnem a projektorem."
+            },
+            {
+              "k": "pobyty-008",
+              "typ": "Položka seznamu",
+              "t": "hřiště s pískovištěm a průlezkami"
+            },
+            {
+              "k": "pobyty-009",
+              "typ": "Položka seznamu",
+              "t": "hřiště pro míčové hry"
+            },
+            {
+              "k": "pobyty-010",
+              "typ": "Položka seznamu",
+              "t": "klubovna s dětským koutkem"
+            },
+            {
+              "k": "pobyty-011",
+              "typ": "Položka seznamu",
+              "t": "v létě party stan 20×10 m"
+            },
+            {
+              "k": "pobyty-012",
+              "typ": "Tlačítko",
+              "t": "Poptat školu v přírodě"
+            },
+            {
+              "k": "pobyty-013",
+              "typ": "Štítek nad nadpisem",
+              "t": "Celoročně"
+            },
+            {
+              "k": "pobyty-014",
+              "typ": "Nadpis",
+              "t": "Adaptační kurzy"
+            },
+            {
+              "k": "pobyty-015",
+              "typ": "Text",
+              "t": "Nový kolektiv se nejlépe seznámí na místě, kde ho nic neruší. Kolem chaty jsou lesy, uvnitř klubovna a stylová restaurace, kde se dá program i promítat."
+            },
+            {
+              "k": "pobyty-016",
+              "typ": "Položka seznamu",
+              "t": "klubovna a restaurace s projektorem"
+            },
+            {
+              "k": "pobyty-017",
+              "typ": "Položka seznamu",
+              "t": "wifi a bar"
+            },
+            {
+              "k": "pobyty-018",
+              "typ": "Položka seznamu",
+              "t": "venkovní posezení"
+            },
+            {
+              "k": "pobyty-019",
+              "typ": "Položka seznamu",
+              "t": "strava 5× denně v ceně skupinového pobytu"
+            },
+            {
+              "k": "pobyty-020",
+              "typ": "Tlačítko",
+              "t": "Poptat adaptační kurz"
+            },
+            {
+              "k": "pobyty-021",
+              "typ": "Štítek nad nadpisem",
+              "t": "Zima"
+            },
+            {
+              "k": "pobyty-022",
+              "typ": "Nadpis",
+              "t": "Lyžařské výcviky"
+            },
+            {
+              "k": "pobyty-023",
+              "typ": "Text",
+              "t": "Asi 200 metrů od chaty je sjezdovka s vlekem, vhodná pro začátečníky. Kolem chaty vede běžkařská stopa a v okolí jsou další areály: Příchovice, Rejdice, Harrachov a Rokytnice. V zimě se k chatě cesta pluhuje."
+            },
+            {
+              "k": "pobyty-024",
+              "typ": "Položka seznamu",
+              "t": "sjezdovka s vlekem asi 200 m od chaty"
+            },
+            {
+              "k": "pobyty-025",
+              "typ": "Položka seznamu",
+              "t": "běžkařská stopa kolem chaty, Jizerská magistrála"
+            },
+            {
+              "k": "pobyty-026",
+              "typ": "Položka seznamu",
+              "t": "úschovna lyží"
+            },
+            {
+              "k": "pobyty-027",
+              "typ": "Položka seznamu",
+              "t": "krbová kamna v restauraci"
+            },
+            {
+              "k": "pobyty-028",
+              "typ": "Tlačítko",
+              "t": "Poptat lyžařský výcvik"
+            },
+            {
+              "k": "pobyty-029",
+              "typ": "Odkaz",
+              "t": "Zimní pobyty 2027"
+            },
+            {
+              "k": "pobyty-030",
+              "typ": "Štítek nad nadpisem",
+              "t": "Celoročně"
+            },
+            {
+              "k": "pobyty-031",
+              "typ": "Nadpis",
+              "t": "Skupiny"
+            },
+            {
+              "k": "pobyty-032",
+              "typ": "Text",
+              "t": "Chata je jako dělaná pro sportovní oddíly, spolky, dětské domovy, tábory i rodinné a přátelské skupiny. Jsou tu společenské místnosti, venkovní hřiště a les kolem."
+            },
+            {
+              "k": "pobyty-033",
+              "typ": "Položka seznamu",
+              "t": "sportovní oddíly a soustředění"
+            },
+            {
+              "k": "pobyty-034",
+              "typ": "Položka seznamu",
+              "t": "spolky a dětské domovy"
+            },
+            {
+              "k": "pobyty-035",
+              "typ": "Položka seznamu",
+              "t": "tábory"
+            },
+            {
+              "k": "pobyty-036",
+              "typ": "Položka seznamu",
+              "t": "rodinné a přátelské skupiny"
+            },
+            {
+              "k": "pobyty-037",
+              "typ": "Tlačítko",
+              "t": "Poptat pobyt pro skupinu"
+            }
+          ]
+        },
+        {
+          "nazev": "Máte termín a počet dětí?",
+          "pole": [
+            {
+              "k": "pobyty-038",
+              "typ": "Nadpis",
+              "t": "Máte termín a počet dětí?"
+            },
+            {
+              "k": "pobyty-039",
+              "typ": "Text",
+              "t": "Napište nám, s kým a kdy jedete. Připravíme nabídku na celý pobyt."
+            },
+            {
+              "k": "pobyty-040",
+              "typ": "Tlačítko",
+              "t": "Poptat pobyt"
+            }
+          ]
+        },
+        {
+          "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
+          "pole": [
+            {
+              "k": "pobyty-001",
+              "typ": "Titulek v Googlu (záložka prohlížeče)",
+              "t": "Pobyty pro skupiny – školy v přírodě, adaptační kurzy, lyžáky | Horská chata Zvonice",
+              "seo": true
+            },
+            {
+              "k": "pobyty-002",
+              "typ": "Popis v Googlu",
+              "t": "Školy v přírodě, adaptační kurzy, lyžařské výcviky a pobyty pro skupiny na Horské chatě Zvonice v Kořenově. Až 100 lůžek, ceny od 617 Kč za osobu a noc se stravou 5× denně.",
+              "seo": true
+            }
+          ]
+        }
+      ]
     },
     {
-     "nazev": "Pobyty pro školy a skupiny",
-     "pole": [
-      {
-       "k": "uvod-023",
-       "typ": "Štítek nad nadpisem",
-       "t": "Naše pobyty"
-      },
-      {
-       "k": "uvod-024",
-       "typ": "Nadpis",
-       "t": "Pobyty pro školy a skupiny"
-      },
-      {
-       "k": "uvod-025",
-       "typ": "Text",
-       "t": "Od 617 Kč za osobu a noc včetně ubytování a stravy pětkrát denně. Na každých 20 platících dětí jeden dospělý zdarma."
-      },
-      {
-       "k": "uvod-026",
-       "typ": "Podnadpis",
-       "t": "Školy v přírodě"
-      },
-      {
-       "k": "uvod-027",
-       "typ": "Text",
-       "t": "Hřiště s trampolínou, louka a les hned za dveřmi, od jara do podzimu."
-      },
-      {
-       "k": "uvod-028",
-       "typ": "Krátký text",
-       "t": "Dozvědět se více"
-      },
-      {
-       "k": "uvod-029",
-       "typ": "Podnadpis",
-       "t": "Adaptační kurzy"
-      },
-      {
-       "k": "uvod-030",
-       "typ": "Text",
-       "t": "Klubovna na hry a porady, louka na týmové aktivity, celoročně."
-      },
-      {
-       "k": "uvod-031",
-       "typ": "Krátký text",
-       "t": "Dozvědět se více"
-      },
-      {
-       "k": "uvod-032",
-       "typ": "Podnadpis",
-       "t": "Zimní pobyty 2027"
-      },
-      {
-       "k": "uvod-033",
-       "typ": "Text",
-       "t": "Lyžařské výcviky a víkendy. Sjezdovka s vlekem asi 200 m od chaty a běžkařská stopa kolem."
-      },
-      {
-       "k": "uvod-034",
-       "typ": "Krátký text",
-       "t": "Dozvědět se více"
-      },
-      {
-       "k": "uvod-035",
-       "typ": "Podnadpis",
-       "t": "Silvestrovský pobyt 2027"
-      },
-      {
-       "k": "uvod-036",
-       "typ": "Text",
-       "t": "27. 12. 2026 – 1. 1. 2027, restaurace s krbovými kamny jen pro Vás."
-      },
-      {
-       "k": "uvod-037",
-       "typ": "Krátký text",
-       "t": "Dozvědět se více"
-      }
-     ]
+      "id": "ubytovani",
+      "nazev": "Ubytování",
+      "skupiny": [
+        {
+          "nazev": "Úvod stránky",
+          "pole": [
+            {
+              "k": "ubyt-003",
+              "typ": "Hlavní nadpis (na fotce)",
+              "t": "Ubytování"
+            }
+          ]
+        },
+        {
+          "nazev": "Pokoje pro celou třídu",
+          "pole": [
+            {
+              "k": "ubyt-004",
+              "typ": "Text",
+              "t": "Horská chata Zvonice nabízí až 100 lůžek. Pokoje jsou převážně dvou až čtyřlůžkové a je tu jeden osmilůžkový. Na každém pokoji je umyvadlo, sociální zařízení je na chodbě. Dva pokoje mají kompletní zařízení."
+            },
+            {
+              "k": "ubyt-005",
+              "typ": "Štítek nad nadpisem",
+              "t": "Pokoje"
+            },
+            {
+              "k": "ubyt-006",
+              "typ": "Nadpis",
+              "t": "Pokoje pro celou třídu"
+            },
+            {
+              "k": "ubyt-007",
+              "typ": "Text",
+              "t": "Dvou až čtyřlůžkové pokoje se hodí pro děti i dospělé. Pro větší partu je k dispozici osmilůžkový pokoj. Přesné rozdělení pokojů Vám rádi upřesníme v nabídce."
+            },
+            {
+              "k": "ubyt-008",
+              "typ": "Odkaz",
+              "t": "Poptat ubytování"
+            },
+            {
+              "k": "ubyt-009",
+              "typ": "Štítek nad nadpisem",
+              "t": "Podkroví"
+            },
+            {
+              "k": "ubyt-010",
+              "typ": "Nadpis",
+              "t": "Podkrovní pokoje"
+            },
+            {
+              "k": "ubyt-011",
+              "typ": "Text",
+              "t": "V podkroví jsou pokoje s dřevěným obložením a šikmými stropy. Hodí se pro skupinu dětí."
+            },
+            {
+              "k": "ubyt-012",
+              "typ": "Odkaz",
+              "t": "Pobyty pro skupiny"
+            },
+            {
+              "k": "ubyt-013",
+              "typ": "Štítek nad nadpisem",
+              "t": "Stravování"
+            },
+            {
+              "k": "ubyt-014",
+              "typ": "Nadpis",
+              "t": "Stylová restaurace"
+            },
+            {
+              "k": "ubyt-015",
+              "typ": "Text",
+              "t": "Restaurace má plátno a projektor, takže se hodí i na výuku nebo večerní promítání. V zimě hřejí krbová kamna. Skupinám vaříme stravu 5× denně."
+            },
+            {
+              "k": "ubyt-016",
+              "typ": "Odkaz",
+              "t": "Ceny se stravou"
+            },
+            {
+              "k": "ubyt-017",
+              "typ": "Štítek nad nadpisem",
+              "t": "Vybavení chaty"
+            },
+            {
+              "k": "ubyt-018",
+              "typ": "Nadpis",
+              "t": "Co u nás najdete"
+            },
+            {
+              "k": "ubyt-019",
+              "typ": "Položka seznamu",
+              "t": "až 100 lůžek"
+            },
+            {
+              "k": "ubyt-020",
+              "typ": "Položka seznamu",
+              "t": "umyvadlo na pokoji"
+            },
+            {
+              "k": "ubyt-021",
+              "typ": "Položka seznamu",
+              "t": "stylová restaurace s plátnem a projektorem"
+            },
+            {
+              "k": "ubyt-022",
+              "typ": "Položka seznamu",
+              "t": "klubovna s dětským koutkem"
+            },
+            {
+              "k": "ubyt-023",
+              "typ": "Položka seznamu",
+              "t": "bar a wifi"
+            },
+            {
+              "k": "ubyt-024",
+              "typ": "Položka seznamu",
+              "t": "venkovní posezení"
+            },
+            {
+              "k": "ubyt-025",
+              "typ": "Položka seznamu",
+              "t": "pískoviště a průlezky"
+            },
+            {
+              "k": "ubyt-026",
+              "typ": "Položka seznamu",
+              "t": "hřiště pro míčové hry"
+            },
+            {
+              "k": "ubyt-027",
+              "typ": "Položka seznamu",
+              "t": "úschovna lyží a kol"
+            },
+            {
+              "k": "ubyt-028",
+              "typ": "Položka seznamu",
+              "t": "krbová kamna v restauraci"
+            },
+            {
+              "k": "ubyt-029",
+              "typ": "Položka seznamu",
+              "t": "v létě party stan 20×10 m"
+            },
+            {
+              "k": "ubyt-030",
+              "typ": "Položka seznamu",
+              "t": "parkování zdarma"
+            }
+          ]
+        },
+        {
+          "nazev": "Vejde se k nám celá škola",
+          "pole": [
+            {
+              "k": "ubyt-031",
+              "typ": "Nadpis",
+              "t": "Vejde se k nám celá škola"
+            },
+            {
+              "k": "ubyt-032",
+              "typ": "Text",
+              "t": "Pošlete nám termín a počet osob, připravíme nabídku."
+            },
+            {
+              "k": "ubyt-033",
+              "typ": "Tlačítko",
+              "t": "Poptat pobyt"
+            }
+          ]
+        },
+        {
+          "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
+          "pole": [
+            {
+              "k": "ubyt-001",
+              "typ": "Titulek v Googlu (záložka prohlížeče)",
+              "t": "Ubytování v Kořenově – až 100 lůžek | Horská chata Zvonice",
+              "seo": true
+            },
+            {
+              "k": "ubyt-002",
+              "typ": "Popis v Googlu",
+              "t": "Horská chata Zvonice: až 100 lůžek v převážně dvou až čtyřlůžkových pokojích, restaurace s projektorem, klubovna s dětským koutkem, bar a wifi.",
+              "seo": true
+            }
+          ]
+        }
+      ]
     },
     {
-     "nazev": "Mezi Jizerskými horami a Krkonošemi",
-     "pole": [
-      {
-       "k": "uvod-038",
-       "typ": "Nadpis",
-       "t": "Mezi Jizerskými horami a Krkonošemi"
-      },
-      {
-       "k": "uvod-039",
-       "typ": "Text",
-       "t": "Chata stojí mezi Kořenovem a Horním Polubným. Do centra Kořenova je to asi 500 metrů pěšky, na vlak i autobus kousek. Z Prahy jede dálkový autobus bez přestupu."
-      },
-      {
-       "k": "uvod-040",
-       "typ": "Text",
-       "t": "Mumlavské vodopády, Protržená přehrada nebo kus Jizerské magistrály jsou na výlet z chaty. Učitelé a vedoucí nemusí nikam přejíždět, od snídaně po večerní program je všechno na jednom místě."
-      },
-      {
-       "k": "uvod-041",
-       "typ": "Odkaz",
-       "t": "Co je kolem chaty"
-      },
-      {
-       "k": "uvod-042",
-       "typ": "Tlačítko",
-       "t": "Vyberte si svůj pobyt"
-      }
-     ]
+      "id": "cenik",
+      "nazev": "Ceník",
+      "skupiny": [
+        {
+          "nazev": "Úvod stránky",
+          "pole": [
+            {
+              "k": "cenik-003",
+              "typ": "Hlavní nadpis (na fotce)",
+              "t": "Ceník"
+            }
+          ]
+        },
+        {
+          "nazev": "Ceník pro školy a skupiny 2027",
+          "pole": [
+            {
+              "k": "cenik-004",
+              "typ": "Text",
+              "t": "Ceny jsou za osobu a noc. Pro školy a velké skupiny připravíme nabídku na celý pobyt."
+            },
+            {
+              "k": "cenik-005",
+              "typ": "Štítek nad nadpisem",
+              "t": "Skupiny"
+            },
+            {
+              "k": "cenik-006",
+              "typ": "Nadpis",
+              "t": "Ceník pro školy a skupiny 2027"
+            },
+            {
+              "k": "cenik-007",
+              "typ": "Text",
+              "t": "Ceny platí pro 2027, jsou za osobu a noc a zahrnují ubytování, plnou penzi 5× denně (snídaně, svačina, oběd, svačina, večeře) a celodenní pitný režim."
+            },
+            {
+              "typ": "tabulka",
+              "hlavicka": null,
+              "radky": [
+                [
+                  "Dospělá osoba včetně plné penze",
+                  "872 Kč"
+                ],
+                [
+                  "Doprovod",
+                  "1 dospělý zdarma na každých 20 platících dětí"
+                ]
+              ],
+              "k": "cenik-008"
+            },
+            {
+              "k": "cenik-009",
+              "typ": "Rozbalovací nadpis",
+              "t": "1. stupeň ZŠ"
+            },
+            {
+              "k": "cenik-010",
+              "typ": "Podnadpis",
+              "t": "Mimo sezónu"
+            },
+            {
+              "k": "cenik-011",
+              "typ": "Drobný text",
+              "t": "září, říjen, listopad, prosinec do 20. 12., duben"
+            },
+            {
+              "typ": "tabulka",
+              "hlavicka": [
+                "Počet osob",
+                "1 noc",
+                "2–3 noci",
+                "4–5 nocí",
+                "6 a více nocí"
+              ],
+              "radky": [
+                [
+                  "do 15 osob",
+                  "756 Kč",
+                  "735 Kč",
+                  "714 Kč",
+                  "694 Kč"
+                ],
+                [
+                  "16–30 osob",
+                  "746 Kč",
+                  "725 Kč",
+                  "704 Kč",
+                  "684 Kč"
+                ],
+                [
+                  "31–50 osob",
+                  "736 Kč",
+                  "715 Kč",
+                  "694 Kč",
+                  "674 Kč"
+                ],
+                [
+                  "51–70 osob",
+                  "726 Kč",
+                  "705 Kč",
+                  "684 Kč",
+                  "664 Kč"
+                ],
+                [
+                  "nad 70 osob",
+                  "719 Kč",
+                  "695 Kč",
+                  "674 Kč",
+                  "654 Kč"
+                ]
+              ],
+              "k": "cenik-012"
+            },
+            {
+              "k": "cenik-013",
+              "typ": "Podnadpis",
+              "t": "V sezóně"
+            },
+            {
+              "k": "cenik-014",
+              "typ": "Drobný text",
+              "t": "prosinec od 20. 12., leden, únor, březen, květen–srpen"
+            },
+            {
+              "typ": "tabulka",
+              "hlavicka": [
+                "Počet osob",
+                "1 noc",
+                "2–3 noci",
+                "4–5 nocí",
+                "6 a více nocí"
+              ],
+              "radky": [
+                [
+                  "do 15 osob",
+                  "819 Kč",
+                  "798 Kč",
+                  "777 Kč",
+                  "757 Kč"
+                ],
+                [
+                  "16–30 osob",
+                  "809 Kč",
+                  "788 Kč",
+                  "767 Kč",
+                  "747 Kč"
+                ],
+                [
+                  "31–50 osob",
+                  "799 Kč",
+                  "778 Kč",
+                  "757 Kč",
+                  "737 Kč"
+                ],
+                [
+                  "51–70 osob",
+                  "789 Kč",
+                  "768 Kč",
+                  "747 Kč",
+                  "727 Kč"
+                ],
+                [
+                  "nad 70 osob",
+                  "779 Kč",
+                  "758 Kč",
+                  "737 Kč",
+                  "717 Kč"
+                ]
+              ],
+              "k": "cenik-015"
+            },
+            {
+              "k": "cenik-016",
+              "typ": "Rozbalovací nadpis",
+              "t": "2. stupeň ZŠ"
+            },
+            {
+              "k": "cenik-017",
+              "typ": "Podnadpis",
+              "t": "Mimo sezónu"
+            },
+            {
+              "k": "cenik-018",
+              "typ": "Drobný text",
+              "t": "září, říjen, listopad, prosinec do 20. 12., duben"
+            },
+            {
+              "typ": "tabulka",
+              "hlavicka": [
+                "Počet osob",
+                "1 noc",
+                "2–3 noci",
+                "4–5 nocí",
+                "6 a více nocí"
+              ],
+              "radky": [
+                [
+                  "do 15 osob",
+                  "779 Kč",
+                  "758 Kč",
+                  "738 Kč",
+                  "718 Kč"
+                ],
+                [
+                  "16–30 osob",
+                  "769 Kč",
+                  "748 Kč",
+                  "728 Kč",
+                  "708 Kč"
+                ],
+                [
+                  "31–50 osob",
+                  "759 Kč",
+                  "738 Kč",
+                  "718 Kč",
+                  "698 Kč"
+                ],
+                [
+                  "51–70 osob",
+                  "749 Kč",
+                  "728 Kč",
+                  "708 Kč",
+                  "688 Kč"
+                ],
+                [
+                  "nad 70 osob",
+                  "739 Kč",
+                  "718 Kč",
+                  "698 Kč",
+                  "678 Kč"
+                ]
+              ],
+              "k": "cenik-019"
+            },
+            {
+              "k": "cenik-020",
+              "typ": "Podnadpis",
+              "t": "V sezóně"
+            },
+            {
+              "k": "cenik-021",
+              "typ": "Drobný text",
+              "t": "prosinec od 20. 12., leden, únor, březen, květen–srpen"
+            },
+            {
+              "typ": "tabulka",
+              "hlavicka": [
+                "Počet osob",
+                "1 noc",
+                "2–3 noci",
+                "4–5 nocí",
+                "6 a více nocí"
+              ],
+              "radky": [
+                [
+                  "do 15 osob",
+                  "835 Kč",
+                  "814 Kč",
+                  "803 Kč",
+                  "783 Kč"
+                ],
+                [
+                  "16–30 osob",
+                  "824 Kč",
+                  "804 Kč",
+                  "793 Kč",
+                  "773 Kč"
+                ],
+                [
+                  "31–50 osob",
+                  "814 Kč",
+                  "794 Kč",
+                  "783 Kč",
+                  "763 Kč"
+                ],
+                [
+                  "51–70 osob",
+                  "804 Kč",
+                  "784 Kč",
+                  "773 Kč",
+                  "753 Kč"
+                ],
+                [
+                  "nad 70 osob",
+                  "794 Kč",
+                  "774 Kč",
+                  "761 Kč",
+                  "743 Kč"
+                ]
+              ],
+              "k": "cenik-022"
+            },
+            {
+              "k": "cenik-023",
+              "typ": "Rozbalovací nadpis",
+              "t": "Mateřské školy"
+            },
+            {
+              "k": "cenik-024",
+              "typ": "Podnadpis",
+              "t": "Mimo sezónu"
+            },
+            {
+              "k": "cenik-025",
+              "typ": "Drobný text",
+              "t": "září, říjen, listopad, prosinec do 20. 12., duben"
+            },
+            {
+              "typ": "tabulka",
+              "hlavicka": [
+                "Počet osob",
+                "1 noc",
+                "2–3 noci",
+                "4–5 nocí",
+                "6 a více nocí"
+              ],
+              "radky": [
+                [
+                  "do 15 osob",
+                  "719 Kč",
+                  "698 Kč",
+                  "677 Kč",
+                  "657 Kč"
+                ],
+                [
+                  "16–30 osob",
+                  "709 Kč",
+                  "688 Kč",
+                  "667 Kč",
+                  "647 Kč"
+                ],
+                [
+                  "31–50 osob",
+                  "699 Kč",
+                  "678 Kč",
+                  "657 Kč",
+                  "637 Kč"
+                ],
+                [
+                  "51–70 osob",
+                  "689 Kč",
+                  "668 Kč",
+                  "647 Kč",
+                  "627 Kč"
+                ],
+                [
+                  "nad 70 osob",
+                  "679 Kč",
+                  "658 Kč",
+                  "637 Kč",
+                  "617 Kč"
+                ]
+              ],
+              "k": "cenik-026"
+            },
+            {
+              "k": "cenik-027",
+              "typ": "Podnadpis",
+              "t": "V sezóně"
+            },
+            {
+              "k": "cenik-028",
+              "typ": "Drobný text",
+              "t": "prosinec od 20. 12., leden, únor, březen, květen–srpen"
+            },
+            {
+              "typ": "tabulka",
+              "hlavicka": [
+                "Počet osob",
+                "1 noc",
+                "2–3 noci",
+                "4–5 nocí",
+                "6 a více nocí"
+              ],
+              "radky": [
+                [
+                  "do 15 osob",
+                  "772 Kč",
+                  "751 Kč",
+                  "730 Kč",
+                  "714 Kč"
+                ],
+                [
+                  "16–30 osob",
+                  "761 Kč",
+                  "741 Kč",
+                  "720 Kč",
+                  "704 Kč"
+                ],
+                [
+                  "31–50 osob",
+                  "751 Kč",
+                  "731 Kč",
+                  "710 Kč",
+                  "694 Kč"
+                ],
+                [
+                  "51–70 osob",
+                  "741 Kč",
+                  "721 Kč",
+                  "700 Kč",
+                  "684 Kč"
+                ],
+                [
+                  "nad 70 osob",
+                  "731 Kč",
+                  "711 Kč",
+                  "690 Kč",
+                  "674 Kč"
+                ]
+              ],
+              "k": "cenik-029"
+            },
+            {
+              "k": "cenik-030",
+              "typ": "Rozbalovací nadpis",
+              "t": "Střední školy"
+            },
+            {
+              "k": "cenik-031",
+              "typ": "Podnadpis",
+              "t": "Mimo sezónu"
+            },
+            {
+              "k": "cenik-032",
+              "typ": "Drobný text",
+              "t": "září, říjen, listopad, prosinec do 20. 12., duben"
+            },
+            {
+              "typ": "tabulka",
+              "hlavicka": [
+                "Počet osob",
+                "1 noc",
+                "2–3 noci",
+                "4–5 nocí",
+                "6 a více nocí"
+              ],
+              "radky": [
+                [
+                  "do 15 osob",
+                  "804 Kč",
+                  "783 Kč",
+                  "763 Kč",
+                  "747 Kč"
+                ],
+                [
+                  "16–30 osob",
+                  "794 Kč",
+                  "773 Kč",
+                  "753 Kč",
+                  "737 Kč"
+                ],
+                [
+                  "31–50 osob",
+                  "784 Kč",
+                  "763 Kč",
+                  "743 Kč",
+                  "727 Kč"
+                ],
+                [
+                  "51–70 osob",
+                  "774 Kč",
+                  "753 Kč",
+                  "733 Kč",
+                  "717 Kč"
+                ],
+                [
+                  "nad 70 osob",
+                  "764 Kč",
+                  "743 Kč",
+                  "723 Kč",
+                  "707 Kč"
+                ]
+              ],
+              "k": "cenik-033"
+            },
+            {
+              "k": "cenik-034",
+              "typ": "Podnadpis",
+              "t": "V sezóně"
+            },
+            {
+              "k": "cenik-035",
+              "typ": "Drobný text",
+              "t": "prosinec od 20. 12., leden, únor, březen, květen–srpen"
+            },
+            {
+              "typ": "tabulka",
+              "hlavicka": [
+                "Počet osob",
+                "1 noc",
+                "2–3 noci",
+                "4–5 nocí",
+                "6 a více nocí"
+              ],
+              "radky": [
+                [
+                  "do 15 osob",
+                  "861 Kč",
+                  "840 Kč",
+                  "830 Kč",
+                  "814 Kč"
+                ],
+                [
+                  "16–30 osob",
+                  "851 Kč",
+                  "830 Kč",
+                  "820 Kč",
+                  "804 Kč"
+                ],
+                [
+                  "31–50 osob",
+                  "841 Kč",
+                  "820 Kč",
+                  "810 Kč",
+                  "794 Kč"
+                ],
+                [
+                  "51–70 osob",
+                  "831 Kč",
+                  "810 Kč",
+                  "800 Kč",
+                  "784 Kč"
+                ],
+                [
+                  "nad 70 osob",
+                  "821 Kč",
+                  "800 Kč",
+                  "790 Kč",
+                  "774 Kč"
+                ]
+              ],
+              "k": "cenik-036"
+            },
+            {
+              "k": "cenik-037",
+              "typ": "Drobný text",
+              "t": "Konečnou cenu podle počtu osob a délky pobytu potvrdíme v nabídce."
+            },
+            {
+              "k": "cenik-038",
+              "typ": "Štítek nad nadpisem",
+              "t": "Individuální hosté"
+            },
+            {
+              "k": "cenik-039",
+              "typ": "Nadpis",
+              "t": "Ceny za osobu a noc"
+            },
+            {
+              "typ": "tabulka",
+              "hlavicka": [
+                "Stravování",
+                "Cena"
+              ],
+              "radky": [
+                [
+                  "Bez stravy",
+                  "735 Kč"
+                ],
+                [
+                  "Se snídaní",
+                  "893 Kč"
+                ],
+                [
+                  "Polopenze",
+                  "1 103 Kč"
+                ],
+                [
+                  "Plná penze",
+                  "1 260 Kč"
+                ]
+              ],
+              "k": "cenik-040"
+            }
+          ]
+        },
+        {
+          "nazev": "Parkování u chaty",
+          "pole": [
+            {
+              "k": "cenik-041",
+              "typ": "Štítek nad nadpisem",
+              "t": "Parkování"
+            },
+            {
+              "k": "cenik-042",
+              "typ": "Nadpis",
+              "t": "Parkování u chaty"
+            },
+            {
+              "typ": "tabulka",
+              "hlavicka": null,
+              "radky": [
+                [
+                  "Ubytovaní hosté",
+                  "zdarma"
+                ],
+                [
+                  "Neubytovaní",
+                  "100 Kč za den"
+                ]
+              ],
+              "k": "cenik-043"
+            }
+          ]
+        },
+        {
+          "nazev": "Spočítáme Vám celý pobyt",
+          "pole": [
+            {
+              "k": "cenik-044",
+              "typ": "Nadpis",
+              "t": "Spočítáme Vám celý pobyt"
+            },
+            {
+              "k": "cenik-045",
+              "typ": "Text",
+              "t": "Napište počet dětí a dospělých, termín a stravu. Pošleme nabídku."
+            },
+            {
+              "k": "cenik-046",
+              "typ": "Tlačítko",
+              "t": "Poptat pobyt"
+            }
+          ]
+        },
+        {
+          "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
+          "pole": [
+            {
+              "k": "cenik-001",
+              "typ": "Titulek v Googlu (záložka prohlížeče)",
+              "t": "Ceník – od 617 Kč za osobu a noc se stravou | Horská chata Zvonice",
+              "seo": true
+            },
+            {
+              "k": "cenik-002",
+              "typ": "Popis v Googlu",
+              "t": "Ceník Horské chaty Zvonice v Kořenově: skupiny od 617 Kč za osobu a noc s plnou penzí 5× denně, nocleh od 735 Kč, parkování pro ubytované zdarma.",
+              "seo": true
+            }
+          ]
+        }
+      ]
     },
     {
-     "nazev": "Pokoje, restaurace a klubovna",
-     "pole": [
-      {
-       "k": "uvod-043",
-       "typ": "Štítek nad nadpisem",
-       "t": "Ubytování"
-      },
-      {
-       "k": "uvod-044",
-       "typ": "Nadpis",
-       "t": "Pokoje, restaurace a klubovna"
-      },
-      {
-       "k": "uvod-045",
-       "typ": "Tlačítko",
-       "t": "Pokoje"
-      },
-      {
-       "k": "uvod-046",
-       "typ": "Tlačítko",
-       "t": "Restaurace"
-      },
-      {
-       "k": "uvod-047",
-       "typ": "Tlačítko",
-       "t": "Klubovna"
-      },
-      {
-       "k": "uvod-048",
-       "typ": "Podnadpis",
-       "t": "Pokoje"
-      },
-      {
-       "k": "uvod-049",
-       "typ": "Text",
-       "t": "Až 100 lůžek v pokojích převážně pro dva až čtyři, k tomu jeden osmilůžkový. Na pokoji je umyvadlo, sociální zařízení na každém patře. Dva pokoje mají vlastní koupelnu."
-      },
-      {
-       "k": "uvod-050",
-       "typ": "Odkaz",
-       "t": "Ubytování"
-      },
-      {
-       "k": "uvod-051",
-       "typ": "Podnadpis",
-       "t": "Stylová restaurace"
-      },
-      {
-       "k": "uvod-052",
-       "typ": "Text",
-       "t": "Pojme celou skupinu najednou. V zimě hřejí krbová kamna, na výuku nebo večerní film je tu plátno a projektor. K tomu bar a wifi."
-      },
-      {
-       "k": "uvod-053",
-       "typ": "Odkaz",
-       "t": "Ceny se stravou"
-      },
-      {
-       "k": "uvod-054",
-       "typ": "Podnadpis",
-       "t": "Klubovna"
-      },
-      {
-       "k": "uvod-055",
-       "typ": "Text",
-       "t": "Prostor na hry, výuku i porady vedoucích. Menší děti mají vlastní dětský koutek, venku pískoviště a průlezky."
-      },
-      {
-       "k": "uvod-056",
-       "typ": "Odkaz",
-       "t": "Pobyty pro skupiny"
-      },
-      {
-       "k": "uvod-057",
-       "typ": "Drobný text",
-       "t": "Skupinové ceny zahrnují ubytování i stravu pětkrát denně. Individuální hosté si vyberou nocleh bez stravy, se snídaní, polopenzi nebo plnou penzi."
-      }
-     ]
+      "id": "zimni-pobyty",
+      "nazev": "Zimní pobyty",
+      "skupiny": [
+        {
+          "nazev": "Úvod stránky",
+          "pole": [
+            {
+              "k": "zima-003",
+              "typ": "Hlavní nadpis (na fotce)",
+              "t": "Zimní pobyty 2027"
+            }
+          ]
+        },
+        {
+          "nazev": "Zima v Jizerských horách pro celou skupinu",
+          "pole": [
+            {
+              "k": "zima-004",
+              "typ": "Štítek nad nadpisem",
+              "t": "Prosinec 2026 – březen 2027"
+            },
+            {
+              "k": "zima-005",
+              "typ": "Nadpis",
+              "t": "Zima v Jizerských horách pro celou skupinu"
+            },
+            {
+              "k": "zima-006",
+              "typ": "Text",
+              "t": "Lyžařské výcviky pro školy a skupinové lyžařské víkendy pro oddíly, spolky a party přátel. Sjezdovka s vlekem je asi 200 metrů od chaty a kolem chaty vede běžkařská stopa."
+            },
+            {
+              "k": "zima-007",
+              "typ": "Štítek nad nadpisem",
+              "t": "Lyžařské výcviky"
+            },
+            {
+              "k": "zima-008",
+              "typ": "Nadpis",
+              "t": "Pro školy"
+            },
+            {
+              "k": "zima-009",
+              "typ": "Text",
+              "t": "Sjezdovka s vlekem je vhodná pro začátečníky a po lyžování se děti vrátí do tepla chaty. V zimě se k chatě cesta pluhuje."
+            },
+            {
+              "k": "zima-010",
+              "typ": "Položka seznamu",
+              "t": "sjezdovka s vlekem asi 200 m"
+            },
+            {
+              "k": "zima-011",
+              "typ": "Položka seznamu",
+              "t": "úschovna lyží"
+            },
+            {
+              "k": "zima-012",
+              "typ": "Položka seznamu",
+              "t": "strava 5× denně a pitný režim v ceně"
+            },
+            {
+              "k": "zima-013",
+              "typ": "Položka seznamu",
+              "t": "na 20 platících dětí 1 doprovod zdarma"
+            },
+            {
+              "k": "zima-014",
+              "typ": "Tlačítko",
+              "t": "Poptat lyžařský výcvik"
+            },
+            {
+              "k": "zima-015",
+              "typ": "Štítek nad nadpisem",
+              "t": "Víkendy"
+            },
+            {
+              "k": "zima-016",
+              "typ": "Nadpis",
+              "t": "Skupinové lyžařské víkendy"
+            },
+            {
+              "k": "zima-017",
+              "typ": "Text",
+              "t": "Pro sportovní oddíly, spolky a rodinné či přátelské skupiny. Celá chata je jen pro Vás, večer u krbových kamen v restauraci."
+            },
+            {
+              "k": "zima-018",
+              "typ": "Položka seznamu",
+              "t": "běžkařská stopa kolem chaty, Jizerská magistrála"
+            },
+            {
+              "k": "zima-019",
+              "typ": "Položka seznamu",
+              "t": "krbová kamna v restauraci"
+            },
+            {
+              "k": "zima-020",
+              "typ": "Položka seznamu",
+              "t": "klubovna a společenské místnosti"
+            },
+            {
+              "k": "zima-021",
+              "typ": "Položka seznamu",
+              "t": "parkování pro ubytované zdarma"
+            },
+            {
+              "k": "zima-022",
+              "typ": "Tlačítko",
+              "t": "Poptat zimní víkend"
+            }
+          ]
+        },
+        {
+          "nazev": "Sezónní ceny pro skupiny",
+          "pole": [
+            {
+              "k": "zima-023",
+              "typ": "Štítek nad nadpisem",
+              "t": "Cena"
+            },
+            {
+              "k": "zima-024",
+              "typ": "Nadpis",
+              "t": "Sezónní ceny pro skupiny"
+            },
+            {
+              "k": "zima-025",
+              "typ": "Text",
+              "t": "Sezóna zahrnuje prosinec od 20. 12., leden, únor a březen. Ceny jsou za osobu a noc včetně plné penze 5× denně a pitného režimu, kompletní tabulky najdete v ceníku."
+            },
+            {
+              "k": "zima-026",
+              "typ": "Tlačítko",
+              "t": "Ceník skupin 2027"
+            }
+          ]
+        },
+        {
+          "nazev": "Zimní termíny se plní",
+          "pole": [
+            {
+              "k": "zima-027",
+              "typ": "Nadpis",
+              "t": "Zimní termíny se plní"
+            },
+            {
+              "k": "zima-028",
+              "typ": "Text",
+              "t": "Napište termín a počet osob, pošleme nabídku na celý pobyt."
+            },
+            {
+              "k": "zima-029",
+              "typ": "Tlačítko",
+              "t": "Poptat zimní pobyt"
+            }
+          ]
+        },
+        {
+          "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
+          "pole": [
+            {
+              "k": "zima-001",
+              "typ": "Titulek v Googlu (záložka prohlížeče)",
+              "t": "Zimní pobyty 2027 – lyžařské výcviky a víkendy | Horská chata Zvonice",
+              "seo": true
+            },
+            {
+              "k": "zima-002",
+              "typ": "Popis v Googlu",
+              "t": "Zimní pobyty 2027 na Horské chatě Zvonice v Kořenově: lyžařské výcviky a skupinové lyžařské víkendy, sjezdovka s vlekem asi 200 m, běžkařská stopa u chaty.",
+              "seo": true
+            }
+          ]
+        }
+      ]
     },
     {
-     "nazev": "Všechno na jednom místě",
-     "pole": [
-      {
-       "k": "uvod-058",
-       "typ": "Štítek nad nadpisem",
-       "t": "Den na chatě"
-      },
-      {
-       "k": "uvod-059",
-       "typ": "Nadpis",
-       "t": "Všechno na jednom místě"
-      },
-      {
-       "k": "uvod-060",
-       "typ": "Text",
-       "t": "Snídaně v restauraci, dopoledne na hřišti, odpoledne výlet k vodopádům a večer promítání nebo hry v klubovně."
-      },
-      {
-       "k": "uvod-061",
-       "typ": "Text",
-       "t": "Strava 5× denně"
-      },
-      {
-       "k": "uvod-062",
-       "typ": "Text",
-       "t": "Krbová kamna"
-      },
-      {
-       "k": "uvod-063",
-       "typ": "Text",
-       "t": "Plátno a projektor"
-      },
-      {
-       "k": "uvod-064",
-       "typ": "Text",
-       "t": "Dětský koutek"
-      },
-      {
-       "k": "uvod-065",
-       "typ": "Text",
-       "t": "Wifi"
-      }
-     ]
+      "id": "silvestr",
+      "nazev": "Silvestr",
+      "skupiny": [
+        {
+          "nazev": "Úvod stránky",
+          "pole": [
+            {
+              "k": "silv-003",
+              "typ": "Hlavní nadpis (na fotce)",
+              "t": "Silvestrovský pobyt 2027"
+            }
+          ]
+        },
+        {
+          "nazev": "Konec roku v lesích Jizerských hor",
+          "pole": [
+            {
+              "k": "silv-004",
+              "typ": "Štítek nad nadpisem",
+              "t": "27. prosince 2026 – 1. ledna 2027"
+            },
+            {
+              "k": "silv-005",
+              "typ": "Nadpis",
+              "t": "Konec roku v lesích Jizerských hor"
+            },
+            {
+              "k": "silv-006",
+              "typ": "Text",
+              "t": "Přijeďte si užít konec roku s rodinou či partou přátel na chatu uprostřed přírody. Kolem chaty vede běžkařská stopa a sjezdovka s vlekem je asi 200 metrů daleko."
+            },
+            {
+              "k": "silv-007",
+              "typ": "Text",
+              "t": "Stylová restaurace s krbovými kamny pojme celou společnost. Je tu plátno a projektor, bar a wifi, venku posezení a hřiště. Do centra Kořenova je to asi 500 metrů."
+            },
+            {
+              "k": "silv-008",
+              "typ": "Položka seznamu",
+              "t": "běžkařská stopa kolem chaty, Jizerská magistrála"
+            },
+            {
+              "k": "silv-009",
+              "typ": "Položka seznamu",
+              "t": "sjezdovka s vlekem asi 200 m"
+            },
+            {
+              "k": "silv-010",
+              "typ": "Položka seznamu",
+              "t": "restaurace s krbovými kamny"
+            },
+            {
+              "k": "silv-011",
+              "typ": "Položka seznamu",
+              "t": "klubovna s dětským koutkem"
+            },
+            {
+              "k": "silv-012",
+              "typ": "Položka seznamu",
+              "t": "parkování pro ubytované zdarma"
+            },
+            {
+              "k": "silv-013",
+              "typ": "Položka seznamu",
+              "t": "domácí mazlíčci jsou vítáni"
+            }
+          ]
+        },
+        {
+          "nazev": "od 1 300 Kč za osobu a noc",
+          "pole": [
+            {
+              "k": "silv-014",
+              "typ": "Štítek nad nadpisem",
+              "t": "Cena"
+            },
+            {
+              "k": "silv-015",
+              "typ": "Nadpis",
+              "t": "od 1 300 Kč za osobu a noc"
+            },
+            {
+              "k": "silv-016",
+              "typ": "Text",
+              "t": "27. 12. 2026 – 1. 1. 2027"
+            },
+            {
+              "typ": "tabulka",
+              "hlavicka": null,
+              "radky": [
+                [
+                  "Polopenze",
+                  "1 300 Kč"
+                ],
+                [
+                  "Plná penze",
+                  "1 500 Kč"
+                ],
+                [
+                  "Silvestrovské občerstvení (příplatek)",
+                  "300 Kč / os."
+                ]
+              ],
+              "k": "silv-017"
+            },
+            {
+              "k": "silv-018",
+              "typ": "Text",
+              "t": "Děti: do 2,99 let zdarma (bez lůžka), 3–9 let včetně sleva 40 %, 10–15 let včetně sleva 20 %."
+            },
+            {
+              "k": "silv-019",
+              "typ": "Tlačítko",
+              "t": "Poptat Silvestr"
+            }
+          ]
+        },
+        {
+          "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
+          "pole": [
+            {
+              "k": "silv-001",
+              "typ": "Titulek v Googlu (záložka prohlížeče)",
+              "t": "Silvestrovský pobyt 2027 v Jizerských horách – Horská chata Zvonice",
+              "seo": true
+            },
+            {
+              "k": "silv-002",
+              "typ": "Popis v Googlu",
+              "t": "Silvestrovský pobyt 2027 na Zvonici 27. 12. 2026 – 1. 1. 2027: polopenze 1 300 Kč, plná penze 1 500 Kč za osobu a noc, silvestrovské občerstvení za příplatek 300 Kč.",
+              "seo": true
+            }
+          ]
+        }
+      ]
     },
     {
-     "nazev": "Ceny za osobu a noc",
-     "pole": [
-      {
-       "k": "uvod-066",
-       "typ": "Štítek nad nadpisem",
-       "t": "Ceník"
-      },
-      {
-       "k": "uvod-067",
-       "typ": "Nadpis",
-       "t": "Ceny za osobu a noc"
-      },
-      {
-       "k": "uvod-068",
-       "typ": "Text",
-       "t": "Parkování pro ubytované zdarma, pro neubytované 100 Kč za den. Skupinové a mimosezonní slevy na dotaz."
-      },
-      {
-       "k": "uvod-069",
-       "typ": "Krátký text",
-       "t": "Školy a skupiny"
-      },
-      {
-       "k": "uvod-070",
-       "typ": "Podnadpis",
-       "t": "Skupinový pobyt"
-      },
-      {
-       "k": "uvod-071",
-       "typ": "Zvýrazněné číslo",
-       "t": "od 617 Kč"
-      },
-      {
-       "k": "uvod-072",
-       "typ": "Text",
-       "t": "se stravou 5× denně"
-      },
-      {
-       "k": "uvod-073",
-       "typ": "Text",
-       "t": "Ubytování i strava v ceně, na každých 20 platících dětí jeden dospělý zdarma. Cena podle délky pobytu, počtu osob a termínu."
-      },
-      {
-       "k": "uvod-074",
-       "typ": "Odkaz",
-       "t": "Chci nabídku"
-      },
-      {
-       "k": "uvod-075",
-       "typ": "Krátký text",
-       "t": "Individuální hosté"
-      },
-      {
-       "k": "uvod-076",
-       "typ": "Podnadpis",
-       "t": "Nocleh"
-      },
-      {
-       "k": "uvod-077",
-       "typ": "Zvýrazněné číslo",
-       "t": "735 Kč"
-      },
-      {
-       "k": "uvod-078",
-       "typ": "Text",
-       "t": "bez stravy"
-      },
-      {
-       "k": "uvod-079",
-       "typ": "Text",
-       "t": "Se snídaní 893 Kč, polopenze 1 103 Kč, plná penze 1 260 Kč."
-      },
-      {
-       "k": "uvod-080",
-       "typ": "Odkaz",
-       "t": "Celý ceník"
-      },
-      {
-       "k": "uvod-081",
-       "typ": "Krátký text",
-       "t": "27. 12. 2026 – 1. 1. 2027"
-      },
-      {
-       "k": "uvod-082",
-       "typ": "Podnadpis",
-       "t": "Silvestrovský pobyt 2027"
-      },
-      {
-       "k": "uvod-083",
-       "typ": "Zvýrazněné číslo",
-       "t": "1 300 Kč"
-      },
-      {
-       "k": "uvod-084",
-       "typ": "Text",
-       "t": "s polopenzí"
-      },
-      {
-       "k": "uvod-085",
-       "typ": "Text",
-       "t": "Plná penze 1 500 Kč, silvestrovské občerstvení za příplatek 300 Kč za osobu."
-      },
-      {
-       "k": "uvod-086",
-       "typ": "Odkaz",
-       "t": "Silvestrovský pobyt"
-      }
-     ]
+      "id": "okoli",
+      "nazev": "Okolí",
+      "skupiny": [
+        {
+          "nazev": "Úvod stránky",
+          "pole": [
+            {
+              "k": "okoli-003",
+              "typ": "Hlavní nadpis (na fotce)",
+              "t": "Okolí chaty"
+            }
+          ]
+        },
+        {
+          "nazev": "Stopa a sjezdovka u chaty",
+          "pole": [
+            {
+              "k": "okoli-004",
+              "typ": "Text",
+              "t": "Horská chata Zvonice stojí na rozhraní Jizerských hor a Krkonoš, mezi Kořenovem a Horním Polubným. Je to výchozí bod pro pěší výlety, cykloturistiku i zimní sporty."
+            },
+            {
+              "k": "okoli-005",
+              "typ": "Štítek nad nadpisem",
+              "t": "Zima"
+            },
+            {
+              "k": "okoli-006",
+              "typ": "Nadpis",
+              "t": "Stopa a sjezdovka u chaty"
+            },
+            {
+              "k": "okoli-007",
+              "typ": "Text",
+              "t": "Kolem chaty vede běžkařská stopa napojená na Jizerskou magistrálu a asi 200 metrů od chaty je sjezdovka s vlekem, vhodná pro začátečníky. V okolí jsou také areály Příchovice, Rejdice, Harrachov a Rokytnice. V zimě se k chatě cesta pluhuje."
+            },
+            {
+              "k": "okoli-008",
+              "typ": "Položka seznamu",
+              "t": "běžkařská stopa kolem chaty"
+            },
+            {
+              "k": "okoli-009",
+              "typ": "Položka seznamu",
+              "t": "sjezdovka s vlekem asi 200 m"
+            },
+            {
+              "k": "okoli-010",
+              "typ": "Položka seznamu",
+              "t": "Příchovice, Rejdice, Harrachov, Rokytnice"
+            },
+            {
+              "k": "okoli-011",
+              "typ": "Položka seznamu",
+              "t": "úschovna lyží v chatě"
+            },
+            {
+              "k": "okoli-012",
+              "typ": "Štítek nad nadpisem",
+              "t": "Léto"
+            },
+            {
+              "k": "okoli-013",
+              "typ": "Nadpis",
+              "t": "Lesy, vodopády a přehrady"
+            },
+            {
+              "k": "okoli-014",
+              "typ": "Text",
+              "t": "Chata leží na samotě v lesích a do centra Kořenova je to asi 500 metrů pěšky. V okolí jsou Mumlavské vodopády, vodopády na Černé Desné, Protržená přehrada a Kozí farma v Pěnčíně. K dalším cílům patří Harrachov, Liberec a Jablonec."
+            },
+            {
+              "k": "okoli-015",
+              "typ": "Položka seznamu",
+              "t": "Mumlavské vodopády"
+            },
+            {
+              "k": "okoli-016",
+              "typ": "Položka seznamu",
+              "t": "vodopády na Černé Desné"
+            },
+            {
+              "k": "okoli-017",
+              "typ": "Položka seznamu",
+              "t": "Protržená přehrada"
+            },
+            {
+              "k": "okoli-018",
+              "typ": "Položka seznamu",
+              "t": "Kozí farma Pěnčín"
+            }
+          ]
+        },
+        {
+          "nazev": "Z čeho se k nám jede",
+          "pole": [
+            {
+              "k": "okoli-019",
+              "typ": "Štítek nad nadpisem",
+              "t": "Vzdálenosti"
+            },
+            {
+              "k": "okoli-020",
+              "typ": "Nadpis",
+              "t": "Z čeho se k nám jede"
+            },
+            {
+              "k": "okoli-021",
+              "typ": "Zvýrazněné číslo",
+              "t": "30 km"
+            },
+            {
+              "k": "okoli-022",
+              "typ": "Podnadpis",
+              "t": "Liberec"
+            },
+            {
+              "k": "okoli-023",
+              "typ": "Text",
+              "t": "Nejbližší velké město."
+            },
+            {
+              "k": "okoli-024",
+              "typ": "Zvýrazněné číslo",
+              "t": "65 km"
+            },
+            {
+              "k": "okoli-025",
+              "typ": "Podnadpis",
+              "t": "Mladá Boleslav"
+            },
+            {
+              "k": "okoli-026",
+              "typ": "Text",
+              "t": "Hradec Králové 90 km."
+            },
+            {
+              "k": "okoli-027",
+              "typ": "Zvýrazněné číslo",
+              "t": "110 km"
+            },
+            {
+              "k": "okoli-028",
+              "typ": "Podnadpis",
+              "t": "Praha"
+            },
+            {
+              "k": "okoli-029",
+              "typ": "Text",
+              "t": "Od Černého Mostu."
+            },
+            {
+              "k": "okoli-030",
+              "typ": "Zvýrazněné číslo",
+              "t": "100 km"
+            },
+            {
+              "k": "okoli-031",
+              "typ": "Podnadpis",
+              "t": "Pardubice, Děčín"
+            },
+            {
+              "k": "okoli-032",
+              "typ": "Text",
+              "t": "Ústí nad Labem 120 km."
+            }
+          ]
+        },
+        {
+          "nazev": "Jak k nám",
+          "pole": [
+            {
+              "k": "okoli-033",
+              "typ": "Štítek nad nadpisem",
+              "t": "Jak k nám"
+            },
+            {
+              "k": "okoli-034",
+              "typ": "Nadpis",
+              "t": "Jak k nám"
+            },
+            {
+              "k": "okoli-035",
+              "typ": "Text",
+              "t": "Horská chata Zvonice, Kořenov 872, 468 49 Kořenov. Asfaltová cesta končí parkovištěm u chaty, kde se otočí i autobus. Vlakem přijedete na zastávku Kořenov, autobusem na zastávku Kořenov, Příchovice, Motorest, odkud je to k chatě necelý kilometr."
+            },
+            {
+              "k": "okoli-036",
+              "typ": "Tlačítko",
+              "t": "Google Maps"
+            },
+            {
+              "k": "okoli-037",
+              "typ": "Tlačítko",
+              "t": "Waze"
+            }
+          ]
+        },
+        {
+          "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
+          "pole": [
+            {
+              "k": "okoli-001",
+              "typ": "Titulek v Googlu (záložka prohlížeče)",
+              "t": "Okolí chaty – Jizerská magistrála, vodopády, sjezdovka | Horská chata Zvonice",
+              "seo": true
+            },
+            {
+              "k": "okoli-002",
+              "typ": "Popis v Googlu",
+              "t": "Horská chata Zvonice leží u Kořenova na rozhraní Jizerských hor a Krkonoš: běžkařská stopa u chaty, sjezdovka s vlekem 200 m, Mumlavské vodopády, Harrachov.",
+              "seo": true
+            }
+          ]
+        }
+      ]
     },
     {
-     "nazev": "Všechno je na dosah",
-     "pole": [
-      {
-       "k": "uvod-087",
-       "typ": "Štítek nad nadpisem",
-       "t": "Okolí chaty"
-      },
-      {
-       "k": "uvod-088",
-       "typ": "Nadpis",
-       "t": "Všechno je na dosah"
-      },
-      {
-       "k": "uvod-089",
-       "typ": "Text",
-       "t": "Sjezdovka, běžkařská stopa i centrum Kořenova jsou pár kroků od chaty."
-      },
-      {
-       "k": "uvod-090",
-       "typ": "Zvýrazněné číslo",
-       "t": "0,2 km"
-      },
-      {
-       "k": "uvod-091",
-       "typ": "Krátký text",
-       "t": "Sjezdovka s vlekem, v zimě na lyže z chaty pěšky"
-      },
-      {
-       "k": "uvod-092",
-       "typ": "Zvýrazněné číslo",
-       "t": "0,5 km"
-      },
-      {
-       "k": "uvod-093",
-       "typ": "Krátký text",
-       "t": "Centrum Kořenova, vlak i autobus kousek"
-      },
-      {
-       "k": "uvod-094",
-       "typ": "Zvýrazněné číslo",
-       "t": "30 km"
-      },
-      {
-       "k": "uvod-095",
-       "typ": "Krátký text",
-       "t": "Liberec, nejbližší velké město"
-      },
-      {
-       "k": "uvod-096",
-       "typ": "Zvýrazněné číslo",
-       "t": "110 km"
-      },
-      {
-       "k": "uvod-097",
-       "typ": "Krátký text",
-       "t": "Praha, dálkový autobus bez přestupu"
-      },
-      {
-       "k": "uvod-098",
-       "typ": "Odkaz",
-       "t": "Co je kolem chaty"
-      }
-     ]
+      "id": "fotogalerie",
+      "nazev": "Fotogalerie",
+      "skupiny": [
+        {
+          "nazev": "Úvod stránky",
+          "pole": [
+            {
+              "k": "foto-003",
+              "typ": "Hlavní nadpis (na fotce)",
+              "t": "Fotogalerie"
+            }
+          ]
+        },
+        {
+          "nazev": "Chata, restaurace, pokoje i okolí",
+          "pole": [
+            {
+              "k": "foto-004",
+              "typ": "Štítek nad nadpisem",
+              "t": "Nahlédněte k nám"
+            },
+            {
+              "k": "foto-005",
+              "typ": "Nadpis",
+              "t": "Chata, restaurace, pokoje i okolí"
+            }
+          ]
+        },
+        {
+          "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
+          "pole": [
+            {
+              "k": "foto-001",
+              "typ": "Titulek v Googlu (záložka prohlížeče)",
+              "t": "Fotogalerie | Horská chata Zvonice",
+              "seo": true
+            },
+            {
+              "k": "foto-002",
+              "typ": "Popis v Googlu",
+              "t": "Fotky Horské chaty Zvonice v Kořenově: chata v zimě i v létě, restaurace, pokoje, hřiště a okolí.",
+              "seo": true
+            }
+          ]
+        }
+      ]
     },
     {
-     "nazev": "Sekce",
-     "pole": [
-      {
-       "k": "uvod-099",
-       "typ": "Podnadpis",
-       "t": "Poptávka pro skupinu"
-      },
-      {
-       "k": "uvod-100",
-       "typ": "Text",
-       "t": "Napište nám termín a počet dětí a dospělých. Pošleme nabídku na celý pobyt včetně stravy."
-      },
-      {
-       "k": "uvod-101",
-       "typ": "Tlačítko",
-       "t": "Poptat pobyt"
-      },
-      {
-       "k": "uvod-102",
-       "typ": "Podnadpis",
-       "t": "Jak k nám"
-      },
-      {
-       "k": "uvod-103",
-       "typ": "Text",
-       "t": "Horská chata Zvonice, Kořenov 872, 468 49 Kořenov. Parkoviště u chaty, otočí se tu i autobus."
-      },
-      {
-       "k": "uvod-104",
-       "typ": "Tlačítko",
-       "t": "Jak k nám"
-      }
-     ]
+      "id": "poptavka",
+      "nazev": "Poptávka a kontakt",
+      "skupiny": [
+        {
+          "nazev": "Úvod stránky",
+          "pole": [
+            {
+              "k": "popt-003",
+              "typ": "Hlavní nadpis (na fotce)",
+              "t": "Poptávka pobytu"
+            }
+          ]
+        },
+        {
+          "nazev": "Sekce",
+          "pole": [
+            {
+              "k": "popt-004",
+              "typ": "Text",
+              "t": "Ať plánujete školu v přírodě, adaptační kurz nebo lyžařský výcvik, rádi Vám připravíme nabídku na celý pobyt. Stačí vyplnit pár údajů níže a ozveme se Vám co nejdříve."
+            },
+            {
+              "k": "popt-005",
+              "typ": "Podnadpis",
+              "t": "Adresa"
+            },
+            {
+              "k": "popt-006",
+              "typ": "Text",
+              "t": "Horská chata Zvonice\nKořenov 872\n468 49 Kořenov"
+            },
+            {
+              "k": "popt-007",
+              "typ": "Podnadpis",
+              "t": "Kontakt"
+            },
+            {
+              "k": "popt-008",
+              "typ": "Podnadpis",
+              "t": "Provozovatel"
+            },
+            {
+              "k": "popt-009",
+              "typ": "Text",
+              "t": "Alteris s.r.o.\nIČ 27862313\nNa stezce 1330/3, Praha 10"
+            }
+          ]
+        },
+        {
+          "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
+          "pole": [
+            {
+              "k": "popt-001",
+              "typ": "Titulek v Googlu (záložka prohlížeče)",
+              "t": "Poptávka pobytu a kontakt | Horská chata Zvonice",
+              "seo": true
+            },
+            {
+              "k": "popt-002",
+              "typ": "Popis v Googlu",
+              "t": "Poptejte pobyt pro školu, adaptační kurz nebo lyžařský výcvik na Horské chatě Zvonice. Kořenov 872, sales@lipperthotels.cz.",
+              "seo": true
+            }
+          ]
+        }
+      ]
     },
     {
-     "nazev": "Video",
-     "pole": [
-      {
-       "k": "uvod-105",
-       "typ": "Štítek nad nadpisem",
-       "t": "Video"
-      },
-      {
-       "k": "uvod-106",
-       "typ": "Krátký text",
-       "t": "Přehrát video"
-      }
-     ]
-    },
-    {
-     "nazev": "Chata v obrázcích",
-     "pole": [
-      {
-       "k": "uvod-107",
-       "typ": "Štítek nad nadpisem",
-       "t": "Fotogalerie"
-      },
-      {
-       "k": "uvod-108",
-       "typ": "Nadpis",
-       "t": "Chata v obrázcích"
-      },
-      {
-       "k": "uvod-109",
-       "typ": "Odkaz",
-       "t": "Celá fotogalerie"
-      }
-     ]
-    },
-    {
-     "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
-     "pole": [
-      {
-       "k": "uvod-001",
-       "typ": "Titulek v Googlu (záložka prohlížeče)",
-       "t": "Horská chata Zvonice – školy v přírodě a pobyty pro skupiny v Kořenově",
-       "seo": true
-      }
-     ]
+      "id": "base",
+      "nazev": "Společné: menu, patička, pop-up",
+      "skupiny": [
+        {
+          "nazev": "Hlavička a menu",
+          "pole": [
+            {
+              "k": "spol-001",
+              "typ": "Položka menu",
+              "t": "Pro skupiny"
+            },
+            {
+              "k": "spol-002",
+              "typ": "Položka menu",
+              "t": "Ubytování"
+            },
+            {
+              "k": "spol-003",
+              "typ": "Položka menu",
+              "t": "Okolí"
+            },
+            {
+              "k": "spol-004",
+              "typ": "Položka menu",
+              "t": "Fotogalerie"
+            },
+            {
+              "k": "spol-005",
+              "typ": "Položka menu",
+              "t": "Ceník"
+            },
+            {
+              "k": "spol-006",
+              "typ": "Položka menu",
+              "t": "Zimní pobyty 2027"
+            },
+            {
+              "k": "spol-007",
+              "typ": "Položka menu",
+              "t": "Silvestr 2027"
+            },
+            {
+              "k": "spol-008",
+              "typ": "Položka menu",
+              "t": "Kontakt"
+            },
+            {
+              "k": "spol-009",
+              "typ": "Položka menu",
+              "t": "Poptávka"
+            },
+            {
+              "k": "spol-010",
+              "typ": "Tlačítko",
+              "t": "Poptávka"
+            },
+            {
+              "k": "spol-011",
+              "typ": "Položka menu",
+              "t": "Pro skupiny"
+            },
+            {
+              "k": "spol-012",
+              "typ": "Položka menu",
+              "t": "Ubytování"
+            },
+            {
+              "k": "spol-013",
+              "typ": "Položka menu",
+              "t": "Ceník"
+            },
+            {
+              "k": "spol-014",
+              "typ": "Položka menu",
+              "t": "Okolí"
+            },
+            {
+              "k": "spol-015",
+              "typ": "Položka menu",
+              "t": "Zimní pobyty 2027"
+            },
+            {
+              "k": "spol-016",
+              "typ": "Položka menu",
+              "t": "Silvestr 2027"
+            },
+            {
+              "k": "spol-017",
+              "typ": "Položka menu",
+              "t": "Fotogalerie"
+            },
+            {
+              "k": "spol-018",
+              "typ": "Položka menu",
+              "t": "Kontakt"
+            },
+            {
+              "k": "spol-019",
+              "typ": "Položka menu",
+              "t": "Poptat pobyt pro skupinu"
+            }
+          ]
+        },
+        {
+          "nazev": "Patička",
+          "pole": [
+            {
+              "k": "spol-020",
+              "typ": "Položka seznamu",
+              "t": "Kořenov 872\n468 49 Kořenov"
+            },
+            {
+              "k": "spol-021",
+              "typ": "Krátký text",
+              "t": "Provozovatel Alteris s.r.o., IČ 27862313"
+            },
+            {
+              "k": "spol-022",
+              "typ": "Nadpis v patičce",
+              "t": "Poptávky"
+            },
+            {
+              "k": "spol-023",
+              "typ": "Odkaz",
+              "t": "Poptávka pobytu"
+            },
+            {
+              "k": "spol-024",
+              "typ": "Odkaz",
+              "t": "Školy v přírodě"
+            },
+            {
+              "k": "spol-025",
+              "typ": "Odkaz",
+              "t": "Adaptační kurzy"
+            },
+            {
+              "k": "spol-026",
+              "typ": "Odkaz",
+              "t": "Lyžařské výcviky"
+            },
+            {
+              "k": "spol-027",
+              "typ": "Odkaz",
+              "t": "Zimní pobyty 2027"
+            },
+            {
+              "k": "spol-028",
+              "typ": "Odkaz",
+              "t": "Silvestrovský pobyt 2027"
+            },
+            {
+              "k": "spol-029",
+              "typ": "Nadpis v patičce",
+              "t": "Užitečné"
+            },
+            {
+              "k": "spol-030",
+              "typ": "Odkaz",
+              "t": "Ceník a ceny pro skupiny"
+            },
+            {
+              "k": "spol-031",
+              "typ": "Odkaz",
+              "t": "Jak k nám"
+            },
+            {
+              "k": "spol-032",
+              "typ": "Nadpis v patičce",
+              "t": "Oblíbené"
+            },
+            {
+              "k": "spol-033",
+              "typ": "Odkaz",
+              "t": "Okolí chaty"
+            },
+            {
+              "k": "spol-034",
+              "typ": "Odkaz",
+              "t": "Ubytování"
+            },
+            {
+              "k": "spol-035",
+              "typ": "Odkaz",
+              "t": "Fotogalerie"
+            },
+            {
+              "k": "spol-036",
+              "typ": "Nadpis v patičce",
+              "t": "Součást skupiny"
+            },
+            {
+              "k": "spol-037",
+              "typ": "Nadpis v patičce",
+              "t": "Naše další hotely a chaty"
+            },
+            {
+              "k": "spol-038",
+              "typ": "Krátký text",
+              "t": "© 2026 Horská chata Zvonice"
+            },
+            {
+              "k": "spol-039",
+              "typ": "Tlačítko",
+              "t": "Nastavení cookies"
+            }
+          ]
+        },
+        {
+          "nazev": "Pop-up s novinkami",
+          "id": "popup",
+          "zapnuto": true,
+          "pole": [
+            {
+              "k": "spol-040",
+              "typ": "Krátký text",
+              "t": "Novinky 2027"
+            },
+            {
+              "k": "spol-041",
+              "typ": "Nadpis",
+              "t": "Zimní pobyty a Silvestr 2027"
+            },
+            {
+              "k": "spol-042",
+              "typ": "Text",
+              "t": "Lyžařské výcviky a víkendy pro skupiny, sjezdovka s vlekem 200 m od chaty. Silvestrovský pobyt 27. 12. 2026 – 1. 1. 2027 je otevřený i rodinám a partám přátel."
+            },
+            {
+              "k": "spol-043",
+              "typ": "Tlačítko",
+              "t": "Zimní pobyty"
+            },
+            {
+              "k": "spol-044",
+              "typ": "Odkaz",
+              "t": "Silvestrovský pobyt"
+            }
+          ]
+        },
+        {
+          "nazev": "Cookie lišta",
+          "pole": [
+            {
+              "k": "spol-045",
+              "typ": "Nadpis",
+              "t": "Cookies na našem webu"
+            },
+            {
+              "k": "spol-046",
+              "typ": "Text",
+              "t": "Nezbytné cookies potřebuje web ke svému fungování. Se souhlasem používáme i analytické a marketingové cookies (Google Tag Manager, Google Analytics), abychom věděli, co návštěvníky zajímá, a mohli web zlepšovat. Volbu můžete kdykoli změnit v patičce webu."
+            },
+            {
+              "k": "spol-047",
+              "typ": "Tlačítko",
+              "t": "Přijmout vše"
+            },
+            {
+              "k": "spol-048",
+              "typ": "Tlačítko",
+              "t": "Jen nezbytné"
+            }
+          ]
+        }
+      ]
     }
-   ]
-  },
-  {
-   "id": "pobyty",
-   "nazev": "Pro skupiny",
-   "skupiny": [
-    {
-     "nazev": "Úvod stránky",
-     "pole": [
-      {
-       "k": "pobyty-003",
-       "typ": "Hlavní nadpis (na fotce)",
-       "t": "Pobyty pro skupiny"
-      }
-     ]
-    },
-    {
-     "nazev": "Školy v přírodě",
-     "pole": [
-      {
-       "k": "pobyty-004",
-       "typ": "Text",
-       "t": "Zvonice je chata pro školy a větší skupiny. Pokoje, restaurace i klubovna jsou pod jednou střechou. Hned za dveřmi je hřiště a les. Skupinové ceny začínají na 617 Kč za osobu a noc včetně ubytování a stravy 5× denně, na každých 20 platících dětí je jeden dospělý zdarma."
-      },
-      {
-       "k": "pobyty-005",
-       "typ": "Štítek nad nadpisem",
-       "t": "Jaro až podzim"
-      },
-      {
-       "k": "pobyty-006",
-       "typ": "Nadpis",
-       "t": "Školy v přírodě"
-      },
-      {
-       "k": "pobyty-007",
-       "typ": "Text",
-       "t": "Chata leží na samotě v lesích, takže si děti mohou v klidu hrát venku. K dispozici jsou tři místnosti pro výuku a večerní program, jedna z nich s plátnem a projektorem. Na hřišti jsou míčové hry a prolézačky, v létě stojí u chaty venkovní stan. Na přání zajistíme dopravu a animační program a doporučíme výlety do okolí."
-      },
-      {
-       "k": "pobyty-008",
-       "typ": "Položka seznamu",
-       "t": "3 místnosti pro výuku a večerní program"
-      },
-      {
-       "k": "pobyty-009",
-       "typ": "Položka seznamu",
-       "t": "hřiště pro míčové hry, prolézačky a v létě venkovní stan"
-      },
-      {
-       "k": "pobyty-010",
-       "typ": "Položka seznamu",
-       "t": "možnost zajištění dopravy a animačního programu"
-      },
-      {
-       "k": "pobyty-011",
-       "typ": "Položka seznamu",
-       "t": "strava 5× denně a pitný režim"
-      },
-      {
-       "k": "pobyty-012",
-       "typ": "Tlačítko",
-       "t": "Poptat školu v přírodě"
-      },
-      {
-       "k": "pobyty-013",
-       "typ": "Štítek nad nadpisem",
-       "t": "Celoročně"
-      },
-      {
-       "k": "pobyty-014",
-       "typ": "Nadpis",
-       "t": "Adaptační kurzy"
-      },
-      {
-       "k": "pobyty-015",
-       "typ": "Text",
-       "t": "Nový kolektiv se nejlépe seznámí na místě, kde ho nic neruší. Kolem chaty jsou lesy, uvnitř klubovna a stylová restaurace, kde se dá program i promítat."
-      },
-      {
-       "k": "pobyty-016",
-       "typ": "Položka seznamu",
-       "t": "program s lektory přes naše partnery"
-      },
-      {
-       "k": "pobyty-017",
-       "typ": "Položka seznamu",
-       "t": "3 místnosti pro skupinové aktivity a večerní program"
-      },
-      {
-       "k": "pobyty-018",
-       "typ": "Položka seznamu",
-       "t": "louka, hřiště pro míčové hry a v létě venkovní stan"
-      },
-      {
-       "k": "pobyty-019",
-       "typ": "Položka seznamu",
-       "t": "možnost zajištění dopravy"
-      },
-      {
-       "k": "pobyty-020",
-       "typ": "Tlačítko",
-       "t": "Poptat adaptační kurz"
-      },
-      {
-       "k": "pobyty-021",
-       "typ": "Štítek nad nadpisem",
-       "t": "Zima"
-      },
-      {
-       "k": "pobyty-022",
-       "typ": "Nadpis",
-       "t": "Lyžařské výcviky"
-      },
-      {
-       "k": "pobyty-023",
-       "typ": "Text",
-       "t": "Asi 200 metrů od chaty je sjezdovka s vlekem, vhodná pro začátečníky. Kolem chaty vede běžkařská stopa a v okolí jsou další areály: Příchovice, Rejdice, Harrachov a Rokytnice. V zimě se k chatě cesta pluhuje. Na místě si můžete půjčit lyžařské vybavení, sáňky i boby."
-      },
-      {
-       "k": "pobyty-024",
-       "typ": "Položka seznamu",
-       "t": "sjezdovka s vlekem asi 200 m od chaty"
-      },
-      {
-       "k": "pobyty-025",
-       "typ": "Položka seznamu",
-       "t": "běžkařská stopa kolem chaty, Jizerská magistrála"
-      },
-      {
-       "k": "pobyty-026",
-       "typ": "Položka seznamu",
-       "t": "půjčovna lyžařského vybavení, sáněk a bobů"
-      },
-      {
-       "k": "pobyty-027",
-       "typ": "Položka seznamu",
-       "t": "úschovna lyží a krbová kamna v restauraci"
-      },
-      {
-       "k": "pobyty-028",
-       "typ": "Tlačítko",
-       "t": "Poptat lyžařský výcvik"
-      },
-      {
-       "k": "pobyty-029",
-       "typ": "Odkaz",
-       "t": "Zimní pobyty 2027"
-      },
-      {
-       "k": "pobyty-030",
-       "typ": "Štítek nad nadpisem",
-       "t": "Celoročně"
-      },
-      {
-       "k": "pobyty-031",
-       "typ": "Nadpis",
-       "t": "Sportovní soustředění"
-      },
-      {
-       "k": "pobyty-032",
-       "typ": "Text",
-       "t": "U chaty vedou běžecké a cyklistické trasy a od jara do podzimu stojí venkovní stan 20×10 m. Vaříme plnou penzi s pitným režimem a časy jídel přizpůsobíme Vašemu tréninku."
-      },
-      {
-       "k": "pobyty-033",
-       "typ": "Položka seznamu",
-       "t": "běžecké a cyklistické trasy u chaty"
-      },
-      {
-       "k": "pobyty-034",
-       "typ": "Položka seznamu",
-       "t": "od jara do podzimu venkovní stan 20×10 m"
-      },
-      {
-       "k": "pobyty-035",
-       "typ": "Položka seznamu",
-       "t": "plná penze s pitným režimem, časy jídel dle tréninku"
-      },
-      {
-       "k": "pobyty-036",
-       "typ": "Položka seznamu",
-       "t": "úschovna lyží a kol"
-      },
-      {
-       "k": "pobyty-037",
-       "typ": "Tlačítko",
-       "t": "Poptat sportovní soustředění"
-      }
-     ]
-    },
-    {
-     "nazev": "Máte termín a počet dětí?",
-     "pole": [
-      {
-       "k": "pobyty-038",
-       "typ": "Nadpis",
-       "t": "Máte termín a počet dětí?"
-      },
-      {
-       "k": "pobyty-039",
-       "typ": "Text",
-       "t": "Napište nám, s kým a kdy jedete. Připravíme nabídku na celý pobyt."
-      },
-      {
-       "k": "pobyty-040",
-       "typ": "Tlačítko",
-       "t": "Poptat pobyt"
-      }
-     ]
-    },
-    {
-     "nazev": "Další typy pobytů",
-     "pole": [
-      {
-       "k": "pobyty-041",
-       "typ": "Položka menu",
-       "t": "Typy pobytů"
-      },
-      {
-       "k": "pobyty-042",
-       "typ": "Štítek nad nadpisem",
-       "t": "Zima"
-      },
-      {
-       "k": "pobyty-043",
-       "typ": "Nadpis",
-       "t": "Zimní tábory"
-      },
-      {
-       "k": "pobyty-044",
-       "typ": "Text",
-       "t": "Zima na Zvonici patří dětem. Sjezdovky jsou blízko chaty, k dispozici je lyžárna a půjčovna lyží a před chatou se dá boby a sáňkami jezdit celé odpoledne."
-      },
-      {
-       "k": "pobyty-045",
-       "typ": "Položka seznamu",
-       "t": "blízké sjezdovky, lyžárna a půjčovna lyží"
-      },
-      {
-       "k": "pobyty-046",
-       "typ": "Položka seznamu",
-       "t": "boby a sáňky"
-      },
-      {
-       "k": "pobyty-047",
-       "typ": "Položka seznamu",
-       "t": "možnost skipasu"
-      },
-      {
-       "k": "pobyty-048",
-       "typ": "Položka seznamu",
-       "t": "možnost zajištění dopravy"
-      },
-      {
-       "k": "pobyty-049",
-       "typ": "Tlačítko",
-       "t": "Poptat zimní tábor"
-      },
-      {
-       "k": "pobyty-050",
-       "typ": "Štítek nad nadpisem",
-       "t": "Celoročně"
-      },
-      {
-       "k": "pobyty-051",
-       "typ": "Nadpis",
-       "t": "Rodinné pobyty"
-      },
-      {
-       "k": "pobyty-052",
-       "typ": "Text",
-       "t": "Děti si zahrají na bezpečném prostranství u chaty nebo v dětském koutku. V okolí je spousta cílů na výlet: Mumlavský vodopád, Kozí farma Pěnčín nebo iQLANDIA Liberec."
-      },
-      {
-       "k": "pobyty-053",
-       "typ": "Položka seznamu",
-       "t": "bezpečný prostor na hraní"
-      },
-      {
-       "k": "pobyty-054",
-       "typ": "Položka seznamu",
-       "t": "dětský koutek"
-      },
-      {
-       "k": "pobyty-055",
-       "typ": "Položka seznamu",
-       "t": "rodinné pokoje"
-      },
-      {
-       "k": "pobyty-056",
-       "typ": "Položka seznamu",
-       "t": "slevy pro děti"
-      },
-      {
-       "k": "pobyty-057",
-       "typ": "Tlačítko",
-       "t": "Poptat rodinný pobyt"
-      },
-      {
-       "k": "pobyty-058",
-       "typ": "Štítek nad nadpisem",
-       "t": "Od jara do podzimu"
-      },
-      {
-       "k": "pobyty-059",
-       "typ": "Nadpis",
-       "t": "Svatby"
-      },
-      {
-       "k": "pobyty-060",
-       "typ": "Text",
-       "t": "Obřad i hostinu můžete uspořádat ve venkovním stanu přímo u chaty. Chatu si pronajmete celou, takže budete mít k dispozici všechny prostory i okolí."
-      },
-      {
-       "k": "pobyty-061",
-       "typ": "Položka seznamu",
-       "t": "venkovní stan u chaty"
-      },
-      {
-       "k": "pobyty-062",
-       "typ": "Položka seznamu",
-       "t": "obřad i hostina na jednom místě"
-      },
-      {
-       "k": "pobyty-063",
-       "typ": "Položka seznamu",
-       "t": "pronájem celé chaty"
-      },
-      {
-       "k": "pobyty-064",
-       "typ": "Tlačítko",
-       "t": "Poptat svatbu"
-      }
-     ]
-    },
-    {
-     "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
-     "pole": [
-      {
-       "k": "pobyty-001",
-       "typ": "Titulek v Googlu (záložka prohlížeče)",
-       "t": "Pobyty pro skupiny – školy v přírodě, adaptační kurzy, lyžáky | Horská chata Zvonice",
-       "seo": true
-      },
-      {
-       "k": "pobyty-002",
-       "typ": "Popis v Googlu",
-       "t": "Školy v přírodě, adaptační kurzy, lyžařské výcviky a pobyty pro skupiny na Horské chatě Zvonice v Kořenově. Až 100 lůžek, ceny od 617 Kč za osobu a noc se stravou 5× denně.",
-       "seo": true
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "ubytovani",
-   "nazev": "Ubytování",
-   "skupiny": [
-    {
-     "nazev": "Úvod stránky",
-     "pole": [
-      {
-       "k": "ubyt-003",
-       "typ": "Hlavní nadpis (na fotce)",
-       "t": "Ubytování"
-      }
-     ]
-    },
-    {
-     "nazev": "Pokoje pro dvojice i velké party",
-     "pole": [
-      {
-       "k": "ubyt-004",
-       "typ": "Text",
-       "t": "Horská chata Zvonice nabízí až 100 lůžek. Pokoje jsou převážně dvou až čtyřlůžkové a je tu jeden osmilůžkový. Na každém pokoji je umyvadlo, sociální zařízení je na chodbě. Dva pokoje mají kompletní zařízení."
-      },
-      {
-       "k": "ubyt-005",
-       "typ": "Štítek nad nadpisem",
-       "t": "Pokoje"
-      },
-      {
-       "k": "ubyt-006",
-       "typ": "Nadpis",
-       "t": "Pokoje pro dvojice i velké party"
-      },
-      {
-       "k": "ubyt-007",
-       "typ": "Text",
-       "t": "Dvou až čtyřlůžkové pokoje se hodí pro děti i dospělé. Pro větší partu je k dispozici osmilůžkový pokoj. Přesné rozdělení pokojů Vám rádi upřesníme v nabídce."
-      },
-      {
-       "k": "ubyt-008",
-       "typ": "Odkaz",
-       "t": "Poptat ubytování"
-      },
-      {
-       "k": "ubyt-009",
-       "typ": "Štítek nad nadpisem",
-       "t": "Podkroví"
-      },
-      {
-       "k": "ubyt-010",
-       "typ": "Nadpis",
-       "t": "Podkrovní pokoje"
-      },
-      {
-       "k": "ubyt-011",
-       "typ": "Text",
-       "t": "V podkroví jsou pokoje s dřevěným obložením a šikmými stropy. Hodí se pro skupinu dětí."
-      },
-      {
-       "k": "ubyt-012",
-       "typ": "Odkaz",
-       "t": "Pobyty pro skupiny"
-      },
-      {
-       "k": "ubyt-013",
-       "typ": "Štítek nad nadpisem",
-       "t": "Stravování"
-      },
-      {
-       "k": "ubyt-014",
-       "typ": "Nadpis",
-       "t": "Stylová restaurace"
-      },
-      {
-       "k": "ubyt-015",
-       "typ": "Text",
-       "t": "Restaurace má plátno a projektor, takže se hodí i na výuku nebo večerní promítání. V zimě hřejí krbová kamna. Skupinám vaříme stravu 5× denně."
-      },
-      {
-       "k": "ubyt-016",
-       "typ": "Odkaz",
-       "t": "Ceny se stravou"
-      },
-      {
-       "k": "ubyt-017",
-       "typ": "Štítek nad nadpisem",
-       "t": "Vybavení chaty"
-      },
-      {
-       "k": "ubyt-018",
-       "typ": "Nadpis",
-       "t": "Co u nás najdete"
-      },
-      {
-       "k": "ubyt-019",
-       "typ": "Položka seznamu",
-       "t": "až 100 lůžek"
-      },
-      {
-       "k": "ubyt-020",
-       "typ": "Položka seznamu",
-       "t": "umyvadlo na pokoji"
-      },
-      {
-       "k": "ubyt-021",
-       "typ": "Položka seznamu",
-       "t": "stylová restaurace s plátnem a projektorem"
-      },
-      {
-       "k": "ubyt-022",
-       "typ": "Položka seznamu",
-       "t": "klubovna s dětským koutkem"
-      },
-      {
-       "k": "ubyt-023",
-       "typ": "Položka seznamu",
-       "t": "bar a wifi"
-      },
-      {
-       "k": "ubyt-024",
-       "typ": "Položka seznamu",
-       "t": "venkovní posezení"
-      },
-      {
-       "k": "ubyt-025",
-       "typ": "Položka seznamu",
-       "t": "pískoviště a průlezky"
-      },
-      {
-       "k": "ubyt-026",
-       "typ": "Položka seznamu",
-       "t": "hřiště pro míčové hry"
-      },
-      {
-       "k": "ubyt-027",
-       "typ": "Položka seznamu",
-       "t": "úschovna lyží a kol"
-      },
-      {
-       "k": "ubyt-028",
-       "typ": "Položka seznamu",
-       "t": "krbová kamna v restauraci"
-      },
-      {
-       "k": "ubyt-029",
-       "typ": "Položka seznamu",
-       "t": "v létě party stan 20×10 m"
-      },
-      {
-       "k": "ubyt-030",
-       "typ": "Položka seznamu",
-       "t": "parkování zdarma"
-      }
-     ]
-    },
-    {
-     "nazev": "Vejde se k nám celá škola",
-     "pole": [
-      {
-       "k": "ubyt-031",
-       "typ": "Nadpis",
-       "t": "Vejde se k nám celá škola"
-      },
-      {
-       "k": "ubyt-032",
-       "typ": "Text",
-       "t": "Pošlete nám termín a počet osob, připravíme nabídku."
-      },
-      {
-       "k": "ubyt-033",
-       "typ": "Tlačítko",
-       "t": "Poptat pobyt"
-      }
-     ]
-    },
-    {
-     "nazev": "Pokoje s vlastní koupelnou a bar",
-     "pole": [
-      {
-       "k": "ubyt-034",
-       "typ": "Štítek nad nadpisem",
-       "t": "Pokoje"
-      },
-      {
-       "k": "ubyt-035",
-       "typ": "Nadpis",
-       "t": "Pokoje s vlastní koupelnou"
-      },
-      {
-       "k": "ubyt-036",
-       "typ": "Text",
-       "t": "Pro hosty, kteří chtějí víc soukromí, máme pokoje s vlastní koupelnou. Rádi je zajistíme pro dospělé i rodiny s dětmi."
-      },
-      {
-       "k": "ubyt-037",
-       "typ": "Štítek nad nadpisem",
-       "t": "Bar"
-      },
-      {
-       "k": "ubyt-038",
-       "typ": "Nadpis",
-       "t": "Bar"
-      },
-      {
-       "k": "ubyt-039",
-       "typ": "Text",
-       "t": "Po večeři se sejdete u baru v restauraci. Posedíte u krbových kamen a dáte si něco dobrého k pití."
-      },
-      {
-       "k": "ubyt-040",
-       "typ": "Položka seznamu",
-       "t": "sauna"
-      },
-      {
-       "k": "ubyt-041",
-       "typ": "Položka seznamu",
-       "t": "ping pong"
-      },
-      {
-       "k": "ubyt-042",
-       "typ": "Položka seznamu",
-       "t": "kulečník"
-      },
-      {
-       "k": "ubyt-043",
-       "typ": "Položka seznamu",
-       "t": "fotbálek"
-      }
-     ]
-    },
-    {
-     "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
-     "pole": [
-      {
-       "k": "ubyt-001",
-       "typ": "Titulek v Googlu (záložka prohlížeče)",
-       "t": "Ubytování v Kořenově – až 100 lůžek | Horská chata Zvonice",
-       "seo": true
-      },
-      {
-       "k": "ubyt-002",
-       "typ": "Popis v Googlu",
-       "t": "Horská chata Zvonice: až 100 lůžek v převážně dvou až čtyřlůžkových pokojích, restaurace s projektorem, klubovna s dětským koutkem, bar a wifi.",
-       "seo": true
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "cenik",
-   "nazev": "Ceník",
-   "skupiny": [
-    {
-     "nazev": "Úvod stránky",
-     "pole": [
-      {
-       "k": "cenik-003",
-       "typ": "Hlavní nadpis (na fotce)",
-       "t": "Ceník"
-      }
-     ]
-    },
-    {
-     "nazev": "Ceník pro školy a skupiny 2027",
-     "pole": [
-      {
-       "k": "cenik-004",
-       "typ": "Text",
-       "t": "Ceny jsou za osobu a noc. Pro školy a velké skupiny připravíme nabídku na celý pobyt."
-      },
-      {
-       "k": "cenik-005",
-       "typ": "Štítek nad nadpisem",
-       "t": "Skupiny"
-      },
-      {
-       "k": "cenik-006",
-       "typ": "Nadpis",
-       "t": "Ceník pro školy a skupiny 2027"
-      },
-      {
-       "k": "cenik-007",
-       "typ": "Text",
-       "t": "Ceny platí pro 2027, jsou za osobu a noc a zahrnují ubytování, plnou penzi 5× denně (snídaně, svačina, oběd, svačina, večeře) a celodenní pitný režim."
-      },
-      {
-       "typ": "tabulka",
-       "hlavicka": null,
-       "radky": [
-        [
-         "Dospělá osoba včetně plné penze",
-         "872 Kč"
-        ],
-        [
-         "Doprovod",
-         "1 dospělý zdarma na každých 20 platících dětí"
-        ]
-       ],
-       "k": "cenik-008"
-      },
-      {
-       "k": "cenik-009",
-       "typ": "Rozbalovací nadpis",
-       "t": "1. stupeň ZŠ"
-      },
-      {
-       "k": "cenik-010",
-       "typ": "Podnadpis",
-       "t": "Mimo sezónu"
-      },
-      {
-       "k": "cenik-011",
-       "typ": "Drobný text",
-       "t": "září, říjen, listopad, prosinec do 20. 12., duben"
-      },
-      {
-       "typ": "tabulka",
-       "hlavicka": [
-        "Počet osob",
-        "1 noc",
-        "2–3 noci",
-        "4–5 nocí",
-        "6 a více nocí"
-       ],
-       "radky": [
-        [
-         "do 15 osob",
-         "756 Kč",
-         "735 Kč",
-         "714 Kč",
-         "694 Kč"
-        ],
-        [
-         "16–30 osob",
-         "746 Kč",
-         "725 Kč",
-         "704 Kč",
-         "684 Kč"
-        ],
-        [
-         "31–50 osob",
-         "736 Kč",
-         "715 Kč",
-         "694 Kč",
-         "674 Kč"
-        ],
-        [
-         "51–70 osob",
-         "726 Kč",
-         "705 Kč",
-         "684 Kč",
-         "664 Kč"
-        ],
-        [
-         "nad 70 osob",
-         "719 Kč",
-         "695 Kč",
-         "674 Kč",
-         "654 Kč"
-        ]
-       ],
-       "k": "cenik-012"
-      },
-      {
-       "k": "cenik-013",
-       "typ": "Podnadpis",
-       "t": "V sezóně"
-      },
-      {
-       "k": "cenik-014",
-       "typ": "Drobný text",
-       "t": "prosinec od 20. 12., leden, únor, březen, květen–srpen"
-      },
-      {
-       "typ": "tabulka",
-       "hlavicka": [
-        "Počet osob",
-        "1 noc",
-        "2–3 noci",
-        "4–5 nocí",
-        "6 a více nocí"
-       ],
-       "radky": [
-        [
-         "do 15 osob",
-         "819 Kč",
-         "798 Kč",
-         "777 Kč",
-         "757 Kč"
-        ],
-        [
-         "16–30 osob",
-         "809 Kč",
-         "788 Kč",
-         "767 Kč",
-         "747 Kč"
-        ],
-        [
-         "31–50 osob",
-         "799 Kč",
-         "778 Kč",
-         "757 Kč",
-         "737 Kč"
-        ],
-        [
-         "51–70 osob",
-         "789 Kč",
-         "768 Kč",
-         "747 Kč",
-         "727 Kč"
-        ],
-        [
-         "nad 70 osob",
-         "779 Kč",
-         "758 Kč",
-         "737 Kč",
-         "717 Kč"
-        ]
-       ],
-       "k": "cenik-015"
-      },
-      {
-       "k": "cenik-016",
-       "typ": "Rozbalovací nadpis",
-       "t": "2. stupeň ZŠ"
-      },
-      {
-       "k": "cenik-017",
-       "typ": "Podnadpis",
-       "t": "Mimo sezónu"
-      },
-      {
-       "k": "cenik-018",
-       "typ": "Drobný text",
-       "t": "září, říjen, listopad, prosinec do 20. 12., duben"
-      },
-      {
-       "typ": "tabulka",
-       "hlavicka": [
-        "Počet osob",
-        "1 noc",
-        "2–3 noci",
-        "4–5 nocí",
-        "6 a více nocí"
-       ],
-       "radky": [
-        [
-         "do 15 osob",
-         "779 Kč",
-         "758 Kč",
-         "738 Kč",
-         "718 Kč"
-        ],
-        [
-         "16–30 osob",
-         "769 Kč",
-         "748 Kč",
-         "728 Kč",
-         "708 Kč"
-        ],
-        [
-         "31–50 osob",
-         "759 Kč",
-         "738 Kč",
-         "718 Kč",
-         "698 Kč"
-        ],
-        [
-         "51–70 osob",
-         "749 Kč",
-         "728 Kč",
-         "708 Kč",
-         "688 Kč"
-        ],
-        [
-         "nad 70 osob",
-         "739 Kč",
-         "718 Kč",
-         "698 Kč",
-         "678 Kč"
-        ]
-       ],
-       "k": "cenik-019"
-      },
-      {
-       "k": "cenik-020",
-       "typ": "Podnadpis",
-       "t": "V sezóně"
-      },
-      {
-       "k": "cenik-021",
-       "typ": "Drobný text",
-       "t": "prosinec od 20. 12., leden, únor, březen, květen–srpen"
-      },
-      {
-       "typ": "tabulka",
-       "hlavicka": [
-        "Počet osob",
-        "1 noc",
-        "2–3 noci",
-        "4–5 nocí",
-        "6 a více nocí"
-       ],
-       "radky": [
-        [
-         "do 15 osob",
-         "835 Kč",
-         "814 Kč",
-         "803 Kč",
-         "783 Kč"
-        ],
-        [
-         "16–30 osob",
-         "824 Kč",
-         "804 Kč",
-         "793 Kč",
-         "773 Kč"
-        ],
-        [
-         "31–50 osob",
-         "814 Kč",
-         "794 Kč",
-         "783 Kč",
-         "763 Kč"
-        ],
-        [
-         "51–70 osob",
-         "804 Kč",
-         "784 Kč",
-         "773 Kč",
-         "753 Kč"
-        ],
-        [
-         "nad 70 osob",
-         "794 Kč",
-         "774 Kč",
-         "761 Kč",
-         "743 Kč"
-        ]
-       ],
-       "k": "cenik-022"
-      },
-      {
-       "k": "cenik-023",
-       "typ": "Rozbalovací nadpis",
-       "t": "Mateřské školy"
-      },
-      {
-       "k": "cenik-024",
-       "typ": "Podnadpis",
-       "t": "Mimo sezónu"
-      },
-      {
-       "k": "cenik-025",
-       "typ": "Drobný text",
-       "t": "září, říjen, listopad, prosinec do 20. 12., duben"
-      },
-      {
-       "typ": "tabulka",
-       "hlavicka": [
-        "Počet osob",
-        "1 noc",
-        "2–3 noci",
-        "4–5 nocí",
-        "6 a více nocí"
-       ],
-       "radky": [
-        [
-         "do 15 osob",
-         "719 Kč",
-         "698 Kč",
-         "677 Kč",
-         "657 Kč"
-        ],
-        [
-         "16–30 osob",
-         "709 Kč",
-         "688 Kč",
-         "667 Kč",
-         "647 Kč"
-        ],
-        [
-         "31–50 osob",
-         "699 Kč",
-         "678 Kč",
-         "657 Kč",
-         "637 Kč"
-        ],
-        [
-         "51–70 osob",
-         "689 Kč",
-         "668 Kč",
-         "647 Kč",
-         "627 Kč"
-        ],
-        [
-         "nad 70 osob",
-         "679 Kč",
-         "658 Kč",
-         "637 Kč",
-         "617 Kč"
-        ]
-       ],
-       "k": "cenik-026"
-      },
-      {
-       "k": "cenik-027",
-       "typ": "Podnadpis",
-       "t": "V sezóně"
-      },
-      {
-       "k": "cenik-028",
-       "typ": "Drobný text",
-       "t": "prosinec od 20. 12., leden, únor, březen, květen–srpen"
-      },
-      {
-       "typ": "tabulka",
-       "hlavicka": [
-        "Počet osob",
-        "1 noc",
-        "2–3 noci",
-        "4–5 nocí",
-        "6 a více nocí"
-       ],
-       "radky": [
-        [
-         "do 15 osob",
-         "772 Kč",
-         "751 Kč",
-         "730 Kč",
-         "714 Kč"
-        ],
-        [
-         "16–30 osob",
-         "761 Kč",
-         "741 Kč",
-         "720 Kč",
-         "704 Kč"
-        ],
-        [
-         "31–50 osob",
-         "751 Kč",
-         "731 Kč",
-         "710 Kč",
-         "694 Kč"
-        ],
-        [
-         "51–70 osob",
-         "741 Kč",
-         "721 Kč",
-         "700 Kč",
-         "684 Kč"
-        ],
-        [
-         "nad 70 osob",
-         "731 Kč",
-         "711 Kč",
-         "690 Kč",
-         "674 Kč"
-        ]
-       ],
-       "k": "cenik-029"
-      },
-      {
-       "k": "cenik-030",
-       "typ": "Rozbalovací nadpis",
-       "t": "Střední školy"
-      },
-      {
-       "k": "cenik-031",
-       "typ": "Podnadpis",
-       "t": "Mimo sezónu"
-      },
-      {
-       "k": "cenik-032",
-       "typ": "Drobný text",
-       "t": "září, říjen, listopad, prosinec do 20. 12., duben"
-      },
-      {
-       "typ": "tabulka",
-       "hlavicka": [
-        "Počet osob",
-        "1 noc",
-        "2–3 noci",
-        "4–5 nocí",
-        "6 a více nocí"
-       ],
-       "radky": [
-        [
-         "do 15 osob",
-         "804 Kč",
-         "783 Kč",
-         "763 Kč",
-         "747 Kč"
-        ],
-        [
-         "16–30 osob",
-         "794 Kč",
-         "773 Kč",
-         "753 Kč",
-         "737 Kč"
-        ],
-        [
-         "31–50 osob",
-         "784 Kč",
-         "763 Kč",
-         "743 Kč",
-         "727 Kč"
-        ],
-        [
-         "51–70 osob",
-         "774 Kč",
-         "753 Kč",
-         "733 Kč",
-         "717 Kč"
-        ],
-        [
-         "nad 70 osob",
-         "764 Kč",
-         "743 Kč",
-         "723 Kč",
-         "707 Kč"
-        ]
-       ],
-       "k": "cenik-033"
-      },
-      {
-       "k": "cenik-034",
-       "typ": "Podnadpis",
-       "t": "V sezóně"
-      },
-      {
-       "k": "cenik-035",
-       "typ": "Drobný text",
-       "t": "prosinec od 20. 12., leden, únor, březen, květen–srpen"
-      },
-      {
-       "typ": "tabulka",
-       "hlavicka": [
-        "Počet osob",
-        "1 noc",
-        "2–3 noci",
-        "4–5 nocí",
-        "6 a více nocí"
-       ],
-       "radky": [
-        [
-         "do 15 osob",
-         "861 Kč",
-         "840 Kč",
-         "830 Kč",
-         "814 Kč"
-        ],
-        [
-         "16–30 osob",
-         "851 Kč",
-         "830 Kč",
-         "820 Kč",
-         "804 Kč"
-        ],
-        [
-         "31–50 osob",
-         "841 Kč",
-         "820 Kč",
-         "810 Kč",
-         "794 Kč"
-        ],
-        [
-         "51–70 osob",
-         "831 Kč",
-         "810 Kč",
-         "800 Kč",
-         "784 Kč"
-        ],
-        [
-         "nad 70 osob",
-         "821 Kč",
-         "800 Kč",
-         "790 Kč",
-         "774 Kč"
-        ]
-       ],
-       "k": "cenik-036"
-      },
-      {
-       "k": "cenik-037",
-       "typ": "Drobný text",
-       "t": "Konečnou cenu podle počtu osob a délky pobytu potvrdíme v nabídce."
-      },
-      {
-       "k": "cenik-038",
-       "typ": "Štítek nad nadpisem",
-       "t": "Individuální hosté"
-      },
-      {
-       "k": "cenik-039",
-       "typ": "Nadpis",
-       "t": "Ceny za osobu a noc"
-      },
-      {
-       "typ": "tabulka",
-       "hlavicka": [
-        "Stravování",
-        "Cena"
-       ],
-       "radky": [
-        [
-         "Bez stravy",
-         "735 Kč"
-        ],
-        [
-         "Se snídaní",
-         "893 Kč"
-        ],
-        [
-         "Polopenze",
-         "1 103 Kč"
-        ],
-        [
-         "Plná penze",
-         "1 260 Kč"
-        ]
-       ],
-       "k": "cenik-040"
-      }
-     ]
-    },
-    {
-     "nazev": "Parkování u chaty",
-     "pole": [
-      {
-       "k": "cenik-041",
-       "typ": "Štítek nad nadpisem",
-       "t": "Parkování"
-      },
-      {
-       "k": "cenik-042",
-       "typ": "Nadpis",
-       "t": "Parkování u chaty"
-      },
-      {
-       "typ": "tabulka",
-       "hlavicka": null,
-       "radky": [
-        [
-         "Ubytovaní hosté",
-         "zdarma"
-        ],
-        [
-         "Neubytovaní",
-         "100 Kč za den"
-        ]
-       ],
-       "k": "cenik-043"
-      }
-     ]
-    },
-    {
-     "nazev": "Spočítáme Vám celý pobyt",
-     "pole": [
-      {
-       "k": "cenik-044",
-       "typ": "Nadpis",
-       "t": "Spočítáme Vám celý pobyt"
-      },
-      {
-       "k": "cenik-045",
-       "typ": "Text",
-       "t": "Napište počet dětí a dospělých, termín a stravu. Pošleme nabídku."
-      },
-      {
-       "k": "cenik-046",
-       "typ": "Tlačítko",
-       "t": "Poptat pobyt"
-      }
-     ]
-    },
-    {
-     "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
-     "pole": [
-      {
-       "k": "cenik-001",
-       "typ": "Titulek v Googlu (záložka prohlížeče)",
-       "t": "Ceník – od 617 Kč za osobu a noc se stravou | Horská chata Zvonice",
-       "seo": true
-      },
-      {
-       "k": "cenik-002",
-       "typ": "Popis v Googlu",
-       "t": "Ceník Horské chaty Zvonice v Kořenově: skupiny od 617 Kč za osobu a noc s plnou penzí 5× denně, nocleh od 735 Kč, parkování pro ubytované zdarma.",
-       "seo": true
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "zimni-pobyty",
-   "nazev": "Zimní pobyty",
-   "skupiny": [
-    {
-     "nazev": "Úvod stránky",
-     "pole": [
-      {
-       "k": "zima-003",
-       "typ": "Hlavní nadpis (na fotce)",
-       "t": "Zimní pobyty 2027"
-      }
-     ]
-    },
-    {
-     "nazev": "Zima v Jizerských horách pro celou skupinu",
-     "pole": [
-      {
-       "k": "zima-004",
-       "typ": "Štítek nad nadpisem",
-       "t": "Prosinec 2026 – březen 2027"
-      },
-      {
-       "k": "zima-005",
-       "typ": "Nadpis",
-       "t": "Zima v Jizerských horách pro celou skupinu"
-      },
-      {
-       "k": "zima-006",
-       "typ": "Text",
-       "t": "Lyžařské výcviky pro školy a skupinové lyžařské víkendy pro oddíly, spolky a party přátel. Sjezdovka s vlekem je asi 200 metrů od chaty a kolem chaty vede běžkařská stopa."
-      },
-      {
-       "k": "zima-007",
-       "typ": "Štítek nad nadpisem",
-       "t": "Lyžařské výcviky"
-      },
-      {
-       "k": "zima-008",
-       "typ": "Nadpis",
-       "t": "Pro školy"
-      },
-      {
-       "k": "zima-009",
-       "typ": "Text",
-       "t": "Sjezdovka s vlekem je vhodná pro začátečníky a po lyžování se děti vrátí do tepla chaty. V zimě se k chatě cesta pluhuje."
-      },
-      {
-       "k": "zima-010",
-       "typ": "Položka seznamu",
-       "t": "sjezdovka s vlekem asi 200 m"
-      },
-      {
-       "k": "zima-011",
-       "typ": "Položka seznamu",
-       "t": "úschovna lyží"
-      },
-      {
-       "k": "zima-012",
-       "typ": "Položka seznamu",
-       "t": "strava 5× denně a pitný režim v ceně"
-      },
-      {
-       "k": "zima-013",
-       "typ": "Položka seznamu",
-       "t": "na 20 platících dětí 1 doprovod zdarma"
-      },
-      {
-       "k": "zima-014",
-       "typ": "Tlačítko",
-       "t": "Poptat lyžařský výcvik"
-      },
-      {
-       "k": "zima-015",
-       "typ": "Štítek nad nadpisem",
-       "t": "Víkendy"
-      },
-      {
-       "k": "zima-016",
-       "typ": "Nadpis",
-       "t": "Skupinové lyžařské víkendy"
-      },
-      {
-       "k": "zima-017",
-       "typ": "Text",
-       "t": "Pro sportovní oddíly, spolky a rodinné či přátelské skupiny. Celá chata je jen pro Vás, večer u krbových kamen v restauraci."
-      },
-      {
-       "k": "zima-018",
-       "typ": "Položka seznamu",
-       "t": "běžkařská stopa kolem chaty, Jizerská magistrála"
-      },
-      {
-       "k": "zima-019",
-       "typ": "Položka seznamu",
-       "t": "krbová kamna v restauraci"
-      },
-      {
-       "k": "zima-020",
-       "typ": "Položka seznamu",
-       "t": "klubovna a společenské místnosti"
-      },
-      {
-       "k": "zima-021",
-       "typ": "Položka seznamu",
-       "t": "parkování pro ubytované zdarma"
-      },
-      {
-       "k": "zima-022",
-       "typ": "Tlačítko",
-       "t": "Poptat zimní víkend"
-      }
-     ]
-    },
-    {
-     "nazev": "Sezónní ceny pro skupiny",
-     "pole": [
-      {
-       "k": "zima-023",
-       "typ": "Štítek nad nadpisem",
-       "t": "Cena"
-      },
-      {
-       "k": "zima-024",
-       "typ": "Nadpis",
-       "t": "Sezónní ceny pro skupiny"
-      },
-      {
-       "k": "zima-025",
-       "typ": "Text",
-       "t": "Sezóna zahrnuje prosinec od 20. 12., leden, únor a březen. Ceny jsou za osobu a noc včetně plné penze 5× denně a pitného režimu, kompletní tabulky najdete v ceníku."
-      },
-      {
-       "k": "zima-026",
-       "typ": "Tlačítko",
-       "t": "Ceník skupin 2027"
-      }
-     ]
-    },
-    {
-     "nazev": "Zimní termíny se plní",
-     "pole": [
-      {
-       "k": "zima-027",
-       "typ": "Nadpis",
-       "t": "Zimní termíny se plní"
-      },
-      {
-       "k": "zima-028",
-       "typ": "Text",
-       "t": "Napište termín a počet osob, pošleme nabídku na celý pobyt."
-      },
-      {
-       "k": "zima-029",
-       "typ": "Tlačítko",
-       "t": "Poptat zimní pobyt"
-      }
-     ]
-    },
-    {
-     "nazev": "Zimní tábory",
-     "pole": [
-      {
-       "k": "zima-030",
-       "typ": "Štítek nad nadpisem",
-       "t": "Zimní tábory"
-      },
-      {
-       "k": "zima-031",
-       "typ": "Nadpis",
-       "t": "Pro děti"
-      },
-      {
-       "k": "zima-032",
-       "typ": "Text",
-       "t": "Blízké sjezdovky, lyžárna a půjčovna lyží, boby a sáňky. Na přání zajistíme skipasy a dopravu."
-      },
-      {
-       "k": "zima-033",
-       "typ": "Položka seznamu",
-       "t": "blízké sjezdovky a lyžárna"
-      },
-      {
-       "k": "zima-034",
-       "typ": "Položka seznamu",
-       "t": "půjčovna lyží, bobů a sáněk"
-      },
-      {
-       "k": "zima-035",
-       "typ": "Položka seznamu",
-       "t": "možnost skipasu"
-      },
-      {
-       "k": "zima-036",
-       "typ": "Položka seznamu",
-       "t": "možnost zajištění dopravy"
-      },
-      {
-       "k": "zima-037",
-       "typ": "Tlačítko",
-       "t": "Poptat zimní tábor"
-      }
-     ]
-    },
-    {
-     "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
-     "pole": [
-      {
-       "k": "zima-001",
-       "typ": "Titulek v Googlu (záložka prohlížeče)",
-       "t": "Zimní pobyty 2027 – lyžařské výcviky a víkendy | Horská chata Zvonice",
-       "seo": true
-      },
-      {
-       "k": "zima-002",
-       "typ": "Popis v Googlu",
-       "t": "Zimní pobyty 2027 na Horské chatě Zvonice v Kořenově: lyžařské výcviky a skupinové lyžařské víkendy, sjezdovka s vlekem asi 200 m, běžkařská stopa u chaty.",
-       "seo": true
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "silvestr",
-   "nazev": "Silvestr",
-   "skupiny": [
-    {
-     "nazev": "Úvod stránky",
-     "pole": [
-      {
-       "k": "silv-003",
-       "typ": "Hlavní nadpis (na fotce)",
-       "t": "Silvestrovský pobyt 2027"
-      }
-     ]
-    },
-    {
-     "nazev": "Konec roku v lesích Jizerských hor",
-     "pole": [
-      {
-       "k": "silv-004",
-       "typ": "Štítek nad nadpisem",
-       "t": "27. prosince 2026 – 1. ledna 2027"
-      },
-      {
-       "k": "silv-005",
-       "typ": "Nadpis",
-       "t": "Konec roku v lesích Jizerských hor"
-      },
-      {
-       "k": "silv-006",
-       "typ": "Text",
-       "t": "Silvestr je jediný termín, kdy na Zvonici ubytováváme i jednotlivce, rodiny a party přátel. Chata je celá Vaše a nikdo Vás nebude rušit. Kolem chaty vede běžkařská stopa a sjezdovka s vlekem je asi 200 metrů daleko."
-      },
-      {
-       "k": "silv-007",
-       "typ": "Text",
-       "t": "Stylová restaurace s krbovými kamny pojme celou společnost. Je tu plátno a projektor, bar a wifi, venku posezení a hřiště. Do centra Kořenova je to asi 500 metrů."
-      },
-      {
-       "k": "silv-008",
-       "typ": "Položka seznamu",
-       "t": "běžkařská stopa kolem chaty, Jizerská magistrála"
-      },
-      {
-       "k": "silv-009",
-       "typ": "Položka seznamu",
-       "t": "sjezdovka s vlekem asi 200 m"
-      },
-      {
-       "k": "silv-010",
-       "typ": "Položka seznamu",
-       "t": "restaurace s krbovými kamny"
-      },
-      {
-       "k": "silv-011",
-       "typ": "Položka seznamu",
-       "t": "klubovna s dětským koutkem"
-      },
-      {
-       "k": "silv-012",
-       "typ": "Položka seznamu",
-       "t": "parkování pro ubytované zdarma"
-      },
-      {
-       "k": "silv-013",
-       "typ": "Položka seznamu",
-       "t": "domácí mazlíčci jsou vítáni"
-      }
-     ]
-    },
-    {
-     "nazev": "od 1 300 Kč za osobu a noc",
-     "pole": [
-      {
-       "k": "silv-014",
-       "typ": "Štítek nad nadpisem",
-       "t": "Cena"
-      },
-      {
-       "k": "silv-015",
-       "typ": "Nadpis",
-       "t": "od 1 300 Kč za osobu a noc"
-      },
-      {
-       "k": "silv-016",
-       "typ": "Text",
-       "t": "27. 12. 2026 – 1. 1. 2027"
-      },
-      {
-       "typ": "tabulka",
-       "hlavicka": null,
-       "radky": [
-        [
-         "Polopenze",
-         "1 300 Kč"
-        ],
-        [
-         "Plná penze",
-         "1 500 Kč"
-        ],
-        [
-         "Silvestrovské občerstvení (příplatek)",
-         "300 Kč / os."
-        ]
-       ],
-       "k": "silv-017"
-      },
-      {
-       "k": "silv-018",
-       "typ": "Text",
-       "t": "Děti: do 2,99 let zdarma (bez lůžka), 3–9 let včetně sleva 40 %, 10–15 let včetně sleva 20 %."
-      },
-      {
-       "k": "silv-019",
-       "typ": "Tlačítko",
-       "t": "Poptat Silvestr"
-      }
-     ]
-    },
-    {
-     "nazev": "Silvestrovský program",
-     "pole": [
-      {
-       "k": "silv-020",
-       "typ": "Štítek nad nadpisem",
-       "t": "Silvestrovský program"
-      },
-      {
-       "k": "silv-021",
-       "typ": "Nadpis",
-       "t": "Co Vás čeká"
-      },
-      {
-       "k": "silv-022",
-       "typ": "Položka seznamu",
-       "t": "Na zahřátí: svařené víno, horká medovina nebo nealkoholický punč"
-      },
-      {
-       "k": "silv-023",
-       "typ": "Položka seznamu",
-       "t": "Slavnostní raut: nahrazuje večeři z polopenze či plné penze, výběr z více jídel"
-      },
-      {
-       "k": "silv-024",
-       "typ": "Položka seznamu",
-       "t": "Hudba a zábava: hudba k poslechu i tanci celý večer"
-      },
-      {
-       "k": "silv-025",
-       "typ": "Položka seznamu",
-       "t": "Půlnoční občerstvení: jednohubky a slané pochutiny"
-      },
-      {
-       "k": "silv-026",
-       "typ": "Položka seznamu",
-       "t": "Půlnoční přípitek: společné přivítání nového roku"
-      },
-      {
-       "k": "silv-027",
-       "typ": "Štítek nad nadpisem",
-       "t": "V ceně pobytu"
-      },
-      {
-       "k": "silv-028",
-       "typ": "Nadpis",
-       "t": "V ceně pobytu"
-      },
-      {
-       "k": "silv-029",
-       "typ": "Položka seznamu",
-       "t": "sauna denně 16:00–20:00"
-      },
-      {
-       "k": "silv-030",
-       "typ": "Položka seznamu",
-       "t": "zapůjčení dětských lyží po domluvě"
-      },
-      {
-       "k": "silv-031",
-       "typ": "Položka seznamu",
-       "t": "zapůjčení sáněk a bobů"
-      },
-      {
-       "k": "silv-032",
-       "typ": "Položka seznamu",
-       "t": "parkování u chaty, úschovna lyží"
-      }
-     ]
-    },
-    {
-     "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
-     "pole": [
-      {
-       "k": "silv-001",
-       "typ": "Titulek v Googlu (záložka prohlížeče)",
-       "t": "Silvestrovský pobyt 2027 v Jizerských horách – Horská chata Zvonice",
-       "seo": true
-      },
-      {
-       "k": "silv-002",
-       "typ": "Popis v Googlu",
-       "t": "Silvestrovský pobyt 2027 na Zvonici 27. 12. 2026 – 1. 1. 2027: polopenze 1 300 Kč, plná penze 1 500 Kč za osobu a noc, silvestrovské občerstvení za příplatek 300 Kč.",
-       "seo": true
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "okoli",
-   "nazev": "Okolí",
-   "skupiny": [
-    {
-     "nazev": "Úvod stránky",
-     "pole": [
-      {
-       "k": "okoli-003",
-       "typ": "Hlavní nadpis (na fotce)",
-       "t": "Okolí chaty"
-      }
-     ]
-    },
-    {
-     "nazev": "Stopa a sjezdovka u chaty",
-     "pole": [
-      {
-       "k": "okoli-004",
-       "typ": "Text",
-       "t": "Horská chata Zvonice stojí na rozhraní Jizerských hor a Krkonoš, mezi Kořenovem a Horním Polubným. Je to výchozí bod pro pěší výlety, cykloturistiku i zimní sporty."
-      },
-      {
-       "k": "okoli-005",
-       "typ": "Štítek nad nadpisem",
-       "t": "Zima"
-      },
-      {
-       "k": "okoli-006",
-       "typ": "Nadpis",
-       "t": "Stopa a sjezdovka u chaty"
-      },
-      {
-       "k": "okoli-007",
-       "typ": "Text",
-       "t": "Kolem chaty vede běžkařská stopa napojená na Jizerskou magistrálu a asi 200 metrů od chaty je sjezdovka s vlekem, vhodná pro začátečníky. V okolí jsou také areály Příchovice, Rejdice, Harrachov a Rokytnice. V zimě se k chatě cesta pluhuje."
-      },
-      {
-       "k": "okoli-008",
-       "typ": "Položka seznamu",
-       "t": "běžkařská stopa kolem chaty"
-      },
-      {
-       "k": "okoli-009",
-       "typ": "Položka seznamu",
-       "t": "sjezdovka s vlekem asi 200 m"
-      },
-      {
-       "k": "okoli-010",
-       "typ": "Položka seznamu",
-       "t": "Příchovice, Rejdice, Harrachov, Rokytnice"
-      },
-      {
-       "k": "okoli-011",
-       "typ": "Položka seznamu",
-       "t": "úschovna lyží v chatě"
-      },
-      {
-       "k": "okoli-012",
-       "typ": "Štítek nad nadpisem",
-       "t": "Léto"
-      },
-      {
-       "k": "okoli-013",
-       "typ": "Nadpis",
-       "t": "Lesy, vodopády a přehrady"
-      },
-      {
-       "k": "okoli-014",
-       "typ": "Text",
-       "t": "Chata leží na samotě v lesích a do centra Kořenova je to asi 500 metrů pěšky. V okolí jsou Mumlavské vodopády, vodopády na Černé Desné, Protržená přehrada a Kozí farma v Pěnčíně. K dalším cílům patří Harrachov, Liberec a Jablonec."
-      },
-      {
-       "k": "okoli-015",
-       "typ": "Položka seznamu",
-       "t": "Mumlavské vodopády"
-      },
-      {
-       "k": "okoli-016",
-       "typ": "Položka seznamu",
-       "t": "vodopády na Černé Desné"
-      },
-      {
-       "k": "okoli-017",
-       "typ": "Položka seznamu",
-       "t": "Protržená přehrada"
-      },
-      {
-       "k": "okoli-018",
-       "typ": "Položka seznamu",
-       "t": "Kozí farma Pěnčín"
-      }
-     ]
-    },
-    {
-     "nazev": "Z čeho se k nám jede",
-     "pole": [
-      {
-       "k": "okoli-019",
-       "typ": "Štítek nad nadpisem",
-       "t": "Vzdálenosti"
-      },
-      {
-       "k": "okoli-020",
-       "typ": "Nadpis",
-       "t": "Z čeho se k nám jede"
-      },
-      {
-       "k": "okoli-021",
-       "typ": "Zvýrazněné číslo",
-       "t": "30 km"
-      },
-      {
-       "k": "okoli-022",
-       "typ": "Podnadpis",
-       "t": "Liberec"
-      },
-      {
-       "k": "okoli-023",
-       "typ": "Text",
-       "t": "Nejbližší velké město."
-      },
-      {
-       "k": "okoli-024",
-       "typ": "Zvýrazněné číslo",
-       "t": "65 km"
-      },
-      {
-       "k": "okoli-025",
-       "typ": "Podnadpis",
-       "t": "Mladá Boleslav"
-      },
-      {
-       "k": "okoli-026",
-       "typ": "Text",
-       "t": "Hradec Králové 90 km."
-      },
-      {
-       "k": "okoli-027",
-       "typ": "Zvýrazněné číslo",
-       "t": "110 km"
-      },
-      {
-       "k": "okoli-028",
-       "typ": "Podnadpis",
-       "t": "Praha"
-      },
-      {
-       "k": "okoli-029",
-       "typ": "Text",
-       "t": "Od Černého Mostu."
-      },
-      {
-       "k": "okoli-030",
-       "typ": "Zvýrazněné číslo",
-       "t": "100 km"
-      },
-      {
-       "k": "okoli-031",
-       "typ": "Podnadpis",
-       "t": "Pardubice, Děčín"
-      },
-      {
-       "k": "okoli-032",
-       "typ": "Text",
-       "t": "Ústí nad Labem 120 km."
-      }
-     ]
-    },
-    {
-     "nazev": "Jak k nám",
-     "pole": [
-      {
-       "k": "okoli-033",
-       "typ": "Štítek nad nadpisem",
-       "t": "Jak k nám"
-      },
-      {
-       "k": "okoli-034",
-       "typ": "Nadpis",
-       "t": "Jak k nám"
-      },
-      {
-       "k": "okoli-035",
-       "typ": "Text",
-       "t": "Horská chata Zvonice, Kořenov 872, 468 49 Kořenov. Asfaltová cesta končí parkovištěm u chaty, kde se otočí i autobus. Vlakem přijedete na zastávku Kořenov, autobusem na zastávku Kořenov, Příchovice, Motorest, odkud je to k chatě necelý kilometr."
-      },
-      {
-       "k": "okoli-036",
-       "typ": "Tlačítko",
-       "t": "Google Maps"
-      },
-      {
-       "k": "okoli-037",
-       "typ": "Tlačítko",
-       "t": "Waze"
-      }
-     ]
-    },
-    {
-     "nazev": "Celoročně",
-     "pole": [
-      {
-       "k": "okoli-038",
-       "typ": "Štítek nad nadpisem",
-       "t": "Celoročně"
-      },
-      {
-       "k": "okoli-039",
-       "typ": "Nadpis",
-       "t": "Výlety za každého počasí"
-      },
-      {
-       "k": "okoli-040",
-       "typ": "Text",
-       "t": "Když se počasí nepovede, v okolí je kam jet i pod střechu."
-      },
-      {
-       "k": "okoli-041",
-       "typ": "Položka seznamu",
-       "t": "IQ Landia Liberec"
-      },
-      {
-       "k": "okoli-042",
-       "typ": "Položka seznamu",
-       "t": "Aquapark Babylon Liberec"
-      },
-      {
-       "k": "okoli-043",
-       "typ": "Položka seznamu",
-       "t": "Muzeum ozubnicové dráhy v Kořenově"
-      }
-     ]
-    },
-    {
-     "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
-     "pole": [
-      {
-       "k": "okoli-001",
-       "typ": "Titulek v Googlu (záložka prohlížeče)",
-       "t": "Okolí chaty – Jizerská magistrála, vodopády, sjezdovka | Horská chata Zvonice",
-       "seo": true
-      },
-      {
-       "k": "okoli-002",
-       "typ": "Popis v Googlu",
-       "t": "Horská chata Zvonice leží u Kořenova na rozhraní Jizerských hor a Krkonoš: běžkařská stopa u chaty, sjezdovka s vlekem 200 m, Mumlavské vodopády, Harrachov.",
-       "seo": true
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "fotogalerie",
-   "nazev": "Fotogalerie",
-   "skupiny": [
-    {
-     "nazev": "Úvod stránky",
-     "pole": [
-      {
-       "k": "foto-003",
-       "typ": "Hlavní nadpis (na fotce)",
-       "t": "Fotogalerie"
-      }
-     ]
-    },
-    {
-     "nazev": "Chata, restaurace, pokoje i okolí",
-     "pole": [
-      {
-       "k": "foto-004",
-       "typ": "Štítek nad nadpisem",
-       "t": "Nahlédněte k nám"
-      },
-      {
-       "k": "foto-005",
-       "typ": "Nadpis",
-       "t": "Chata, restaurace, pokoje i okolí"
-      }
-     ]
-    },
-    {
-     "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
-     "pole": [
-      {
-       "k": "foto-001",
-       "typ": "Titulek v Googlu (záložka prohlížeče)",
-       "t": "Fotogalerie | Horská chata Zvonice",
-       "seo": true
-      },
-      {
-       "k": "foto-002",
-       "typ": "Popis v Googlu",
-       "t": "Fotky Horské chaty Zvonice v Kořenově: chata v zimě i v létě, restaurace, pokoje, hřiště a okolí.",
-       "seo": true
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "poptavka",
-   "nazev": "Poptávka a kontakt",
-   "skupiny": [
-    {
-     "nazev": "Úvod stránky",
-     "pole": [
-      {
-       "k": "popt-003",
-       "typ": "Hlavní nadpis (na fotce)",
-       "t": "Poptávka pobytu"
-      }
-     ]
-    },
-    {
-     "nazev": "Sekce",
-     "pole": [
-      {
-       "k": "popt-004",
-       "typ": "Text",
-       "t": "Ať plánujete školu v přírodě, adaptační kurz nebo lyžařský výcvik, rádi Vám připravíme nabídku na celý pobyt. Stačí vyplnit pár údajů níže a ozveme se Vám co nejdříve."
-      },
-      {
-       "k": "popt-005",
-       "typ": "Podnadpis",
-       "t": "Adresa"
-      },
-      {
-       "k": "popt-006",
-       "typ": "Text",
-       "t": "Horská chata Zvonice\nKořenov 872\n468 49 Kořenov"
-      },
-      {
-       "k": "popt-007",
-       "typ": "Podnadpis",
-       "t": "Kontakt"
-      },
-      {
-       "k": "popt-008",
-       "typ": "Podnadpis",
-       "t": "Provozovatel"
-      },
-      {
-       "k": "popt-009",
-       "typ": "Text",
-       "t": "Alteris s.r.o.\nIČ 27862313\nNa stezce 1330/3, Praha 10"
-      }
-     ]
-    },
-    {
-     "nazev": "Mám zájem o",
-     "pole": [
-      {
-       "k": "popt-010",
-       "typ": "Štítek nad nadpisem",
-       "t": "Mám zájem o"
-      },
-      {
-       "k": "popt-011",
-       "typ": "Položka seznamu",
-       "t": "animační program"
-      },
-      {
-       "k": "popt-012",
-       "typ": "Položka seznamu",
-       "t": "doprava"
-      },
-      {
-       "k": "popt-013",
-       "typ": "Položka seznamu",
-       "t": "skipasy"
-      },
-      {
-       "k": "popt-014",
-       "typ": "Položka seznamu",
-       "t": "půjčení lyží"
-      },
-      {
-       "k": "popt-015",
-       "typ": "Položka seznamu",
-       "t": "zapůjčení sáněk a bobů"
-      }
-     ]
-    },
-    {
-     "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
-     "pole": [
-      {
-       "k": "popt-001",
-       "typ": "Titulek v Googlu (záložka prohlížeče)",
-       "t": "Poptávka pobytu a kontakt | Horská chata Zvonice",
-       "seo": true
-      },
-      {
-       "k": "popt-002",
-       "typ": "Popis v Googlu",
-       "t": "Poptejte pobyt pro školu, adaptační kurz nebo lyžařský výcvik na Horské chatě Zvonice. Kořenov 872, sales@lipperthotels.cz.",
-       "seo": true
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "partneri",
-   "nazev": "Naši partneři",
-   "skupiny": [
-    {
-     "nazev": "Úvod stránky",
-     "pole": [
-      {
-       "k": "part-003",
-       "typ": "Hlavní nadpis (na fotce)",
-       "t": "Naši partneři"
-      },
-      {
-       "k": "part-004",
-       "typ": "Text",
-       "t": "S těmito partnery spolupracujeme na programu a službách pro školy a skupiny. Další partnery doplníme."
-      }
-     ]
-    },
-    {
-     "nazev": "TAPAZA",
-     "pole": [
-      {
-       "k": "part-005",
-       "typ": "Štítek nad nadpisem",
-       "t": "Tábory a programy"
-      },
-      {
-       "k": "part-006",
-       "typ": "Nadpis",
-       "t": "TAPAZA"
-      },
-      {
-       "k": "part-007",
-       "typ": "Text",
-       "t": "Dětské tábory a programy na Zvonici v Kořenově. Podívejte se, jak se u nás dají strávit jarní prázdniny a jak děti tráví léto."
-      },
-      {
-       "k": "part-008",
-       "typ": "Tlačítko",
-       "t": "Tábory TAPAZA v Kořenově"
-      },
-      {
-       "k": "part-009",
-       "typ": "Podnadpis",
-       "t": "Jarní prázdniny na Zvonici"
-      },
-      {
-       "k": "part-010",
-       "typ": "Podnadpis",
-       "t": "Jak děti tráví léto na Zvonici"
-      }
-     ]
-    },
-    {
-     "nazev": "4Event",
-     "pole": [
-      {
-       "k": "part-011",
-       "typ": "Štítek nad nadpisem",
-       "t": "Program a zábava"
-      },
-      {
-       "k": "part-012",
-       "typ": "Nadpis",
-       "t": "4Event"
-      },
-      {
-       "k": "part-013",
-       "typ": "Text",
-       "t": "Animační a zážitkové programy pro školy a skupiny."
-      },
-      {
-       "k": "part-014",
-       "typ": "Tlačítko",
-       "t": "Web 4Event"
-      }
-     ]
-    },
-    {
-     "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
-     "pole": [
-      {
-       "k": "part-001",
-       "typ": "Titulek v Googlu (záložka prohlížeče)",
-       "t": "Naši partneři | Horská chata Zvonice"
-      },
-      {
-       "k": "part-002",
-       "typ": "Popis v Googlu",
-       "t": "Partneři Horské chaty Zvonice v Kořenově: TAPAZA a 4Event, programy a tábory pro školy a skupiny."
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "base",
-   "nazev": "Společné: menu, patička, pop-up",
-   "skupiny": [
-    {
-     "nazev": "Hlavička a menu",
-     "pole": [
-      {
-       "k": "spol-001",
-       "typ": "Položka menu",
-       "t": "Pro skupiny"
-      },
-      {
-       "k": "spol-002",
-       "typ": "Položka menu",
-       "t": "Ubytování"
-      },
-      {
-       "k": "spol-003",
-       "typ": "Položka menu",
-       "t": "Okolí"
-      },
-      {
-       "k": "spol-004",
-       "typ": "Položka menu",
-       "t": "Fotogalerie"
-      },
-      {
-       "k": "spol-005",
-       "typ": "Položka menu",
-       "t": "Ceník"
-      },
-      {
-       "k": "spol-006",
-       "typ": "Položka menu",
-       "t": "Zimní pobyty 2027"
-      },
-      {
-       "k": "spol-007",
-       "typ": "Položka menu",
-       "t": "Silvestr 2027"
-      },
-      {
-       "k": "spol-008",
-       "typ": "Položka menu",
-       "t": "Kontakt"
-      },
-      {
-       "k": "spol-009",
-       "typ": "Položka menu",
-       "t": "Poptávka"
-      },
-      {
-       "k": "spol-010",
-       "typ": "Tlačítko",
-       "t": "Poptávka"
-      },
-      {
-       "k": "spol-011",
-       "typ": "Položka menu",
-       "t": "Pro skupiny"
-      },
-      {
-       "k": "spol-012",
-       "typ": "Položka menu",
-       "t": "Ubytování"
-      },
-      {
-       "k": "spol-013",
-       "typ": "Položka menu",
-       "t": "Ceník"
-      },
-      {
-       "k": "spol-014",
-       "typ": "Položka menu",
-       "t": "Okolí"
-      },
-      {
-       "k": "spol-015",
-       "typ": "Položka menu",
-       "t": "Zimní pobyty 2027"
-      },
-      {
-       "k": "spol-016",
-       "typ": "Položka menu",
-       "t": "Silvestr 2027"
-      },
-      {
-       "k": "spol-017",
-       "typ": "Položka menu",
-       "t": "Fotogalerie"
-      },
-      {
-       "k": "spol-018",
-       "typ": "Položka menu",
-       "t": "Kontakt"
-      },
-      {
-       "k": "spol-019",
-       "typ": "Položka menu",
-       "t": "Poptat pobyt pro skupinu"
-      },
-      {
-       "k": "spol-049",
-       "typ": "Položka menu",
-       "t": "Naši partneři"
-      },
-      {
-       "k": "spol-050",
-       "typ": "Položka menu",
-       "t": "Všechny pobyty pro skupiny"
-      }
-     ]
-    },
-    {
-     "nazev": "Patička",
-     "pole": [
-      {
-       "k": "spol-020",
-       "typ": "Položka seznamu",
-       "t": "Kořenov 872\n468 49 Kořenov"
-      },
-      {
-       "k": "spol-021",
-       "typ": "Krátký text",
-       "t": "Provozovatel Alteris s.r.o., IČ 27862313"
-      },
-      {
-       "k": "spol-022",
-       "typ": "Nadpis v patičce",
-       "t": "Poptávky"
-      },
-      {
-       "k": "spol-023",
-       "typ": "Odkaz",
-       "t": "Poptávka pobytu"
-      },
-      {
-       "k": "spol-024",
-       "typ": "Odkaz",
-       "t": "Školy v přírodě"
-      },
-      {
-       "k": "spol-025",
-       "typ": "Odkaz",
-       "t": "Adaptační kurzy"
-      },
-      {
-       "k": "spol-026",
-       "typ": "Odkaz",
-       "t": "Lyžařské výcviky"
-      },
-      {
-       "k": "spol-027",
-       "typ": "Odkaz",
-       "t": "Zimní pobyty 2027"
-      },
-      {
-       "k": "spol-028",
-       "typ": "Odkaz",
-       "t": "Silvestrovský pobyt 2027"
-      },
-      {
-       "k": "spol-029",
-       "typ": "Nadpis v patičce",
-       "t": "Užitečné"
-      },
-      {
-       "k": "spol-030",
-       "typ": "Odkaz",
-       "t": "Ceník a ceny pro skupiny"
-      },
-      {
-       "k": "spol-031",
-       "typ": "Odkaz",
-       "t": "Jak k nám"
-      },
-      {
-       "k": "spol-032",
-       "typ": "Nadpis v patičce",
-       "t": "Oblíbené"
-      },
-      {
-       "k": "spol-033",
-       "typ": "Odkaz",
-       "t": "Okolí chaty"
-      },
-      {
-       "k": "spol-034",
-       "typ": "Odkaz",
-       "t": "Ubytování"
-      },
-      {
-       "k": "spol-035",
-       "typ": "Odkaz",
-       "t": "Fotogalerie"
-      },
-      {
-       "k": "spol-036",
-       "typ": "Nadpis v patičce",
-       "t": "Součást skupiny"
-      },
-      {
-       "k": "spol-037",
-       "typ": "Nadpis v patičce",
-       "t": "Naše další hotely a chaty"
-      },
-      {
-       "k": "spol-038",
-       "typ": "Krátký text",
-       "t": "© 2026 Horská chata Zvonice"
-      },
-      {
-       "k": "spol-039",
-       "typ": "Tlačítko",
-       "t": "Nastavení cookies"
-      }
-     ]
-    },
-    {
-     "nazev": "Pop-up s novinkami",
-     "id": "popup",
-     "zapnuto": true,
-     "pole": [
-      {
-       "k": "spol-040",
-       "typ": "Krátký text",
-       "t": "Novinky 2027"
-      },
-      {
-       "k": "spol-041",
-       "typ": "Nadpis",
-       "t": "Zimní pobyty a Silvestr 2027"
-      },
-      {
-       "k": "spol-042",
-       "typ": "Text",
-       "t": "Lyžařské výcviky a víkendy pro skupiny, sjezdovka s vlekem 200 m od chaty. Silvestrovský pobyt 27. 12. 2026 – 1. 1. 2027 je otevřený i rodinám a partám přátel."
-      },
-      {
-       "k": "spol-043",
-       "typ": "Tlačítko",
-       "t": "Zimní pobyty"
-      },
-      {
-       "k": "spol-044",
-       "typ": "Odkaz",
-       "t": "Silvestrovský pobyt"
-      }
-     ]
-    },
-    {
-     "nazev": "Cookie lišta",
-     "pole": [
-      {
-       "k": "spol-045",
-       "typ": "Nadpis",
-       "t": "Cookies na našem webu"
-      },
-      {
-       "k": "spol-046",
-       "typ": "Text",
-       "t": "Nezbytné cookies potřebuje web ke svému fungování. Se souhlasem používáme i analytické a marketingové cookies (Google Tag Manager, Google Analytics), abychom věděli, co návštěvníky zajímá, a mohli web zlepšovat. Volbu můžete kdykoli změnit v patičce webu."
-      },
-      {
-       "k": "spol-047",
-       "typ": "Tlačítko",
-       "t": "Přijmout vše"
-      },
-      {
-       "k": "spol-048",
-       "typ": "Tlačítko",
-       "t": "Jen nezbytné"
-      }
-     ]
-    }
-   ]
-  }
- ]
+  ]
 }
