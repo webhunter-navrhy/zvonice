@@ -6,7 +6,7 @@
 const CFG = { id: 'zvonice', site: '../', api: 'https://webhunter-admin.webhunter.workers.dev' };
 const FILES = { texty: '_data/texty.json', galerie: '_data/galerie.json', video: '_data/video.json' };
 const SK = 'zvonice_admin';
-const S = { tab: 'texty', str: null, sess: null, def: false, D: {}, snap: {}, pending: {}, preview: {}, saving: false, lib: null };
+const S = { tab: 'texty', str: null, sess: null, def: false, D: {}, snap: {}, prev: {}, pending: {}, preview: {}, saving: false, lib: null };
 const $ = (s) => document.querySelector(s);
 const uid = () => Math.random().toString(36).slice(2, 8);
 const slug = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40);
@@ -51,6 +51,43 @@ async function reauth() {
 async function loadAll() {
   for (const k of Object.keys(FILES)) { S.D[k] = JSON.parse(await readFile(FILES[k])); S.snap[k] = JSON.stringify(S.D[k]); }
 }
+/* Sloučení změn (3cestné): base = stav při načtení, mine = úpravy v tomto okně, theirs = aktuální stav na serveru.
+   Uloží se jen to, co se v tomto okně opravdu změnilo – starší otevřená administrace tak nepřepíše novější úpravy. */
+const eq = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+const isObj = (x) => x && typeof x === 'object' && !Array.isArray(x);
+const idOf = (x) => (isObj(x) ? (x.k ?? x.id ?? x.img ?? x.nazev ?? null) : null);
+const unikatni = (a) => a.every((x) => idOf(x) != null) && new Set(a.map(idOf)).size === a.length;
+function merge3(base, mine, theirs) {
+  if (eq(mine, base)) return theirs;
+  if (eq(theirs, base) || eq(mine, theirs)) return mine;
+  if (isObj(base) && isObj(mine) && isObj(theirs)) {
+    const out = {};
+    for (const k of new Set([...Object.keys(theirs), ...Object.keys(mine)])) {
+      const inB = k in base, inM = k in mine, inT = k in theirs;
+      if (inM && inT) out[k] = merge3(inB ? base[k] : undefined, mine[k], theirs[k]);
+      else if (inM) { if (!inB || !eq(base[k], mine[k])) out[k] = mine[k]; }
+      else if (!inB || !eq(base[k], theirs[k])) out[k] = theirs[k];
+    }
+    return out;
+  }
+  if (Array.isArray(base) && Array.isArray(mine) && Array.isArray(theirs)) {
+    if (unikatni(base) && unikatni(mine) && unikatni(theirs)) {
+      const B = new Map(base.map((x) => [idOf(x), x])), M = new Map(mine.map((x) => [idOf(x), x])), T = new Map(theirs.map((x) => [idOf(x), x]));
+      const out = [];
+      if (eq(mine.map(idOf), base.map(idOf))) {          // pořadí ani položky jsem neměnil → pořadí ze serveru
+        for (const t of theirs) { const id = idOf(t); out.push(M.has(id) ? merge3(B.get(id), M.get(id), t) : t); }
+      } else {
+        for (const m of mine) { const id = idOf(m);
+          if (T.has(id)) out.push(merge3(B.get(id), m, T.get(id)));
+          else if (!B.has(id) || !eq(B.get(id), m)) out.push(m); }   // smazané jinde nechat smazané, pokud jsem je neupravil
+        for (const t of theirs) { const id = idOf(t); if (!B.has(id) && !M.has(id)) out.push(t); }
+      }
+      return out;
+    }
+    if (base.length === mine.length && mine.length === theirs.length) return mine.map((m, i) => merge3(base[i], m, theirs[i]));
+  }
+  return mine;
+}
 const dirty = () => Object.keys(FILES).filter((k) => JSON.stringify(S.D[k]) !== S.snap[k]);
 const bar = () => { const b = $('#savebar'); if (!b) return; const d = dirty(); b.classList.toggle('on', d.length > 0 || S.saving); b.querySelector('span').textContent = S.saving ? 'Ukládám…' : 'Máte neuložené změny.'; b.querySelectorAll('button').forEach((x) => { x.disabled = S.saving; }); };
 window.addEventListener('beforeunload', (e) => { if (dirty().length) { e.preventDefault(); e.returnValue = ''; } });
@@ -62,14 +99,22 @@ async function saveAll() {
   for (const p of S.D.galerie.photos) if (!p.alt.trim()) p.alt = 'Fotka z chaty Zvonice';
   S.saving = true; bar();
   try {
+    // před uložením načíst aktuální stav – když se mezitím web změnil (jiné okno, jiný počítač), změny sloučit
+    let slouceno = false;
+    for (const k of keys) {
+      const remote = JSON.parse(await readFile(FILES[k])), base = JSON.parse(S.snap[k]);
+      if (eq(remote, base) || (S.prev[k] && eq(remote, JSON.parse(S.prev[k])))) continue;
+      S.D[k] = merge3(base, S.D[k], remote); slouceno = true;
+    }
     const files = keys.map((k) => ({ path: FILES[k], content: JSON.stringify(S.D[k], null, 2) + '\n' }));
     const used = JSON.stringify(S.D);
     const imgs = Object.keys(S.pending).filter((p) => used.includes(p.replace(/^img\//, '')));
     imgs.forEach((p) => files.push({ path: p, b64: S.pending[p] }));
     const sha = await commit(files, 'Administrace: ' + keys.join(', ') + (imgs.length ? ` (+${imgs.length} foto)` : ''));
     imgs.forEach((p) => delete S.pending[p]);
-    keys.forEach((k) => { S.snap[k] = JSON.stringify(S.D[k]); });
-    toast('Uloženo. Změny se na webu objeví přibližně za minutu.', 'ok'); watchPublish(sha);
+    keys.forEach((k) => { S.prev[k] = S.snap[k]; S.snap[k] = JSON.stringify(S.D[k]); });
+    if (slouceno) { const y = window.scrollY; shell(); window.scrollTo(0, y); }
+    toast(slouceno ? 'Uloženo. Mezitím se web změnil jinde – Vaše úpravy jsme sloučili s aktuální verzí.' : 'Uloženo. Změny se na webu objeví přibližně za minutu.', 'ok'); watchPublish(sha);
   } catch (e) { toast('Uložení se nepovedlo: ' + e.message, 'err'); }
   finally { S.saving = false; bar(); }
 }
