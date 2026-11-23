@@ -10,6 +10,10 @@
     burger.setAttribute('aria-expanded', o);
     document.body.style.overflow = o ? 'hidden' : '';
   });
+  // klik na položku mobilního menu (i kotvu na stejné stránce) menu zavře
+  document.querySelectorAll('.mob-menu a').forEach(function (a) {
+    a.addEventListener('click', function () { hl.classList.remove('otevreno'); if (burger) burger.setAttribute('aria-expanded', false); document.body.style.overflow = ''; });
+  });
 
   var tabs = [].slice.call(document.querySelectorAll('.zal [role=tab]'));
   tabs.forEach(function (t) {

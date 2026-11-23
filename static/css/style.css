@@ -428,3 +428,15 @@ body{font-weight:400}
 .formular fieldset.zajem label{display:inline-flex;gap:8px;align-items:center;flex-direction:row}
 .formular fieldset.zajem input{width:auto}
 @media(max-width:900px){.dva-sl{grid-template-columns:1fr}.rozbal-in{display:none!important}}
+
+/* mobilní menu: kategorie Pro skupiny */
+.mob-rozbal summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font:700 22px/1.2 var(--serif);text-transform:uppercase;letter-spacing:.05em;color:var(--tma);padding:16px 0;border-bottom:1px solid var(--linka)}
+.mob-rozbal summary::-webkit-details-marker{display:none}
+.mob-rozbal summary::after{content:"";width:9px;height:9px;border-right:1.5px solid var(--akcent);border-bottom:1.5px solid var(--akcent);transform:translateY(-3px) rotate(45deg);transition:transform .2s}
+.mob-rozbal[open] summary::after{transform:translateY(2px) rotate(-135deg)}
+.mob-rozbal div{padding:6px 0 10px 16px;border-bottom:1px solid var(--linka)}
+@media(max-width:900px){.mob-menu .mob-rozbal a{font:400 16px/1.3 var(--sans);text-transform:none;letter-spacing:.01em;padding:11px 0;border:0}}
+/* videa partnerů na šířku */
+.video-ram.siroke{width:100%;aspect-ratio:16/9;background-size:cover;background-position:center}
+.video-ram.siroke .video-hraj{background:rgba(30,12,8,.28)}
+.formular fieldset.zajem legend{font:400 11px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--tlum)}

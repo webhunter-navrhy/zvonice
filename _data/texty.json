@@ -632,7 +632,7 @@
       {
        "k": "pobyty-004",
        "typ": "Text",
-       "t": "Zvonice je chata pro školy a větší skupiny. Pokoje, restaurace i klubovna jsou pod jednou střechou. Hned za dveřmi je hřiště a les. Skupinové ceny začínají na 617 Kč za osobu a noc včetně ubytování a stravy 5× denně, na každých 20 dětí je jeden dospělý zdarma."
+       "t": "Zvonice je chata pro školy a větší skupiny. Pokoje, restaurace i klubovna jsou pod jednou střechou. Hned za dveřmi je hřiště a les. Skupinové ceny začínají na 617 Kč za osobu a noc včetně ubytování a stravy 5× denně, na každých 20 platících dětí je jeden dospělý zdarma."
       },
       {
        "k": "pobyty-005",
@@ -2897,6 +2897,11 @@
        "k": "spol-049",
        "typ": "Položka menu",
        "t": "Naši partneři"
+      },
+      {
+       "k": "spol-050",
+       "typ": "Položka menu",
+       "t": "Všechny pobyty pro skupiny"
       }
      ]
     },
