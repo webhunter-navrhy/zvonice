@@ -1,0 +1,35 @@
+{% extends "_base.html" %}
+{% from "_casti.html" import stitek, titulni %}
+{% set titulek = TS('part-001') %}
+{% set popis = TS('part-002') %}
+{% block obsah %}
+{{ titulni(T('part-003'), 'zv27-ext-hriste-1.jpg', 'Hřiště a party stan před chatou Zvonice', '50% 60%') }}
+<section class="sekce">
+  <div class="obal">
+    <p class="uvodni">{{ T('part-004') }}</p>
+    <div class="blok" id="tapaza" data-odhal>
+      <div>
+        {{ stitek(T('part-005'), 'vlevo') }}
+        <h2>{{ T('part-006') }}</h2>
+        <p>{{ T('part-007') }}</p>
+        <a class="btn" href="https://www.taborytapaza.cz/tabory/korenov" target="_blank" rel="noopener">{{ T('part-008') }}</a>
+      </div>
+      <div class="partner-videa">
+        <h3 class="h3">{{ T('part-009') }}</h3>
+        <div class="video-ram"><button type="button" class="video-hraj" data-yt="31D3_FGiO5E" aria-label="Přehrát video: {{ T('part-009') }}"><span class="video-ikona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button></div>
+        <h3 class="h3">{{ T('part-010') }}</h3>
+        <div class="video-ram"><button type="button" class="video-hraj" data-yt="fkb8sXb0MPc" aria-label="Přehrát video: {{ T('part-010') }}"><span class="video-ikona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button></div>
+      </div>
+    </div>
+    <div class="blok otoc" id="4event" data-odhal>
+      <div>
+        {{ stitek(T('part-011'), 'vlevo') }}
+        <h2>{{ T('part-012') }}</h2>
+        <p>{{ T('part-013') }}</p>
+        <a class="btn" href="https://www.4event.cz" target="_blank" rel="noopener">{{ T('part-014') }}</a>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -407,3 +407,24 @@ body{font-weight:400}
 .cookies .btn-obrys{background:transparent;color:var(--akcent);border:1px solid var(--akcent)}
 .cookies .btn-obrys:hover{background:var(--akcent);color:#fff}
 .cookie-odkaz{background:none;border:0;padding:0;font:inherit;color:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* úpravy 23. 11. */
+.kat-menu{max-width:760px;margin:32px auto 0;border:1px solid var(--linka)}
+.kat-menu summary{cursor:pointer;padding:14px 20px;font:400 13px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--akcent)}
+.kat-menu ul{list-style:none;margin:0;padding:0 20px 14px;display:flex;flex-wrap:wrap;gap:6px 22px}
+.kat-menu a{display:inline-block;padding:8px 0;font-size:15px;text-decoration:none;color:inherit;border-bottom:1px solid transparent}
+.kat-menu a:hover{border-color:var(--akcent);color:var(--akcent)}
+.blok[id]{scroll-margin-top:110px}
+.rozbal{position:relative;display:inline-flex}
+.rozbal-in{display:none;position:absolute;top:100%;left:0;min-width:230px;background:#fff;box-shadow:0 12px 30px rgba(0,0,0,.14);padding:8px 0;z-index:40;flex-direction:column}
+.rozbal:hover .rozbal-in,.rozbal:focus-within .rozbal-in{display:flex}
+.rozbal-in a{padding:10px 20px;white-space:nowrap;color:#2b2b2b;text-transform:none;letter-spacing:.02em}
+.rozbal-in a:hover{color:var(--akcent)}
+.dva-sl{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px)}
+.dva-sl h2{font-size:clamp(22px,2.2vw,28px);letter-spacing:.05em;text-transform:uppercase;margin-bottom:12px}
+.partner-videa .video-ram{margin:10px 0 26px}
+.formular fieldset.zajem{border:1px solid var(--linka);padding:14px 18px;display:flex;flex-wrap:wrap;gap:8px 24px}
+.formular fieldset.zajem legend{padding:0 8px;font-size:14px}
+.formular fieldset.zajem label{display:inline-flex;gap:8px;align-items:center;flex-direction:row}
+.formular fieldset.zajem input{width:auto}
+@media(max-width:900px){.dva-sl{grid-template-columns:1fr}.rozbal-in{display:none!important}}

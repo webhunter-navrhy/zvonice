@@ -52,6 +52,8 @@ document.querySelectorAll('form.formular').forEach(function (f) {
     var btn = f.querySelector('button[type=submit],button:not([type])');
     var pole = {}, popis = {skupina:'Typ pobytu',jmeno:'Jméno',email:'E-mail',telefon:'Telefon',organizace:'Škola / klub / oddíl',prijezd:'Příjezd',odjezd:'Odjezd',deti:'Počet dětí',dospeli:'Počet dospělých',strava:'Strava',zprava:'Zpráva'};
     Object.keys(popis).forEach(function (k) { if (f.elements[k] && f.elements[k].value) pole[popis[k]] = f.elements[k].value; });
+    var zaj = Array.prototype.map.call(f.querySelectorAll('input[name=zajem]:checked'), function (c) { return c.value; });
+    if (zaj.length) pole['Mám zájem o'] = zaj.join(', ');
     stav.textContent = 'Odesílám…'; if (btn) btn.disabled = true;
     fetch('https://webhunter-admin.webhunter.workers.dev/api/zvonice/form', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },

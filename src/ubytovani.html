@@ -28,13 +28,31 @@
       </div>
     </div>
 
-    <div class="blok" data-odhal>
+    <div class="blok" id="pokoje-koupelna" data-odhal>
+      <div class="blok-foto">{{ img('nz-pokoj-vi.jpg', 'Pokoj na chatě Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div>
+        {{ stitek(T('ubyt-034'), 'vlevo') }}
+        <h2>{{ T('ubyt-035') }}</h2>
+        <p>{{ T('ubyt-036') }}</p>
+      </div>
+    </div>
+
+    <div class="blok otoc" data-odhal>
       <div class="blok-foto">{{ img('nz-restaurace-4.jpg', 'Stylová restaurace chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
         {{ stitek(T('ubyt-013'), 'vlevo') }}
         <h2>{{ T('ubyt-014') }}</h2>
         <p>{{ T('ubyt-015') }}</p>
         <a class="odkaz" href="{{ url('cenik/') }}">{{ T('ubyt-016') }}</a>
+      </div>
+    </div>
+
+    <div class="blok otoc" id="bar" data-odhal>
+      <div class="blok-foto">{{ img('nz2-bar.jpg', 'Bar v restauraci chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div>
+        {{ stitek(T('ubyt-037'), 'vlevo') }}
+        <h2>{{ T('ubyt-038') }}</h2>
+        <p>{{ T('ubyt-039') }}</p>
       </div>
     </div>
 
@@ -45,7 +63,7 @@
         <li>{{ T('ubyt-019') }}</li><li>{{ T('ubyt-020') }}</li><li>{{ T('ubyt-021') }}</li>
         <li>{{ T('ubyt-022') }}</li><li>{{ T('ubyt-023') }}</li><li>{{ T('ubyt-024') }}</li>
         <li>{{ T('ubyt-025') }}</li><li>{{ T('ubyt-026') }}</li><li>{{ T('ubyt-027') }}</li>
-        <li>{{ T('ubyt-028') }}</li><li>{{ T('ubyt-029') }}</li><li>{{ T('ubyt-030') }}</li>
+        <li>{{ T('ubyt-028') }}</li><li>{{ T('ubyt-029') }}</li><li>{{ T('ubyt-030') }}</li><li>{{ T('ubyt-040') }}</li><li>{{ T('ubyt-041') }}</li><li>{{ T('ubyt-042') }}</li><li>{{ T('ubyt-043') }}</li>
       </ul>
     </div>
   </div>

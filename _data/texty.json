@@ -5,7 +5,7 @@
    "nazev": "Úvod",
    "skupiny": [
     {
-     "nazev": "Chata v lesích Jizerských hor",
+     "nazev": "Horská chata na rozhraní Jizerek a Krkonoš",
      "pole": [
       {
        "k": "uvod-002",
@@ -15,7 +15,7 @@
       {
        "k": "uvod-003",
        "typ": "Hlavní nadpis",
-       "t": "Chata v lesích Jizerských hor"
+       "t": "Horská chata na rozhraní Jizerek a Krkonoš"
       },
       {
        "k": "uvod-004",
@@ -100,7 +100,7 @@
       {
        "k": "uvod-019",
        "typ": "Zvýrazněné číslo",
-       "t": "1 : 20"
+       "t": "20 : 1"
       },
       {
        "k": "uvod-020",
@@ -135,7 +135,7 @@
       {
        "k": "uvod-025",
        "typ": "Text",
-       "t": "Od 617 Kč za osobu a noc včetně ubytování a stravy pětkrát denně. Na každých 20 dětí jeden dospělý zdarma."
+       "t": "Od 617 Kč za osobu a noc včetně ubytování a stravy pětkrát denně. Na každých 20 platících dětí jeden dospělý zdarma."
       },
       {
        "k": "uvod-026",
@@ -395,7 +395,7 @@
       {
        "k": "uvod-073",
        "typ": "Text",
-       "t": "Ubytování i strava v ceně, na každých 20 dětí jeden dospělý zdarma. Cena podle délky pobytu, počtu osob a termínu."
+       "t": "Ubytování i strava v ceně, na každých 20 platících dětí jeden dospělý zdarma. Cena podle délky pobytu, počtu osob a termínu."
       },
       {
        "k": "uvod-074",
@@ -647,27 +647,27 @@
       {
        "k": "pobyty-007",
        "typ": "Text",
-       "t": "Chata leží na samotě v lesích, takže si děti mohou v klidu hrát venku. Na hřišti jsou pískoviště a průlezky, k tomu hřiště pro míčové hry a louka. Na výuku a večerní program je klubovna a restaurace s plátnem a projektorem."
+       "t": "Chata leží na samotě v lesích, takže si děti mohou v klidu hrát venku. K dispozici jsou tři místnosti pro výuku a večerní program, jedna z nich s plátnem a projektorem. Na hřišti jsou míčové hry a prolézačky, v létě stojí u chaty venkovní stan. Na přání zajistíme dopravu a animační program a doporučíme výlety do okolí."
       },
       {
        "k": "pobyty-008",
        "typ": "Položka seznamu",
-       "t": "hřiště s pískovištěm a průlezkami"
+       "t": "3 místnosti pro výuku a večerní program"
       },
       {
        "k": "pobyty-009",
        "typ": "Položka seznamu",
-       "t": "hřiště pro míčové hry"
+       "t": "hřiště pro míčové hry, prolézačky a v létě venkovní stan"
       },
       {
        "k": "pobyty-010",
        "typ": "Položka seznamu",
-       "t": "klubovna s dětským koutkem"
+       "t": "možnost zajištění dopravy a animačního programu"
       },
       {
        "k": "pobyty-011",
        "typ": "Položka seznamu",
-       "t": "v létě party stan 20×10 m"
+       "t": "strava 5× denně a pitný režim"
       },
       {
        "k": "pobyty-012",
@@ -692,22 +692,22 @@
       {
        "k": "pobyty-016",
        "typ": "Položka seznamu",
-       "t": "klubovna a restaurace s projektorem"
+       "t": "program s lektory přes naše partnery"
       },
       {
        "k": "pobyty-017",
        "typ": "Položka seznamu",
-       "t": "wifi a bar"
+       "t": "3 místnosti pro skupinové aktivity a večerní program"
       },
       {
        "k": "pobyty-018",
        "typ": "Položka seznamu",
-       "t": "venkovní posezení"
+       "t": "louka, hřiště pro míčové hry a v létě venkovní stan"
       },
       {
        "k": "pobyty-019",
        "typ": "Položka seznamu",
-       "t": "strava 5× denně v ceně skupinového pobytu"
+       "t": "možnost zajištění dopravy"
       },
       {
        "k": "pobyty-020",
@@ -727,7 +727,7 @@
       {
        "k": "pobyty-023",
        "typ": "Text",
-       "t": "Asi 200 metrů od chaty je sjezdovka s vlekem, vhodná pro začátečníky. Kolem chaty vede běžkařská stopa a v okolí jsou další areály: Příchovice, Rejdice, Harrachov a Rokytnice. V zimě se k chatě cesta pluhuje."
+       "t": "Asi 200 metrů od chaty je sjezdovka s vlekem, vhodná pro začátečníky. Kolem chaty vede běžkařská stopa a v okolí jsou další areály: Příchovice, Rejdice, Harrachov a Rokytnice. V zimě se k chatě cesta pluhuje. Na místě si můžete půjčit lyžařské vybavení, sáňky i boby."
       },
       {
        "k": "pobyty-024",
@@ -742,12 +742,12 @@
       {
        "k": "pobyty-026",
        "typ": "Položka seznamu",
-       "t": "úschovna lyží"
+       "t": "půjčovna lyžařského vybavení, sáněk a bobů"
       },
       {
        "k": "pobyty-027",
        "typ": "Položka seznamu",
-       "t": "krbová kamna v restauraci"
+       "t": "úschovna lyží a krbová kamna v restauraci"
       },
       {
        "k": "pobyty-028",
@@ -767,37 +767,37 @@
       {
        "k": "pobyty-031",
        "typ": "Nadpis",
-       "t": "Skupiny"
+       "t": "Sportovní soustředění"
       },
       {
        "k": "pobyty-032",
        "typ": "Text",
-       "t": "Chata je jako dělaná pro sportovní oddíly, spolky, dětské domovy, tábory i rodinné a přátelské skupiny. Jsou tu společenské místnosti, venkovní hřiště a les kolem."
+       "t": "U chaty vedou běžecké a cyklistické trasy a od jara do podzimu stojí venkovní stan 20×10 m. Vaříme plnou penzi s pitným režimem a časy jídel přizpůsobíme Vašemu tréninku."
       },
       {
        "k": "pobyty-033",
        "typ": "Položka seznamu",
-       "t": "sportovní oddíly a soustředění"
+       "t": "běžecké a cyklistické trasy u chaty"
       },
       {
        "k": "pobyty-034",
        "typ": "Položka seznamu",
-       "t": "spolky a dětské domovy"
+       "t": "od jara do podzimu venkovní stan 20×10 m"
       },
       {
        "k": "pobyty-035",
        "typ": "Položka seznamu",
-       "t": "tábory"
+       "t": "plná penze s pitným režimem, časy jídel dle tréninku"
       },
       {
        "k": "pobyty-036",
        "typ": "Položka seznamu",
-       "t": "rodinné a přátelské skupiny"
+       "t": "úschovna lyží a kol"
       },
       {
        "k": "pobyty-037",
        "typ": "Tlačítko",
-       "t": "Poptat pobyt pro skupinu"
+       "t": "Poptat sportovní soustředění"
       }
      ]
     },
@@ -818,6 +818,131 @@
        "k": "pobyty-040",
        "typ": "Tlačítko",
        "t": "Poptat pobyt"
+      }
+     ]
+    },
+    {
+     "nazev": "Další typy pobytů",
+     "pole": [
+      {
+       "k": "pobyty-041",
+       "typ": "Položka menu",
+       "t": "Typy pobytů"
+      },
+      {
+       "k": "pobyty-042",
+       "typ": "Štítek nad nadpisem",
+       "t": "Zima"
+      },
+      {
+       "k": "pobyty-043",
+       "typ": "Nadpis",
+       "t": "Zimní tábory"
+      },
+      {
+       "k": "pobyty-044",
+       "typ": "Text",
+       "t": "Zima na Zvonici patří dětem. Sjezdovky jsou blízko chaty, k dispozici je lyžárna a půjčovna lyží a před chatou se dá boby a sáňkami jezdit celé odpoledne."
+      },
+      {
+       "k": "pobyty-045",
+       "typ": "Položka seznamu",
+       "t": "blízké sjezdovky, lyžárna a půjčovna lyží"
+      },
+      {
+       "k": "pobyty-046",
+       "typ": "Položka seznamu",
+       "t": "boby a sáňky"
+      },
+      {
+       "k": "pobyty-047",
+       "typ": "Položka seznamu",
+       "t": "možnost skipasu"
+      },
+      {
+       "k": "pobyty-048",
+       "typ": "Položka seznamu",
+       "t": "možnost zajištění dopravy"
+      },
+      {
+       "k": "pobyty-049",
+       "typ": "Tlačítko",
+       "t": "Poptat zimní tábor"
+      },
+      {
+       "k": "pobyty-050",
+       "typ": "Štítek nad nadpisem",
+       "t": "Celoročně"
+      },
+      {
+       "k": "pobyty-051",
+       "typ": "Nadpis",
+       "t": "Rodinné pobyty"
+      },
+      {
+       "k": "pobyty-052",
+       "typ": "Text",
+       "t": "Děti si zahrají na bezpečném prostranství u chaty nebo v dětském koutku. V okolí je spousta cílů na výlet: Mumlavský vodopád, Kozí farma Pěnčín nebo iQLANDIA Liberec."
+      },
+      {
+       "k": "pobyty-053",
+       "typ": "Položka seznamu",
+       "t": "bezpečný prostor na hraní"
+      },
+      {
+       "k": "pobyty-054",
+       "typ": "Položka seznamu",
+       "t": "dětský koutek"
+      },
+      {
+       "k": "pobyty-055",
+       "typ": "Položka seznamu",
+       "t": "rodinné pokoje"
+      },
+      {
+       "k": "pobyty-056",
+       "typ": "Položka seznamu",
+       "t": "slevy pro děti"
+      },
+      {
+       "k": "pobyty-057",
+       "typ": "Tlačítko",
+       "t": "Poptat rodinný pobyt"
+      },
+      {
+       "k": "pobyty-058",
+       "typ": "Štítek nad nadpisem",
+       "t": "Od jara do podzimu"
+      },
+      {
+       "k": "pobyty-059",
+       "typ": "Nadpis",
+       "t": "Svatby"
+      },
+      {
+       "k": "pobyty-060",
+       "typ": "Text",
+       "t": "Obřad i hostinu můžete uspořádat ve venkovním stanu přímo u chaty. Chatu si pronajmete celou, takže budete mít k dispozici všechny prostory i okolí."
+      },
+      {
+       "k": "pobyty-061",
+       "typ": "Položka seznamu",
+       "t": "venkovní stan u chaty"
+      },
+      {
+       "k": "pobyty-062",
+       "typ": "Položka seznamu",
+       "t": "obřad i hostina na jednom místě"
+      },
+      {
+       "k": "pobyty-063",
+       "typ": "Položka seznamu",
+       "t": "pronájem celé chaty"
+      },
+      {
+       "k": "pobyty-064",
+       "typ": "Tlačítko",
+       "t": "Poptat svatbu"
       }
      ]
     },
@@ -855,7 +980,7 @@
      ]
     },
     {
-     "nazev": "Pokoje pro celou třídu",
+     "nazev": "Pokoje pro dvojice i velké party",
      "pole": [
       {
        "k": "ubyt-004",
@@ -870,7 +995,7 @@
       {
        "k": "ubyt-006",
        "typ": "Nadpis",
-       "t": "Pokoje pro celou třídu"
+       "t": "Pokoje pro dvojice i velké party"
       },
       {
        "k": "ubyt-007",
@@ -1011,6 +1136,61 @@
        "k": "ubyt-033",
        "typ": "Tlačítko",
        "t": "Poptat pobyt"
+      }
+     ]
+    },
+    {
+     "nazev": "Pokoje s vlastní koupelnou a bar",
+     "pole": [
+      {
+       "k": "ubyt-034",
+       "typ": "Štítek nad nadpisem",
+       "t": "Pokoje"
+      },
+      {
+       "k": "ubyt-035",
+       "typ": "Nadpis",
+       "t": "Pokoje s vlastní koupelnou"
+      },
+      {
+       "k": "ubyt-036",
+       "typ": "Text",
+       "t": "Pro hosty, kteří chtějí víc soukromí, máme pokoje s vlastní koupelnou. Rádi je zajistíme pro dospělé i rodiny s dětmi."
+      },
+      {
+       "k": "ubyt-037",
+       "typ": "Štítek nad nadpisem",
+       "t": "Bar"
+      },
+      {
+       "k": "ubyt-038",
+       "typ": "Nadpis",
+       "t": "Bar"
+      },
+      {
+       "k": "ubyt-039",
+       "typ": "Text",
+       "t": "Po večeři se sejdete u baru v restauraci. Posedíte u krbových kamen a dáte si něco dobrého k pití."
+      },
+      {
+       "k": "ubyt-040",
+       "typ": "Položka seznamu",
+       "t": "sauna"
+      },
+      {
+       "k": "ubyt-041",
+       "typ": "Položka seznamu",
+       "t": "ping pong"
+      },
+      {
+       "k": "ubyt-042",
+       "typ": "Položka seznamu",
+       "t": "kulečník"
+      },
+      {
+       "k": "ubyt-043",
+       "typ": "Položka seznamu",
+       "t": "fotbálek"
       }
      ]
     },
@@ -1841,6 +2021,51 @@
      ]
     },
     {
+     "nazev": "Zimní tábory",
+     "pole": [
+      {
+       "k": "zima-030",
+       "typ": "Štítek nad nadpisem",
+       "t": "Zimní tábory"
+      },
+      {
+       "k": "zima-031",
+       "typ": "Nadpis",
+       "t": "Pro děti"
+      },
+      {
+       "k": "zima-032",
+       "typ": "Text",
+       "t": "Blízké sjezdovky, lyžárna a půjčovna lyží, boby a sáňky. Na přání zajistíme skipasy a dopravu."
+      },
+      {
+       "k": "zima-033",
+       "typ": "Položka seznamu",
+       "t": "blízké sjezdovky a lyžárna"
+      },
+      {
+       "k": "zima-034",
+       "typ": "Položka seznamu",
+       "t": "půjčovna lyží, bobů a sáněk"
+      },
+      {
+       "k": "zima-035",
+       "typ": "Položka seznamu",
+       "t": "možnost skipasu"
+      },
+      {
+       "k": "zima-036",
+       "typ": "Položka seznamu",
+       "t": "možnost zajištění dopravy"
+      },
+      {
+       "k": "zima-037",
+       "typ": "Tlačítko",
+       "t": "Poptat zimní tábor"
+      }
+     ]
+    },
+    {
      "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
      "pole": [
       {
@@ -1974,6 +2199,76 @@
        "k": "silv-019",
        "typ": "Tlačítko",
        "t": "Poptat Silvestr"
+      }
+     ]
+    },
+    {
+     "nazev": "Silvestrovský program",
+     "pole": [
+      {
+       "k": "silv-020",
+       "typ": "Štítek nad nadpisem",
+       "t": "Silvestrovský program"
+      },
+      {
+       "k": "silv-021",
+       "typ": "Nadpis",
+       "t": "Co Vás čeká"
+      },
+      {
+       "k": "silv-022",
+       "typ": "Položka seznamu",
+       "t": "Na zahřátí: svařené víno, horká medovina nebo nealkoholický punč"
+      },
+      {
+       "k": "silv-023",
+       "typ": "Položka seznamu",
+       "t": "Slavnostní raut: nahrazuje večeři z polopenze či plné penze, výběr z více jídel"
+      },
+      {
+       "k": "silv-024",
+       "typ": "Položka seznamu",
+       "t": "Hudba a zábava: hudba k poslechu i tanci celý večer"
+      },
+      {
+       "k": "silv-025",
+       "typ": "Položka seznamu",
+       "t": "Půlnoční občerstvení: jednohubky a slané pochutiny"
+      },
+      {
+       "k": "silv-026",
+       "typ": "Položka seznamu",
+       "t": "Půlnoční přípitek: společné přivítání nového roku"
+      },
+      {
+       "k": "silv-027",
+       "typ": "Štítek nad nadpisem",
+       "t": "V ceně pobytu"
+      },
+      {
+       "k": "silv-028",
+       "typ": "Nadpis",
+       "t": "V ceně pobytu"
+      },
+      {
+       "k": "silv-029",
+       "typ": "Položka seznamu",
+       "t": "sauna denně 16:00–20:00"
+      },
+      {
+       "k": "silv-030",
+       "typ": "Položka seznamu",
+       "t": "zapůjčení dětských lyží po domluvě"
+      },
+      {
+       "k": "silv-031",
+       "typ": "Položka seznamu",
+       "t": "zapůjčení sáněk a bobů"
+      },
+      {
+       "k": "silv-032",
+       "typ": "Položka seznamu",
+       "t": "parkování u chaty, úschovna lyží"
       }
      ]
     },
@@ -2196,6 +2491,41 @@
      ]
     },
     {
+     "nazev": "Celoročně",
+     "pole": [
+      {
+       "k": "okoli-038",
+       "typ": "Štítek nad nadpisem",
+       "t": "Celoročně"
+      },
+      {
+       "k": "okoli-039",
+       "typ": "Nadpis",
+       "t": "Výlety za každého počasí"
+      },
+      {
+       "k": "okoli-040",
+       "typ": "Text",
+       "t": "Když se počasí nepovede, v okolí je kam jet i pod střechu."
+      },
+      {
+       "k": "okoli-041",
+       "typ": "Položka seznamu",
+       "t": "IQ Landia Liberec"
+      },
+      {
+       "k": "okoli-042",
+       "typ": "Položka seznamu",
+       "t": "Aquapark Babylon Liberec"
+      },
+      {
+       "k": "okoli-043",
+       "typ": "Položka seznamu",
+       "t": "Muzeum ozubnicové dráhy v Kořenově"
+      }
+     ]
+    },
+    {
      "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
      "pole": [
       {
@@ -2312,6 +2642,41 @@
      ]
     },
     {
+     "nazev": "Mám zájem o",
+     "pole": [
+      {
+       "k": "popt-010",
+       "typ": "Štítek nad nadpisem",
+       "t": "Mám zájem o"
+      },
+      {
+       "k": "popt-011",
+       "typ": "Položka seznamu",
+       "t": "animační program"
+      },
+      {
+       "k": "popt-012",
+       "typ": "Položka seznamu",
+       "t": "doprava"
+      },
+      {
+       "k": "popt-013",
+       "typ": "Položka seznamu",
+       "t": "skipasy"
+      },
+      {
+       "k": "popt-014",
+       "typ": "Položka seznamu",
+       "t": "půjčení lyží"
+      },
+      {
+       "k": "popt-015",
+       "typ": "Položka seznamu",
+       "t": "zapůjčení sáněk a bobů"
+      }
+     ]
+    },
+    {
      "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
      "pole": [
       {
@@ -2325,6 +2690,102 @@
        "typ": "Popis v Googlu",
        "t": "Poptejte pobyt pro školu, adaptační kurz nebo lyžařský výcvik na Horské chatě Zvonice. Kořenov 872, sales@lipperthotels.cz.",
        "seo": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "partneri",
+   "nazev": "Naši partneři",
+   "skupiny": [
+    {
+     "nazev": "Úvod stránky",
+     "pole": [
+      {
+       "k": "part-003",
+       "typ": "Hlavní nadpis (na fotce)",
+       "t": "Naši partneři"
+      },
+      {
+       "k": "part-004",
+       "typ": "Text",
+       "t": "S těmito partnery spolupracujeme na programu a službách pro školy a skupiny. Další partnery doplníme."
+      }
+     ]
+    },
+    {
+     "nazev": "TAPAZA",
+     "pole": [
+      {
+       "k": "part-005",
+       "typ": "Štítek nad nadpisem",
+       "t": "Tábory a programy"
+      },
+      {
+       "k": "part-006",
+       "typ": "Nadpis",
+       "t": "TAPAZA"
+      },
+      {
+       "k": "part-007",
+       "typ": "Text",
+       "t": "Dětské tábory a programy na Zvonici v Kořenově. Podívejte se, jak se u nás dají strávit jarní prázdniny a jak děti tráví léto."
+      },
+      {
+       "k": "part-008",
+       "typ": "Tlačítko",
+       "t": "Tábory TAPAZA v Kořenově"
+      },
+      {
+       "k": "part-009",
+       "typ": "Podnadpis",
+       "t": "Jarní prázdniny na Zvonici"
+      },
+      {
+       "k": "part-010",
+       "typ": "Podnadpis",
+       "t": "Jak děti tráví léto na Zvonici"
+      }
+     ]
+    },
+    {
+     "nazev": "4Event",
+     "pole": [
+      {
+       "k": "part-011",
+       "typ": "Štítek nad nadpisem",
+       "t": "Program a zábava"
+      },
+      {
+       "k": "part-012",
+       "typ": "Nadpis",
+       "t": "4Event"
+      },
+      {
+       "k": "part-013",
+       "typ": "Text",
+       "t": "Animační a zážitkové programy pro školy a skupiny."
+      },
+      {
+       "k": "part-014",
+       "typ": "Tlačítko",
+       "t": "Web 4Event"
+      }
+     ]
+    },
+    {
+     "nazev": "Vyhledávače (titulek a popis stránky v Googlu)",
+     "pole": [
+      {
+       "k": "part-001",
+       "typ": "Titulek v Googlu (záložka prohlížeče)",
+       "t": "Naši partneři | Horská chata Zvonice"
+      },
+      {
+       "k": "part-002",
+       "typ": "Popis v Googlu",
+       "t": "Partneři Horské chaty Zvonice v Kořenově: TAPAZA a 4Event, programy a tábory pro školy a skupiny."
       }
      ]
     }
@@ -2431,6 +2892,11 @@
        "k": "spol-019",
        "typ": "Položka menu",
        "t": "Poptat pobyt pro skupinu"
+      },
+      {
+       "k": "spol-049",
+       "typ": "Položka menu",
+       "t": "Naši partneři"
       }
      ]
     },

@@ -7,6 +7,20 @@
 <section class="sekce">
   <div class="obal">
     <p class="uvodni">{{ T('pobyty-004') }}</p>
+    <nav class="kat-menu" aria-label="{{ T('pobyty-041') }}">
+      <details open>
+        <summary>{{ T('pobyty-041') }}</summary>
+        <ul>
+          <li><a href="#skoly-v-prirode">{{ T('pobyty-006') }}</a></li>
+          <li><a href="#adaptacni-kurzy">{{ T('pobyty-014') }}</a></li>
+          <li><a href="#lyzarske-vycviky">{{ T('pobyty-022') }}</a></li>
+          <li><a href="#zimni-tabory">{{ T('pobyty-043') }}</a></li>
+          <li><a href="#skupiny">{{ T('pobyty-031') }}</a></li>
+          <li><a href="#rodinne-pobyty">{{ T('pobyty-051') }}</a></li>
+          <li><a href="#svatby">{{ T('pobyty-059') }}</a></li>
+        </ul>
+      </details>
+    </nav>
 
     <div class="blok" id="skoly-v-prirode" data-odhal>
       <div class="blok-foto">{{ img('zv27-ext-hriste-2.jpg', 'Hřiště s průlezkami a skluzavkou u chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
@@ -20,7 +34,7 @@
     </div>
 
     <div class="blok otoc" id="adaptacni-kurzy" data-odhal>
-      <div class="blok-foto">{{ img('nz-herna.jpg', 'Herna s dětským kobercem na chatě Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div class="blok-foto">{{ img('nz2-adaptacni.jpg', 'Adaptační kurz na chatě Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
         {{ stitek(T('pobyty-013'), 'vlevo') }}
         <h2>{{ T('pobyty-014') }}</h2>
@@ -31,13 +45,23 @@
     </div>
 
     <div class="blok" id="lyzarske-vycviky" data-odhal>
-      <div class="blok-foto">{{ img('krajina-mraz.jpg', 'Zimní krajina u Kořenova', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div class="blok-foto">{{ img('nz2-lyzarsky-vycvik.jpg', 'Lyžařský výcvik u chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
         {{ stitek(T('pobyty-021'), 'vlevo') }}
         <h2>{{ T('pobyty-022') }}</h2>
         <p>{{ T('pobyty-023') }}</p>
         <ul class="seznam"><li>{{ T('pobyty-024') }}</li><li>{{ T('pobyty-025') }}</li><li>{{ T('pobyty-026') }}</li><li>{{ T('pobyty-027') }}</li></ul>
         <a class="btn" href="{{ url('poptavka/') }}?pobyt=Lyžařský výcvik">{{ T('pobyty-028') }}</a> <a class="odkaz" href="{{ url('zimni-pobyty/') }}">{{ T('pobyty-029') }}</a>
+      </div>
+    </div>
+    <div class="blok" id="zimni-tabory" data-odhal>
+      <div class="blok-foto">{{ img('nz2-zimni-tabory.jpg', 'Zimní tábor u chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div>
+        {{ stitek(T('pobyty-042'), 'vlevo') }}
+        <h2>{{ T('pobyty-043') }}</h2>
+        <p>{{ T('pobyty-044') }}</p>
+        <ul class="seznam"><li>{{ T('pobyty-045') }}</li><li>{{ T('pobyty-046') }}</li><li>{{ T('pobyty-047') }}</li><li>{{ T('pobyty-048') }}</li></ul>
+        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Zimní tábor">{{ T('pobyty-049') }}</a>
       </div>
     </div>
     <div class="blok otoc" id="skupiny" data-odhal>
@@ -47,7 +71,29 @@
         <h2>{{ T('pobyty-031') }}</h2>
         <p>{{ T('pobyty-032') }}</p>
         <ul class="seznam"><li>{{ T('pobyty-033') }}</li><li>{{ T('pobyty-034') }}</li><li>{{ T('pobyty-035') }}</li><li>{{ T('pobyty-036') }}</li></ul>
-        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Skupinový pobyt">{{ T('pobyty-037') }}</a>
+        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Sportovní soustředění">{{ T('pobyty-037') }}</a>
+      </div>
+    </div>
+
+    <div class="blok" id="rodinne-pobyty" data-odhal>
+      <div class="blok-foto">{{ img('nz2-rodinne.jpg', 'Děti na sáňkách u chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div>
+        {{ stitek(T('pobyty-050'), 'vlevo') }}
+        <h2>{{ T('pobyty-051') }}</h2>
+        <p>{{ T('pobyty-052') }}</p>
+        <ul class="seznam"><li>{{ T('pobyty-053') }}</li><li>{{ T('pobyty-054') }}</li><li>{{ T('pobyty-055') }}</li><li>{{ T('pobyty-056') }}</li></ul>
+        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Rodinný pobyt">{{ T('pobyty-057') }}</a>
+      </div>
+    </div>
+
+    <div class="blok otoc" id="svatby" data-odhal>
+      <div class="blok-foto">{{ img('nz2-svatby.jpg', 'Chata Zvonice s venkovním stanem', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
+      <div>
+        {{ stitek(T('pobyty-058'), 'vlevo') }}
+        <h2>{{ T('pobyty-059') }}</h2>
+        <p>{{ T('pobyty-060') }}</p>
+        <ul class="seznam"><li>{{ T('pobyty-061') }}</li><li>{{ T('pobyty-062') }}</li><li>{{ T('pobyty-063') }}</li></ul>
+        <a class="btn" href="{{ url('poptavka/') }}?pobyt=Svatba">{{ T('pobyty-064') }}</a>
       </div>
     </div>
   </div>
