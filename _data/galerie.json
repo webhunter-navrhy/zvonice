@@ -5,32 +5,28 @@
       "alt": "Vstup do chaty Zvonice"
     },
     {
-      "img": "zv27-ext-hriste-2.jpg",
-      "alt": "Hřiště s průlezkami a skluzavkou"
-    },
-    {
-      "img": "zv27-ext-chata-1.jpg",
-      "alt": "Chata Zvonice za loukou"
-    },
-    {
-      "img": "zv27-ext-chata-3.jpg",
-      "alt": "Chata a dětské hřiště"
+      "img": "zv27-ext-areal-3.jpg",
+      "alt": "Chata Zvonice z louky"
     },
     {
       "img": "zv27-ext-areal-1.jpg",
       "alt": "Areál chaty s party stanem"
     },
     {
+      "img": "zv27-ext-chata-1.jpg",
+      "alt": "Chata Zvonice za loukou"
+    },
+    {
+      "img": "zv27-ext-hriste-2.jpg",
+      "alt": "Hřiště s průlezkami a skluzavkou"
+    },
+    {
+      "img": "zv27-ext-chata-3.jpg",
+      "alt": "Chata a dětské hřiště"
+    },
+    {
       "img": "zv27-ext-areal-2.jpg",
       "alt": "Louka u chaty"
-    },
-    {
-      "img": "zv27-ext-areal-3.jpg",
-      "alt": "Chata Zvonice z louky"
-    },
-    {
-      "img": "zv27-int-klubovna.jpg",
-      "alt": "Klubovna s dětským kobercem"
     },
     {
       "img": "zv27-int-spolecenska-1.jpg",
@@ -43,6 +39,10 @@
     {
       "img": "zv27-int-spolecenska-3.jpg",
       "alt": "Společenská místnost s dřevěným nábytkem"
+    },
+    {
+      "img": "uploads/2026-11/herna-i-a8t4du.jpg",
+      "alt": "Učebna / herna"
     },
     {
       "img": "zv27-int-pokoj-1.jpg",
@@ -79,10 +79,6 @@
     {
       "img": "les-zima.jpg",
       "alt": "Zasněžený les a hřiště"
-    },
-    {
-      "img": "louka.jpg",
-      "alt": "Louka a lesy kolem chaty"
     },
     {
       "img": "pokoj-2.jpg",
