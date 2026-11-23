@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ titulek or site.nazev }}</title>
 <meta name="description" content="{{ popis or site.popis }}">
-<meta name="robots" content="noindex, nofollow">
+{% if site.navrh or noindex %}<meta name="robots" content="noindex, nofollow">
+{% endif %}<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500});</script>
 <meta name="theme-color" content="#6a1f1a">
 <meta property="og:title" content="{{ titulek or site.nazev }}">
 <meta property="og:description" content="{{ popis or site.popis }}">
@@ -59,7 +60,7 @@
       <ul>{% for h in site.skupina %}<li><a href="{{ h.url }}" target="_blank" rel="noopener">{{ h.nazev }}</a><small>{{ h.misto }}</small></li>{% endfor %}</ul>
     </div>
   </div>
-  <div class="obal pata-spodek"><span>© 2026 Horská chata Zvonice</span><span>Návrh webu · fotky ze stávajícího webu chaty</span></div>
+  <div class="obal pata-spodek"><span>© 2026 Horská chata Zvonice</span><button type="button" class="cookie-odkaz" data-cookies-nastaveni>Nastavení cookies</button></div>
 </footer>
 <div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-nadpis" hidden>
   <div class="popup-okno">
@@ -69,6 +70,14 @@
     <p>Lyžařské výcviky a víkendy pro skupiny, sjezdovka s vlekem 200 m od chaty. Silvestrovský pobyt 27. 12. 2026 – 1. 1. 2027 je otevřený i rodinám a partám přátel.</p>
     <a class="btn" href="{{ url('zimni-pobyty/') }}">Zimní pobyty</a>
     <a class="odkaz" href="{{ url('silvestr/') }}">Silvestrovský pobyt</a>
+  </div>
+</div>
+<div class="cookies" id="cookies" role="dialog" aria-live="polite" aria-labelledby="cookies-nadpis" data-gtm="{{ site.gtm }}" hidden>
+  <h2 id="cookies-nadpis">Cookies na našem webu</h2>
+  <p>Nezbytné cookies potřebuje web ke svému fungování. Se souhlasem používáme i analytické a marketingové cookies (Google Tag Manager, Google Analytics), abychom věděli, co návštěvníky zajímá, a mohli web zlepšovat. Volbu můžete kdykoli změnit v patičce webu.</p>
+  <div class="cookies-tl">
+    <button type="button" class="btn" data-cookies="vse">Přijmout vše</button>
+    <button type="button" class="btn btn-obrys" data-cookies="nezbytne">Jen nezbytné</button>
   </div>
 </div>
 <script src="{{ asset('js/main.js') }}" defer></script>

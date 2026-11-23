@@ -65,7 +65,39 @@ document.querySelectorAll('form.formular').forEach(function (f) {
   });
   });
 
-// pop-up s novinkami: jednou za návštěvu, Esc / klik mimo / křížek zavře
+// cookies: výchozí stav zamítnuto (v hlavičce), GTM se načte až po „Přijmout vše“ a jen na zvonice.cz
+var cookiesVolba = (function () {
+  var lis = document.getElementById('cookies'), KLIC = 'zvonice-cookies', cekaji = [];
+  var nacti = function () { try { return localStorage.getItem(KLIC); } catch (e) { return null; } };
+  var gtmNacten = false;
+  var pouzij = function (v) {
+    var ano = v === 'vse' ? 'granted' : 'denied';
+    gtag('consent', 'update', { ad_storage: ano, ad_user_data: ano, ad_personalization: ano, analytics_storage: ano });
+    var id = lis && lis.dataset.gtm;
+    if (v === 'vse' && id && !gtmNacten && /(^|\.)zvonice\.cz$/.test(location.hostname)) {
+      gtmNacten = true;
+      dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+      var s = document.createElement('script'); s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(id);
+      document.head.appendChild(s);
+    }
+  };
+  var ukaz = function (bezFokusu) { if (lis) { lis.hidden = false; if (bezFokusu === true) return; var b = lis.querySelector('[data-cookies]'); if (b) b.focus({ preventScroll: true }); } };
+  if (lis) lis.querySelectorAll('[data-cookies]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var v = b.dataset.cookies;
+      try { localStorage.setItem(KLIC, v); } catch (e) {}
+      lis.hidden = true; pouzij(v);
+      var c = cekaji; cekaji = []; c.forEach(function (f) { f(); });
+    });
+  });
+  document.querySelectorAll('[data-cookies-nastaveni]').forEach(function (b) { b.addEventListener('click', ukaz); });
+  var v = nacti();
+  if (v) pouzij(v); else ukaz(true);
+  return function (f) { if (lis && lis.hidden) f(); else cekaji.push(f); };
+})();
+
+// pop-up s novinkami: jednou za návštěvu (až po volbě cookies), Esc / klik mimo / křížek zavře
 (function () {
   var p = document.getElementById('popup');
   if (!p) return;
@@ -76,11 +108,11 @@ document.querySelectorAll('form.formular').forEach(function (f) {
     if (last) last.focus();
   };
   var last;
-  setTimeout(function () {
+  cookiesVolba(function () { setTimeout(function () {
     last = document.activeElement;
     p.hidden = false; p.classList.add('on');
     p.querySelector('.popup-zavrit').focus();
-  }, 6000);
+  }, 6000); });
   p.querySelector('.popup-zavrit').addEventListener('click', zav);
   p.addEventListener('click', function (e) { if (e.target === p) zav(); });
   addEventListener('keydown', function (e) { if (e.key === 'Escape' && p.classList.contains('on')) zav(); });
