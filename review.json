@@ -1,18 +1,17 @@
 {
   "znamka": 8,
   "slabiny": [
-    "PC buňka 3 a mobil buňky 3–4, Pobyty pro každou skupinu: oprava se neprovedla. Nadpisy dlaždic jsou pořád uprostřed fotky a „Lyžařské výcviky“ se na světlé zasněžené krajině dál ztrácí. Pod nadpis dejte zespodu přechod linear-gradient(to top, rgba(30,19,16,.6), transparent 60%), nadpis a „Dozvědět se více“ přesuňte do spodní třetiny dlaždice (align-items:flex-end, padding-bottom 24 px) a vnitřní rámeček nechte jen jako 1px linku.",
-    "PC buňka 4, letní fotka chaty s dětmi a party stanem: oprava se neprovedla. Fotka je pořád roztažená přes celých 1440 px a zdroj má kolem 1100 px. Dejte ji do kontejneru max-width 1160 px jako ostatní sekce (stejně odsazenou jako dlaždice nad ní), nebo ji ořízněte na pás vysoký nejvýš 420 px, aby se nezvětšovala víc než 1,3×. Na mobilu může zůstat přes celou šířku.",
-    "PC buňka 6 a mobil buňka 7, poznámka „Skupinové ceny zahrnují ubytování a stravu pětkrát denně…“: na mobilu už je pod kartou Pokoje, ale na PC visí pořád volně nad sekcí Den na chatě. Na obou je dál drobná (asi 11 px) a světle šedá. Nastavte font-size 15px a color #5a4a40, na PC ji dejte hned pod kartu Pokoje se zarovnáním na její levou hranu (margin-top 16 px) a odstraňte prázdný pruh pod ní."
+    "PC buňka 3 a mobil buňka 4, Pobyty pro školy a skupiny: oprava je jen napůl. Dlaždice jsou teď ztmavené a nadpisy jsou čitelné (dlaždice Lyžařské výcviky na světlém sněhu zmizela). Na PC ale nadpisy Školy v přírodě, Adaptační kurzy, Zimní pobyty 2027 a Silvestrovský pobyt 2027 pořád stojí uprostřed fotky. Kolem nich je dál silný vnitřní rámeček. Na mobilu je Adaptační kurzy taky ve středu. Nadpis a „Dozvědět se více“ dejte do spodní třetiny dlaždice (align-items:flex-end, padding-bottom 24px) s přechodem linear-gradient(to top, rgba(30,19,16,.6), transparent 60%). Rámeček zúžte na 1px linku.",
+    "PC buňka 6 a mobil buňka 7, poznámka „Skupinové ceny zahrnují ubytování a stravu pětkrát denně…“: neopraveno. Na PC visí pořád na středu volně nad sekcí Den na chatě a pod ní zůstal prázdný béžový pruh. Na PC i na mobilu je dál drobná (asi 11 px) a světle šedá. Nastavte font-size 15px a color #5a4a40. Na PC ji přesuňte hned pod kartu Pokoje se zarovnáním na její levou hranu (margin-top 16px) a prázdný pruh pod ní odstraňte.",
+    "PC buňky 9–10 a mobil buňky 13–14, sekce Nahlédněte k nám: místo videa je jen hnědý obdélník s texturou dřeva. Na mobilu na něm není vidět ani tlačítko přehrání. Mezi kartami Poptávka a Jak k nám a videem je na PC asi 150 px prázdného místa. Jako poster dejte skutečný snímek z videa chaty (exteriér nebo hřiště) s viditelným tlačítkem přehrání i na mobilu. Mezeru nad sekcí zmenšete na běžný odstup sekcí."
   ],
   "zavazne": [],
   "silne": [
-    "Web je sourozenec skalskydvur.cz: Playfair 700 verzálky, Montserrat, pískové pozadí, vínová #420c0a a ornamentální nadtitulky. Tak to Rafael chtěl u hotelů skupiny LippertHotels.",
-    "Logo Horská chata Zvonice je vlevo v hlavičce a v patičce a vínovou barvu bere z loga a starého webu.",
-    "Všechna čísla mají zdroj v briefu: 100 lůžek, strava 5× denně, sjezdovka 200 m, dospělý zdarma na 20 dětí, ceny 620/735/893/1 103/1 260 Kč, Silvestr 1 300/1 500 Kč, vzdálenosti 0,5/30/110 km.",
-    "Jasná konverze: Poptávka v hlavičce, CTA Poptat pobyt v hero a v sekcích, ceník se třemi kartami, blok Poptávka a Jak k nám a kontakty v patičce.",
-    "QA je čisté: žádné přetečení na 6 šířkách, noindex, cache busting, malé dotykové cíle 0. Mobil je skutečně navržený pro mobil (karty pod sebou, čitelné texty, galerie 2×2)."
+    "Velká fotka chaty v zimě v PC buňce 4 už se nezvětšuje: zdroj má 1920 px, takže je ostrá i přes celou šířku.",
+    "Web působí jako sourozenec skalskydvur.cz: Playfair verzálky s Montserratem, písková paleta, ornamenty u nadpisů a vínová z loga Zvonice. Logo je celé uprostřed hlavičky a v patičce je skupina Lippert Hotels.",
+    "Obsah je z briefu: 100 lůžek, strava 5× denně, sjezdovka 200 m od chaty, ceník 735/893/1 103/1 260 Kč, Silvestr 27. 12.–1. 1., vzdálenosti 30 km a 110 km, parkovné, poptávka e-mailem.",
+    "Mobil nepřetéká, CTA Poptávka je stále v hlavičce a ceník je v kartách čitelný."
   ],
-  "verdikt": "Ani jedna ze tří výtek minulého kola není opravená, jen poznámka k cenám se na mobilu přesunula pod kartu Pokoje. Nové závažné vady nejsou, takže známka zůstává 8. Před odesláním je dobré dodělat přechod pod nadpisy dlaždic, zúžit letní fotku a zvětšit poznámku k cenám.",
-  "_hash": "08eacdb617dc51a89bd4238f679e7f1e517b83d0"
+  "verdikt": "Jedna ze tří výtek je opravená (fotka chaty už se nezvětšuje), u dlaždic se zlepšila čitelnost, ale ne umístění nadpisů, a poznámka u ceníku zůstala beze změny. Nová závažná vada není, takže známka zůstává 8. Web lze odeslat, ale tyhle dvě úpravy by měly proběhnout ještě před odesláním.",
+  "_hash": "6364be4d6db039fa5ea2d3607e4ff3bc51238c60"
 }

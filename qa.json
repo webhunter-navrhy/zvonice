@@ -2,7 +2,10 @@
   "url": "https://webhunter-navrhy.github.io/zvonice/",
   "ok": true,
   "chyby": [],
-  "varovani": [],
+  "varovani": [
+    "Největší obrázek (PC) 571 kB > 400 kB: https://webhunter-navrhy.github.io/zvonice/img/nz-chata-hriste-zima-1920.webp",
+    "Dotykové cíle <40 px na mobilu: 1× (např. button.cookie-odkaz \"Nastavení cookies\" 358×20)"
+  ],
   "metriky": {
     "sirky": {
       "1440": {
@@ -11,11 +14,11 @@
       },
       "1280": {
         "scrollWidth": 1280,
-        "pocet_pretekajicich": 0
+        "pocet_pretekajicich": 2
       },
       "1024": {
         "scrollWidth": 1024,
-        "pocet_pretekajicich": 0
+        "pocet_pretekajicich": 2
       },
       "820": {
         "scrollWidth": 820,
@@ -30,18 +33,18 @@
         "pocet_pretekajicich": 0
       }
     },
-    "preneseno_PC_MB": 1.8,
+    "preneseno_PC_MB": 2.3,
     "nejvetsi_obrazek_PC": {
-      "kB": 241,
-      "url": "https://webhunter-navrhy.github.io/zvonice/img/chata-zima-slunce-1600.webp"
+      "kB": 571,
+      "url": "https://webhunter-navrhy.github.io/zvonice/img/nz-chata-hriste-zima-1920.webp"
     },
-    "snimku_PC": 10,
-    "preneseno_mobil_MB": 1.85,
+    "snimku_PC": 11,
+    "preneseno_mobil_MB": 2.34,
     "nejvetsi_obrazek_mobil": {
-      "kB": 268,
-      "url": "https://webhunter-navrhy.github.io/zvonice/img/adaptacni-kurz-1175.webp"
+      "kB": 313,
+      "url": "https://webhunter-navrhy.github.io/zvonice/img/nz-chata-hriste-zima-1280.webp"
     },
-    "snimku_mobil": 15,
+    "snimku_mobil": 16,
     "seo": {
       "title": "Horská chata Zvonice – školy v přírodě a pobyty pro skupiny v Kořenově",
       "description": "Horská chata Zvonice v Kořenově: až 100 lůžek pro školy v přírodě, lyžařské výcviky a skupiny, resta",
@@ -56,12 +59,12 @@
       "canonical": false,
       "viewport": true
     },
-    "maly_dotykovy_cil": 0,
+    "maly_dotykovy_cil": 1,
     "font_nadpis": "Playfair Display",
     "font_text": "Montserrat",
     "podstranky": {
-      "stranek": 12,
-      "obrazku": 74
+      "stranek": 19,
+      "obrazku": 151
     }
   }
 }
