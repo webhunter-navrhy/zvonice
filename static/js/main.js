@@ -69,7 +69,7 @@ document.querySelectorAll('form.formular').forEach(function (f) {
       if (r.ok) {
         f.reset(); f.dataset.odeslano = '1'; f.classList.add('odeslano');
         if (btn) btn.textContent = 'Odesláno ✓';
-        stav.textContent = 'Děkujeme, poptávka je odeslaná. Potvrzení jsme Vám poslali na e-mail a brzy se Vám ozveme. Není potřeba odesílat znovu.';
+        stav.textContent = 'Děkujeme, poptávka je odeslaná a brzy se Vám ozveme. Není potřeba odesílat znovu.';
         stav.scrollIntoView({ block: 'center', behavior: 'smooth' });
       }
       else { stav.textContent = (r.j && r.j.error) || 'Odeslání se nepovedlo. Zkuste to prosím znovu, nebo nám napište na sales@lipperthotels.cz.'; }
