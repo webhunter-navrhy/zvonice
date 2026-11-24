@@ -53,22 +53,28 @@ document.querySelectorAll('form.formular').forEach(function (f) {
   if (q.get('balicek') && f.elements.zprava && !f.elements.zprava.value) f.elements.zprava.value = 'Mám zájem o balíček: ' + q.get('balicek');
   f.addEventListener('submit', function (e) {
     e.preventDefault();
+    if (f.dataset.odesila === '1' || f.dataset.odeslano === '1') return;
     var hp = f.querySelector('.past input').value;
     var btn = f.querySelector('button[type=submit],button:not([type])');
     var pole = {}, popis = {skupina:'Typ pobytu',jmeno:'Jméno',email:'E-mail',telefon:'Telefon',organizace:'Škola / klub / oddíl',prijezd:'Příjezd',odjezd:'Odjezd',deti:'Počet dětí',dospeli:'Počet dospělých',strava:'Strava',zprava:'Zpráva'};
     Object.keys(popis).forEach(function (k) { if (f.elements[k] && f.elements[k].value) pole[popis[k]] = f.elements[k].value; });
     var zaj = Array.prototype.map.call(f.querySelectorAll('input[name=zajem]:checked'), function (c) { return c.value; });
     if (zaj.length) pole['Mám zájem o'] = zaj.join(', ');
-    stav.textContent = 'Odesílám…'; if (btn) btn.disabled = true;
+    stav.textContent = 'Odesílám…'; f.dataset.odesila = '1'; if (btn) btn.disabled = true;
     fetch('https://webhunter-admin.webhunter.workers.dev/api/zvonice/form', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ type: 'poptavka', fields: pole, page: location.href, hp: hp, ms: Date.now() - t0 })
     }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok && j.ok !== false, j: j }; }); })
     .then(function (r) {
-      if (r.ok) { f.reset(); stav.textContent = 'Děkujeme, poptávku jsme přijali a brzy se Vám ozveme.'; }
+      if (r.ok) {
+        f.reset(); f.dataset.odeslano = '1'; f.classList.add('odeslano');
+        if (btn) btn.textContent = 'Odesláno ✓';
+        stav.textContent = 'Děkujeme, poptávka je odeslaná. Potvrzení jsme Vám poslali na e-mail a brzy se Vám ozveme. Není potřeba odesílat znovu.';
+        stav.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
       else { stav.textContent = (r.j && r.j.error) || 'Odeslání se nepovedlo. Zkuste to prosím znovu, nebo nám napište na sales@lipperthotels.cz.'; }
     }).catch(function () { stav.textContent = 'Odeslání se nepovedlo. Zkuste to prosím znovu, nebo nám napište na sales@lipperthotels.cz.'; })
-    .then(function () { if (btn) btn.disabled = false; });
+    .then(function () { f.dataset.odesila = ''; if (btn && f.dataset.odeslano !== '1') btn.disabled = false; });
   });
   });
 

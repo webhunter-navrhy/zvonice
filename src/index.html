@@ -173,11 +173,8 @@
     {{ stitek(T('uvod-107')) }}
     <h2 class="h2 stred">{{ T('uvod-108') }}</h2>
     <div class="galerie">
-      <a href="{{ url('fotogalerie/') }}">{{ img('chata-podzim.jpg', 'Chata Zvonice na podzim', sizes='20vw') }}</a>
-      <a href="{{ url('fotogalerie/') }}">{{ img('jidelna-3.jpg', 'Restaurace s velkými okny', sizes='20vw') }}</a>
-      <a href="{{ url('fotogalerie/') }}">{{ img('pokoj-5.jpg', 'Podkrovní pokoj s dřevěným obložením', sizes='20vw') }}</a>
-      <a href="{{ url('fotogalerie/') }}">{{ img('louka.jpg', 'Louka a smrkový les kolem chaty v létě', sizes='20vw') }}</a>
-      <a href="{{ url('fotogalerie/') }}">{{ img('zv27-ext-hriste-3.jpg', 'Hřiště s průlezkami u chaty', sizes='20vw') }}</a>
+      {% for p in data.galerie.photos[:5] %}<a href="{{ url('fotogalerie/') }}">{{ img(p.img, p.alt, sizes='20vw') }}</a>
+      {% endfor %}
     </div>
     <div class="akce stred"><a class="odkaz" href="{{ url('fotogalerie/') }}">{{ T('uvod-109') }}</a></div>
   </div>

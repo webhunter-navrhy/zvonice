@@ -182,7 +182,7 @@ function vGalerie() {
       h('button.btn.btn-p', { type: 'button', onclick: () => file.click() }, '＋ Přidat fotky'), file, grid);
   };
   render();
-  return h('section.card', {}, h('h2', {}, 'Fotogalerie'), h('p.hint', {}, 'Fotky se zobrazí na stránce Fotogalerie. Na úvodní stránce zůstává pět vybraných fotek.'), box);
+  return h('section.card', {}, h('h2', {}, 'Fotogalerie'), h('p.hint', {}, 'Fotky se zobrazí na stránce Fotogalerie. Prvních pět fotek v tomto pořadí se ukazuje i na úvodní stránce, pořadí změníte šipkami.'), box);
 }
 function vVideo() {
   const v = S.D.video;
