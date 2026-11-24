@@ -72,8 +72,8 @@ document.querySelectorAll('form.formular').forEach(function (f) {
         stav.textContent = 'Děkujeme, poptávka je odeslaná a brzy se Vám ozveme. Není potřeba odesílat znovu.';
         stav.scrollIntoView({ block: 'center', behavior: 'smooth' });
       }
-      else { stav.textContent = (r.j && r.j.error) || 'Odeslání se nepovedlo. Zkuste to prosím znovu, nebo nám napište na sales@lipperthotels.cz.'; }
-    }).catch(function () { stav.textContent = 'Odeslání se nepovedlo. Zkuste to prosím znovu, nebo nám napište na sales@lipperthotels.cz.'; })
+      else { stav.textContent = (r.j && r.j.error) || 'Odeslání se nepovedlo. Zkuste to prosím znovu, nebo nám napište na provozni@zvonice.cz.'; }
+    }).catch(function () { stav.textContent = 'Odeslání se nepovedlo. Zkuste to prosím znovu, nebo nám napište na provozni@zvonice.cz.'; })
     .then(function () { f.dataset.odesila = ''; if (btn && f.dataset.odeslano !== '1') btn.disabled = false; });
   });
   });
