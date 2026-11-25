@@ -77,14 +77,6 @@
       "alt": "Sprcha"
     },
     {
-      "img": "krajina-mraz.jpg",
-      "alt": "Zamrzlá krajina u Kořenova"
-    },
-    {
-      "img": "les-zima.jpg",
-      "alt": "Zasněžený les a hřiště"
-    },
-    {
       "img": "pokoj-2.jpg",
       "alt": "Pokoj na chatě Zvonice"
     },
@@ -99,6 +91,18 @@
     {
       "img": "pokoj-11.jpg",
       "alt": "Pokoj na chatě Zvonice"
+    },
+    {
+      "img": "uploads/2026-11/20141226-105847-w5o7jm.jpg",
+      "alt": "Sáňkování na Zvonici"
+    },
+    {
+      "img": "krajina-mraz.jpg",
+      "alt": "Zamrzlá krajina u Kořenova"
+    },
+    {
+      "img": "les-zima.jpg",
+      "alt": "Zasněžený les a hřiště"
     }
   ]
 }
