@@ -45,10 +45,14 @@ def nacti_data():
 class Obrazky:
     """Převod do WebP + generování <img srcset>. Počítá fotky na stránce: první je eager."""
 
-    def __init__(self, base):
+    def __init__(self, base, vymena=None):
         self.base = base
         self.pocet = 0
         self.info = {}
+        # fotky vyměněné v administraci (_data/fotky.json): "stránka|původní soubor" -> {"img": nový soubor, "pozice": "50% 50%"}
+        self.vymena = vymena or {}
+        self.stranka = ""
+        self.sloty = []
         os.makedirs(CACHE, exist_ok=True)
 
     def reset(self):
@@ -88,9 +92,18 @@ class Obrazky:
         self.info[nazev] = {"raster": True, "varianty": varianty}
         return self.info[nazev]
 
-    def img(self, nazev, alt=None, sizes="100vw", cls="", eager=None, styl=""):
+    def img(self, nazev, alt=None, sizes="100vw", cls="", eager=None, styl="", slot=True):
         if alt is None:
             raise BuildError(f"img('{nazev}'): chybí alt (pro dekorativní fotku alt='')")
+        if slot and self.stranka:   # fotka napevno v šabloně = jde vyměnit v administraci (záložka Fotky na webu)
+            klic = f"{self.stranka}|{nazev}"
+            if not any(x["k"] == klic for x in self.sloty):
+                self.sloty.append({"k": klic, "stranka": self.stranka, "img": nazev, "alt": alt.lstrip("~")})
+            v = self.vymena.get(klic)
+            if isinstance(v, dict) and v.get("img") and os.path.exists(os.path.join(IMG, v["img"])):
+                nazev = v["img"]
+                styl = re.sub(r"object-position:[^;]*;?", "", styl).strip()
+                styl = f"object-position:{v.get('pozice') or '50% 50%'}" + (";" + styl if styl else "")
         skryta = ""
         if alt == "" or alt.startswith("~"):
             alt = alt.lstrip("~"); skryta = ' aria-hidden="true"'
@@ -159,7 +172,7 @@ def main():
     if os.path.exists(DIST):
         shutil.rmtree(DIST)
     os.makedirs(DIST)
-    obr = Obrazky(base)
+    obr = Obrazky(base, (data.get("fotky") or {}).get("vymena"))
 
     # statické soubory + hash obsahu pro cache busting
     shutil.copytree(STATIC, DIST, dirs_exist_ok=True)
@@ -228,6 +241,7 @@ def main():
             continue
         jmeno = f[:-5]
         obr.reset()
+        obr.stranka = "" if jmeno == "404" else jmeno
         tpl = env.get_template(f)
         kod = tpl.render()
         if jmeno == "404":
@@ -269,6 +283,20 @@ def main():
     json.dump({"sha": os.environ.get("GITHUB_SHA", "local")}, open(os.path.join(DIST, "version.json"), "w"))
     knih = sorted(os.path.relpath(os.path.join(d, f), IMG) for d, _, fs in os.walk(IMG) for f in fs if f.lower().endswith(RASTER))
     json.dump(knih, open(os.path.join(DIST, "images.json"), "w"), ensure_ascii=False)
+    # náhled 640 px pro každou fotku knihovny (i nepoužitou), aby ji administrace ukázala ve výběru „Vybrat z webu"
+    for rel in knih:
+        cil = os.path.join(DIST, "img", re.sub(r"[^A-Za-z0-9._-]+", "-", os.path.splitext(rel)[0]) + "-640.webp")
+        if os.path.exists(cil):
+            continue
+        try:
+            im = ImageOps.exif_transpose(Image.open(os.path.join(IMG, rel))).convert("RGB")
+            if im.width > 640:
+                im = im.resize((640, round(im.height * 640 / im.width)), Image.LANCZOS)
+            os.makedirs(os.path.dirname(cil), exist_ok=True)
+            im.save(cil, "WEBP", quality=72)
+        except Exception as e:
+            print("náhled se nepovedl:", rel, e)
+    json.dump(obr.sloty, open(os.path.join(DIST, "fotky-sloty.json"), "w"), ensure_ascii=False)
     if site.get("domena") and not navrh:
         open(os.path.join(DIST, "CNAME"), "w").write(site["domena"] + "\n")
 

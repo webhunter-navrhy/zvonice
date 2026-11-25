@@ -9,7 +9,7 @@
     {{ stitek(T('foto-004')) }}
     <h2 class="h2 stred">{{ T('foto-005') }}</h2>
     <div class="galerie-plna">
-      {% for p in data.galerie.photos %}<button type="button" data-velka="{{ img_url(p.img, 1920) }}" aria-label="Zvětšit: {{ p.alt }}">{{ img(p.img, p.alt, sizes='(min-width: 900px) 25vw, 50vw') }}</button>{% endfor %}
+      {% for p in data.galerie.photos %}<button type="button" data-velka="{{ img_url(p.img, 1920) }}" aria-label="Zvětšit: {{ p.alt }}">{{ img(p.img, p.alt, sizes='(min-width: 900px) 25vw, 50vw', slot=False) }}</button>{% endfor %}
     </div>
   </div>
 </section>

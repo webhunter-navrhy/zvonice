@@ -173,7 +173,7 @@
     {{ stitek(T('uvod-107')) }}
     <h2 class="h2 stred">{{ T('uvod-108') }}</h2>
     <div class="galerie">
-      {% for p in data.galerie.photos[:5] %}<a href="{{ url('fotogalerie/') }}">{{ img(p.img, p.alt, sizes='20vw') }}</a>
+      {% for p in data.galerie.photos[:5] %}<a href="{{ url('fotogalerie/') }}">{{ img(p.img, p.alt, sizes='20vw', slot=False) }}</a>
       {% endfor %}
     </div>
     <div class="akce stred"><a class="odkaz" href="{{ url('fotogalerie/') }}">{{ T('uvod-109') }}</a></div>

@@ -3,7 +3,7 @@
 {% set titulek = TS('pobyty-001') %}
 {% set popis = TS('pobyty-002') %}
 {% block obsah %}
-{{ titulni(T('pobyty-003'), 'zv27-ext-hriste-1.jpg', 'Hřiště a party stan před chatou Zvonice', '50% 60%') }}
+{{ titulni(T('pobyty-003'), 'nz2-korenov.webp', 'Dětské hřiště s houpačkami a lezeckou sítí u chaty Zvonice', '50% 55%') }}
 <section class="sekce">
   <div class="obal">
     <p class="uvodni">{{ T('pobyty-004') }}</p>
@@ -54,7 +54,7 @@
         <a class="btn" href="{{ url('poptavka/') }}?pobyt=Lyžařský výcvik">{{ T('pobyty-028') }}</a> <a class="odkaz" href="{{ url('zimni-pobyty/') }}">{{ T('pobyty-029') }}</a>
       </div>
     </div>
-    <div class="blok" id="zimni-tabory" data-odhal>
+    <div class="blok otoc" id="zimni-tabory" data-odhal>
       <div class="blok-foto">{{ img('nz2-zimni-tabory.jpg', 'Zimní tábor u chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
         {{ stitek(T('pobyty-042'), 'vlevo') }}
@@ -64,7 +64,7 @@
         <a class="btn" href="{{ url('poptavka/') }}?pobyt=Zimní tábor">{{ T('pobyty-049') }}</a>
       </div>
     </div>
-    <div class="blok otoc" id="skupiny" data-odhal>
+    <div class="blok" id="skupiny" data-odhal>
       <div class="blok-foto">{{ img('zv27-ext-areal-2.jpg', 'Louka na míčové hry u chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
         {{ stitek(T('pobyty-030'), 'vlevo') }}
@@ -75,7 +75,7 @@
       </div>
     </div>
 
-    <div class="blok" id="rodinne-pobyty" data-odhal>
+    <div class="blok otoc" id="rodinne-pobyty" data-odhal>
       <div class="blok-foto">{{ img('nz2-rodinne.jpg', 'Děti na sáňkách u chaty Zvonice', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
         {{ stitek(T('pobyty-050'), 'vlevo') }}
@@ -86,7 +86,7 @@
       </div>
     </div>
 
-    <div class="blok otoc" id="svatby" data-odhal>
+    <div class="blok" id="svatby" data-odhal>
       <div class="blok-foto">{{ img('nz2-svatby.jpg', 'Chata Zvonice s venkovním stanem', sizes='(min-width: 900px) 48vw, 100vw') }}</div>
       <div>
         {{ stitek(T('pobyty-058'), 'vlevo') }}

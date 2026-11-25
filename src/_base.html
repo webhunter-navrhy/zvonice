@@ -66,7 +66,7 @@
 {% set P = data.popup %}{% if P.zapnuto and P.nadpis %}<div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-nadpis" data-zpozdeni="{{ P.zpozdeni or 6 }}" hidden>
   <div class="popup-okno{% if P.foto %} s-fotkou{% endif %}">
     <button class="popup-zavrit" type="button" aria-label="Zavřít">×</button>
-    {% if P.foto %}<div class="popup-foto">{{ img(P.foto, '', sizes='460px') }}</div>{% endif %}
+    {% if P.foto %}<div class="popup-foto">{{ img(P.foto, '', sizes='460px', slot=False) }}</div>{% endif %}
     {% if P.stitek %}<small>{{ P.stitek }}</small>{% endif %}
     <h2 id="popup-nadpis">{{ P.nadpis }}</h2>
     {% if P.text %}<p>{{ P.text | replace('\n', ' ') }}</p>{% endif %}

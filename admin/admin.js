@@ -1,12 +1,12 @@
-/* Administrace Horská chata Zvonice: texty a ceny všech stránek, poptávky z formulářů, pop-up, akční balíčky, fotogalerie, video, heslo.
+/* Administrace Horská chata Zvonice: texty a ceny všech stránek, výměna kterékoli fotky na webu, poptávky z formulářů, pop-up, akční balíčky, fotogalerie, video, heslo.
    Data jsou v repozitáři (_data/texty.json, popup.json, baliky.json, galerie.json, video.json); poptávky v KV webhunter-admin. Uložení = jeden commit přes webhunter-admin,
    GitHub Action pak web přegeneruje (~1 minuta). */
 'use strict';
 (() => {
 const CFG = { id: 'zvonice', site: '../', api: 'https://webhunter-admin.webhunter.workers.dev' };
-const FILES = { texty: '_data/texty.json', popup: '_data/popup.json', baliky: '_data/baliky.json', galerie: '_data/galerie.json', video: '_data/video.json' };
+const FILES = { texty: '_data/texty.json', popup: '_data/popup.json', baliky: '_data/baliky.json', galerie: '_data/galerie.json', video: '_data/video.json', fotky: '_data/fotky.json' };
 const SK = 'zvonice_admin';
-const S = { tab: 'texty', str: null, sess: null, def: false, D: {}, snap: {}, prev: {}, pending: {}, preview: {}, saving: false, lib: null };
+const S = { tab: 'texty', str: null, fstr: null, sloty: null, sess: null, def: false, D: {}, snap: {}, prev: {}, pending: {}, preview: {}, saving: false, lib: null };
 const $ = (s) => document.querySelector(s);
 const uid = () => Math.random().toString(36).slice(2, 8);
 const slug = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40);
@@ -51,6 +51,7 @@ async function reauth() {
 async function loadAll() {
   for (const k of Object.keys(FILES)) { S.D[k] = JSON.parse(await readFile(FILES[k])); S.snap[k] = JSON.stringify(S.D[k]); }
   (S.D.baliky.polozky || (S.D.baliky.polozky = [])).forEach((b) => { if (!b.id) b.id = uid(); });
+  if (!isObj(S.D.fotky.vymena)) S.D.fotky.vymena = {};
 }
 /* Sloučení změn (3cestné): base = stav při načtení, mine = úpravy v tomto okně, theirs = aktuální stav na serveru.
    Uloží se jen to, co se v tomto okně opravdu změnilo – starší otevřená administrace tak nepřepíše novější úpravy. */
@@ -291,6 +292,60 @@ function okno(nadpis, obsah, akce) {
   });
 }
 
+/* fotky na webu: každá fotka napevno ve stránce jde vyměnit (_data/fotky.json → vymena["stránka|původní soubor"] = {img, pozice});
+   seznam míst s fotkami generuje build do fotky-sloty.json */
+const VYREZ = [['50% 50%', 'Uprostřed'], ['50% 20%', 'Horní část'], ['50% 85%', 'Spodní část'], ['20% 50%', 'Levá část'], ['80% 50%', 'Pravá část']];
+async function nactiSloty() { if (!S.sloty) { try { S.sloty = await fetch(CFG.site + 'fotky-sloty.json?t=' + Date.now(), { cache: 'no-store' }).then((r) => r.json()); } catch { S.sloty = []; } } return S.sloty; }
+function nahled(rel) {
+  const im = h('img', { alt: '', loading: 'lazy' }); im.src = src(rel);
+  im.onerror = () => { im.onerror = null; im.src = CFG.site + 'img/' + rel.replace(/\.[^.]+$/, '').replace(/[^A-Za-z0-9._-]+/g, '-') + '-1280.webp'; };
+  return im;
+}
+async function vyberZWebu() {
+  const knih = [...Object.keys(S.preview), ...(await lib())].filter((x, i, a) => a.indexOf(x) === i && !/^(yt-|drevo-bg)/.test(x));
+  return new Promise((ok) => {
+    const zavri = (v) => { bg.remove(); document.removeEventListener('keydown', esc); ok(v); };
+    const esc = (e) => { if (e.key === 'Escape') zavri(null); };
+    const grid = h('div.grid.vyber', {}, knih.map((rel) => h('button', { type: 'button', title: 'Vybrat tuto fotku', onclick: () => zavri(rel) }, nahled(rel))));
+    const bg = h('div.modal-bg', { onclick: (e) => { if (e.target === bg) zavri(null); } },
+      h('div.modal.modal-velky', { role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Vybrat fotku' }, h('h2', {}, 'Vyberte fotku z webu'),
+        h('p.hint', {}, 'Všechny fotky, které už na webu jsou (i ty dříve nahrané). Kliknutím fotku vyberete.'), grid,
+        h('div.modal-actions', {}, h('button.btn.btn-s', { type: 'button', onclick: () => zavri(null) }, 'Zrušit'))));
+    document.addEventListener('keydown', esc); document.body.append(bg);
+  });
+}
+function vFotky() {
+  const V = S.D.fotky.vymena; const obsah = h('div', {}, h('p.hint', {}, 'Načítám…')), volby = h('div.chips');
+  const nazevStr = (id) => { const x = STRANKY_WEBU.find(([v]) => v === (id === 'index' ? '' : id + '/')); return x ? x[1] : id; };
+  const kresli = async () => {
+    const sloty = await nactiSloty();
+    if (!sloty.length) { obsah.replaceChildren(h('p.hint', {}, 'Seznam fotek se nepodařilo načíst. Zkuste stránku obnovit.')); return; }
+    const stranky = [...new Set(sloty.map((x) => x.stranka))].sort((a, b) => STRANKY_WEBU.findIndex(([v]) => v === (a === 'index' ? '' : a + '/')) - STRANKY_WEBU.findIndex(([v]) => v === (b === 'index' ? '' : b + '/')));
+    if (!S.fstr || !stranky.includes(S.fstr)) S.fstr = stranky[0];
+    volby.replaceChildren(...stranky.map((st) => h('button', { type: 'button', 'aria-pressed': String(st === S.fstr), onclick: () => { S.fstr = st; kresli(); } }, nazevStr(st))));
+    const grid = h('div.grid.sloty');
+    sloty.filter((x) => x.stranka === S.fstr).forEach((sl, i) => {
+      const v = V[sl.k], vymenena = !!(v && v.img);
+      const nastav = (rel) => { V[sl.k] = { img: rel, pozice: (V[sl.k] && V[sl.k].pozice) || '50% 50%' }; bar(); kresli(); };
+      const file = h('input', { type: 'file', accept: 'image/*', hidden: true, onchange: async (e) => {
+        const f = e.target.files[0]; if (!f) return; try { nastav(await upload(f)); toast('Fotka je připravená. Na web se nahraje po kliknutí na „Uložit změny“.'); } catch (er) { toast(er.message, 'err'); } } });
+      const vyrez = vymenena ? h('label.f.vyrez', {}, h('span', {}, 'Výřez fotky na webu'),
+        h('select', { onchange: (e) => { V[sl.k].pozice = e.target.value; bar(); } }, VYREZ.map(([val, n]) => { const o = h('option', { value: val }, n); if ((v.pozice || '50% 50%') === val) o.selected = true; return o; }))) : null;
+      grid.append(h('div.ph', {}, nahled(vymenena ? v.img : sl.img),
+        h('div.ph-in', {}, h('small', {}, `${i + 1}. fotka na stránce${vymenena ? ' · vyměněná' : ''}`), h('p', {}, sl.alt || 'Fotka'), vyrez),
+        h('div.t', {},
+          h('button', { type: 'button', onclick: () => file.click() }, 'Nahrát novou'),
+          h('button', { type: 'button', onclick: async () => { const rel = await vyberZWebu(); if (rel) nastav(rel); } }, 'Vybrat z webu'),
+          vymenena ? h('button.x', { type: 'button', title: 'Vrátit původní fotku', onclick: () => { delete V[sl.k]; bar(); kresli(); } }, 'Vrátit původní') : null), file));
+    });
+    obsah.replaceChildren(grid);
+  };
+  kresli();
+  return h('section.card', {}, h('h2', {}, 'Fotky na webu'),
+    h('p.hint', {}, 'Vyberte stránku a u kterékoli fotky klikněte na „Nahrát novou“ (z počítače nebo telefonu), nebo „Vybrat z webu“ (fotka, která už na webu je, třeba z galerie). U vyměněné fotky můžete zvolit, kterou část fotky má web ukázat. „Vrátit původní“ vrátí fotku, která tam byla. Změny se projeví po kliknutí na „Uložit změny“, fotky v galerii a u akčních balíčků se mění v jejich vlastních záložkách.'),
+    volby, obsah);
+}
+
 /* poptávky z formulářů (uložené ve webhunter-admin) */
 const fmtD = (iso) => { try { return new Date(iso).toLocaleString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' }); } catch { return iso; } };
 async function loadForms(force) { if (!S.forms || force) S.forms = await api('/forms'); return S.forms; }
@@ -381,9 +436,9 @@ function shell() {
       h('span', {}, h('a.btn.btn-s', { href: CFG.site, target: '_blank', rel: 'noopener' }, 'Zobrazit web'), ' ',
         h('button.btn.btn-s', { type: 'button', onclick: () => { if (dirty().length && !confirm('Máte neuložené změny. Opravdu se odhlásit?')) return; localStorage.removeItem(SK); S.sess = null; login(); } }, 'Odhlásit'))),
     h('div.wrap', {}, S.def ? h('div.banner', {}, 'Používáte výchozí heslo „admin“. V záložce Heslo si nastavte vlastní.') : null,
-      h('nav.tabs', { 'aria-label': 'Části administrace' }, [['texty', 'Texty a ceny'], ['poptavky', 'Poptávky'], ['popup', 'Pop-up'], ['baliky', 'Akční balíčky'], ['foto', 'Fotogalerie a video'], ['heslo', 'Heslo']].map(([k, n]) =>
+      h('nav.tabs', { 'aria-label': 'Části administrace' }, [['texty', 'Texty a ceny'], ['fotky', 'Fotky na webu'], ['poptavky', 'Poptávky'], ['popup', 'Pop-up'], ['baliky', 'Akční balíčky'], ['foto', 'Fotogalerie a video'], ['heslo', 'Heslo']].map(([k, n]) =>
         h('button', { type: 'button', 'aria-pressed': String(S.tab === k), onclick: () => { S.tab = k; shell(); window.scrollTo(0, 0); } }, n))),
-      ...({ texty: () => [vTexty()], poptavky: () => [vPoptavky()], popup: () => [vPopup()], baliky: () => [vBaliky()], foto: () => [vVideo(), vGalerie()] }[S.tab] || (() => [vHeslo()]))()),
+      ...({ texty: () => [vTexty()], fotky: () => [vFotky()], poptavky: () => [vPoptavky()], popup: () => [vPopup()], baliky: () => [vBaliky()], foto: () => [vVideo(), vGalerie()] }[S.tab] || (() => [vHeslo()]))()),
     h('div.savebar', { id: 'savebar' }, h('span', {}, ''),
       h('span', {}, h('button.btn.btn-s', { type: 'button', onclick: () => { if (confirm('Zahodit neuložené změny?')) location.reload(); } }, 'Zahodit'), ' ',
         h('button.btn.btn-p', { type: 'button', onclick: saveAll }, 'Uložit změny'))));

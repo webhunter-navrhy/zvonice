@@ -77,3 +77,9 @@ small.pozn{display:block;color:#6f6a62;font-size:13px;margin-top:4px;font-weight
   .dva{grid-template-columns:1fr}
   .modal-bg{align-items:flex-end;padding:0}.modal{border-radius:14px 14px 0 0}
 }
+.sloty .ph-in{padding:8px 10px 2px;flex:1}.sloty .ph-in small{color:#6f6a62;font-size:12px}.sloty .ph-in p{margin:2px 0 6px;font-size:14px;line-height:1.35}
+.sloty .t{flex-wrap:wrap}.sloty .t button{font-size:13px;padding:4px 6px}
+.vyrez{margin:4px 0 6px}.vyrez span{font-size:12px}.vyrez select{width:100%;padding:6px;border:1px solid #cfc6b4;border-radius:6px;background:#fffdf8;font:inherit;font-size:14px}
+.modal.modal-velky{max-width:980px}
+.vyber{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}.vyber button{padding:0;border:2px solid transparent;border-radius:8px;overflow:hidden;cursor:pointer;background:#ddd}
+.vyber button:hover,.vyber button:focus-visible{border-color:#6a1f1a}.vyber img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}

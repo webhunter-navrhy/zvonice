@@ -342,7 +342,8 @@ body{font-weight:400}
 .hl nav a:hover{color:#f6d6cf}
 .hl.plna nav a:hover{color:var(--akcent)}
 /* hero */
-.hero::after{background:linear-gradient(90deg,rgba(12,14,18,.82) 0%,rgba(12,14,18,.62) 45%,rgba(12,14,18,.38) 100%),linear-gradient(0deg,rgba(12,14,18,.6),rgba(12,14,18,0) 40%)}
+.hero::after{background:linear-gradient(90deg,rgba(12,14,18,.7) 0%,rgba(12,14,18,.46) 45%,rgba(12,14,18,.18) 100%),linear-gradient(0deg,rgba(12,14,18,.5),rgba(12,14,18,0) 40%)}
+.hero h1,.hero p,.hero .stitek{text-shadow:0 2px 14px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.5)}
 .hero .stitek{color:#ffd9d1}
 .hero p{color:#fff}
 .hero-pata{color:#fff;text-shadow:0 1px 5px rgba(0,0,0,.6)}
@@ -352,7 +353,7 @@ body{font-weight:400}
 @media (max-width:900px){.titulni{margin-top:0;padding-top:68px}}
 /* dlaždice pobytů */
 .dl::before{background:linear-gradient(to top,rgba(12,12,12,.8) 0,rgba(12,12,12,.7) 55%,rgba(12,12,12,.58) 100%)}
-.dl:hover::before{background:rgba(12,12,12,.82)}
+.dl::before,.dl:hover::before{background:linear-gradient(to top,rgba(12,12,12,.78) 0,rgba(12,12,12,.62) 55%,rgba(12,12,12,.45) 100%);transition:none}
 .dl h3,.dl p,.dl .vic{text-shadow:0 1px 8px rgba(0,0,0,.6)}
 .dl p{color:#fff;font-size:14.5px;font-weight:400}
 .dl::after{border-color:rgba(255,255,255,.8)}
@@ -362,7 +363,7 @@ body{font-weight:400}
 .hl:not(.plna){background:linear-gradient(180deg,rgba(12,14,18,.82) 0,rgba(12,14,18,.55) 65%,rgba(12,14,18,0) 100%)}
 .misto{background:rgba(14,16,20,.72)}
 .misto p{color:#fff;font-size:14px}
-@media (max-width:900px){.hero::after{background:linear-gradient(0deg,rgba(12,14,18,.8),rgba(12,14,18,.7) 100%)}.hero .stitek{font-size:12px}}
+@media (max-width:900px){.hero::after{background:linear-gradient(0deg,rgba(12,14,18,.72),rgba(12,14,18,.55) 100%)}.hero .stitek{font-size:12px}}
 .hl:not(.plna){background:linear-gradient(180deg,rgba(10,12,16,.88) 0,rgba(10,12,16,.72) 60%,rgba(10,12,16,0) 100%)}
 
 /* ceník skupin 2027 */
