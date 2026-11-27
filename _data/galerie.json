@@ -1,6 +1,10 @@
 {
   "photos": [
     {
+      "img": "uploads/2026-11/20260110-134557-opraveny-okap-qdttqn.jpg",
+      "alt": "Fotka z chaty Zvonice"
+    },
+    {
       "img": "zv27-ext-vstup.jpg",
       "alt": "Vstup do chaty Zvonice"
     },
@@ -103,6 +107,10 @@
     {
       "img": "les-zima.jpg",
       "alt": "Zasněžený les a hřiště"
+    },
+    {
+      "img": "uploads/2026-11/20260110-144154-t3tg1w.jpg",
+      "alt": "Děti na chatě"
     }
   ]
 }
