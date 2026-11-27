@@ -1,3 +1,8 @@
 {
-  "vymena": {}
+  "vymena": {
+    "fotogalerie|chata-podzim.jpg": {
+      "img": "uploads/2026-11/img-2386-gkm8cw.jpg",
+      "pozice": "50% 50%"
+    }
+  }
 }
